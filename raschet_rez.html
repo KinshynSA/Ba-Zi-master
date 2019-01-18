@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ba-zi.ru календарь</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="shortcut icon" href="favicon.png" /> -->
+
+	<!-- Start: injected by AdGuard -->
+	<script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1532437497.726428&amp;sb=1&amp;domain=ba-zi.ru&amp;mask=103"
+	 type="text/javascript" nonce="2E00E0FF72FD47419FF6BFE26F3A19D9"></script>
+	<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1532375093.479040" type="text/javascript"
+	 nonce="2E00E0FF72FD47419FF6BFE26F3A19D9"></script>
+	<!-- End: injected by AdGuard -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/css/fonts.css" />
+	<link rel="stylesheet" href="css/css/main.css" />
+	<link rel="stylesheet" href="css/css/media.css" />
+
+</head>
+
+<body class="calendar rasch_rez">
+
+	<ul class="body_slides">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<header>
+		<div class="container-fluid">
+			<div class="row header_top">
+
+				<div class="col-xs-12 col-sm-push-3 col-sm-6 menu_box">
+					<ul class="menu">
+						<li><a href="#"><img src="img/blog-01.svg" alt="" width="22" height="22">
+								<p>Блог</p>
+							</a></li>
+						<li><a href="#"><img src="img/mob.svg" alt="" width="13" height="19">
+								<p>Мобильное приложение</p>
+							</a></li>
+						<li><a href="#"><img src="img/Log_grey1.svg" alt="" width="16" height="20">
+								<p>Личный кабинет</p>
+							</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 col-sm-pull-6 logo">
+					<a href="index.html"><img src="img/logo_VZ_w-01.svg" alt=""></a>
+				</div>
+
+
+				<div class="col-xs-6 col-sm-3 info tar">
+					<p>Время - это посредник
+						<br>между возможным и действительным</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<nav class="nav_mob">
+						<button class="icon_menu icon_menu1">
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+						</button>
+					</nav>
+					<div class="mic"></div>
+				</div>
+			</div>
+
+			<div class="row">
+                    <div class="menu_box_2">
+							<ul class="menu mobile_side def_mnu">
+								<li><a href="Ba-czi.html">Ба-цзы</a></li>
+								<li class="active_menu">Календарь</li>
+								<li><a href="Ci-men.html">ци мень</a></li>
+								<div class="nxt_str"></div>
+								<li><a href="#">летящие звезды</a></li>
+								<li><a href="#">8 дворцов</a></li>
+							</ul>
+						</div>
+			</div>
+
+		</div>
+	</header>
+
+
+	<section class="content">
+		<div class="box">
+
+			<div class="flex_box flex_nofw">
+
+				<div class="sidebar">
+
+					<div class="sidebar_nav">
+						<button class="sidebar_nav_button">
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+                        </button>
+                        <div class="jfn_btn">
+                                <a href="#" class="lins lins_2 sm_dev">JFN <span class="smile">☺️</span></a>
+                        </div>
+						<div class="avatar">
+							<h3>ВЛАДИМИР ЗАХАРОВ</h3>
+							<img src="img/Log.svg" alt="">
+						</div>
+					</div>
+
+					<!-- ///////////////// -->
+
+					<div class="sidebar_info">
+						<button class="sidebar_nav_close">
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+						</button>
+
+						<div class="avatar">
+							<img src="img/Log.svg" alt="">
+							<h3>ВЛАДИМИР ЗАХАРОВ</h3>
+						</div>
+
+						<div class="sidebar_flex_box">
+                                <div class="sidebar_box sidebar_box_1">
+										<p>Ваша подписка: 
+										<br><b>Калькулятор Ба-Цзы 
+										<br>до 14.02.2018</b></p>
+	
+										<ul>
+											 <li><a href="#">Выйти</a></li>
+											 <li><a href="#">Мой архив</a></li>
+										 </ul> 
+										 <p class="raz_s_grin">Разница с Гринвичем: UTC +2</p>
+                                         <a href="#" class="lins lins_2 hd_768">JFN <span class="smile">☺️</span></a>	
+	
+									</div>
+
+							<img src="img/uzor1.png" alt="">
+                            <div class="black_bg">
+							<div class="sidebar_box sidebar_box_2">
+								<h3>ОПЦИИ ОТОБРАЖЕНИЯ</h3>
+
+								<form action="">
+									<input type="checkbox" name="" id="checkbox_1">
+									<label for="checkbox_1">Подписи на пиньинь</label>
+									<input type="checkbox" name="" id="checkbox_2">
+									<label for="checkbox_2">Подписи на русском </label>
+									<input type="checkbox" name="" id="checkbox_3">
+									<label for="checkbox_3">Символические Звезды </label>
+									<input type="checkbox" name="" id="checkbox_4">
+									<label for="checkbox_4">Звезды 2018</label>
+									<input type="checkbox" name="" id="checkbox_5">
+									<label for="checkbox_5">Скрытые Небесные Стволы</label>
+
+									<div class="list_variants">
+										<input type="radio" name="radio_1" id="radio_1_1">
+										<label for="radio_1_1">1 набор</label>
+										<input type="radio" name="radio_1" id="radio_1_2">
+										<label for="radio_1_2">2 набор</label>
+									</div>
+
+									<input type="checkbox" name="" id="checkbox_6">
+									<label for="checkbox_6">Персональные направления </label>
+									<input type="checkbox" name="" id="checkbox_7">
+									<label for="checkbox_7">Описание направлений </label>
+									<input type="checkbox" name="" id="checkbox_8">
+									<label for="checkbox_8">10 Божеств </label>
+									<input type="checkbox" name="" id="checkbox_9">
+									<label for="checkbox_9">12 Стадий</label>
+									<input type="checkbox" name="" id="checkbox_10">
+                                    <label for="checkbox_10">12 Домов</label>
+                                    <div class="list_variants">
+                                            <input type="radio" name="radio_1" id="radio_3_1">
+                                            <label for="radio_3_1">версия 1</label>
+                                            <input type="radio" name="radio_1" id="radio_3_2">
+                                            <label for="radio_3_2">версия 2</label>
+                                        </div>
+									<input type="checkbox" name="" id="checkbox_11">
+									<label for="checkbox_11">Прогнозы</label>
+									<input type="checkbox" name="" id="checkbox_12">
+									<label for="checkbox_12">Шуэнкун Дагуа</label>
+									<input type="checkbox" name="" id="checkbox_30">
+									<label for="checkbox_30">Найин</label>
+									<input type="checkbox" name="" id="checkbox_31">
+									<label for="checkbox_31">Гексаграммы в Ба-Цзы</label>
+									<input type="checkbox" name="" id="checkbox_32">
+									<label for="checkbox_32">Стратагемы в Ба-Цзы  </label>
+									<input type="checkbox" name="" id="checkbox_13">
+									<label for="checkbox_13">Ци Мэнь факторы на год</label>
+
+									<div class="list_variants">
+										<input type="radio" name="radio" id="checkbox_13_1">
+										<label for="checkbox_13_1">текущий год</label>
+										<input type="radio" name="radio" id="checkbox_13_2">
+										<label for="checkbox_13_2">следующий год</label>
+									</div>
+
+									<input type="checkbox" name="" id="checkbox_14">
+									<label for="checkbox_14">Ци Мэнь факторы на месяц</label>
+								</form>
+
+								<div class="sidebar_btn">
+									<a href="#" class="buttons">СОХРАНИТЬ ОПЦИИ</a>
+									<a href="#" class="buttons">ВЕРСИЯ ДЛЯ ПЕЧАТИ</a>
+								</div>
+
+							</div>
+							<div class="sidebar_box sidebar_box_3 sbposa">
+
+                                    <h3>Вариант базы Ци Мэнь</h3>
+									
+									<form action="">
+											<input type="radio" name="radio_1" id="radio_2_1">
+											<label for="radio_2_1">1 База</label>
+											<input type="radio" name="radio_1" id="radio_2_2">
+                                            <label for="radio_2_2">2 База</label>
+                                            <div class="sidebar_sel_inp">
+                                                    <select>
+                                                            <option value="geroup">Группа </option>
+                                                        </select>
+                                                        <input type="text" placeholder="Название">
+                                            </div>
+                                            
+                                    </form>
+                                    
+                                    <div class="sidebar_btn">
+                                            <a href="#" class="buttons">СОХРАНИТЬ В АРХИВЕ</a>
+                                            <a href="#" class="buttons">НОВЫЙ РАСЧЕТ</a>
+                                        </div>
+
+							</div>
+							</div>
+                        </div>
+                        <div class="sidebar_box_bottom">
+								<p>Меняя причины,
+									<span class="tac">меняем следствия</span>
+									<b class="tar">Владимир Захаров</b></p>
+							</div>
+					</div>
+
+				</div>
+
+				<!-- ///////////////// -->
+
+				<div class="content_block">
+
+                    <div class="nesk_raschet">
+
+                        <div class="one_rasch_p">
+
+                            <div class="top_inf_card">
+                                    <h3 class="h3 gr_bg"><span></span>Сюзанна</h3>
+                                    <div class="gr_bg"><span></span><strong>Примечание</strong></div>
+                                    <p>
+                                            Дата: <strong>10.11.2005</strong><br>
+                                            Время: <strong>10:45</strong><br>
+                                            Пол: Женский <br>
+                                            <strong>GUA (Звезда жизни): 2</strong>
+                                    </p>
+                                    <p>
+                                            Поправка на пекинское время: - 6 
+                                    </p>
+                            </div>
+
+                            <table class="ft_calculator hd_mpl">
+                                <tr>
+                                    <th>ЧАС</th>
+                                    <th>ДЕНЬ</th>
+                                    <th>МЕСЯЦ</th>
+                                    <th>ГОД</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>Элемент ШКДГ</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td>Небесные<br>
+                                        Стволы</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                        Вода Инь</td>
+                                    <td>Небесные<br>
+                                        Стволы</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                    <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                    <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                    <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                    <td>Скрытые НС</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>Элемент ШКДГ</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="main_sym">金</span></td>
+                                    <td><span class="main_sym">金</span></td>
+                                    <td><span class="main_sym">金</span></td>
+                                    <td><span class="main_sym">金</span></td>
+                                    <td>Найин</td>
+                                </tr>
+                            </table>
+
+                            <table class="ft_calculator sbr_n">
+                                    <tr>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        
+                                </tr>
+                                <tr>
+                                    <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                </tr>
+                                <tr>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        <td class="ff_or">93<br>(2064)</td>
+                                        
+                                </tr>
+                                <tr>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    </tr>
+                                
+                                </table>
+
+                            <div class="wdthsh">
+									<h3 class="h3">Символические Звезды</h3>
+									<table class="ft_calculator wdthsh">
+										<tbody>
+                                        <tr>
+											<th></th>
+											<th>П. Ц.</th>
+											<th>Б. Ч.</th>
+											<th>З. А.</th>
+										</tr>
+										<tr>
+                                            <td class="bg_th">ДНЯ</td>
+											<td class="td_p_cus"><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td><div class="tsptd">
+                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                    Кролик
+                                            </div>
+                                            <div class="tsptd">
+                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                    Кролик
+                                            </div></td>
+											<td class="td_p_cus"><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+                                        </tr>
+                                        <tr>
+                                                <td class="bg_th">ГОДА</td>
+                                                <td><span class="main_sym">卯</span><br>Mao<br>
+                                                    Кролик</td>
+                                                <td><div class="tsptd">
+                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик
+                                                </div>
+                                                <div class="tsptd">
+                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик
+                                                </div></td>
+                                                <td><span class="main_sym">酉</span><br>You<br>
+                                                    Петух</td>
+                                            </tr>
+                                            <tr>
+                                                    <th></th>
+                                                    <th>П. Л.</th>
+                                                    <th>Тай Ци Б. Ч.</th>
+                                                    <th>Пустые З. В.</th>
+                                                </tr>
+                                                <tr>
+                                                        <td class="bg_th">ДНЯ</td>
+                                                        <td><span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик</td>
+                                                        <td><div class="tsptd">
+                                                                <span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик
+                                                        </div>
+                                                        <div class="tsptd">
+                                                                <span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик
+                                                        </div></td>
+                                                        <td><span class="main_sym">酉</span><br>You<br>
+                                                            Петух</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="bg_th">ГОДА</td>
+                                                            <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик</td>
+                                                            <td><div class="tsptd">
+                                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик
+                                                            </div>
+                                                            <div class="tsptd">
+                                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик
+                                                            </div></td>
+                                                            <td><span class="main_sym">酉</span><br>You<br>
+                                                                Петух</td>
+                                                        </tr>
+                                    </tbody>
+                                </table>
+								</div>
+
+                        </div>
+
+                        <div class="one_rasch_p hd_fr_sm">
+
+                                <div class="top_inf_card">
+                                        <h3 class="h3 gr_bg"><span></span>Сюзанна</h3>
+                                        <div class="gr_bg"><span></span><strong>Примечание</strong></div>
+                                        <p>
+                                                Дата: <strong>10.11.2005</strong><br>
+                                                Время: <strong>10:45</strong><br>
+                                                Пол: Женский <br>
+                                                <strong>GUA (Звезда жизни): 2</strong>
+                                        </p>
+                                        <p>
+                                                Поправка на пекинское время: - 6 
+                                        </p>
+                                </div>
+    
+                                <table class="ft_calculator hd_mpl">
+                                    <tr>
+                                        <th>ЧАС</th>
+                                        <th>ДЕНЬ</th>
+                                        <th>МЕСЯЦ</th>
+                                        <th>ГОД</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>Элемент ШКДГ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td>Небесные<br>
+                                            Стволы</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td>Небесные<br>
+                                            Стволы</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td>Скрытые НС</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>Элемент ШКДГ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td>Найин</td>
+                                    </tr>
+                                </table>
+    
+                                <table class="ft_calculator sbr_n">
+                                        <tr>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            
+                                    </tr>
+                                    <tr>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    </tr>
+                                    <tr>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            
+                                    </tr>
+                                    <tr>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        </tr>
+                                    
+                                    </table>
+    
+                                <div class="wdthsh">
+                                        <h3 class="h3">Символические Звезды</h3>
+                                        <table class="ft_calculator wdthsh">
+                                            <tbody>
+                                            <tr>
+                                                <th></th>
+                                                <th>П. Ц.</th>
+                                                <th>Б. Ч.</th>
+                                                <th>З. А.</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg_th">ДНЯ</td>
+                                                <td class="td_p_cus"><span class="main_sym">卯</span><br>Mao<br>
+                                                    Кролик</td>
+                                                <td><div class="tsptd">
+                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик
+                                                </div>
+                                                <div class="tsptd">
+                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик
+                                                </div></td>
+                                                <td class="td_p_cus"><span class="main_sym">酉</span><br>You<br>
+                                                    Петух</td>
+                                            </tr>
+                                            <tr>
+                                                    <td class="bg_th">ГОДА</td>
+                                                    <td><span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик</td>
+                                                    <td><div class="tsptd">
+                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик
+                                                    </div>
+                                                    <div class="tsptd">
+                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик
+                                                    </div></td>
+                                                    <td><span class="main_sym">酉</span><br>You<br>
+                                                        Петух</td>
+                                                </tr>
+                                                <tr>
+                                                        <th></th>
+                                                        <th>П. Л.</th>
+                                                        <th>Тай Ци Б. Ч.</th>
+                                                        <th>Пустые З. В.</th>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="bg_th">ДНЯ</td>
+                                                            <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик</td>
+                                                            <td><div class="tsptd">
+                                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик
+                                                            </div>
+                                                            <div class="tsptd">
+                                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик
+                                                            </div></td>
+                                                            <td><span class="main_sym">酉</span><br>You<br>
+                                                                Петух</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="bg_th">ГОДА</td>
+                                                                <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик</td>
+                                                                <td><div class="tsptd">
+                                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик
+                                                                </div>
+                                                                <div class="tsptd">
+                                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик
+                                                                </div></td>
+                                                                <td><span class="main_sym">酉</span><br>You<br>
+                                                                    Петух</td>
+                                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+    
+                            </div>
+
+                    </div>
+
+                    <hr class="gr_hr"/>
+
+                    <div class="nesk_raschet">
+
+                            <div class="one_rasch_p">
+    
+                                <div class="top_inf_card">
+                                        <h3 class="h3 gr_bg"><span></span>Сюзанна</h3>
+                                        <div class="gr_bg"><span></span><strong>Примечание</strong></div>
+                                        <p>
+                                                Дата: <strong>10.11.2005</strong><br>
+                                                Время: <strong>10:45</strong><br>
+                                                Пол: Женский <br>
+                                                <strong>GUA (Звезда жизни): 2</strong>
+                                        </p>
+                                        <p>
+                                                Поправка на пекинское время: - 6 
+                                        </p>
+                                </div>
+    
+                                <table class="ft_calculator hd_mpl">
+                                    <tr>
+                                        <th>ЧАС</th>
+                                        <th>ДЕНЬ</th>
+                                        <th>МЕСЯЦ</th>
+                                        <th>ГОД</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>Элемент ШКДГ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td>Небесные<br>
+                                            Стволы</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                            Вода Инь</td>
+                                        <td>Небесные<br>
+                                            Стволы</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                        <td>Скрытые НС</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>Элемент ШКДГ</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td><span class="main_sym">金</span></td>
+                                        <td>Найин</td>
+                                    </tr>
+                                </table>
+    
+                                <table class="ft_calculator sbr_n">
+                                        <tr>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            
+                                    </tr>
+                                    <tr>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                    </tr>
+                                    <tr>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            <td class="ff_or">93<br>(2064)</td>
+                                            
+                                    </tr>
+                                    <tr>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        </tr>
+                                    
+                                    </table>
+    
+                                <div class="wdthsh">
+                                        <h3 class="h3">Символические Звезды</h3>
+                                        <table class="ft_calculator wdthsh">
+                                            <tbody>
+                                            <tr>
+                                                <th></th>
+                                                <th>П. Ц.</th>
+                                                <th>Б. Ч.</th>
+                                                <th>З. А.</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg_th">ДНЯ</td>
+                                                <td class="td_p_cus"><span class="main_sym">卯</span><br>Mao<br>
+                                                    Кролик</td>
+                                                <td><div class="tsptd">
+                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик
+                                                </div>
+                                                <div class="tsptd">
+                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик
+                                                </div></td>
+                                                <td class="td_p_cus"><span class="main_sym">酉</span><br>You<br>
+                                                    Петух</td>
+                                            </tr>
+                                            <tr>
+                                                    <td class="bg_th">ГОДА</td>
+                                                    <td><span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик</td>
+                                                    <td><div class="tsptd">
+                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик
+                                                    </div>
+                                                    <div class="tsptd">
+                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик
+                                                    </div></td>
+                                                    <td><span class="main_sym">酉</span><br>You<br>
+                                                        Петух</td>
+                                                </tr>
+                                                <tr>
+                                                        <th></th>
+                                                        <th>П. Л.</th>
+                                                        <th>Тай Ци Б. Ч.</th>
+                                                        <th>Пустые З. В.</th>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="bg_th">ДНЯ</td>
+                                                            <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик</td>
+                                                            <td><div class="tsptd">
+                                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик
+                                                            </div>
+                                                            <div class="tsptd">
+                                                                    <span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик
+                                                            </div></td>
+                                                            <td><span class="main_sym">酉</span><br>You<br>
+                                                                Петух</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="bg_th">ГОДА</td>
+                                                                <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик</td>
+                                                                <td><div class="tsptd">
+                                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик
+                                                                </div>
+                                                                <div class="tsptd">
+                                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик
+                                                                </div></td>
+                                                                <td><span class="main_sym">酉</span><br>You<br>
+                                                                    Петух</td>
+                                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+    
+                            </div>
+    
+                            <div class="one_rasch_p hd_fr_sm">
+    
+                                    <div class="top_inf_card">
+                                            <h3 class="h3 gr_bg"><span></span>Сюзанна</h3>
+                                            <div class="gr_bg"><span></span><strong>Примечание</strong></div>
+                                            <p>
+                                                    Дата: <strong>10.11.2005</strong><br>
+                                                    Время: <strong>10:45</strong><br>
+                                                    Пол: Женский <br>
+                                                    <strong>GUA (Звезда жизни): 2</strong>
+                                            </p>
+                                            <p>
+                                                    Поправка на пекинское время: - 6 
+                                            </p>
+                                    </div>
+        
+                                    <table class="ft_calculator hd_mpl">
+                                        <tr>
+                                            <th>ЧАС</th>
+                                            <th>ДЕНЬ</th>
+                                            <th>МЕСЯЦ</th>
+                                            <th>ГОД</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>4</td>
+                                            <td>7</td>
+                                            <td>7</td>
+                                            <td>Элемент ШКДГ</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td>Небесные<br>
+                                                Стволы</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+                                                Вода Инь</td>
+                                            <td>Небесные<br>
+                                                Стволы</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                            <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                            <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                            <td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+                                            <td>Скрытые НС</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>4</td>
+                                            <td>7</td>
+                                            <td>7</td>
+                                            <td>Элемент ШКДГ</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="main_sym">金</span></td>
+                                            <td><span class="main_sym">金</span></td>
+                                            <td><span class="main_sym">金</span></td>
+                                            <td><span class="main_sym">金</span></td>
+                                            <td>Найин</td>
+                                        </tr>
+                                    </table>
+        
+                                    <table class="ft_calculator sbr_n">
+                                            <tr>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                
+                                        </tr>
+                                        <tr>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                        </tr>
+                                        <tr>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                <td class="ff_or">93<br>(2064)</td>
+                                                
+                                        </tr>
+                                        <tr>
+                                                <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                                <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                                <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                                <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                                <td><span class="main_sym">癸</span><br><span class="main_sym">木</span></td>
+                                            </tr>
+                                        
+                                        </table>
+        
+                                    <div class="wdthsh">
+                                            <h3 class="h3">Символические Звезды</h3>
+                                            <table class="ft_calculator wdthsh">
+                                                <tbody>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>П. Ц.</th>
+                                                    <th>Б. Ч.</th>
+                                                    <th>З. А.</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="bg_th">ДНЯ</td>
+                                                    <td class="td_p_cus"><span class="main_sym">卯</span><br>Mao<br>
+                                                        Кролик</td>
+                                                    <td><div class="tsptd">
+                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик
+                                                    </div>
+                                                    <div class="tsptd">
+                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик
+                                                    </div></td>
+                                                    <td class="td_p_cus"><span class="main_sym">酉</span><br>You<br>
+                                                        Петух</td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="bg_th">ГОДА</td>
+                                                        <td><span class="main_sym">卯</span><br>Mao<br>
+                                                            Кролик</td>
+                                                        <td><div class="tsptd">
+                                                                <span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик
+                                                        </div>
+                                                        <div class="tsptd">
+                                                                <span class="main_sym">卯</span><br>Mao<br>
+                                                                Кролик
+                                                        </div></td>
+                                                        <td><span class="main_sym">酉</span><br>You<br>
+                                                            Петух</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th></th>
+                                                            <th>П. Л.</th>
+                                                            <th>Тай Ци Б. Ч.</th>
+                                                            <th>Пустые З. В.</th>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="bg_th">ДНЯ</td>
+                                                                <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                    Кролик</td>
+                                                                <td><div class="tsptd">
+                                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик
+                                                                </div>
+                                                                <div class="tsptd">
+                                                                        <span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик
+                                                                </div></td>
+                                                                <td><span class="main_sym">酉</span><br>You<br>
+                                                                    Петух</td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td class="bg_th">ГОДА</td>
+                                                                    <td><span class="main_sym">卯</span><br>Mao<br>
+                                                                        Кролик</td>
+                                                                    <td><div class="tsptd">
+                                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                                            Кролик
+                                                                    </div>
+                                                                    <div class="tsptd">
+                                                                            <span class="main_sym">卯</span><br>Mao<br>
+                                                                            Кролик
+                                                                    </div></td>
+                                                                    <td><span class="main_sym">酉</span><br>You<br>
+                                                                        Петух</td>
+                                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+        
+                                </div>
+    
+                        </div>
+
+</div>
+</div>
+
+
+</div>
+</section>
+
+<!-- /////////////////////// -->
+
+<section class="footer">
+<div class="container-fluid">
+<div class="row">
+</div>
+</div>
+</section>
+
+<!-- /////////////////////// -->
+
+<footer>
+		<div class="container-fluid">
+		  <div class="row">
+	
+			<div class="foots flex_box">
+			  <div class="first_cont_foot">
+				  <div class="logo_foot">
+					  <img src="img/BaZi_LogoW.svg" alt="">					
+					</div>
+		  
+					<ul class="menu_foots">
+                            <div class="mf_bl">
+                                    <li><a href="#">Видео иероглифов</a></li>
+                                    <li><a href="#">Вопросы</a></li>
+                            </div>
+                            <div class="mf_bl">
+                                    <li><a href="#">Служба поддержки</a></li>
+                                    <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                            </div>
+                        </ul>
+			  </div>
+			  <div class="sec_cont_foot">
+				  <div class="soc_btn">
+					  <a href="#"><img src="./img/socbut/fb.svg" alt=""></a>
+					  <a href="#"><img src="./img/socbut/tw.svg" alt=""></a>
+					  <a href="#"><img src="./img/socbut/tmblr.svg" alt=""></a>
+					  <a href="#"><img src="./img/socbut/in.svg" alt=""></a>
+					  <a href="#"><img src="./img/socbut/inst.svg" alt=""></a>
+					  <a href="#"><img src="./img/socbut/vk.svg" alt=""></a>
+					  <a href="#"><img src="./img/socbut/ggl.svg" alt=""></a>
+					</div>
+			  </div>
+			</div>
+	
+	
+			
+		  </div>
+		  <div class="pause"></div>
+			<p>© Ba-zi.ru. Все права защищены 2008-2017</p>
+			<div class="mic"></div>
+		</div>
+
+    </footer>
+
+<div class="hidden"></div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+<script src="libs/bootstrap/bootstrap.js"></script>
+<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="libs/slick/jquery-migrate.min.js"></script>
+<script src="js/common.js"></script>
+<!-- Yandex.Metrika counter -->
+<!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter -->
+<!-- /Google Analytics counter -->
+
+</body>
+
+</html>

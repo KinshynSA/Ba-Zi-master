@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Oswaldregular/Oswaldregular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Oswaldregular/Oswaldregular.woff") format("woff"), url("../../fonts/Oswaldregular/Oswaldregular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Oswaldmedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Oswaldmedium/Oswaldmedium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Oswaldmedium/Oswaldmedium.woff") format("woff"), url("../../fonts/Oswaldmedium/Oswaldmedium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Oswaldlight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Oswaldlight/Oswaldlight.eot?#iefix") format("embedded-opentype"), url("../../fonts/Oswaldlight/Oswaldlight.woff") format("woff"), url("../../fonts/Oswaldlight/Oswaldlight.ttf") format("truetype"); }
+@font-face {
+  font-family: "LucidaGrande";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/LucidaGrande/LucidaGrande.eot?#iefix") format("embedded-opentype"), url("../../fonts/LucidaGrande/LucidaGrande.woff") format("woff"), url("../../fonts/LucidaGrande/LucidaGrande.ttf") format("truetype"); }
+@font-face {
+  font-family: "NotoSansTC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.woff") format("woff"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */

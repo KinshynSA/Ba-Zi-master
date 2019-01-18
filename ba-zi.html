@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ba-zi.ru календарь</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="shortcut icon" href="favicon.png" /> -->
+
+	<!-- Start: injected by AdGuard -->
+	<script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1532437497.726428&amp;sb=1&amp;domain=ba-zi.ru&amp;mask=103"
+	 type="text/javascript" nonce="2E00E0FF72FD47419FF6BFE26F3A19D9"></script>
+	<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1532375093.479040" type="text/javascript"
+	 nonce="2E00E0FF72FD47419FF6BFE26F3A19D9"></script>
+	<!-- End: injected by AdGuard -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/css/fonts.css" />
+	<link rel="stylesheet" href="css/css/main.css" />
+	<link rel="stylesheet" href="css/css/media.css" />
+
+</head>
+
+<body class="calendar bzi">
+
+	<ul class="body_slides">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<header>
+		<div class="container-fluid">
+			<div class="row header_top">
+
+				<div class="col-xs-12 col-sm-push-3 col-sm-6 menu_box">
+					<ul class="menu">
+						<li><a href="#"><img src="img/blog-01.svg" alt="" width="22" height="22">
+								<p>Блог</p>
+							</a></li>
+						<li><a href="#"><img src="img/mob.svg" alt="" width="13" height="19">
+								<p>Мобильное приложение</p>
+							</a></li>
+						<li><a href="#"><img src="img/Log_grey1.svg" alt="" width="16" height="20">
+								<p>Личный кабинет</p>
+							</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 col-sm-pull-6 logo">
+					<a href="index.html"><img src="img/logo_VZ_w-01.svg" alt=""></a>
+				</div>
+
+
+				<div class="col-xs-6 col-sm-3 info tar">
+					<p>Время - это посредник
+						<br>между возможным и действительным</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<nav class="nav_mob">
+						<button class="icon_menu icon_menu1">
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+						</button>
+					</nav>
+					<div class="mic"></div>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="menu_box_2">
+							<ul class="menu mobile_side def_mnu">
+								<li><a href="Ba-czi.html">Ба-цзы</a></li>
+								<li class="active_menu">Календарь</li>
+								<li><a href="Ci-men.html">ци мень</a></li>
+								<div class="nxt_str"></div>
+								<li><a href="#">летящие звезды</a></li>
+								<li><a href="#">8 дворцов</a></li>
+							</ul>
+						</div>
+			</div>
+
+		</div>
+	</header>
+
+
+	<section class="content">
+		<div class="box">
+
+			<div class="flex_box flex_nofw">
+
+				<div class="sidebar">
+
+					<div class="sidebar_nav">
+						<button class="sidebar_nav_button">
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+						</button>
+						<div class="jfn_btn">
+								<a href="#" class="lins lins_2 sm_dev">JFN <span class="smile">☺️</span></a>
+						</div>
+						<div class="avatar">
+							<h3>ВЛАДИМИР ЗАХАРОВ</h3>
+							<img src="img/Log.svg" alt="">
+						</div>
+					</div>
+
+					<!-- ///////////////// -->
+
+					<div class="sidebar_info">
+						<button class="sidebar_nav_close">
+							<span class="line_menu"></span>
+							<span class="line_menu"></span>
+						</button>
+
+						<div class="avatar">
+							<img src="img/Log.svg" alt="">
+							<h3>ВЛАДИМИР ЗАХАРОВ</h3>
+						</div>
+
+						<div class="sidebar_flex_box">
+								<div class="sidebar_box sidebar_box_1">
+										<p>Ваша подписка: 
+										<br><b>Калькулятор Ба-Цзы 
+										<br>до 14.02.2018</b></p>
+	
+										<ul>
+											 <li><a href="#">Выйти</a></li>
+											 <li><a href="#">Мой архив</a></li>
+										 </ul> 
+										 <p class="raz_s_grin">Разница с Гринвичем: UTC +2</p>
+										 <a href="#" class="lins lins_2 hd_768">JFN <span class="smile">☺️</span></a>	
+									</div>
+
+							<img src="img/uzor1.png" alt="">
+							<div class="black_bg">
+							<div class="sidebar_box sidebar_box_2">
+									<h3>ОПЦИИ ОТОБРАЖЕНИЯ</h3>
+	
+									<form action="">
+										<input type="checkbox" name="" id="checkbox_1">
+										<label for="checkbox_1">Подписи на пиньинь</label>
+										<input type="checkbox" name="" id="checkbox_2">
+										<label for="checkbox_2">Подписи на русском </label>
+										<input type="checkbox" name="" id="checkbox_3">
+										<label for="checkbox_3">Символические Звезды </label>
+										<input type="checkbox" name="" id="checkbox_4">
+										<label for="checkbox_4">Звезды 2018</label>
+										<input type="checkbox" name="" id="checkbox_5">
+										<label for="checkbox_5">Скрытые Небесные Стволы</label>
+	
+										<div class="list_variants">
+											<input type="radio" name="radio_1" id="radio_1_1">
+											<label for="radio_1_1">1 набор</label>
+											<input type="radio" name="radio_1" id="radio_1_2">
+											<label for="radio_1_2">2 набор</label>
+										</div>
+	
+										<input type="checkbox" name="" id="checkbox_6">
+										<label for="checkbox_6">Персональные направления </label>
+										<input type="checkbox" name="" id="checkbox_7">
+										<label for="checkbox_7">Описание направлений </label>
+										<input type="checkbox" name="" id="checkbox_8">
+										<label for="checkbox_8">10 Божеств </label>
+										<input type="checkbox" name="" id="checkbox_9">
+										<label for="checkbox_9">12 Стадий</label>
+										<input type="checkbox" name="" id="checkbox_10">
+										<label for="checkbox_10">12 Домов</label>
+										<div class="list_variants">
+												<input type="radio" name="radio_1" id="radio_3_1">
+												<label for="radio_3_1">версия 1</label>
+												<input type="radio" name="radio_1" id="radio_3_2">
+												<label for="radio_3_2">версия 2</label>
+											</div>
+										<input type="checkbox" name="" id="checkbox_11">
+										<label for="checkbox_11">Прогнозы</label>
+										<input type="checkbox" name="" id="checkbox_12">
+										<label for="checkbox_12">Шуэнкун Дагуа</label>
+										<input type="checkbox" name="" id="checkbox_30">
+										<label for="checkbox_30">Найин</label>
+										<input type="checkbox" name="" id="checkbox_31">
+										<label for="checkbox_31">Гексаграммы в Ба-Цзы</label>
+										<input type="checkbox" name="" id="checkbox_32">
+										<label for="checkbox_32">Стратагемы в Ба-Цзы  </label>
+										<input type="checkbox" name="" id="checkbox_13">
+										<label for="checkbox_13">Ци Мэнь факторы (на год)</label>
+	
+										<div class="list_variants">
+											<input type="radio" name="radio" id="checkbox_13_1">
+											<label for="checkbox_13_1">текущий год</label>
+											<input type="radio" name="radio" id="checkbox_13_2">
+											<label for="checkbox_13_2">следующий год</label>
+										</div>
+	
+										<input type="checkbox" name="" id="checkbox_14">
+										<label for="checkbox_14">Ци Мэнь факторы (на месяц)</label>
+									</form>
+	
+									<div class="sidebar_btn">
+										<a href="#" class="buttons">СОХРАНИТЬ ОПЦИИ</a>
+										<a href="#" class="buttons">ВЕРСИЯ ДЛЯ ПЕЧАТИ</a>
+									</div>
+	
+								</div>
+								<div class="sidebar_box sidebar_box_3 sbposa">
+	
+										<h3>Вариант базы Ци Мэнь</h3>
+										
+										<form action="">
+												<input type="radio" name="radio_1" id="radio_2_1">
+												<label for="radio_2_1">1 База</label>
+												<input type="radio" name="radio_1" id="radio_2_2">
+												<label for="radio_2_2">2 База</label>
+												<div class="sidebar_sel_inp">
+														<select>
+																<option value="geroup">Группа </option>
+															</select>
+															<input type="text" placeholder="Название">
+												</div>
+												
+										</form>
+										
+										<div class="sidebar_btn">
+												<a href="#" class="buttons">СОХРАНИТЬ В АРХИВЕ</a>
+												<a href="#" class="buttons">НОВЫЙ РАСЧЕТ</a>
+											</div>
+	
+								</div>
+							</div>
+							
+						</div>
+						<div class="sidebar_box_bottom">
+								<p>Меняя причины,
+									<span class="tac">меняем следствия</span>
+									<b class="tar">Владимир Захаров</b></p>
+							</div>
+					</div>
+
+				</div>
+
+				<!-- ///////////////// -->
+
+				<div class="content_block">
+
+					<div class="t1 bot8 center">Калькулятор Ба-Цзы</div>
+
+					<div class="top_content_block">
+						<div class="top_content_block_all">
+							<article class="top_content_block_left">
+								
+									<h3 class="h3 gr_bg"><span></span>Сюзанна</h3>
+									<div class="gr_bg"><span></span><strong>Примечание</strong></div>
+									<p>Дата: <strong>10.11.2005 <span class="ml_span">10:45</span></strong></p>
+
+
+									<p class="mbl_text">Пол: Женский </p>
+									<p class="mbl_text"><strong>GUA (Звезда жизни): 2 </strong></p>
+									<p class="mbl_text">DP (Дворец Судьбы) – Юго-Восток (4)</p>
+									<p class="mbl_text">Врата – Смерть
+											<p class="mbl_text">Божество – Летящий Змей</p>
+											<p class="mbl_text">Звезда – Небесное Сердце</p>
+											<p class="mbl_text">Божественный Свет – Север</p>
+								
+								
+									
+										
+										<p class="mbl_text">Божественное Благословение – Юго-Запад</p>
+										<p class="mbl_text">Божественная Сила – Северо-Запад</p>
+										<p class="mbl_text">Духовное направление – Юго-Восток</p>
+										<p class="mbl_text">Главный Дух (ДжиФу) – Юг</p>
+
+
+										<h3 class="h3 dom_zachat">Дом зачатия</h3>
+										<p class="h3_text">壬寅</p>
+										<p class="h3_text"><strong>Сила карты (2):</strong> Сильный</p>
+									
+										<p class="h3_text"><strong>Структура:</strong> Друг </p>
+										<p class="h3_text"><strong>Отсутствующие стихии:</strong> Деньги<br>
+											Поправка на пекинское время: - 6<br>
+											Разница с Гринвичем: UTC +2</p>
+
+										<p>Расчитываемая дата <br>
+											(с учетом солнечного времени):<br>
+											27/11/1972 05:37</p>
+							
+								
+
+							</article>
+							<div class="hd_laptp">
+									<table class="ft_calculator full_width_t ml_mins">
+											<tr>
+												<th>ЧАС</th>
+												<th>ДЕНЬ</th>
+												<th>МЕСЯЦ</th>
+												<th>ГОД</th>
+												<th></th>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>4</td>
+												<td>7</td>
+												<td>7</td>
+												<td>Элемент ШКДГ</td>
+											</tr>
+											<tr>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td>Небесные<br>
+													Стволы</td>
+											</tr>
+											<tr>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+													Вода Инь</td>
+												<td>Небесные<br>
+													Стволы</td>
+											</tr>
+											<tr>
+												<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+												<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+												<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+												<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+												<td>Скрытые НС</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>4</td>
+												<td>7</td>
+												<td>7</td>
+												<td>Элемент ШКДГ</td>
+											</tr>
+											<tr>
+												<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+												<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+												<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+												<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+												<td>Найин</td>
+											</tr>
+											<tr>
+												<td><span class="red"> Восемь<br> Сидений<br>
+														Божество<br> Облегчения<br>
+														Благородный</span><br>
+														Кровавый Нож<br>
+														Fu Chen<br>
+														Земные<br> Похороны<br>
+														Похоронная<br> Дверь<br>
+														Летящее<br> Целомудрие</td>
+														<td><span class="red"> Восемь<br> Сидений<br>
+															Божество<br> Облегчения<br>
+															Благородный</span><br>
+															Кровавый Нож<br>
+															Fu Chen<br>
+															Земные<br> Похороны<br>
+															Похоронная<br> Дверь<br>
+															Летящее<br> Целомудрие</td>
+															<td><span class="red"> Восемь<br> Сидений<br>
+																Божество<br> Облегчения<br>
+																Благородный</span><br>
+																Кровавый Нож<br>
+																Fu Chen<br>
+																Земные<br> Похороны<br>
+																Похоронная<br> Дверь<br>
+																Летящее<br> Целомудрие</td>
+																<td><span class="red"> Восемь<br> Сидений<br>
+																	Божество<br> Облегчения<br>
+																	Благородный</span><br>
+																	Кровавый Нож<br>
+																	Fu Chen<br>
+																	Земные<br> Похороны<br>
+																	Похоронная<br> Дверь<br>
+																	Летящее<br> Целомудрие</td>
+												<td>Звезды<br>
+														2018</td>
+											</tr>
+											<tr>
+												<td><span class="main_sym">䷵</span><br>54<br>
+													Gui Mei<br>
+													Невеста</td>
+													<td><span class="main_sym">䷵</span><br>54<br>
+														Gui Mei<br>
+														Невеста</td>
+														<td><span class="main_sym">䷵</span><br>54<br>
+															Gui Mei<br>
+															Невеста</td>
+															<td><span class="main_sym">䷵</span><br>54<br>
+																Gui Mei<br>
+																Невеста</td>
+												<td>Элемент ШКДГ</td>
+											</tr>
+											<tr>
+													<td></td>
+													<td>6</td>
+													<td>33</td>
+													<td></td>
+													<td>Элемент ШКДГ</td>
+												</tr>
+		
+										</table>
+							</div>
+							<div class="top_content_block_right">
+								<div class="fb_cnt_t">
+									<table class="ft_calculator ft_calculator_s wdthsh">
+										<tr>
+											<th><select class="fts_calculator">
+													<option value="43">43(2014)</option>
+												</select></th>
+											<th><select class="fts_calculator">
+													<option value="2018">2018</option>
+												</select></th>
+											<th><select class="fts_calculator">
+													<option value="Sep">Сентябрь</option>
+												</select></th>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>4</td>
+											<td>7</td>
+										</tr>
+										<tr>
+											<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+												Вода Инь</td>
+											<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+												Вода Инь</td>
+											<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+												Вода Инь</td>
+										</tr>
+										<tr>
+											<td><span class="ft_calc_sym"><span class="main_sym">卯</span></span><br>Mao<br>
+												Кролик<br>
+												Дерево Инь<br>
+												<strong>Смерть</strong></td>
+											<td><span class="ft_calc_sym"><span class="main_sym">卯</span></span><br>Mao<br>
+												Кролик<br>
+												Дерево Инь<br>
+												<strong>Смерть</strong></td>
+											<td><span class="ft_calc_sym"><span class="main_sym">卯</span></span><br>Mao<br>
+												Кролик<br>
+												Дерево Инь<br>
+												<strong>Смерть</strong></td>
+										</tr>
+										<tr>
+											<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+											<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+											<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>4</td>
+											<td>7</td>
+										</tr>
+										<tr>
+											<td class="fz_sm"><span class="red"> Комбинация <br> Великого Князя<br>
+													Месячная<br> Добродетель</span><br>
+												Очарование<br> Смерти<br>
+												Меньший<br> Потребитель<br>
+												Соленый Пруд</td>
+											<td class="fz_sm"><span class="red"> Комбинация <br> Великого Князя<br>
+													Месячная<br> Добродетель</span><br>
+												Очарование<br> Смерти<br>
+												Меньший<br> Потребитель<br>
+												Соленый Пруд</td>
+											<td class="fz_sm"><span class="red"> Комбинация <br> Великого Князя<br>
+													Месячная<br> Добродетель</span><br>
+												Очарование<br> Смерти<br>
+												Меньший<br> Потребитель<br>
+												Соленый Пруд</td>
+										</tr>
+									</table>
+									<div class="wdthsh">
+									<h3 class="h3">Символические Звезды</h3>
+									<table class="ft_calculator wdthsh">
+										<tr>
+											<th>ДНЯ<br>
+												рождения</th>
+											<th></th>
+											<th>ГОДА<br>
+												рождения</th>
+										</tr>
+										<tr>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td class="bg_th pmz"><strong>Персиковый<br>
+													Цвет</strong></td>
+											<td><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+										</tr>
+										<tr>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td class="bg_th pmz"><strong>Персиковый<br>
+													Цвет</strong></td>
+											<td><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+										</tr>
+										<tr>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td class="bg_th pmz"><strong>Персиковый<br>
+													Цвет</strong></td>
+											<td><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+										</tr>
+										<tr>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td class="bg_th pmz"><strong>Персиковый<br>
+													Цвет</strong></td>
+											<td><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+										</tr>
+										<tr>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td class="bg_th pmz"><strong>Персиковый<br>
+													Цвет</strong></td>
+											<td><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+										</tr>
+										<tr>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик</td>
+											<td class="bg_th pmz"><strong>Персиковый<br>
+													Цвет</strong></td>
+											<td><span class="main_sym">酉</span><br>You<br>
+												Петух</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="bg_th tal_b plz"><strong>Благородный Человек</strong><br>
+												часа рождения</td>
+											<td><span class="main_sym">卯</span><br>Mao<br>
+												Кролик<br>巳<br>Si<br>
+												Змея</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="tal_b plz">Сектор зачатия</td>
+											<td><span class="main_sym">酉</span></td>
+										</tr>
+									</table>
+								</div>
+								</div>
+
+
+								<div class="mlc">
+
+								<table class="ft_calculator hd_mpl">
+									<tr>
+										<th>ЧАС</th>
+										<th>ДЕНЬ</th>
+										<th>МЕСЯЦ</th>
+										<th>ГОД</th>
+										<th></th>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>4</td>
+										<td>7</td>
+										<td>7</td>
+										<td>Элемент ШКДГ</td>
+									</tr>
+									<tr>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td>Небесные<br>
+											Стволы</td>
+									</tr>
+									<tr>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td><span class="ft_calc_sym">癸</span> <br>Gui<br>
+											Вода Инь</td>
+										<td>Небесные<br>
+											Стволы</td>
+									</tr>
+									<tr>
+										<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+										<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+										<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+										<td><span class="ff_sym">丁<span class="main_sym">戊</span>癸</span></td>
+										<td>Скрытые НС</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>4</td>
+										<td>7</td>
+										<td>7</td>
+										<td>Элемент ШКДГ</td>
+									</tr>
+									<tr>
+										<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+										<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+										<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+										<td><span class="main_sym">金</span><br>Металл<br> фольги</td>
+										<td>Найин</td>
+									</tr>
+									<tr>
+										<td><span class="red"> Восемь<br> Сидений<br>
+												Божество<br> Облегчения<br>
+												Благородный</span><br>
+												Кровавый Нож<br>
+												Fu Chen<br>
+												Земные<br> Похороны<br>
+												Похоронная<br> Дверь<br>
+												Летящее<br> Целомудрие</td>
+												<td><span class="red"> Восемь<br> Сидений<br>
+													Божество<br> Облегчения<br>
+													Благородный</span><br>
+													Кровавый Нож<br>
+													Fu Chen<br>
+													Земные<br> Похороны<br>
+													Похоронная<br> Дверь<br>
+													Летящее<br> Целомудрие</td>
+													<td><span class="red"> Восемь<br> Сидений<br>
+														Божество<br> Облегчения<br>
+														Благородный</span><br>
+														Кровавый Нож<br>
+														Fu Chen<br>
+														Земные<br> Похороны<br>
+														Похоронная<br> Дверь<br>
+														Летящее<br> Целомудрие</td>
+														<td><span class="red"> Восемь<br> Сидений<br>
+															Божество<br> Облегчения<br>
+															Благородный</span><br>
+															Кровавый Нож<br>
+															Fu Chen<br>
+															Земные<br> Похороны<br>
+															Похоронная<br> Дверь<br>
+															Летящее<br> Целомудрие</td>
+										<td>Звезды<br>
+												2018</td>
+									</tr>
+									<tr>
+										<td><span class="main_sym">䷵</span><br>54<br>
+											Gui Mei<br>
+											Невеста</td>
+											<td><span class="main_sym">䷵</span><br>54<br>
+												Gui Mei<br>
+												Невеста</td>
+												<td><span class="main_sym">䷵</span><br>54<br>
+													Gui Mei<br>
+													Невеста</td>
+													<td><span class="main_sym">䷵</span><br>54<br>
+														Gui Mei<br>
+														Невеста</td>
+										<td>Элемент ШКДГ</td>
+									</tr>
+									<tr>
+											<td></td>
+											<td>6</td>
+											<td>33</td>
+											<td></td>
+											<td>Элемент ШКДГ</td>
+										</tr>
+
+								</table>
+
+								<div>
+									<h3 class="h3">
+										<strong>Ци Мэнь факторы</strong> на год
+									</h3>
+									<table class="ft_calculator full_width_t">
+										<tr>
+											<td><span class="main_sym">辅</span><br>Fu<br>
+												Помощник</td>
+												<td><span class="main_sym">辅</span><br>Fu<br>
+													Помощник</td>
+													<td><span class="main_sym">辅</span><br>Fu<br>
+														Помощник</td>
+														<td><span class="main_sym">辅</span><br>Fu<br>
+															Помощник</td>
+											<td class="pmzm">Звезды</td>
+										</tr>
+										<tr>
+												<td><span class="main_sym">辅</span><br>Fu<br>
+													Помощник</td>
+													<td><span class="main_sym">辅</span><br>Fu<br>
+														Помощник</td>
+														<td><span class="main_sym">辅</span><br>Fu<br>
+															Помощник</td>
+															<td><span class="main_sym">辅</span><br>Fu<br>
+																Помощник</td>
+												<td class="pmzm">Звезды</td>
+											</tr>
+									</table>
+								</div>
+								<div>
+										<h3 class="h3">
+												<strong>Ци Мэнь факторы</strong> на месяц
+											</h3>
+											<table class="ft_calculator full_width_t">
+												<tr>
+														<td class="bg_th lpmz"><a href="#">Февраль</a></td>
+														<td class="bg_th lpmz"><a href="#">Май</a></td>
+														<td class="bg_th lpmz"><a href="#">Август</a></td>
+														<td class="bg_th lpmz"><a href="#">Ноябрь</a></td>
+												</tr>
+												<tr>
+														<td class="bg_th lpmz"><a href="#">Март</a></td>
+														<td class="bg_th lpmz"><a href="#">Июнь</a></td>
+														<td class="bg_lth lpmz"><strong>Сентябрь</strong></td>
+														<td class="bg_th lpmz"><a href="#">Декабрь</a></td>
+												</tr>
+												<tr>
+														<td class="bg_th lpmz"><a href="#">Апрель</a></td>
+														<td class="bg_th lpmz"><a href="#">Июль</a></td>
+														<td class="bg_th lpmz"><a href="#">Октябрь</a></td>
+														<td class="bg_th lpmz"><a href="#">Январь</a></td>
+												</tr>
+											</table>
+											<table class="ft_calculator full_width_t">
+													<tr>
+														<td><span class="main_sym">辅</span><br>Fu<br>
+															Помощник</td>
+															<td><span class="main_sym">辅</span><br>Fu<br>
+																Помощник</td>
+																<td><span class="main_sym">辅</span><br>Fu<br>
+																	Помощник</td>
+																	<td><span class="main_sym">辅</span><br>Fu<br>
+																		Помощник</td>
+														<td class="pmzm">Звезды</td>
+													</tr>
+													<tr>
+															<td><span class="main_sym">辅</span><br>Fu<br>
+																Помощник</td>
+																<td><span class="main_sym">辅</span><br>Fu<br>
+																	Помощник</td>
+																	<td><span class="main_sym">辅</span><br>Fu<br>
+																		Помощник</td>
+																		<td><span class="main_sym">辅</span><br>Fu<br>
+																			Помощник</td>
+															<td class="pmzm">Звезды</td>
+														</tr>
+												</table>	
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="stolpi_udachi">
+						<h3 class="h3">
+							Столпы Удачи
+						</h3>
+						<div class="div_table">
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+							<div class="col_div">
+								<div class="td_div ff_or">
+									93<br>(2064)
+								</div>
+								<div class="td_div">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div">
+									<span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">乙</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div">
+									<span class="main_sym">水</span>
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+								<div class="td_div ff_or">
+									2064 甲乙
+								</div>
+							</div>
+						</div>
+						<!-- 
+						<table class="ft_calculator">
+							<tr>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+								<td class="ff_or">93<br>(2064)</td>
+						</tr>
+						<tr>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+						</tr>
+						<tr>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+							<td><span class="main_sym">丑</span><br>You<br>Петух<br><strong>Купание</strong></td>
+						</tr>
+						<tr>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+							<td><span class="main_sym">乙</span></td>
+						</tr>
+						<tr>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+							<td><span class="main_sym">水</span></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or"></td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+						</tr>
+						<tr>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+							<td class="ff_or">2064 甲乙</td>
+						</tr>
+						
+						</table>
+						-->
+					</div>
+
+					<div class="month_stolpi">
+						<h3 class="h3">
+							Месячные столпы
+						</h3>
+						<div class="div_table">
+								<div class="col_div">
+									<div class="td_div ff_or">
+											01/2018
+										</div>
+										<div class="td_div ff_or">
+												甲乙
+											</div>
+											<div class="td_div ff_or">
+													01/2018
+												</div>
+												<div class="td_div ff_or">
+														甲乙
+													</div>
+													<div class="td_div ff_or">
+															01/2018
+														</div>
+														<div class="td_div ff_or">
+																甲乙
+															</div>
+									</div>
+									<div class="col_div">
+											<div class="td_div ff_or">
+													01/2018
+												</div>
+												<div class="td_div ff_or">
+														甲乙
+													</div>
+													<div class="td_div ff_or">
+															01/2018
+														</div>
+														<div class="td_div ff_or">
+																甲乙
+															</div>
+															<div class="td_div ff_or">
+																	01/2018
+																</div>
+																<div class="td_div ff_or">
+																		甲乙
+																	</div>
+											</div>
+											<div class="col_div">
+													<div class="td_div ff_or">
+															01/2018
+														</div>
+														<div class="td_div ff_or">
+																甲乙
+															</div>
+															<div class="td_div ff_or">
+																	01/2018
+																</div>
+																<div class="td_div ff_or">
+																		甲乙
+																	</div>
+																	<div class="td_div ff_or">
+																			01/2018
+																		</div>
+																		<div class="td_div ff_or">
+																				甲乙
+																			</div>
+													</div>
+													<div class="col_div">
+															<div class="td_div ff_or">
+																	01/2018
+																</div>
+																<div class="td_div ff_or">
+																		甲乙
+																	</div>
+																	<div class="td_div ff_or">
+																			01/2018
+																		</div>
+																		<div class="td_div ff_or">
+																				甲乙
+																			</div>
+																			<div class="td_div ff_or">
+																					01/2018
+																				</div>
+																				<div class="td_div ff_or">
+																						甲乙
+																					</div>
+															</div>
+															<div class="col_div">
+																	<div class="td_div ff_or">
+																			01/2018
+																		</div>
+																		<div class="td_div ff_or">
+																				甲乙
+																			</div>
+																			<div class="td_div ff_or">
+																					01/2018
+																				</div>
+																				<div class="td_div ff_or">
+																						甲乙
+																					</div>
+																					<div class="td_div ff_or">
+																							01/2018
+																						</div>
+																						<div class="td_div ff_or">
+																								甲乙
+																							</div>
+																	</div>
+																	<div class="col_div">
+																			<div class="td_div ff_or">
+																					01/2018
+																				</div>
+																				<div class="td_div ff_or">
+																						甲乙
+																					</div>
+																					<div class="td_div ff_or">
+																							01/2018
+																						</div>
+																						<div class="td_div ff_or">
+																								甲乙
+																							</div>
+																							<div class="td_div ff_or">
+																									01/2018
+																								</div>
+																								<div class="td_div ff_or">
+																										甲乙
+																									</div>
+																			</div>
+																			<div class="col_div">
+																					<div class="td_div ff_or">
+																							01/2018
+																						</div>
+																						<div class="td_div ff_or">
+																								甲乙
+																							</div>
+																							<div class="td_div ff_or">
+																									01/2018
+																								</div>
+																								<div class="td_div ff_or">
+																										甲乙
+																									</div>
+																									<div class="td_div ff_or">
+																											01/2018
+																										</div>
+																										<div class="td_div ff_or">
+																												甲乙
+																											</div>
+																					</div>
+																					<div class="col_div">
+																							<div class="td_div ff_or">
+																									01/2018
+																								</div>
+																								<div class="td_div ff_or">
+																										甲乙
+																									</div>
+																									<div class="td_div ff_or">
+																											01/2018
+																										</div>
+																										<div class="td_div ff_or">
+																												甲乙
+																											</div>
+																											<div class="td_div ff_or">
+																													01/2018
+																												</div>
+																												<div class="td_div ff_or">
+																														甲乙
+																													</div>
+																							</div>
+																							<div class="col_div">
+																									<div class="td_div ff_or">
+																											01/2018
+																										</div>
+																										<div class="td_div ff_or">
+																												甲乙
+																											</div>
+																											<div class="td_div ff_or">
+																													01/2018
+																												</div>
+																												<div class="td_div ff_or">
+																														甲乙
+																													</div>
+																													<div class="td_div ff_or">
+																															01/2018
+																														</div>
+																														<div class="td_div ff_or">
+																																甲乙
+																															</div>
+																									</div>
+																									<div class="col_div">
+																											<div class="td_div ff_or">
+																													01/2018
+																												</div>
+																												<div class="td_div ff_or">
+																														甲乙
+																													</div>
+																													<div class="td_div ff_or">
+																															01/2018
+																														</div>
+																														<div class="td_div ff_or">
+																																甲乙
+																															</div>
+																															<div class="td_div ff_or">
+																																	01/2018
+																																</div>
+																																<div class="td_div ff_or">
+																																		甲乙
+																																	</div>
+																											</div>
+																											<div class="col_div">
+																													<div class="td_div ff_or">
+																															01/2018
+																														</div>
+																														<div class="td_div ff_or">
+																																甲乙
+																															</div>
+																															<div class="td_div ff_or">
+																																	01/2018
+																																</div>
+																																<div class="td_div ff_or">
+																																		甲乙
+																																	</div>
+																																	<div class="td_div ff_or">
+																																			01/2018
+																																		</div>
+																																		<div class="td_div ff_or">
+																																				甲乙
+																																			</div>
+																													</div>
+																													<div class="col_div">
+																															<div class="td_div ff_or">
+																																	01/2018
+																																</div>
+																																<div class="td_div ff_or">
+																																		甲乙
+																																	</div>
+																																	<div class="td_div ff_or">
+																																			01/2018
+																																		</div>
+																																		<div class="td_div ff_or">
+																																				甲乙
+																																			</div>
+																																			<div class="td_div ff_or">
+																																					01/2018
+																																				</div>
+																																				<div class="td_div ff_or">
+																																						甲乙
+																																					</div>
+																															</div>
+								</div>
+								<!--
+						<table class="ft_calculator">
+								<tr>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+										<td class="ff_or">01/2018</td>
+									</tr>
+									<tr>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+											<td class="ff_or">甲乙</td>
+										</tr>
+										<tr>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+												<td class="ff_or">01/2018</td>
+											</tr>
+											<tr>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+													<td class="ff_or">甲乙</td>
+												</tr>
+												<tr>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+														<td class="ff_or">01/2018</td>
+													</tr>
+													<tr>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+															<td class="ff_or">甲乙</td>
+														</tr>
+						</table>
+						-->
+					</div>
+
+					<div class="ten_gods">
+						<h3 class="h3">
+							10 Божеств
+						</h3>
+						<div class="div_table">
+							<div class="col_div">
+								<div class="td_div ff_or">
+									<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+								</div>
+								<div class="td_div ff_or">
+									Вор богатства
+								</div>
+							</div>
+							<div class="col_div">
+									<div class="td_div ff_or">
+										<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+									</div>
+									<div class="td_div ff_or">
+										Вор богатства
+									</div>
+								</div>
+								<div class="col_div">
+										<div class="td_div ff_or">
+											<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+										</div>
+										<div class="td_div ff_or">
+											Вор богатства
+										</div>
+									</div>
+									<div class="col_div">
+											<div class="td_div ff_or">
+												<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+											</div>
+											<div class="td_div ff_or">
+												Вор богатства
+											</div>
+										</div>
+										<div class="col_div">
+												<div class="td_div ff_or">
+													<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+												</div>
+												<div class="td_div ff_or">
+													Вор богатства
+												</div>
+											</div>
+											<div class="col_div">
+													<div class="td_div ff_or">
+														<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+													</div>
+													<div class="td_div ff_or">
+														Вор богатства
+													</div>
+												</div>
+												<div class="col_div">
+														<div class="td_div ff_or">
+															<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+														</div>
+														<div class="td_div ff_or">
+															Вор богатства
+														</div>
+													</div>
+													<div class="col_div">
+															<div class="td_div ff_or">
+																<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+															</div>
+															<div class="td_div ff_or">
+																Вор богатства
+															</div>
+														</div>
+														<div class="col_div">
+																<div class="td_div ff_or">
+																	<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+																</div>
+																<div class="td_div ff_or">
+																	Вор богатства
+																</div>
+															</div>
+															<div class="col_div">
+																	<div class="td_div ff_or">
+																		<span class="main_sym">癸</span><br>Gui<br>Вода Инь
+																	</div>
+																	<div class="td_div ff_or">
+																		Вор богатства
+																	</div>
+																</div>
+						</div>
+						<!--
+						<table class="ft_calculator">
+							<tr>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+								<td><span class="main_sym">癸</span><br>Gui<br>Вода Инь</td>
+							</tr>
+							<tr>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+								<td class="ff_or">Вор богатства</td>
+							</tr>
+						</table>
+						-->
+					</div>
+
+					<div class="bc_block">
+						<div class="fbc_block">
+							<h3 class="h3">
+									Персональные направления
+							</h3>
+							<div class="person_way">
+								<div class="fpw">
+									<p class="green ff_mfw"><strong>Дворец<br>
+											творчества<br>
+											и богатства<br>
+											Шен-Ци</strong><br>
+											«Дарение жизни»</p>
+											<p class="green ff_mfw">
+													<strong>Дворец<br>
+													социальной харизмы<br>
+													Янь-Нянь</strong><br>
+													«Долгожительство»
+											</p>
+											<p class="ff_mfw ff_mfw">
+													<strong>Дворец<br>
+													испытания<br>
+													и турбулентности <br>
+													Дзюэ-Минг<br></strong>
+													«Угроза жизни»
+											</p>
+								</div>
+								<div class="fpw">
+									<p class="green ff_mfw">
+											<strong>Дворец<br>
+											здоровья<br>
+											и благополучия<br>
+											Тянь-И</strong><br>
+											«Небесный доктор»
+									</p>
+									<div class="compas">
+										<img class="img_compas" src="./img/bazi/compas.png" alt="">
+									</div>
+									<p class="ff_mfw ff_mfw">
+											<strong>Дворец<br>
+											приключений<br> 
+											Хо-Хай</strong><br>
+											«Препятствия»
+									</p>
+								</div>
+								<div class="fpw">
+										<p class="green ff_mfw"><strong>Дворец<br>
+												творчества<br>
+												и богатства<br>
+												Шен-Ци</strong><br>
+												«Дарение жизни»</p>
+												<p class="green ff_mfw">
+														<strong>Дворец<br>
+														социальной харизмы<br>
+														Янь-Нянь</strong><br>
+														«Долгожительство»
+												</p>
+												<p class="ff_mfw">
+														<strong>Дворец<br>
+														испытания<br>
+														и турбулентности <br>
+														Дзюэ-Минг<br></strong>
+														«Угроза жизни»
+												</p>
+									</div>
+									<div class="blag_s">Благоприятный сектор</div>
+									<div class="ne_blag_s">Неблагоприятный сектор</div>
+							</div>
+							
+						</div>
+						<div class="prers_way_desc">
+							<h3 class="h3">
+									Описание персональных направлений
+							</h3>
+
+							<p>
+								<strong>Шен-Ци «Дарение жизни»</strong>	
+								</p>
+								<p>							
+Энергия этого направления или местоположения помогают Вам в ваших деловых и личных начинаниях.
+							</p>
+							<p>
+									Если Вы ищете продвижение по карьерной лестнице или стремитесь к улучшению бизнеса, постарайтесь сидеть в этом направлении за рабочим столом. Поместите Ваш стол таким образом, чтобы Вы во время работы смотрели лицом в этом направлении. Было бы идеально, если бы дверь комнаты также была направлена в этом направлении (глядя изнутри наружу).
+							</p>
+							<p>
+									Если Вы думаете о приобретении (аренде) дома, офиса или квартиры, то одной из возможностей является такой дом, офис или квартира, входная дверь которой «смотрит» в этом направлении (глядя изнутри наружу). Таким образом энергия (Ци), приходящая из этого направления, поможет Вам в сфере финансов или в политической карьере.
+							</p>
+							<p>
+									Если Вы выбираете комнату для кабинета, она может располагаться в Вашем личном секторе Шен-Ци или в секторе Шен-Ци ДОМА (офиса, квартиры).
+							</p>
+							<p>	
+									Тянь-И «Небесный доктор»
+									Тянь-И помогаем в вопросах, связанных со здоровьем. Если вы хотите улучшить свое здоровье в целом или ищите поддержку в исцелении от определенного недуга, тогда используйте естественную силу Тянь-И.
+							</p>
+							<p>	
+							Хорошо, если изголовье вашей кровати «смотрит» в этом направлении.
+						</p>
+						<p>	
+Вы также можете выбрать комнату, расположенную в секторе Вашего Тянь-И, дополнительном развернув кровать в личном направлении Тянь-И.
+</p>
+<p>	
+Для серьезной и последовательной практики Фэн Шуй плита или микроволновка также должны «наслаждаться» этим направлением. Например, плиту следует расположить так, чтобы ее ручки смотрели в этом направлении.
+</p>
+<p>	
+<strong>Янь-Нянь «Долгожительство»</strong>
+</p>
+<p>	
+Перевод Янь-Нянь не совсем отражает истинную суть этого качества Ци. Янь-Нянь способствует построению отношений. Это могут быть любовные, дружеские или рабочие отношения. Янь-нянь помогает завязывать крепкие узы дружбы и находить взаимопонимание.
+</p>
+<p>	
+Кровать, расположенная в вашем сектора Янь-Нянь или кровать, смотрящая в этом направлении, помогают вам «впитывать» это качество ци во время сна. Это направление примиряет споры и помогает встретить возлюбленного/возлюбленную. Также, если вы стремитесь к прекращению нежелательных отношений, ваше направление Янь-Нянь поможет расстаться с другим человеком легко и безболезненно для обеих сторон.
+</p>
+<p>	
+На работе, Ваше направление Янь-Нянь способствует построению лучших отношений с коллегами и подчиненными. Если возможно, поставьте свой рабочий стол таким образом, чтобы во время работы смотреть в направлении Янь-Нянь.
+</p>
+<p>	
+<strong>Фу-Вэй «Стабильность»</strong>
+</p>
+<p>	
+Фу Вэй может быть переведено как «место покоя» или «стабильность». Это качество ци помогает накопить энергию, отдохнуть и прояснить ум.
+</p>
+<p>	
+Если вы хотите посмотреть на свою жизнь со стороны, медитировать или улучшить качество своих мыслей, используйте это направление.
+</p>
+<p>	
+Хорошо, если гостиная расположена в этом секторе вашего дома.
+</p>
+<p>	
+<strong>Хо-Хай «Препятствия»</strong>
+</p>
+<p>	
+Переводится «препятствия» или «вред». Как явствует из названия, это направление приносит вред и беспокойство обитателям. В доме может означать извечные проблемы и поломки, которые, кажется, невозможно устранить. Например, электрооборудование перестает работать, кондиционер протекает, возникают проблемы с трубами и водой. Также возникают препятствия во взаимоотношениях. Друзья и родственники порой мешают без всякой видимой причины.
+</p>
+<p>	
+Избегайте располагать кровать или рабочий стол в этом месте/направлении.
+</p>
+<p>	
+<strong>У-Гуй «Пять призраков»</strong>
+</p>
+<p>	
+Это направление приносит негативную Ци, влекущую за собой проступки, предательство, сплетни и клевету. «Пять призраков» более проблематичны, чем Хо-Хай. Обычно отсутствие взаимопонимания, недоразумения, шум или бунты вызваны отрицательным воздействием направления Пяти призраков.
+</p>
+<p>	
+Избегайте того, чтобы ваша спальня или главная дверь находилась в этом секторе или рабочий стол смотрел в этом направлении. Лучше всего в этом секторе расположить кухню, т.к. кухня может быть использована для подавления отрицательных качеств Пяти призраков. Но помните, что при этом ручки плиты должны смотреть в одном из ваших благоприятных направлений (Шен-Ци, Тянь-И или Янь-Нянь)
+</p>
+<p>	
+<strong>Лю-Ша «Шесть убийц»</strong>
+</p>
+<p>	
+Это качество Ци может означать физическую опасность, несчастные случаи, ограбление или хирургическое вмешательство. «Шесть убийц» также приводят к судебным тяжбам, разводам и растрате денег.
+</p>
+<p>	
+Любой ценой избегайте того, чтобы ваша спальня находилась в секторе Лю-Ша. Вы можете ослабить это качество Ци, поместив здесь второстепенные комнаты, например кладовку, гостевую комнату или тренажерный зал.
+</p>
+<p>	
+<strong>Дзюэ-Минг «Угроза жизни»</strong>
+</p>
+<p>	
+Это качество Ци считается наиболее опасным в теории Восьми Дворцов. Его негативное влияние может привести к трагическим авариям, банкротству, коррупции, смертельным заболеваниям или серьезным проблемам во взаимоотношениях.
+</p>
+<p>	
+Избегайте этого направления. Не покупайте дом, у которого главная дверь смотрит в этом направлении и избегайте спать в комнате, расположенной в секторе Дзюэ-Минг. Этот сектор лучше всего отдать под кладовку или кухню, для того, чтобы минимизировать его негативное влияние.
+</p>
+<div class="lotary_date">
+	<p>
+		<strong>
+			Даты для лотереи:
+		</strong>
+	</p>
+	30/11/2018 09:00-11:00 <br>
+08/01/2019 00:00-02:00 19:00-21:00 <br>
+29/01/2019 09:00-11:00 <br>
+<strong>Направление:</strong> S (Юг)
+<p><strong>
+		Желтый Император во время Четырех Сезонов
+</strong></p> 
+<p> Рождение на плечах Желтого Императора означает жизнь, полную несметных богатств. Вы будете богаты в среднем возрасте. Ожидается много детей и внуков. С одеждой и доходом никогда не возникнет проблем. В старости у вас будут поля в деревне. Поддержка со стороны братьев и сестер. Молодые годы довольно суровые, но позже вы сможете насладиться жизнью.
+	</p></div>
+</div>
+
+
+<div class="revw_year">
+	<h3 class="h3 center">Прогноз на год 2018:</h3>
+	<strong>Li Ming 2018</strong>
+	<div class="revw_desc">
+		<span class="main_sym">午</span>
+		<p>Это отличный год, чтобы заняться продвижением личных планов. Смена работы принесет хорошие плоды. В карьере ожидается спокойный период. Студенты насладятся хорошими результатами в учебе. Сейчас самое время заняться составлением планов или изучением чего-то нового. Однако есть признаки скрытой опасности и финансовых неприятностей. Вероятны также беспочвенные сплетни относительно вас. Этим летом остерегайтесь растяжений и травм. Не рекомендуется задерживаться вне дома допоздна. </p>
+	</div>
+	<h3 class="h3">
+			день Ren Xu 2018
+	</h3>
+	<p><strong>Обзор</strong>
+	</p>
+	<p>
+Партнерства и совместные предприятия помогут продвижению вашей карьеры или бизнеса. Сейчас полезно создать надежную сеть опытных и проверенных контактов, способных оказать содействие в ваших стремлениях. Так можно облегчить груз на своих плечах. Поделившись идеями и ответственностью с другими людьми, вы сумеете эффективнее управлять ресурсами. Будьте открыты и внимательны к предложениям окружающих.
+</p>
+<p>
+<strong>Богатство</strong>
+</p>
+<p>
+В этом году окажется непросто зарабатывать деньги. Важно оставаться в игре, создавая для себя новые возможности и пересматривая старые методы для увеличения профессиональной эффективности. Сила коллективного ума способна на многое, так что старайтесь больше сотрудничать с окружающими и поработайте над улучшением своего финансового положения.
+</p>
+<p>
+<strong>Отношения</strong>
+</p>
+<p>
+Вы можете встретить свою вторую половинку благодаря друзьям. Пары в отношениях столкнутся с некоторыми проблемами. Есть вероятность измен и вмешательства третьей стороны, поэтому важно сохранять открытость в общении и не упускать из вида возможные проблемы в отношениях. Их разумнее устранить в зародыше.
+</p>
+<p>
+<strong>Здоровье</strong>
+</p>
+<p>
+Молодежь может не беспокоиться по поводу здоровья, а вот пожилым людям стоит обратить внимание на уровень сахара в крови. Важный шаг – это корректировка питания, чтобы оно было более здоровым. Так вы снизите риск внезапных проблем со здоровьем из-за переизбытка сахара или холестерина.
+</p>
+<p>
+<strong>Карьера</strong>
+</p>
+<p>
+На рабочем месте усилится конкуренция, и вы почувствуете негативное влияние стресса. Окружите себя людьми, которым доверяете и с которыми вам комфортно. Они помогут снять часть груза с ваших плеч и защитят от ненужных контактов. В одиночку вы лишь усугубите ситуацию, так что сделайте все возможное для укрепления связей с людьми.
+</p>
+</div>
+
+<div class="dvorci_life">
+	<h3 class="h3">
+			Дворцы Жизни (версия 1)
+	</h3>
+	<div class="shema_punkti">
+		<div class="punkti">
+			<ul>
+					<li>Дворец Жизни</li>
+					<li>Братство</li>
+					<li>Партнерство/супруг(а)</li>
+					<li>Дети</li>
+					<li>Богатство</li>
+					<li>Пространство/имущество</li>
+					<li>Жалование</li>
+					<li>Друзья</li>
+					<li>Болезни/опасности</li>
+					<li>Духовность</li>
+					<li>Движение</li>
+					<li>Родители</li>
+			</ul>
+		</div>
+		<div class="shema">
+			<table class="bot_calc_bazi">
+				<tr>
+					<td></td>
+					<td>
+						<div class="gb_simp">
+							<div class="symb_block_s">
+								<span class="f_sym_b">甲</span>
+								<span class="s_sym_b">子</span>
+							</div>
+							<div class="month_nbr">10</div>
+						</div>
+				</td>
+
+					<td></td>
+
+					<td>
+							<div class="gb_simp">
+									<div class="symb_block_s">
+										<span class="f_sym_b">甲</span>
+										<span class="s_sym_b">子</span>
+									</div>
+									<div class="month_nbr">10</div>
+								</div>
+					</td>
+					<td></td>
+					<td>
+							<div class="gb_simp">
+									<div class="symb_block_s">
+										<span class="f_sym_b">甲</span>
+										<span class="s_sym_b">子</span>
+									</div>
+									<div class="month_nbr">10</div>
+								</div>
+					</td>
+					<td></td>
+				</tr>
+
+				<tr>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd bd_bn_l"></td>
+						<td class="bg_gr_bd">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd bd_bn_r"></td>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+				</tr>
+				<tr>
+						<td></td>
+						<td class="bg_gr_bd_l">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="bg_gr_bd_l">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+				</tr>
+				<tr>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd_l">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td colspan="3" class="calc_cent" >
+							<table>
+								<tr>
+									<td><span class="main_sym_bot">癸</span></td>
+									<td><span class="main_sym_bot">癸</span></td>
+									<td><span class="main_sym_bot">癸</span></td>
+									<td><span class="main_sym_bot">癸</span></td>
+								</tr>
+								<tr>
+										<td><span class="main_sym_bot">癸</span></td>
+										<td><span class="main_sym_bot">癸</span></td>
+										<td><span class="main_sym_bot">癸</span></td>
+										<td><span class="main_sym_bot">癸</span></td>
+									</tr>
+							</table>
+						</td>
+						<td class="bg_gr_bd_l">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+				</tr>
+				<tr>
+						<td></td>
+						<td class="bg_gr_bd_l">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="bg_gr_bd_l">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+				</tr>
+				<tr>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd_b bg_gr_bd_b_no_l"></td>
+						<td class="bg_gr_bd_b">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd_b">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd_b">
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td class="bg_gr_bd_b bg_gr_bd_b_no"></td>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+				</tr>
+				<tr>
+						<td></td>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+						<td>
+								<div class="gb_simp">
+										<div class="symb_block_s">
+											<span class="f_sym_b">甲</span>
+											<span class="s_sym_b">子</span>
+										</div>
+										<div class="month_nbr">10</div>
+									</div>
+						</td>
+						<td></td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- /////////////////////// -->
+
+	<section class="footer">
+		<div class="container-fluid">
+			<div class="row">
+			</div>
+		</div>
+	</section>
+
+	<!-- /////////////////////// -->
+
+	<footer>
+			<div class="container-fluid">
+				<div class="row">
+	
+					<div class="foots flex_box">
+						<div class="first_cont_foot">
+								<div class="logo_foot">
+										<img src="img/BaZi_LogoW.svg" alt="">					
+									</div>
+				
+									<ul class="menu_foots">
+											<div class="mf_bl">
+													<li><a href="#">Видео иероглифов</a></li>
+													<li><a href="#">Вопросы</a></li>
+											</div>
+											<div class="mf_bl">
+													<li><a href="#">Служба поддержки</a></li>
+													<li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+											</div>
+										</ul>
+						</div>
+						<div class="sec_cont_foot">
+								<div class="soc_btn">
+										<a href="#"><img src="./img/socbut/fb.svg" alt=""></a>
+										<a href="#"><img src="./img/socbut/tw.svg" alt=""></a>
+										<a href="#"><img src="./img/socbut/tmblr.svg" alt=""></a>
+										<a href="#"><img src="./img/socbut/in.svg" alt=""></a>
+										<a href="#"><img src="./img/socbut/inst.svg" alt=""></a>
+										<a href="#"><img src="./img/socbut/vk.svg" alt=""></a>
+										<a href="#"><img src="./img/socbut/ggl.svg" alt=""></a>
+									</div>
+						</div>
+					</div>
+	
+	
+					
+				</div>
+				<div class="pause"></div>
+					<p>© Ba-zi.ru. Все права защищены 2008-2017</p>
+					<div class="mic"></div>
+			</div>
+		</footer>
+
+
+	<div class="hidden"></div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.js"></script>
+	<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/slick/slick.js"></script>
+	<script src="libs/slick/jquery-migrate.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter -->
+	<!-- /Google Analytics counter -->
+
+</body>
+
+</html>
