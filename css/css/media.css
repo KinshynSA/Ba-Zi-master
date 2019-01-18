@@ -2086,7 +2086,6 @@ display: none;
 
 
 
-/* high-rise */
 @media screen and (max-width: 768px){
 	header{
 		padding-top: 0;
@@ -2098,6 +2097,53 @@ display: none;
 @media screen and (max-width: 640px){
 	.popup_high{
 		width: 100%;
+	}
+	.table_hexagrams{
+		width: calc(100% + 30px);
+		margin: 0 -15px 15px;
+	}
+	.table_hexagrams_column:nth-of-type(1){
+		min-width: 64px;
+	}
+	.table_hexagrams_column:nth-of-type(3){
+		min-width: 94px;
+	}
+}
+@media screen and (max-width: 480px){
+	.table_hexagrams_column{
+		padding: 4px;
+	}
+	.table_hexagrams_column:nth-of-type(1){
+		min-width: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.table_hexagrams_column:nth-of-type(2){
+		padding: 4px 10px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.table_hexagrams_column:nth-of-type(3){
+		min-width: 69px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.table_hexagrams_column:nth-of-type(4){
+		min-width: 49px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.table_hexagrams_column:nth-of-type(4) p{
+		font-size: 0;
+	}
+	.table_hexagrams_img_redact{
+		margin-right: 0;
+	}
+	.table_hexagrams_number_desktop{
+		display: none;
+	}
+	.table_hexagrams_number_mobile{
+		display: block;
 	}
 }
 @media screen and (max-width: 375px){
@@ -2114,6 +2160,13 @@ display: none;
 		width: 25px;
 		height: 30px;
 		margin-left: 3px;
+	}
+	.table_hexagrams{
+	    width: calc(100% + 50px);
+	    margin: 0 -25px 15px;
+	}
+	.table_hexagrams_column:nth-of-type(4){
+		min-width: 39px;
 	}
 }
 @media screen and (max-width: 370px){
