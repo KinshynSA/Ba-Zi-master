@@ -14,7 +14,7 @@ body{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Hexagrams/Hexagrams-375x559.png);
+  background-image: url(../../../T/Hexagrams-Edit/Hexagrams-Edit-1280x700.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -1858,7 +1858,8 @@ section {
 
 .info p {
   margin: 0;
-  font-family: "Oswaldlight", sans-serif; }
+  font-family: "Oswaldlight", sans-serif;
+  font-size: 16px; }
 
 .info,
 .menu_box {
@@ -1926,7 +1927,8 @@ section {
     width: auto;
     justify-content: center; }
     .menu_box_2 .menu li {
-      height: 36px; }
+      height: 40px;
+      font-size: 11px; }
       .menu_box_2 .menu li a {
         padding-top: 12px;
         padding-bottom: 12px; }
@@ -2042,7 +2044,7 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.8s linear; }
   .sidebar .sidebar_info .avatar {
-    margin-top: 40px; }
+    margin-top: 22px; }
     .sidebar .sidebar_info .avatar:after {
       display: none; }
   .sidebar .sidebar_nav {
@@ -2064,7 +2066,7 @@ section {
     .sidebar .sidebar_box b {
       font-family: "Oswaldmedium", sans-serif; }
     .sidebar .sidebar_box ul {
-      margin: 24px auto 24px;
+      margin: 24px auto 16px;
       padding: 0;
       list-style-type: none; }
       .sidebar .sidebar_box ul li {
@@ -2601,6 +2603,7 @@ margin-right: 35px;
     -webkit-background-size: cover;
     background-size: cover; }
   .avatar h3 {
+    margin-bottom: 25px;
     font-size: 14px;
     font-weight: 500;
     line-height: 0.86;
@@ -3041,10 +3044,12 @@ footer {
       line-height: 30px;
       letter-spacing: 0.15em; }
       .foots .menu_foots li a {
-        color: #fff; }
+        display: inline-block;
+        color: #fff;
+        transition: all 0.2s ease-in-out; }
         .foots .menu_foots li a:hover {
           color: #fff;
-          font-family: Oswald;
+          transform: scale(1.04);
          }
     .foots .menu_foots .active {
       font-family: "Oswaldmedium", sans-serif; }
@@ -3063,17 +3068,22 @@ footer {
   .calendar .foots {
     display: block; }
   .calendar .content {
+    display: flex;
     position: relative;
     top: initial;
     bottom: initial;
     left: initial;
     right: initial;
-    margin-top: 100px;
+    margin-top: 82px;
+    min-height: calc(100vh - 430px);
     z-index: 2; }
     .calendar .content .box {
       width: 100%;
       padding-left: 0;
       padding-right: 0; }
+      .calendar .content .box .flex_box{
+        height: 100%;
+      }
 
 .block_top_calendar {
   position: relative;
@@ -4602,6 +4612,10 @@ td.td_bot_symb_r .small_shen_symb {
 }
 .soc_btn a {
   margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+.soc_btn a:hover{
+  transform: scale(1.2);
 }
 
 .frst_cnt {
@@ -4630,7 +4644,7 @@ footer .container-fluid .row {
   margin: auto;
 }
 .raz_s_grin{
-  margin-bottom: 50px;
+  margin-bottom: 62px;
 }
 
 .qimen_prim form .form_box_bg {
@@ -5527,7 +5541,7 @@ body.bczi_login {
   width: 60px;
   margin: 0;
 }
-.popup_high button{
+.popup_button{
   width: 100%;
   max-width: 240px;
   margin: 20px auto 0;
@@ -5547,6 +5561,7 @@ body.bczi_login {
 .square_high{
   width: 285px;
   max-width: calc(100% - 44px);
+  margin: 32px auto;
 }
 .square_high_row{
   display: flex;
@@ -5638,11 +5653,8 @@ body.bczi_login {
 .table_hexagrams_number_mobile{
   display: none;
 }
-.table_hexagrams_row img{
-  transition: all 0.2s ease-in-out;
-}
-.table_hexagrams_row:hover img{
-  color: #ea5e68;
+.table_hexagrams_redact_butt{
+  cursor: pointer;
 }
 .table_hexagrams_img_redact{
   display: inline-block;
@@ -5652,4 +5664,108 @@ body.bczi_login {
   display: inline-block;
   width: 21px;
   margin-right: 10px;
+}
+
+
+.popup_hexagrams{
+  position: relative;
+  max-width: 720px;
+  margin: 64px auto 60px;
+  width: 100%;
+  padding: 20px 90px;
+  color: #ffffff;
+}
+.popup_hexagrams_title{
+  position: absolute;
+  top: -32px;
+  left: 0;
+  color: #000;
+  font-family: Oswaldmedium;
+}
+.popup_hexagrams_flex{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.popup_hexagrams_name{}
+.popup_hexagrams_name .popup_hexagrams_input{
+  width: 100%;
+  max-width: 420px;
+}
+.popup_hexagrams_nick{
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.popup_hexagrams_input{
+  width: 120px;
+  padding: 0 10px;
+  margin-left: 20px;
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+}
+.popup_hexagrams_main{}
+.popup_hexagrams_main_left{}
+.popup_hexagrams_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin-left: 20px;
+  padding: 20px 30px;
+  background-color: #cacacb;
+}
+.popup_hexagrams_img_item{
+  opacity: 0.6;
+}
+.popup_hexagrams_main_right{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.popup_hexagrams_textarea_block{
+  padding: 10px 4px 10px 10px;
+  width: 280px;
+  height: 100%;
+  background-color: #eaeaea;
+  overflow-y: hidden;
+}
+.popup_hexagrams_textarea{
+  width: 100%;
+  height: 100%;
+  padding: 0 16px 0 0;
+  background-color: #eaeaea;
+  color: #000;
+  font-family: Oswald;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.42px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: none;
+}
+.popup_hexagrams_textarea::-webkit-scrollbar{
+  width: 8px;
+  background-color: #fefeff;
+}
+.popup_hexagrams_textarea::-webkit-scrollbar-thumb{
+  width: 6px;
+  height: 148px;
+  border-radius: 7px;
+  background-color: rgba(0,0,0,0.5);
+}
+.popup_hexagrams_textarea::-webkit-scrollbar-track{
+  width: 8px;
+  background-color: #fefeff;
+}
+.popup_hexagrams button{
+  margin: 0px auto 0;
+  max-width: 200px;
+  padding: 16px 10px;
 }

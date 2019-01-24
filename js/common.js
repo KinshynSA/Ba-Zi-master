@@ -29,6 +29,18 @@
     
     //  end 8 dvorcov
 
+
+    // hexagrams
+    $('.table_hexagrams_redact_butt').click(function(){
+    	$('.table_hexagrams').hide();
+    	$('.block_pop').show(); 
+    });
+    $('.table_hexagrams_close').click(function(){
+		$('.table_hexagrams').show();
+		$('.block_pop').hide(); 
+    });
+
+
 	//  PageScroll  start
   $('a.order').mPageScroll2id();
 	//  PageScroll end  
