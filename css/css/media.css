@@ -331,8 +331,12 @@
 		padding-right: 0;
 		padding-left: 0;
 	}
+	.logo{
+		margin-top: 25px;
+    	padding-left: 40px;
+	}
 	.menu_box {
-		margin-top: 0;
+		margin-top: 32px;
 		margin-bottom: 20px;
 		padding: 10px 0;
 
@@ -340,16 +344,17 @@
 	.info p {
 		max-width: 200px;
 		margin-left: auto;
+    	padding-right: 27px;
+    	padding-top: 22px;
+		font-size: 13px;
 	}
-	/* body {
-		padding-bottom: 100px;
-	} */
+	header .mic{
+    	top: -4px;
+		right: 40px;
+	}
 	body.ci_men {
 		padding-bottom: 419px;
 	}
-	/*.menu_box_2 .menu {
-		margin-bottom: 40px;
-	}*/
 	.body_slides,
 	.body_slides:after {
 		position: absolute;
@@ -810,6 +815,9 @@
 		-ms-flex-wrap: wrap;
 		-o-flex-wrap: wrap;
 		flex-wrap: wrap;
+	}
+	.sidebar{
+		margin-top: 75px;
 	}
 	.sidebar,
 	.sidebar_2 {
@@ -2094,19 +2102,68 @@ display: none;
 		background-color: transparent;
 	}
 }
+@media screen and (max-width: 700px){
+	.popup_hexagrams{
+		padding: 20px 30px;
+	}
+}
 @media screen and (max-width: 640px){
+	.menu_box{
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 5px;
+	}
+	.logo{
+		margin-top: 0;
+	}
+	.info p{
+		padding-top: 0;
+	}
 	.popup_high{
 		width: 100%;
 	}
-	.table_hexagrams{
+	/*.table_hexagrams{
 		width: calc(100% + 30px);
 		margin: 0 -15px 15px;
-	}
+	}*/
 	.table_hexagrams_column:nth-of-type(1){
 		min-width: 64px;
 	}
 	.table_hexagrams_column:nth-of-type(3){
 		min-width: 94px;
+	}
+	
+}
+@media screen and (max-width: 630px){
+	.right_block_padding{
+		padding: 0;
+	}
+	.popup_hexagrams{
+		padding: 20px;
+	}
+	.popup_hexagrams_title{
+		left: 20px;
+	}
+	.popup_hexagrams_main_right{
+		margin-left: 10px;
+	}
+	.popup_hexagrams_textarea_block{
+		width: 220px;
+	}
+	.popup_hexagrams_nick{
+		font-size: 11px;
+	}
+	.popup_hexagrams_img{
+		width: 100px;
+		height: 100px;
+		padding: 20px;
+	}
+	.popup_hexagrams_name .popup_hexagrams_input{
+		max-width: 330px;
+	}
+	.popup_hexagrams_input{
+		width: 100px;
+		margin-left: 10px;
 	}
 }
 @media screen and (max-width: 480px){
@@ -2160,10 +2217,6 @@ display: none;
 		width: 25px;
 		height: 30px;
 		margin-left: 3px;
-	}
-	.table_hexagrams{
-	    width: calc(100% + 50px);
-	    margin: 0 -25px 15px;
 	}
 	.table_hexagrams_column:nth-of-type(4){
 		min-width: 39px;

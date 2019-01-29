@@ -2,7 +2,7 @@
 body{
   position: relative;
 }
-/*body:after{
+body:after{
   content: "";
   position: absolute;
   top: 0;
@@ -14,11 +14,11 @@ body{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Hexagrams-Edit/Hexagrams-Edit-1280x700.png);
+  background-image: url(../../../T/Hexagrams-Edit/Hexagrams-Edit-375x559.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
-}*/
+}
 
 b,strong{
   font-family: Oswaldmedium;
@@ -5603,8 +5603,9 @@ body.bczi_login {
 
 /* hexagrams */
 .table_hexagrams{
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto 15px;
+  padding: 0 20px;
   font-family: "Oswaldmedium";
   font-size: 12px;
   line-height: 1;
@@ -5667,6 +5668,9 @@ body.bczi_login {
 }
 
 
+.right_block_padding{
+  padding: 0 20px;
+}
 .popup_hexagrams{
   position: relative;
   max-width: 720px;
