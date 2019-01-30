@@ -2132,6 +2132,19 @@ display: none;
 	.table_hexagrams_column:nth-of-type(3){
 		min-width: 94px;
 	}
+	.popup_hexagrams_main_right{
+		margin-left: 10px;
+	}
+	.popup_hexagrams_textarea_block{
+		width: 290px;
+	}
+	.popup_hexagrams_img{
+		margin-left: 10px;
+	}
+	.popup_hexagrams_input,
+	.popup_hexagrams_textarea{
+		margin-left: 10px;
+	}
 	
 }
 @media screen and (max-width: 630px){
@@ -2158,12 +2171,12 @@ display: none;
 		height: 100px;
 		padding: 20px;
 	}
-	.popup_hexagrams_name .popup_hexagrams_input{
+	.popup_hexagrams_name .popup_hexagrams_textarea{
 		max-width: 330px;
 	}
-	.popup_hexagrams_input{
+	.popup_hexagrams_input,
+	.popup_hexagrams_textarea{
 		width: 100px;
-		margin-left: 10px;
 	}
 }
 @media screen and (max-width: 480px){
@@ -2203,6 +2216,67 @@ display: none;
 		display: block;
 	}
 }
+@media screen and (max-width: 470px){
+	.popup_hexagrams_flex{
+		flex-wrap: wrap;
+	}
+	.popup_hexagrams_name{
+    	justify-content: flex-start;
+		padding-left: 140px;
+	}
+	.popup_hexagrams_nick{
+		display: block;
+	}
+	.popup_hexagrams_name .popup_hexagrams_textarea{
+		height: 50px;
+		padding: 5px 10px;
+		margin-top: 2px;
+		margin-left: 0;
+		line-height: 1.27;
+	}
+	.popup_hexagrams_description{
+		position: absolute;
+	    top: 20px;
+	    left: 20px;
+	    width: 120px;
+	    justify-content: flex-start;
+	}
+	.popup_hexagrams_description .popup_hexagrams_nick{
+		order: 2;
+		line-height: 1;
+	}
+	.popup_hexagrams_description .popup_hexagrams_img{
+		order: 1;
+		width: 100%;
+    	height: 100px;
+		margin-bottom: 8px;
+		margin-left: 0;
+	}
+	.popup_hexagrams_main_left{
+		order: 2;
+		padding-right: 55px;
+	}
+	.popup_hexagrams_input, .popup_hexagrams_textarea{
+		width: 140px;
+	}
+	.popup_hexagrams_number{
+		position: absolute;
+		top: 100px;
+		right: 20px;
+	}
+	.popup_hexagrams_number .popup_hexagrams_nick{}
+	.popup_hexagrams_number .popup_hexagrams_input{}
+	.popup_hexagrams_main_right{
+		order: 1;
+		width: 100%;
+		margin-top: 50px;
+    	margin-left: 0;
+	}
+	.popup_hexagrams_textarea_block{
+		width: 100%;
+		height: 120px;
+	}
+}
 @media screen and (max-width: 375px){
 	.square_high .dsquare_high{
 		width: 80px;
@@ -2237,5 +2311,16 @@ display: none;
 	}
 	.dsquare_high_line_middle{
 		padding: 5px 0px 5px 4px;
+	}
+	.popup_hexagrams_main_left{
+		padding-right: 0;
+	}
+	.popup_hexagrams_number{
+		width: 140px;
+		justify-content: flex-start;
+	}
+	.popup_hexagrams_number .popup_hexagrams_input{
+		width: 100%;
+		margin-left: 0;
 	}
 }

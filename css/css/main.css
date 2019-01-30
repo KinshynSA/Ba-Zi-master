@@ -5692,7 +5692,7 @@ body.bczi_login {
   justify-content: flex-end;
 }
 .popup_hexagrams_name{}
-.popup_hexagrams_name .popup_hexagrams_input{
+.popup_hexagrams_name .popup_hexagrams_textarea{
   width: 100%;
   max-width: 420px;
 }
@@ -5702,8 +5702,10 @@ body.bczi_login {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.popup_hexagrams_input{
+.popup_hexagrams_input,
+.popup_hexagrams_textarea{
   width: 120px;
+  height: 20px;
   padding: 0 10px;
   margin-left: 20px;
   background-color: #eaeaea;
@@ -5713,6 +5715,10 @@ body.bczi_login {
   letter-spacing: 0.5px;
   border: none;
   outline: none;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: hidden;
 }
 .popup_hexagrams_main{}
 .popup_hexagrams_main_left{}
@@ -5739,7 +5745,7 @@ body.bczi_login {
   background-color: #eaeaea;
   overflow-y: hidden;
 }
-.popup_hexagrams_textarea{
+.popup_hexagrams_textarea_right{
   width: 100%;
   height: 100%;
   padding: 0 16px 0 0;
@@ -5752,19 +5758,19 @@ body.bczi_login {
   border: none;
   outline: none;
   resize: none;
-  overflow-y: none;
+  overflow-y: scroll;
 }
-.popup_hexagrams_textarea::-webkit-scrollbar{
+.popup_hexagrams_textarea_right::-webkit-scrollbar{
   width: 8px;
   background-color: #fefeff;
 }
-.popup_hexagrams_textarea::-webkit-scrollbar-thumb{
+.popup_hexagrams_textarea_right::-webkit-scrollbar-thumb{
   width: 6px;
   height: 148px;
   border-radius: 7px;
   background-color: rgba(0,0,0,0.5);
 }
-.popup_hexagrams_textarea::-webkit-scrollbar-track{
+.popup_hexagrams_textarea_right::-webkit-scrollbar-track{
   width: 8px;
   background-color: #fefeff;
 }
