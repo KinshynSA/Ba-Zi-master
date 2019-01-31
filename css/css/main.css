@@ -2,7 +2,7 @@
 body{
   position: relative;
 }
-body:after{
+/*body:after{
   content: "";
   position: absolute;
   top: 0;
@@ -18,7 +18,7 @@ body:after{
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
-}
+}*/
 
 b,strong{
   font-family: Oswaldmedium;
