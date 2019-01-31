@@ -5867,7 +5867,9 @@ body.bczi_login {
   margin-right: 280px;
 }
 .popup_stratagema_name{}
-.popup_stratagema_textarea{}
+.popup_stratagema_textarea{
+  width: 420px;
+}
 .popup_stratagema_textarea_block{
   width: 420px;
   height: 120px;
