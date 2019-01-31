@@ -40,6 +40,17 @@
 		$('.block_pop').hide(); 
     });
 
+    // stratagema
+    $('.table_stratagema_redact_butt').click(function(){
+    	$('.table_stratagema').hide();
+    	$('.block_pop').show(); 
+    });
+    $('.table_hexagrams_close').click(function(){
+		$('.table_stratagema').show();
+		$('.block_pop').hide(); 
+    });
+    
+
 
 	//  PageScroll  start
   $('a.order').mPageScroll2id();

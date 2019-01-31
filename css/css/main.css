@@ -14,7 +14,7 @@ body:after{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Hexagrams-Edit/Hexagrams-Edit-375x559.png);
+  background-image: url(../../../T/Stratagema-Edit/Stratagema-Edit-375x559.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -5609,14 +5609,16 @@ body.bczi_login {
   font-family: "Oswaldmedium";
   font-size: 12px;
   line-height: 1;
+  letter-spacing: 0.2px;
 }
 .table_hexagrams_row{
   display: flex;
   border-bottom: 1px solid #cccccc;
   transition: all 0.2s ease-in-out;
 }
-.table_hexagrams_row:hover{
+.table_hexagrams_row:not(.table_hexagrams_row_main):hover .table_hexagrams_column:not(:nth-of-type(1)){
   color: #ea5e68;
+  transition: color 0.2s ease-in-out;
 }
 .table_hexagrams_row_main{
   background-color: #eaeaea;
@@ -5678,6 +5680,7 @@ body.bczi_login {
   width: 100%;
   padding: 20px 90px;
   color: #ffffff;
+  letter-spacing: 0.5px;
 }
 .popup_hexagrams_title{
   position: absolute;
@@ -5758,7 +5761,7 @@ body.bczi_login {
   border: none;
   outline: none;
   resize: none;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .popup_hexagrams_textarea_right::-webkit-scrollbar{
   width: 8px;
@@ -5778,4 +5781,99 @@ body.bczi_login {
   margin: 0px auto 0;
   max-width: 200px;
   padding: 16px 10px;
+}
+
+
+
+
+
+/* stratagema */
+.table_stratagema{
+  max-width: 790px;
+  margin: -7px auto 15px;
+  padding: 0 20px;
+  font-family: "Oswaldmedium";
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+.table_stratagema_row{
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  transition: all 0.2s ease-in-out;
+}
+.table_stratagema_row:not(.table_stratagema_row_main):hover  .table_stratagema_column:not(:nth-of-type(1)){
+  color: #ea5e68;
+  transition: color 0.2s ease-in-out;
+}
+.table_stratagema_row_main{
+  background-color: #eaeaea;
+  text-transform: uppercase;
+  border-bottom: none;
+  line-height: 1;
+}
+.table_stratagema_column{
+  display: flex;
+  align-items: center;
+  padding: 6.3px 12px;
+  text-align: center;
+  border-right: 1px solid #fdf4f4;
+}
+.table_stratagema_column:nth-of-type(1){
+  min-width: 69px;
+}
+.table_stratagema_column:nth-of-type(2){
+  width: 100%;
+  padding-left: 15px;
+  text-align: left;
+}
+.table_stratagema_column:nth-of-type(3){
+  min-width: 99px;
+  line-height: 1.17;
+}
+.table_stratagema_column:nth-of-type(4){
+  min-width: 139px;
+}
+.table_stratagema_column:nth-of-type(5){
+  min-width: 149px;
+}
+.table_stratagema_row_main .table_stratagema_column{
+  padding: 6px 12px;
+}
+.table_stratagema_column p{
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.17;
+}
+.table_stratagema_number_mobile{
+  display: none;
+}
+.table_stratagema_redact_butt{
+  cursor: pointer;
+}
+.table_stratagema_img_redact{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.popup_stratagema{
+  padding: 20px 100px;
+}
+.popup_stratagema .popup_hexagrams_flex{}
+.popup_stratagema .popup_hexagrams_input{
+  min-width: 140px;
+  width: 140px;
+  margin-right: 280px;
+}
+.popup_stratagema_name{}
+.popup_stratagema_textarea{}
+.popup_stratagema_textarea_block{
+  width: 420px;
+  height: 120px;
+  margin-left: 20px;
+}
+.popup_stratagema_textarea_right{}
+.popup_stratagema button{
+  margin: 10px auto 0;
 }

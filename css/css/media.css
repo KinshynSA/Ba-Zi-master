@@ -2145,7 +2145,22 @@ display: none;
 	.popup_hexagrams_textarea{
 		margin-left: 10px;
 	}
-	
+	.table_stratagema_column:nth-of-type(1){
+		min-width: 54px;
+	}
+	.table_stratagema_column:nth-of-type(3){
+		min-width: 69px;
+	}
+	.table_stratagema_column:nth-of-type(4){
+		min-width: 109px;
+	}
+	.table_stratagema_column:nth-of-type(5){
+		min-width: 139px;
+	}
+	.popup_stratagema_textarea_block{
+		width: 420px;
+		margin-left: 10px;
+	}
 }
 @media screen and (max-width: 630px){
 	.right_block_padding{
@@ -2177,6 +2192,63 @@ display: none;
 	.popup_hexagrams_input,
 	.popup_hexagrams_textarea{
 		width: 100px;
+	}
+	.table_stratagema_column:nth-of-type(1){
+		min-width: 29px;
+	}
+	.table_stratagema_column:nth-of-type(5){
+		min-width: 50px;
+	}
+	.table_stratagema_number_desktop{
+		display: none;
+	}
+	.table_stratagema_number_mobile{
+		display: block;		
+	}
+	.table_stratagema_redact_butt{
+		text-align: center;
+	}
+	.table_stratagema_img_redact{
+		margin-right: 0;
+	}
+	.table_stratagema_text_redact{
+		display: none;
+	}
+	.popup_stratagema_name,
+	.popup_stratagema_number,
+	.popup_stratagema_textarea_box{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.popup_stratagema_name .popup_hexagrams_nick,
+	.popup_stratagema_number .popup_hexagrams_nick,
+	.popup_stratagema_textarea_box .popup_hexagrams_nick{
+		display: inline-block;
+    	width: 100%;
+    	text-align: left;		
+	}
+	.popup_stratagema .popup_stratagema_name .popup_hexagrams_input,
+	.popup_stratagema .popup_stratagema_number .popup_hexagrams_input,
+	.popup_stratagema .popup_stratagema_textarea_box .popup_hexagrams_input{
+		margin: 0;
+	}
+	.popup_stratagema .popup_hexagrams_nick{
+		font-size: 12px;
+	}
+	.popup_hexagrams_name .popup_hexagrams_textarea{
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.popup_stratagema .popup_hexagrams_input{
+		margin: 0 100px 0 18px;
+	}
+	.popup_stratagema_textarea{
+		width: 100%;
+		margin-left: 0;
+	}
+	.popup_stratagema_textarea_block{
+		width: 100%;
+		margin-left: 0;
 	}
 }
 @media screen and (max-width: 480px){
@@ -2214,6 +2286,13 @@ display: none;
 	}
 	.table_hexagrams_number_mobile{
 		display: block;
+	}
+	.table_stratagema_column,
+	.table_stratagema_row_main .table_stratagema_column{
+		padding: 6px 4px;
+	}
+	.table_stratagema_column:nth-of-type(2){
+		padding-left: 10px;
 	}
 }
 @media screen and (max-width: 470px){
@@ -2276,6 +2355,18 @@ display: none;
 		width: 100%;
 		height: 120px;
 	}
+	.table_stratagema{
+		padding: 0 10px;
+	}
+	.table_stratagema_column:nth-of-type(4){
+		min-width: 89px;
+	}
+	.popup_stratagema_textarea{
+		width: 100%;
+	}
+	.popup_stratagema .popup_hexagrams_input{
+	    margin: 0 35px 0 18px;
+	}
 }
 @media screen and (max-width: 375px){
 	.square_high .dsquare_high{
@@ -2291,6 +2382,9 @@ display: none;
 		width: 25px;
 		height: 30px;
 		margin-left: 3px;
+	}
+	.table_hexagrams{
+		padding: 10px;
 	}
 	.table_hexagrams_column:nth-of-type(4){
 		min-width: 39px;
@@ -2322,5 +2416,25 @@ display: none;
 	.popup_hexagrams_number .popup_hexagrams_input{
 		width: 100%;
 		margin-left: 0;
+	}
+	.table_stratagema{
+		padding: 0;
+		font-size: 11px;
+	}
+	.table_stratagema_column:nth-of-type(1){
+		min-width: 20px;
+	}
+	.table_stratagema_column:nth-of-type(2){
+		padding-left: 4px;
+	}
+	.table_stratagema_column:nth-of-type(3){
+		min-width: 50px;
+	}
+	.table_stratagema_column:nth-of-type(4){}
+	.table_stratagema_column:nth-of-type(5){
+		min-width: 32px;
+	}
+	.popup_stratagema .popup_hexagrams_input{
+	    margin: 0 0 0 18px;
 	}
 }
