@@ -2093,7 +2093,20 @@ display: none;
 
 
 
-
+@media screen and (max-width: 1000px){
+	.table_phenomenon{
+		padding: 0 10px;
+	}
+	.table_phenomenon_column:nth-of-type(3){
+		min-width: 74px;
+	}
+	.table_phenomenon_column:nth-of-type(6){
+		min-width: 50px;
+	}
+	.table_phenomenon_redact_butt{
+		font-size: 0;
+	}
+}
 @media screen and (max-width: 768px){
 	header{
 		padding-top: 0;
@@ -2101,11 +2114,73 @@ display: none;
 	.bg_black{
 		background-color: transparent;
 	}
+	.bg_black-butt{
+		margin: 0;
+	}
+	.phenomenon_title{
+		margin-bottom: 15px;
+	}
+	.phenomenon_under-title{
+		margin: 15px 20px;
+		padding: 0;
+	}
+	.table_phenomenon_column:nth-of-type(3){
+		min-width: 84px;
+	}
+	.table_phenomenon_column:nth-of-type(6){
+		min-width: 175px;
+	}
+	.table_phenomenon{
+		padding: 0 20px;
+	}
+
+	.table_phenomenon_redact_butt{
+		font-size: inherit;
+	}
 }
 @media screen and (max-width: 700px){
 	.popup_hexagrams{
 		padding: 20px 30px;
 	}
+	.popup_hexagrams_textarea_right{
+		padding: 0;
+	}
+	.popup_hexagrams_textarea_right::-webkit-scrollbar{
+	  width: initial;
+	  background-color: initial;
+	}
+	.popup_hexagrams_textarea_right::-webkit-scrollbar-thumb{
+	  width: initial;
+	  height: initial;
+	  border-radius: initial;
+	  background-color: initial;
+	}
+	.popup_hexagrams_textarea_right::-webkit-scrollbar-track{
+	  width: initial;
+	  background-color: initial;
+	}
+	.table_phenomenon_column:nth-of-type(2){
+		min-width: 49px;
+	}
+	.table_phenomenon_column:nth-of-type(3){
+		min-width: 79px;
+	}
+	.table_phenomenon_column:nth-of-type(4){
+		min-width: 64px;
+	}
+	.table_phenomenon_column:nth-of-type(5){
+		min-width: 69px;
+	}
+	.table_phenomenon_column:nth-of-type(6){
+		min-width: 67px;
+	}
+	.table_phenomenon_redact_butt{
+		width: 14px;
+		font-size: 0;
+	}
+	.table_phenomenon_redact_butt img{
+		margin-right: 0;
+	}	
 }
 @media screen and (max-width: 640px){
 	.menu_box{
@@ -2122,10 +2197,6 @@ display: none;
 	.popup_high{
 		width: 100%;
 	}
-	/*.table_hexagrams{
-		width: calc(100% + 30px);
-		margin: 0 -15px 15px;
-	}*/
 	.table_hexagrams_column:nth-of-type(1){
 		min-width: 64px;
 	}
@@ -2250,6 +2321,18 @@ display: none;
 		width: 100%;
 		margin-left: 0;
 	}
+	.table_phenomenon_column:nth-of-type(1){
+		padding: 4px 4px 4px 7px;
+	}
+	.table_phenomenon_column:nth-of-type(3){
+		min-width: 74px;
+	}
+	.table_phenomenon_column:nth-of-type(4){
+		min-width: 69px;
+	}
+	.table_phenomenon_column:nth-of-type(6){
+		min-width: 50px;
+	}
 }
 @media screen and (max-width: 480px){
 	.table_hexagrams_column{
@@ -2367,6 +2450,28 @@ display: none;
 	.popup_stratagema .popup_hexagrams_input{
 	    margin: 0 35px 0 18px;
 	}
+	.phenomenon_under-title{
+		margin: 15px 10px;
+	}
+	.table_phenomenon{
+		padding: 0 10px;
+		font-size: 11px;
+	}
+	.table_phenomenon_column:nth-of-type(2){
+		min-width: 36px;
+	}
+	.table_phenomenon_column:nth-of-type(3){
+		min-width: 51px;
+	}
+	.table_phenomenon_column:nth-of-type(4){
+		min-width: 44px;
+	}
+	.table_phenomenon_column:nth-of-type(5){
+		min-width: 48px;
+	}
+	.table_phenomenon_column:nth-of-type(6){
+		min-width: 50px;
+	}
 }
 @media screen and (max-width: 375px){
 	.square_high .dsquare_high{
@@ -2416,6 +2521,9 @@ display: none;
 	.popup_hexagrams_number .popup_hexagrams_input{
 		width: 100%;
 		margin-left: 0;
+	}
+	.bg_black-butt{
+		margin: -20px auto 20px;
 	}
 	.table_stratagema{
 		padding: 0;

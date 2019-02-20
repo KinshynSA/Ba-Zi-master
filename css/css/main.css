@@ -2,7 +2,7 @@
 body{
   position: relative;
 }
-/*body:after{
+body:after{
   content: "";
   position: absolute;
   top: 0;
@@ -14,11 +14,11 @@ body{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Stratagema-Edit/Stratagema-Edit-375x559.png);
+  background-image: url(../../../T/Phenomenon/Phenomenon-375x559.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
-}*/
+}
 
 b,strong{
   font-family: Oswaldmedium;
@@ -5788,6 +5788,24 @@ body.bczi_login {
 
 
 /* stratagema */
+.bg_black-butt{
+  display: block;
+  margin: 20px 20px 20px 40px;
+  width: auto;
+  padding: 14px 10px;
+  font-family: "Oswaldlight";
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.bg_black-butt:hover{
+  background-color: rgba(234, 94, 104, 0.2);
+  color: #ffffff;
+  transition: .8s;
+}
 .table_stratagema{
   max-width: 790px;
   margin: -7px auto 15px;
@@ -5845,6 +5863,9 @@ body.bczi_login {
   margin-bottom: 0;
   line-height: 1.17;
 }
+.table_stratagema_ieroglyph{
+  font-family: "NotoSansTC", sans-serif;
+}
 .table_stratagema_number_mobile{
   display: none;
 }
@@ -5879,3 +5900,87 @@ body.bczi_login {
 .popup_stratagema button{
   margin: 10px auto 0;
 }
+
+
+
+/* phenomenon */
+.phenomenon_title{
+  margin-bottom: 26px;
+  line-height: 1;
+}
+.phenomenon_under-title{
+  max-width: 740px;
+  margin: 26px auto 16px;
+  padding: 0 12px;
+}
+.table_phenomenon{
+  max-width: 780px;
+  margin: 16px auto;
+  padding: 0 32px 0 20px;
+  font-family: "Oswaldmedium";
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.5px;
+}
+.table_phenomenon_row{
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  transition: all 0.2s ease-in-out;
+}
+.table_phenomenon_row_main{
+  background-color: #eaeaea;
+  text-transform: uppercase;
+  border-bottom: none;
+}
+.table_phenomenon_column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  text-align: center;
+  border-right: 1px solid #fdf4f4;
+}
+.table_phenomenon_row_main .table_phenomenon_column{
+  min-height: 40px;
+  padding: 4px;
+  line-height: 1;
+}
+.table_phenomenon_column:nth-of-type(1){
+  justify-content: flex-start;
+  width: 100%;
+  padding: 4px 16px;
+  text-align: left;
+}
+.table_phenomenon_column:nth-of-type(2){
+  min-width: 59px;
+}
+.table_phenomenon_column:nth-of-type(3){
+  min-width: 84px;
+}
+.table_phenomenon_column:nth-of-type(4){
+  min-width: 73px;
+}
+.table_phenomenon_column:nth-of-type(5){
+  min-width: 79px;
+}
+.table_phenomenon_column:nth-of-type(6){
+  min-width: 175px;
+}
+.table_phenomenon_column p{
+  margin-bottom: 0;
+}
+.table_phenomenon_column-redact{
+  padding: 7px 8px; 
+}
+.table_phenomenon_redact_butt{
+  display: flex;
+  align-items: center;
+}
+.table_phenomenon_redact_butt img{
+  height: 12px;
+  margin-right: 4px;
+}
+.table_phenomenon_delete_butt{
+  margin-left: 10px;
+}
+.table_phenomenon_delete_butt img{}

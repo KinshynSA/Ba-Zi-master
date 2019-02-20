@@ -23,5 +23,10 @@
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.woff") format("woff"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "NotoSansTC-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/NotoSansTC-Bold/NotoSansTC-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/NotoSansTC-Bold/NotoSansTC-Bold.woff") format("woff"), url("../../fonts/NotoSansTC-Regular/NotoSansTC-Bold.ttf") format("truetype"); }
 
 /*# sourceMappingURL=fonts.css.map */
