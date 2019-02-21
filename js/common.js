@@ -51,6 +51,17 @@
     });
     
 
+    // phenomenon
+    $('.table_phenomenon_redact_butt').click(function(){
+    	$('.table_phenomenon, .phenomenon_under-title').hide();
+    	$('.right_block-phenomenon').show(); 
+    });
+    $('.table_phenomenon_close').click(function(){
+		$('.table_phenomenon, .phenomenon_under-title').show();
+		$('.right_block-phenomenon').hide(); 
+    });
+
+
 
 	//  PageScroll  start
   $('a.order').mPageScroll2id();

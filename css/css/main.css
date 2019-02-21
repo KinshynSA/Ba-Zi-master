@@ -14,7 +14,7 @@ body:after{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Phenomenon/Phenomenon-375x559.png);
+  background-image: url(../../../T/Edit-Phenomenon/Edit-Phenomenon-375x559.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -679,7 +679,7 @@ text-align: center;
 .block_pop{
     display: none;
     height: auto;
-    padding: 25px 0;
+    padding: 40px 60px 25px 25px;
     background-color: rgba(0,0,0,0.8);
     position: absolute;
     top: 0;
@@ -3851,11 +3851,6 @@ footer {
 .calendar_box {
   font-family: Oswaldlight;
 }
-
-.block_pop {
-  padding-left: 25px;
-}
-
 .cal_date label {
   line-height: 18px;
 }
@@ -4651,10 +4646,6 @@ footer .container-fluid .row {
   padding: 0;
 }
 
-.block_pop{
-  padding: 40px 60px;
-  padding-bottom: 25px;
-}
 
 .cal_main_right {
   display: flex;
@@ -5972,11 +5963,11 @@ body.bczi_login {
 .table_phenomenon_column-redact{
   padding: 7px 8px; 
 }
-.table_phenomenon_redact_butt{
+.table_phenomenon_column-redact p{
   display: flex;
   align-items: center;
 }
-.table_phenomenon_redact_butt img{
+.table_phenomenon_column-redact img{
   height: 12px;
   margin-right: 4px;
 }
@@ -5984,3 +5975,68 @@ body.bczi_login {
   margin-left: 10px;
 }
 .table_phenomenon_delete_butt img{}
+
+
+.right_block-phenomenon{
+  display: none;
+}
+.popup_phenomenon_title{
+  max-width: 720px;
+  margin: 0 auto 16px;
+}
+.popup_phenomenon{
+  position: static;
+  display: block;
+  max-width: 720px;
+  margin: 16px auto 24px;
+  padding: 20px 100px 20px 40px;
+  color: #ffffff;
+  font-size: 12px;
+}
+.popup_phenomenon_flex{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.popup_phenomenon_nick{
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.popup_phenomenon_input,
+.popup_phenomenon_textarea{
+  margin-left: 18px;
+  min-width: 420px;
+  color: #000000;
+  padding: 4px 10px;
+  line-height: 1.27;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  border: none;
+}
+.popup_phenomenon_textarea{
+  height: 80px;
+  resize: none;
+}
+.popup_phenomenon_flex-notes .popup_phenomenon_textarea{
+  height: 60px;
+}
+.popup_phenomenon_flex-select{
+  align-items: center;
+}
+.popup_phenomenon_flex-select select{
+  min-width: 90px;
+  margin-left: 18px;
+  margin-right: 330px;
+  padding-left: 10px;
+  background-color: #eaeaea;
+}
+.ppopup_phenomenon_flex-select option{}
+.popup_phenomenon_close{
+  position: relative;
+  left: 30px;
+  max-width: 200px;
+  margin-top: 8px;
+  padding: 16px 10px;
+}
+
+

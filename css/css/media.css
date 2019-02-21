@@ -2103,8 +2103,14 @@ display: none;
 	.table_phenomenon_column:nth-of-type(6){
 		min-width: 50px;
 	}
-	.table_phenomenon_redact_butt{
+	.table_phenomenon_column-redact{
 		font-size: 0;
+	}
+	.popup_phenomenon{
+		padding: 20px;
+	}
+	.popup_phenomenon_close{
+		position: static;
 	}
 }
 @media screen and (max-width: 768px){
@@ -2133,9 +2139,14 @@ display: none;
 	.table_phenomenon{
 		padding: 0 20px;
 	}
-
-	.table_phenomenon_redact_butt{
+	.table_phenomenon_column-redact{
 		font-size: inherit;
+	}
+	.popup_phenomenon{
+		padding: 20px 100px 20px 40px;
+	}
+	.popup_phenomenon_close{
+		position: relative;
 	}
 }
 @media screen and (max-width: 700px){
@@ -2174,13 +2185,19 @@ display: none;
 	.table_phenomenon_column:nth-of-type(6){
 		min-width: 67px;
 	}
-	.table_phenomenon_redact_butt{
+	.table_phenomenon_column-redact p{
 		width: 14px;
 		font-size: 0;
 	}
-	.table_phenomenon_redact_butt img{
+	.table_phenomenon_column-redact img{
 		margin-right: 0;
-	}	
+	}
+	.popup_phenomenon{
+		padding: 20px;
+	}
+	.popup_phenomenon_close{
+		position: static;
+	}
 }
 @media screen and (max-width: 640px){
 	.menu_box{
@@ -2333,6 +2350,35 @@ display: none;
 	.table_phenomenon_column:nth-of-type(6){
 		min-width: 50px;
 	}
+	.popup_phenomenon_title{
+		margin: 0 20px 16px;
+	}
+	.popup_phenomenon_flex{
+		flex-wrap: wrap;
+    	justify-content: flex-start;
+		margin-bottom: 8px;
+	}
+	.popup_phenomenon_input,
+	.popup_phenomenon_textarea{
+		margin-top: 8px;
+		margin-left: 0;
+		width: 100%;
+		min-width: 0;
+	}
+	.popup_phenomenon_flex-select{
+		flex-wrap: nowrap;
+  		justify-content: flex-end;
+  		max-width: 160px;
+    	margin: 8px auto;
+	}
+	.popup_phenomenon_flex-select .popup_phenomenon_nick{
+		display: inline-block;
+		min-width: 54px;
+		text-align: left;
+	}
+	.popup_phenomenon_flex-select select{
+		margin-right: 0;
+	}
 }
 @media screen and (max-width: 480px){
 	.table_hexagrams_column{
@@ -2450,27 +2496,13 @@ display: none;
 	.popup_stratagema .popup_hexagrams_input{
 	    margin: 0 35px 0 18px;
 	}
-	.phenomenon_under-title{
-		margin: 15px 10px;
-	}
 	.table_phenomenon{
-		padding: 0 10px;
-		font-size: 11px;
+		margin: 0 10px;
+		padding: 0;
+		overflow-x: scroll;
 	}
-	.table_phenomenon_column:nth-of-type(2){
-		min-width: 36px;
-	}
-	.table_phenomenon_column:nth-of-type(3){
-		min-width: 51px;
-	}
-	.table_phenomenon_column:nth-of-type(4){
-		min-width: 44px;
-	}
-	.table_phenomenon_column:nth-of-type(5){
-		min-width: 48px;
-	}
-	.table_phenomenon_column:nth-of-type(6){
-		min-width: 50px;
+	.table_phenomenon_row{
+		width: 500px;
 	}
 }
 @media screen and (max-width: 375px){
