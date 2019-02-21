@@ -679,7 +679,7 @@ text-align: center;
 .block_pop{
     display: none;
     height: auto;
-    padding: 40px 60px 25px 25px;
+    padding: 40px 60px 25px;
     background-color: rgba(0,0,0,0.8);
     position: absolute;
     top: 0;
