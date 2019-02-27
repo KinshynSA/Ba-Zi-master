@@ -2148,6 +2148,9 @@ display: none;
 	.table_phenomenon_column-redact{
 		font-size: inherit;
 	}
+	.phenomenon_choice-block{
+		margin: 0;
+	}
 	.popup_phenomenon{
 		padding: 20px 100px 20px 40px;
 	}
@@ -2604,5 +2607,13 @@ display: none;
 	}
 	.popup_stratagema .popup_hexagrams_input{
 	    margin: 0 0 0 18px;
+	}
+	.phenomenon_choice-block{
+		margin: -20px auto 40px;
+	    text-align: right;
+	    max-width: 140px;
+	}
+	.phenomenon_choice-item{
+		justify-content: flex-end;
 	}
 }

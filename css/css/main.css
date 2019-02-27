@@ -14,7 +14,7 @@ body{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Edit-Phenomenon/Edit-Phenomenon-768x700.png);
+  background-image: url(../../../T/Phenomenon/Phenomenon-1280x700.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -3142,7 +3142,7 @@ footer {
     .block_top_calendar .top_calendar_box .numbers {
       padding-left: 8px;
       font-size: 12px;
-      font-family: "Oswaldlight", sansserif;
+      font-family: "Oswaldlight", sans-serif;
       line-height: 20px;
       letter-spacing: 28px;
       text-align: center; }
@@ -5895,6 +5895,42 @@ body.bczi_login {
 
 
 /* phenomenon */
+.phenomenon_choice-block{
+  margin: 18px auto 0 40px;
+}
+.phenomenon_choice-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+}
+.phenomenon_choice-item input{}
+.phenomenon_choice-item span{}
+.phenomenon_choice-item span:before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.phenomenon_choice-item span:hover:before{
+  background-color: #ea5e68;
+}
+.phenomenon_choice-item input:checked+span:before{
+  background-color: #ea5e68;
+}
+.phenomenon_choice-butt{
+  display: inline-block;
+  margin-top: 5px;
+  font-family: "Oswaldmedium", sans-serif;
+}
+
 .phenomenon_title{
   margin-bottom: 26px;
   line-height: 1;
