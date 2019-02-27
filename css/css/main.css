@@ -5854,7 +5854,7 @@ body.bczi_login {
   margin-bottom: 0;
   line-height: 1.17;
 }
-.table_stratagema_ieroglyph{
+.font-ieroglyph{
   font-family: "NotoSansTC", sans-serif;
 }
 .table_stratagema_number_mobile{
@@ -6211,4 +6211,14 @@ body.bczi_login {
 }
 .popup_phenomenon_butt:hover{
   background-color: rgba(234, 94, 104, 0.2);
+}
+
+
+/* structures (на основе phenomenon) */
+.table_structures{}
+.table_structures .table_phenomenon_column:nth-of-type(1){
+  padding: 4px 14px;
+}
+.table_structures .table_phenomenon_column{
+  padding: 8px 2px;
 }
