@@ -60,7 +60,9 @@
 		$('.table_phenomenon, .phenomenon_under-title').show();
 		$('.right_block-phenomenon').hide(); 
     });
-
+    $('.popup_phenomenon_item_var').click(function(){
+    	$(this).prev('input').click();
+    });
 
 
 	//  PageScroll  start

@@ -14,7 +14,7 @@ body{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../../T/Edit-Phenomenon/Edit-Phenomenon-375x559.png);
+  background-image: url(../../../T/Edit-Phenomenon/Edit-Phenomenon-768x700.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -5918,6 +5918,9 @@ body.bczi_login {
   border-bottom: 1px solid #cccccc;
   transition: all 0.2s ease-in-out;
 }
+.table_phenomenon_row:not(.table_phenomenon_row_main):hover{
+  color: #ea5e68;
+}
 .table_phenomenon_row_main{
   background-color: #eaeaea;
   text-transform: uppercase;
@@ -5966,6 +5969,7 @@ body.bczi_login {
 .table_phenomenon_column-redact p{
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .table_phenomenon_column-redact img{
   height: 12px;
@@ -5988,7 +5992,7 @@ body.bczi_login {
   position: static;
   display: block;
   max-width: 720px;
-  margin: 16px auto 24px;
+  margin: 16px auto 26px;
   padding: 20px 100px 20px 40px;
   color: #ffffff;
   font-size: 12px;
@@ -6040,3 +6044,135 @@ body.bczi_login {
 }
 
 
+.popup_phenomenon_table{
+  max-width: 720px;
+  margin: 16px auto 20px;
+  font-family: "Oswaldmedium";
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.popup_phenomenon_table p{
+  margin-bottom: 0;
+}
+.popup_phenomenon_row{
+  display: flex;
+}
+.popup_phenomenon_row-main{
+  background-color: #eaeaea;
+  text-transform: uppercase;
+  border-bottom: none;
+  text-align: center;
+}
+.popup_phenomenon_column{
+  padding: 8px 6px;
+  border-right: 1px solid #fdf4f4;
+}
+.popup_phenomenon_row-main .popup_phenomenon_column{
+  padding: 12px 2px 14px;
+}
+.popup_phenomenon_column:nth-of-type(1){
+  min-width: 11.4%;
+}
+.popup_phenomenon_column:nth-of-type(2),
+.popup_phenomenon_column:nth-of-type(3){
+  min-width: 15.7%;
+}
+.popup_phenomenon_column:nth-of-type(4),
+.popup_phenomenon_column:nth-of-type(5){
+  min-width: 9.86%;
+}
+.popup_phenomenon_column:nth-of-type(6){
+  min-width: 11.5%;
+}
+.popup_phenomenon_column:nth-of-type(7){
+  min-width: 13.2%;
+}
+.popup_phenomenon_column:nth-of-type(8){
+  width: 100%;
+}
+.popup_phenomenon_table-top .popup_phenomenon_row:not(.popup_phenomenon_row-main){
+  border-bottom: 1px solid #cccccc;
+}
+.popup_phenomenon_table-down{}
+.popup_phenomenon-top{
+  position: relative;
+  margin: 3px;
+  padding: 0 6px;
+  background-color: #f0f0f0;
+  line-height: 20px;
+  text-align: left;
+}
+.popup_phenomenon-top:before,
+.popup_phenomenon-top:after{
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-bottom: 4px solid #4a4a4a;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.popup_phenomenon-top:after{
+  top: 10px;
+  border-top: 4px solid #4a4a4a;
+  border-bottom: 4px solid transparent;
+}
+.popup_phenomenon_column-down{
+  padding: 0;
+  border-right: 1px solid #cccccc;
+}
+.popup_phenomenon_column-down{
+  border-right: none;
+}
+.popup_phenomenon_item{
+  line-height: 30px;
+}
+.popup_phenomenon_item input[type=checkbox]{}
+.popup_phenomenon_item_var{
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 2px;
+  text-align: left;
+  cursor: pointer;
+}
+.popup_phenomenon_item_var:before{
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 1px solid #979797;
+  transition: all 0.2s ease-in-out;
+}
+.popup_phenomenon_item_var:hover:before,
+.popup_phenomenon_item input[type=checkbox]:checked+.popup_phenomenon_item_var:before{
+  background-color: #ea5e68;
+}
+
+.popup_phenomenon_butt{
+  display: block;
+  width: auto;
+  max-width: 140px;
+  margin: 20px auto;
+  padding: 12px 14px;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+.popup_phenomenon_butt:hover{
+  background-color: rgba(234, 94, 104, 0.2);
+}
