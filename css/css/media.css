@@ -2456,6 +2456,7 @@ display: none;
 @media screen and (max-width: 470px){
 	.square_high{
 		max-width: 100%;
+		width: 250px;
 	}
 	.popup_hexagrams_flex{
 		flex-wrap: wrap;
