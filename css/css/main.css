@@ -5587,6 +5587,10 @@ body.bczi_login {
   justify-content: space-between;
 }
 .dsquare_high_line_column span{}
+.dsquare_high_line_column .font-ieroglyph{
+  font-size: 16px;
+  line-height: 1;
+}
 .dsquare_high_line_column img{
   height: 50%;
 }
