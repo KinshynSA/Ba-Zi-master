@@ -793,22 +793,22 @@ text-align: center;
   content: " ";  
   background: url(../../img/wind/bottom.svg) no-repeat center;  
   position: absolute;
-  left: 113px;
+  left: 50%;
   top: -66px;
   height: 30px;  
   width: 30px;  
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateX(50%);
 }
 
 .bot_wind > .square8::before{
   content: " ";  
   background: url(../../img/wind/arrow.svg) no-repeat center;  
   position: absolute;
-  left: 113px;
+  left: 50%;
   bottom: -60px;
   height: 30px;  
   width: 30px;  
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateX(50%);
 }
 
 .right_wind > .square8::after{
@@ -816,10 +816,10 @@ text-align: center;
   background: url(../../img/wind/bottom.svg) no-repeat center;  
   position: absolute;
   left: -69px;
-    top: 120px;
+    bottom: calc(50% + 1%);
     height: 30px;
     width: 30px;
-    transform: rotate(90deg);
+    transform: translateY(50%) rotate(90deg);
 }
 
 .right_wind > .square8::before{
@@ -827,10 +827,10 @@ text-align: center;
   background: url(../../img/wind/arrow.svg) no-repeat center;  
   position: absolute;
   right: -70px;
-    bottom: 125px;
+    bottom: calc(50% + 1%);
     height: 30px;
     width: 30px;
-    transform: rotate(90deg);
+    transform: translateY(50%) rotate(90deg);
 }
 
 .left_wind > .square8::after{
@@ -838,10 +838,10 @@ text-align: center;
   background: url(../../img/wind/arrow.svg) no-repeat center;  
   position: absolute;
   left: -69px;
-    top: 120px;
+    bottom: calc(50% + 1%);
     height: 30px;
     width: 30px;
-    transform: rotate(-90deg);
+    transform: translateY(50%) rotate(-90deg);
 }
 
 .left_wind > .square8::before{
@@ -849,10 +849,10 @@ text-align: center;
   background: url(../../img/wind/bottom.svg) no-repeat center;  
   position: absolute;
   right: -70px;
-    bottom: 125px;
+    bottom: calc(50% + 1%);
     height: 30px;
     width: 30px;
-    transform: rotate(-90deg);
+    transform: translateY(50%) rotate(-90deg);
 }
 
 .left_top_wind > .square8::after{
@@ -947,20 +947,22 @@ text-align: center;
   content: " ";  
   background: url(../../img/wind/arrow.svg) no-repeat center;  
   position: absolute;
-  left: 113px;
+  left: 50%;
   top: -66px;
   height: 30px;  
   width: 30px;  
+  transform: translateX(-50%);
 }
 
 .top_wind > .square8::after{
   content: " ";  
   background: url(../../img/wind/bottom.svg) no-repeat center;  
   position: absolute;
-  left: 113px;
+  left: 50%;
   bottom: -57px;
   height: 30px;  
   width: 30px;  
+  transform: translateX(-50%);
 }
 
 
@@ -5552,7 +5554,7 @@ body.bczi_login {
 .square_high{
   width: 285px;
   max-width: calc(100% - 44px);
-  margin: 32px auto;
+  margin: 32px auto 310px;
 }
 .square_high_row{
   display: flex;
