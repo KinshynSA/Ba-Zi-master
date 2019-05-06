@@ -2867,7 +2867,7 @@ input[type="checkbox"]:checked + label:after {
         color: #fff;
         transition: all 0.2s ease-in-out; }
         .foots .menu_foots li a:hover {
-          color: #fff;
+          color: #ea5e68;
           transform: scale(1.04);
          }
     .foots .menu_foots .active {
@@ -4423,6 +4423,7 @@ td.td_bot_symb_r .small_shen_symb {
 }
 .soc_btn a {
   margin: 0 10px;
+  color: #ebebeb;
   transition: all 0.2s ease-in-out;
 }
 .soc_btn a:hover{
