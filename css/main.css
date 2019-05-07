@@ -4428,12 +4428,12 @@ td.td_bot_symb_r .small_shen_symb {
 .soc_btn a:hover{
   transform: scale(1.2);
 }
-.soc_btn a{
+.soc_btn a img{
+  filter: brightness(0.7);
   transition: all 0.2s ease-in-out;
 }
 .soc_btn a:hover img{
-  filter: brightness(0.7);
-  color: #ebebeb;
+  filter: brightness(1);
 }
 
 
