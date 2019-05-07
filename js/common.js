@@ -76,16 +76,10 @@
 	});
   // sidebar menu
 	$('.sidebar_nav_button').click( function() {
-		$('.sidebar_nav').hide('slow');
-		$('.sidebar_info').show('slow');
 		$('.sidebar').addClass('sidebar_2');
-		$('.content_block').addClass('content_block_2');
 	});
 	$('.sidebar_nav_close').click( function() {
-		$('.sidebar_info').hide('slow');
-		$('.sidebar_nav').show('slow');
 		$('.sidebar').removeClass('sidebar_2');
-		$('.content_block').removeClass('content_block_2');
 	});
 
 
