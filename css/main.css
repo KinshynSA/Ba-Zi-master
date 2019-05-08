@@ -731,6 +731,7 @@ tr>td.ff_or {
   background-color: #eaeaea;
   height: 30px;
   width: 180px;
+  max-width: 100%;
   left: 0;
   top: -7px;
   z-index: -1;
@@ -760,8 +761,10 @@ span.ml_span {
   margin-left: 15px;
 }
 
+
 .fbc_block {
   float: left;
+  padding-right: 20px;
 }
 
 .bg_gr_bd {
@@ -838,8 +841,9 @@ td.bg_gr_bd_b_no_l {
 
 .symb_block_s {
   display: flex;
-  font-family: STSongti-SC-Bold;
-  font-size: 11px;
+  font-family: STSongti-SC;
+  font-weight: bold;
+  font-size: 12px;
   justify-content: space-around;
 }
 
@@ -904,10 +908,6 @@ td.pmz {
   padding: 5px 67px;
 }
 
-.hd_laptp {
-  display: none;
-}
-
 .ft_calculator th,.ft_calculator td {
   padding: 5px;
 }
@@ -922,20 +922,29 @@ td.pmz {
 
 .ft_calc_sym {
   font-size: 38px;
-  font-family: STSongti-SC-Bold;
+  font-family: STSongti-SC;
+  font-weight: bold;
 }
 
 .ff_sym {
-  font-family: STSongti-SC-Bold;
+  font-family: STSongti-SC;
+  font-weight: bold;
 }
 
 .main_sym {
-  font-family: STSongti-SC-Bold;
+  font-family: STSongti-SC;
+  font-weight: bold;
   font-size: 20px;
 }
 
+.main_sym-img{
+  width: 19px;
+  margin-bottom: 2px;
+}
+
 .main_sym_bot {
-  font-family: STSongti-SC-Bold;
+  font-family: STSongti-SC;
+  font-weight: bold;
   font-size: 17px;
 }
 
@@ -2161,6 +2170,9 @@ text-align: center;
     border-radius: 50%; }
   .sidebar .list_variants {
     margin-left: 31px; }
+    .sidebar_btn .buttons{
+      width: 100%;
+    }
 
 /*.sidebar_2 {
   width: 240px;
@@ -2310,6 +2322,7 @@ text-align: center;
   display: block;
   margin: 0 auto 20px;
   padding: 14px 10px;
+  background-color: transparent;
   font-size: 12px;
   font-family: "Oswaldlight", sasn-serif;
   text-transform: uppercase;
@@ -3846,14 +3859,7 @@ td.td_p_cus {
 }
 
 .top_inf_card .gr_bg > span::before {
-  position: absolute;
-    content: '';
-    background-color: #eaeaea;
-    height: 30px;
-    width: 180px;
     left: 24%;
-    top: -7px;
-    z-index: -1;
 }
 
 .nesk_raschet {
@@ -4139,7 +4145,8 @@ a.btn_black_big {
 }
 
 .symb_spoil {
-  font-family: STSongti-SC-Bold;
+  font-family: STSongti-SC;
+  font-weight: bold;
 }
 
 .spoiler-wrap{

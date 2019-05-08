@@ -152,6 +152,7 @@
 	}
 	.fbc_block {
 		float: none;
+		padding-right: 0;
 	}
 	.person_way {
 		width: 500px;
@@ -328,12 +329,6 @@
 	.ft_calculator_s {
 		margin-top: 37px;
 	}
-	.hd_mpl {
-		display: none;
-	}
-	.hd_laptp {
-		display: block;
-	}
 	.stolpi_udachi > .ft_calculator td {
 		display: table-cell;
 	}
@@ -342,9 +337,6 @@
 	}
 	.mlc {
 		margin: 0;
-	}
-	.stolpi_udachi .ft_calculator td {
-		
 	}
 }
 
@@ -1122,7 +1114,7 @@
 		padding: 16px 20px;
 	}
 	.sidebar-detailed .sidebar_info .sidebar_box_2{
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 49% 49%;
 	}
 	.sidebar-detailed .sidebar_box h3{
 		grid-column: 1/2;
@@ -1569,6 +1561,10 @@
 	.form_box .form_box_bg .time_pecin{
 		width: 50%;
 	}
+	.sidebar-detailed .sidebar_info .sidebar_box_1{
+		max-width: calc(49% - 20px);
+		right: 20px;
+	}
 }
 
 @media only screen and (max-width: 464px){
@@ -1716,9 +1712,6 @@
 	.ml_mins {
 		margin-left: -10px;
 	}
-	.gr_bg > span::before {
-		width: 154px;
-	}
 	.qi_men_n .block_pop,
 	.qi_mn_d_f .block_pop{
 		padding: 20px 10px;
@@ -1771,6 +1764,16 @@
 	}
 	.pl_pref {
 	    width: 375px;
+	}
+	.ft_calculator.hd_mpl{
+		margin-left: -20px;
+	}
+	.shema_punkti{
+		overflow-x: scroll;
+    	margin-left: -20px;
+	}
+	.shema{
+		padding-left: 30px;
 	}
 }
 
@@ -1840,6 +1843,9 @@
 	.sidebar_btn a{
 		max-width: 90%;
 		font-size: 10px;
+	}
+	.sidebar-detailed .sidebar_btn a{
+		max-width: 100%;
 	}
 	.sidebar_sel_inp input {
 	    width: 69px;
@@ -1940,6 +1946,9 @@
 	.arch_tbl{
 		width: 360px;
     	overflow-x: scroll;
+	}
+	.bzi .content_block{
+		overflow-x: scroll;
 	}
 }
 

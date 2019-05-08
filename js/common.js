@@ -150,3 +150,10 @@ if (document.getElementsByClassName('datepicker').length !== 0) {
 }
 
 });
+
+
+// ba-zi.html
+$('.sidebar-switcher').click(function(){
+	var c = this.dataset.option;
+	jQuery('.' + c + '').toggleClass('hidden');
+});
