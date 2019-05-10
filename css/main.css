@@ -248,7 +248,7 @@ section {
   transition: 0.8s linear; }
   .menu li {
     display: inline-block;
-    width: 120px;
+    min-width: 120px;
     height: 40px;
     font-size: 10px;
     font-family: "Oswaldlight", sans-serif;

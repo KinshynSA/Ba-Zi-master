@@ -1338,6 +1338,12 @@
 		margin-bottom: 10px;
 		padding: 5px 0;
 	}
+	.menu_box_2 .menu li:nth-child(4) {
+		border-left: 1px solid #fff;
+	}
+	.menu_box_2 .menu li:nth-child(5) {
+		border-left: 0;
+	}
 	.header-shablon-2 .mic{
 		display: none;
 	}
@@ -1475,12 +1481,6 @@
 	}*/
 	.form_box .form_box_bg .sex .female {
 		margin-left: 5px;
-	}
-	.menu_box_2 .menu li:nth-child(4) {
-		border-left: 1px solid #fff;
-	}
-	.menu_box_2 .menu li:nth-child(5) {
-		border-left: 0;
 	}
 	.menu_box .menu li p,
 	.info  {
@@ -1904,7 +1904,7 @@
 
 @media only screen and (max-width: 369px){
 	.menu li{
-		width: 100px;
+		min-width: 100px;
 	}
 	.form_box .form_box_bg .w_2,
 	.form_box .form_box_bg .w_2.tar {
