@@ -855,33 +855,33 @@
     	grid-row: 3/4;
     	justify-content: flex-start;
 	}
-	.qi_men_n .sidebar_box_3{
+	.sidebar_qimen .sidebar_box_3{
 		display: flex;
     	flex-direction: column;
     	grid-row: 1/4;
 	}
-	.qi_men_n .sidebar_box_3 form{
+	.sidebar_qimen .sidebar_box_3 form{
 		margin-bottom: 0;
 	    flex-grow: 100;
 	    display: flex;
 	    flex-direction: column;
 	}
-	.qi_men_n .baza_box{
+	.sidebar_qimen .baza_box{
 		flex-grow: 100;
 	}
-	.qi_men_n .sidebar_btn-form-1{
+	.sidebar_qimen .sidebar_btn-form-1{
 		display: flex;
 	    justify-content: space-between;
 	    align-items: center;
 	    grid-column: 1/4;
 	    grid-row: 3/4;
 	}
-	.qi_men_n .buttons{
+	.sidebar_qimen .buttons{
 		max-width: 180px;
 		margin: 10px 0 0;
 
 	}
-	.qi_men_n .sidebar_btn-form-1 a{
+	.sidebar_qimen .sidebar_btn-form-1 a{
 		width: 30%;
 	}
 }
@@ -1412,36 +1412,34 @@
 		grid-row: 3/4;
 		justify-content: flex-end;
 	}
-	.qi_men_n .sidebar_box_1{}
-	.qi_men_n .sidebar_box_2{}
-	.qi_men_n .sidebar_box_3{
+	.sidebar_qimen .sidebar_box_3{
 		grid-column: 1/3;
 		grid-row: 3/5;
 	}
-	.qi_men_n .sidebar_box_3 form{
+	.sidebar_qimen .sidebar_box_3 form{
 		display: grid;
 	    grid-auto-columns: 46% 46%;
 	    justify-content: space-between;
 	    grid-row-gap: 20px;
 	}
-	.qi_men_n .sidebar_box_3 form h3{
+	.sidebar_qimen .sidebar_box_3 form h3{
 		grid-row: 2/3;
 		margin-bottom: -10px;
 	}
-	.qi_men_n .baza_box{
+	.sidebar_qimen .baza_box{
 		grid-row: 3/4;
 	}
-	.qi_men_n .sidebar_box_3 form .sidebar_sel_inp{
+	.sidebar_qimen .sidebar_box_3 form .sidebar_sel_inp{
     	grid-column: 2/3;
 		grid-row: 1/2;
     	justify-self: flex-end;
 		align-self: flex-start;
 		margin-top: 0;
 	}
-	.qi_men_n .sidebar_box_3 form .sidebar_btn a{
+	.sidebar_qimen .sidebar_box_3 form .sidebar_btn a{
 		margin: 0;
 	}
-	.qi_men_n .sidebar_btn-form-1{
+	.sidebar_qimen .sidebar_btn-form-1{
 		position: relative;
 		z-index: 10;
 		grid-column: 2/3;
@@ -1449,7 +1447,7 @@
 		flex-direction: column;
 		align-items: flex-end;
 	}
-	.qi_men_n .sidebar_btn-form-1 a{
+	.sidebar_qimen .sidebar_btn-form-1 a{
 		width: 100%;
 	}
 }
@@ -1720,12 +1718,12 @@
 	.sidebar_detailed .sidebar_sel_inp input{
 		width: 65px;
 	}
-	.qi_men_n .sidebar_box_3{
+	.sidebar_qimen .sidebar_box_3{
 		grid-column: 1/3;
     	grid-row: 3/5;
     	margin-bottom: 20px;
 	}
-	.qi_men_n .buttons{
+	.sidebar_qimen .buttons{
 		max-width: 160px;
 	}
 }
@@ -1871,8 +1869,7 @@
 	.ml_mins {
 		margin-left: -10px;
 	}
-	.qi_men_n .block_pop,
-	.qi_mn_d_f .block_pop{
+	.sidebar_qimen .block_pop{
 		padding: 20px 10px;
 		width: 100%;
 	}
@@ -2120,21 +2117,21 @@
 	.sidebar_detailed .sidebar_btn a {
 		max-width: 100%;
 	}
-	.qi_men_n .sidebar_box_3 form{
+	.sidebar_qimen .sidebar_box_3 form{
 		display: block;
 	}
-	.qi_men_n .sidebar_box_3 form h3{
+	.sidebar_qimen .sidebar_box_3 form h3{
 		margin-bottom: 10px;
 	}
-	.qi_men_n .sidebar_box_3 form .sidebar_sel_inp{
+	.sidebar_qimen .sidebar_box_3 form .sidebar_sel_inp{
 		margin: 20px 0 20px;
 	}
-	.qi_men_n .sidebar_btn-form-1{
+	.sidebar_qimen .sidebar_btn-form-1{
 		grid-column: 1/3;
 		grid-row: 5/6;
 	    align-items: start;
 	}
-	.qi_men_n .buttons{
+	.sidebar_qimen .buttons{
 		max-width: 100%;
 	}
 }
