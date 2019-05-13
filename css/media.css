@@ -1723,6 +1723,7 @@
 	.qi_men_n .sidebar_box_3{
 		grid-column: 1/3;
     	grid-row: 3/5;
+    	margin-bottom: 20px;
 	}
 	.qi_men_n .buttons{
 		max-width: 160px;
@@ -2131,7 +2132,6 @@
 	.qi_men_n .sidebar_btn-form-1{
 		grid-column: 1/3;
 		grid-row: 5/6;
-	    justify-content: baseline;
 	    align-items: start;
 	}
 	.qi_men_n .buttons{
