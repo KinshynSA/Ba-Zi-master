@@ -287,6 +287,9 @@
 	.opisli{
 		margin: 0 20px;
 	}
+	.arch .content_block{
+		padding: 20px;
+	}
 }
 
 @media only screen and (max-width: 1148px){
@@ -1106,9 +1109,6 @@
 	.person_way {
 		width: 100%;
 	}
-	.arch .content_block{
-		padding: 20px;
-	}
 }
 
 @media only screen and (max-width: 630px){
@@ -1520,23 +1520,18 @@
 }
 
 @media only screen and (max-width: 489px){
-
 	.arch .content_block {
-	padding: 20px 0;
+		padding: 20px 0;
 	}
-
 	.arch .h3 {
 		margin-left: 20px;
 	}
-
 	.arch .select_filter_card {
 		flex-wrap: wrap;
 	}
-
 	.arch .nxt_str_a {
 		width: 100%;
 	}
-
 	.arch .btn_spot {
 		margin-top: 10px;
 	}

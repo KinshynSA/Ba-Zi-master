@@ -13,34 +13,34 @@ body:after{
   max-width: 1280px;
   min-height: 100vh;
   margin: auto;
-  background-image: url(../../Ba-Zi-master-screen/RNS/1280.png);
+  background-image: url(../../Ba-Zi-master-screen/Calendar/1-1280.png);
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
 }
 @media screen and (max-width: 960px){
   body:after{
-    background-image: url(../../Ba-Zi-master-screen/RNS/960.png);
+    background-image: url(../../Ba-Zi-master-screen/Calendar/1-960.png);
   }
 }
 @media screen and (max-width: 768px){
   body:after{
-    background-image: url(../../Ba-Zi-master-screen/RNS/768.png);
+    background-image: url(../../Ba-Zi-master-screen/Calendar/1-768.png);
   }
 }
 @media screen and (max-width: 640px){
   body:after{
-    background-image: url(../../Ba-Zi-master-screen/RNS/640.png);
+    background-image: url(../../Ba-Zi-master-screen/Calendar/1-640.png);
   }
 }
 @media screen and (max-width: 480px){
   body:after{
-    background-image: url(../../Ba-Zi-master-screen/RNS/480.png);
+    background-image: url(../../Ba-Zi-master-screen/Calendar/1-480.png);
   }
 }
 @media screen and (max-width: 375px){
   body:after{
-    background-image: url(../../Ba-Zi-master-screen/RNS/375.png);
+    background-image: url(../../Ba-Zi-master-screen/Calendar/1-375.png);
   }
 }
 
@@ -1637,7 +1637,8 @@ text-align: center;
   font-size: 28px;
   display: block;
   margin-top: 12px;
-  font-family: STSongti-TC-Bold;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
 
 .m_top {
@@ -1804,7 +1805,8 @@ text-align: center;
   text-align: center;
   height: 55px;
   position: relative;
-  font-family: STSongti-TC-Bold;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
 
 
@@ -1831,7 +1833,8 @@ text-align: center;
   margin-top: 30px;
   word-wrap: normal;
   word-break: keep-all;
-  font-family: STSongti-TC-Bold;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
 
 .tablelist .shen_tab td {
@@ -1845,7 +1848,8 @@ text-align: center;
 .small_shen_symb {
   font-size: 21px;
   display: block;
-  font-family: STSongti-TC-Bold;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
 
 .cont_items{
@@ -1879,7 +1883,8 @@ text-align: center;
   border-bottom: none;
 }
 .opisli ul li span{
-    font-family: STSongti-TC-Bold;
+    font-family: "STSongti-TC", sans-serif;
+    font-weight: bold;
 }
 .tablelist .line1 .bigstar{
       position: absolute;
@@ -2187,26 +2192,28 @@ text-align: center;
   background-color: #fdf4f4; }
   .content_block .list_calendar {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 0;
     list-style-type: none; }
     .content_block .list_calendar li {
-      margin-left: 4px;
-      margin-right: 5px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      width: 120px; }
       .content_block .list_calendar li .box_list_calendar {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 120px; }
+        /*width: 120px;*/ }
         .content_block .list_calendar li .box_list_calendar:hover {
           box-shadow: -3px 3px 0 #f5c2c5, 3px 3px 0 #f5c2c5, 3px -3px 0 #f5c2c5, -3px -3px 0 #f5c2c5; }
           .content_block .list_calendar li .box_list_calendar:hover .box_calendar {
             border: 2px solid #f5c2c5;
             border-top: 0; }
         .content_block .list_calendar li .box_list_calendar .box_calendar {
+          display: flex;
+          flex-direction: column;
           width: 120px;
           padding: 5px;
           border: 2px solid #b4b4b4;
@@ -2249,15 +2256,45 @@ text-align: center;
             .content_block .list_calendar li .box_list_calendar .calendar_title .calendar_bonus b {
               color: #256700; }
         .content_block .list_calendar li .box_list_calendar .hieroglyphs {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
           width: 96px;
           margin-left: 9px;
           margin-bottom: 5px;
-          font-family: "STSongti-TC-Bold", sans-serif;
-          font-size: 20px;
-          line-height: 30px;
-          letter-spacing: 12px;
-          position: relative;
+          font-size: 19px;
+          font-family: "STSongti-TC", sans-serif;
+          font-weight: bold;
+          line-height: normal;
+          letter-spacing: normal;
           color: #000000; }
+          .hieroglyph-box{
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            margin-bottom: 4px;
+            text-align: center;
+          }
+          .hieroglyph-item{}
+          .hieroglyph-item{
+            order: 4;
+          }
+          .hieroglyph-number{
+            order: 2;
+            margin-bottom: 4px;
+            font-size: 12px;
+            font-family: "OswaldLight", sans-serif;
+            font-weight: normal;
+          }
+          .content_block .list_calendar li .box_list_calendar .hieroglyphs .hieroglyph-box:nth-of-type(n+4){
+            margin-bottom: 2px;
+          }
+          .content_block .list_calendar li .box_list_calendar .hieroglyphs .hieroglyph-box:nth-of-type(n+4) .hieroglyph-number{
+            order: 6;
+            margin-top: 4px;
+            margin-bottom: 0;
+          }
           .content_block .list_calendar li .box_list_calendar .hieroglyphs .numbers {
             margin-left: 6px;
             font-family: "Oswaldlight", sans-serif;
@@ -2267,9 +2304,16 @@ text-align: center;
             letter-spacing: 27px;
             text-align: center; }
         .content_block .list_calendar li .box_list_calendar .desc_list_calendar {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-grow: 100;
           padding-top: 5px;
           text-align: center;
           border-top: 2px solid #b4b4b4; }
+          .content_block .list_calendar li .box_list_calendar .desc_list_calendar .desc_list_calendar_text{
+            flex-grow: 100;
+          }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar h3 {
             margin: 0;
             font-size: 12px;
@@ -2280,7 +2324,7 @@ text-align: center;
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .green {
             color: #147500; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .hieroglyphs_2 {
-            font-family: "STSongti-TC-Bold", sans-serif;
+            font-family: "STSongti-TC", sans-serif;
             font-weight: 500;
             color: #000; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar p {
@@ -2294,7 +2338,7 @@ text-align: center;
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .link_calendar {
             display: block;
             padding: 4px;
-            font-family: 10px;
+            font-size: 10px;
             font-family: "Oswaldmedium", sans-serif;
             text-transform: uppercase;
             line-height: 12px;
@@ -2304,15 +2348,14 @@ text-align: center;
             .content_block .list_calendar li .box_list_calendar .desc_list_calendar .link_calendar:hover {
               color: #fff;
               background-color: #ea5e68; }
-      .content_block .list_calendar li .box_list_calendar_double {
-        width: 249px; }
-      .content_block .list_calendar li .hepl_list_calendar {
+      .content_block .list_calendar li.list_calendar_double {
+        width: 246px; }
+      .hepl_list_calendar {
         width: 100%;
-        padding: 8px 5px;
-        font-size: 14px;
+        padding: 5px;
+        font-size: 12px;
         font-family: "Oswaldmedium", sans-serif;
-        line-height: 12px;
-        letter-spacing: 0.5px;
+        line-height: 1;
         text-align: center;
         color: #ffffff;
         background-color: #ea5e68;
@@ -2452,7 +2495,8 @@ text-align: center;
 
         .black{ 
           color: #000;
-          font-family: STSongti-TC-Bold;
+          font-family: "STSongti-TC", sans-serif;
+          font-weight: bold;
         }
         .calendar_day_title{
           color: #ea5e68;
@@ -2598,7 +2642,8 @@ text-align: center;
 .symbol-cont {
   position: relative;
   font-size: 20px;
-  font-family: STSongti-TC-Bold, sans-serif;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
         
 .avatar {
@@ -2935,30 +2980,37 @@ input[type="checkbox"]:checked + label:after {
 .block_top_calendar {
   position: relative;
   margin-bottom: 20px;
-  margin-right: 5px;
-  margin-left: 4px;
   border: solid 2px #b4b4b4; }
   .block_top_calendar .top_calendar_box {
-    max-width: 330px;
+    /*max-width: 330px;*/
     margin: 5px auto;
     padding: 0;
     text-align: center; }
     .block_top_calendar .top_calendar_box .hieroglyphs {
-      display: inline-block;
-      width: 69px;
+      display: inline-flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       font-family: "NotoSansTC", sans-serif;
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 14px;
       color: #000000;
       vertical-align: middle; }
+      .block_top_calendar .top_calendar_box .hieroglyphs .hieroglyph-box{
+        width: 50%;
+      }
+        .block_top_calendar .top_calendar_box  .hieroglyph-box:nth-of-type(n+3) .hieroglyph-number{
+          order: 6;
+          margin-top: 4px;
+          margin-bottom: 0;
+        }
     .block_top_calendar .top_calendar_box .hieroglyphs_option {
+      margin: 0 4px;
       display: inline-block;
       vertical-align: middle; }
       .block_top_calendar .top_calendar_box .hieroglyphs_option select {
         position: relative;
         display: inline-block;
+        padding-left: 10px;
         height: 20px;
         font-size: 12px;
         letter-spacing: 1.2px;
@@ -2976,12 +3028,10 @@ input[type="checkbox"]:checked + label:after {
           color: #000; }
       .block_top_calendar .top_calendar_box .hieroglyphs_option #month {
         width: 83px;
-        margin-left: 2px;
-        margin-right: 9px;
-      text-transform: uppercase; }
+        margin-right: 10px;
+        text-transform: uppercase; }
       .block_top_calendar .top_calendar_box .hieroglyphs_option #year {
-        width: 60px;
-        margin-right: 17px; }
+        width: 60px; }
     .block_top_calendar .top_calendar_box .numbers {
       padding-left: 8px;
       font-size: 12px;
@@ -2992,37 +3042,31 @@ input[type="checkbox"]:checked + label:after {
   .block_top_calendar .top_calendar_left,
   .block_top_calendar .top_calendar_right {
     position: absolute;
-    margin-top: 57px;
-    margin-bottom: 58px;
+    top: 50%;
     width: 54px;
     height: 25px;
-    opacity: 0.8; }
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+    transform:  translateY(-50%);
+    transition: 0.8s linear; }
     .block_top_calendar .top_calendar_left:hover,
     .block_top_calendar .top_calendar_right:hover {
       opacity: 1; }
   .block_top_calendar .top_calendar_left {
-    top: -14px;
     left: 0;
-    margin-left: 20%;
-    transition: 0.8s linear;
-    background-image: url(../img/Arrows_left_shadow.png);
-    background-repeat: no-repeat;
-    background-position: center center; }
+    margin-left: 11.4%;
+    margin-right: 20px;
+    background-image: url(../img/Arrows_left_shadow.png); }
     .block_top_calendar .top_calendar_left:hover {
-      background-image: url(../img/Arrows_left.png);
-      background-repeat: no-repeat;
-      background-position: center center; }
+      background-image: url(../img/Arrows_left.png); }
   .block_top_calendar .top_calendar_right {
-    top: -14px;
     right: 0;
-    margin-right: 20%;
-    background-image: url(../img/Arrows_right_shadow.png);
-    background-repeat: no-repeat;
-    background-position: center center; }
+    margin-left: 20px;
+    margin-right: 13%;
+    background-image: url(../img/Arrows_right_shadow.png); }
     .block_top_calendar .top_calendar_right:hover {
-      background-image: url(../img/Arrows_right.png);
-      background-repeat: no-repeat;
-      background-position: center center; }
+      background-image: url(../img/Arrows_right.png); }
 
 /*.ba_czi .form_box .form_box_bg {
   padding-left: 19px;
@@ -4524,10 +4568,11 @@ div.tran_hlp {
 }
 
 .bred_l {
-  font-family: STSongti-TC-Bold;
   position: absolute;
   left: 5px;
   color: #d0021b;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
 
 .bred_r {
@@ -4745,7 +4790,8 @@ p.mb_f {
 }
 
 .cd_symb_n {
-  font-family: STSongti-TC-Bold;
+  font-family: "STSongti-TC", sans-serif;
+  font-weight: bold;
 }
 
 .time_table_main th, .time_table_small th {
