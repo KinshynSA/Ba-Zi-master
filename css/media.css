@@ -1444,8 +1444,7 @@
 		z-index: 10;
 		grid-column: 2/3;
 		grid-row: 4/5;	
-		flex-direction: column;
-		align-items: flex-end;
+		justify-content: flex-end;
 	}
 	.sidebar_qimen .sidebar_btn-form-1 a{
 		width: 100%;
@@ -1731,6 +1730,8 @@
 	.sidebar_detailed .sidebar_sel_inp input{
 		width: 65px;
 	}
+	.bzi .sidebar_sel_inp input,
+	.bzi .sidebar_sel_inp select,
 	.sidebar_qimen .sidebar_sel_inp input,
 	.sidebar_qimen .sidebar_sel_inp select{
 		width: 48%;
@@ -2086,6 +2087,9 @@
 	.reg_mail{
 		flex-wrap: wrap;
 	}
+	.bzi .content_block{
+		overflow-x: scroll;
+	}
 	.eight .content_block{
 		padding: 65px 20px 20px;
 	}
@@ -2126,6 +2130,7 @@
 	    grid-column: 1/3;
 	    grid-row: 3/4;
 	    justify-self: self-start;
+	    width: 100%;
 	}
 	.sidebar_detailed .sidebar_btn-form-1{
 	    grid-column: 1/3;
