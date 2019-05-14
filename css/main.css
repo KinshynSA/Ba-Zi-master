@@ -2138,6 +2138,9 @@ text-align: center;
       color: #ffffff; }
   .sidebar form {
     margin-bottom: 24px; }
+    form.sidebar-form-small{
+      margin-bottom: 10px;
+    }
   .sidebar input[type="checkbox"] + label,
   .sidebar input[type="radio"] + label {
     display: block;
