@@ -78,9 +78,6 @@ body input:required:valid,
 body textarea:required:valid {
   color: green; }
 
-.hidden {
-  display: none; }
-
 header,
 section,
 footer,
@@ -2192,19 +2189,20 @@ text-align: center;
   background-color: #fdf4f4; }
   .content_block .list_calendar {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    width: calc(100% + 10px);
+    margin: 0 auto 20px;
     padding: 0;
     list-style-type: none; }
     .content_block .list_calendar li {
+      margin-right: 10px;
       margin-bottom: 20px;
       width: 120px; }
       .content_block .list_calendar li .box_list_calendar {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
         /*width: 120px;*/ }
         .content_block .list_calendar li .box_list_calendar:hover {
           box-shadow: -3px 3px 0 #f5c2c5, 3px 3px 0 #f5c2c5, 3px -3px 0 #f5c2c5, -3px -3px 0 #f5c2c5; }
@@ -2269,6 +2267,11 @@ text-align: center;
           line-height: normal;
           letter-spacing: normal;
           color: #000000; }
+          .content_block .list_calendar li .box_list_calendar .hieroglyphs.hidden{
+            display: flex!important;
+            flex-direction: column;
+            align-items: center;
+          }
           .hieroglyph-box{
             display: flex;
             flex-direction: column;
@@ -2276,7 +2279,6 @@ text-align: center;
             margin-bottom: 4px;
             text-align: center;
           }
-          .hieroglyph-item{}
           .hieroglyph-item{
             order: 4;
           }
@@ -2294,6 +2296,12 @@ text-align: center;
             order: 6;
             margin-top: 4px;
             margin-bottom: 0;
+          }
+          .content_block .list_calendar li .box_list_calendar .hieroglyphs.hidden .hieroglyph-box{
+            display: none;
+          }
+          .content_block .list_calendar li .box_list_calendar .hieroglyphs.hidden .hieroglyph-box:not(.c_ym){
+            display: flex;
           }
           .content_block .list_calendar li .box_list_calendar .hieroglyphs .numbers {
             margin-left: 6px;
@@ -2333,6 +2341,10 @@ text-align: center;
             font-family: "Oswaldlight", sans-serif;
             line-height: 16px;
             letter-spacing: 0.5px; }
+            .content_block .list_calendar li .box_list_calendar .desc_list_calendar p span{
+              display: inline-block;
+              width: 100%;
+            }
             .content_block .list_calendar li .box_list_calendar .desc_list_calendar p b {
               font-family: "Oswaldmedium", sans-serif; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .link_calendar {
@@ -2349,8 +2361,11 @@ text-align: center;
               color: #fff;
               background-color: #ea5e68; }
       .content_block .list_calendar li.list_calendar_double {
-        width: 246px; }
-      .hepl_list_calendar {
+        width: 250px; }
+      .help_list_calendar-box{
+        width: 100%;
+      }
+      .help_list_calendar {
         width: 100%;
         padding: 5px;
         font-size: 12px;
@@ -2359,7 +2374,7 @@ text-align: center;
         text-align: center;
         color: #ffffff;
         background-color: #ea5e68;
-      margin-top: 5px;
+        margin-top: 5px;
      }
 
 .buttons {
@@ -2979,6 +2994,7 @@ input[type="checkbox"]:checked + label:after {
 
 .block_top_calendar {
   position: relative;
+  padding: 0 calc(54px + 12%);
   margin-bottom: 20px;
   border: solid 2px #b4b4b4; }
   .block_top_calendar .top_calendar_box {

@@ -299,6 +299,9 @@
 }
 
 @media only screen and (max-width: 1120px){
+	.block_top_calendar {
+		padding: 0 calc(54px + 3%);
+	}
 	.block_top_calendar .top_calendar_left {
 		margin-left: 4%;
 	}
@@ -403,6 +406,39 @@
 	}
 }
 
+@media screen and (max-width: 850px){
+	.block_top_calendar{
+		padding: 0;
+	}
+	.block_top_calendar .top_calendar_box{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option{
+		margin: 0 10px;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option #month{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option #year{
+		width: 100%;
+	}
+	.block_top_calendar .top_calendar_left,
+	.block_top_calendar .top_calendar_right{
+		top: auto;
+		bottom: 10px;
+		transform: none;
+	}
+	.block_top_calendar .top_calendar_left{
+		margin-left: calc(50% - 70px);
+	}
+	.block_top_calendar .top_calendar_right{
+		margin-right: calc(50% - 70px);
+	}
+}
 @media only screen and (max-width: 800px){
 	.admin_menu li:nth-child(11) {
 		border-left: 1px solid #fff;
@@ -541,21 +577,38 @@
 		width: 60%;
 		columns: 3;
 	}
-	.block_top_calendar .top_calendar_right  {
-		margin-right: 3%;
+
+	.block_top_calendar{
+		padding: 0 calc(54px + 6%);
 	}
-	.block_top_calendar .top_calendar_left {
-		margin-left: 3%;
-	}
-	.content_block .list_calendar {
+	.block_top_calendar .top_calendar_box{
 		justify-content: center;
+		align-items: center;
 	}
-	.content_block .list_calendar li {
+	.block_top_calendar .top_calendar_box .hieroglyphs_option{
+		margin: 0 20px;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option #month{
+		width: 83px;
 		margin-right: 10px;
-		margin-left: 10px;
+		margin-bottom: 0;
 	}
-	  
-	  
+	.block_top_calendar .top_calendar_box .hieroglyphs_option #year{
+		width: 60px;
+	}
+	.block_top_calendar .top_calendar_left,
+	.block_top_calendar .top_calendar_right{
+		top: 50%;
+		bottom: auto;
+		transform: translateY(-50%);
+	}
+	.block_top_calendar .top_calendar_left{
+		margin-left: 6%;
+	}
+	.block_top_calendar .top_calendar_right{
+		margin-right: 6%;
+	}
+	  	  
 	.nav_calendar_day_box .list_calendar_day {
 		margin-right: 0;
 		margin-left: 0;
@@ -730,17 +783,6 @@
 		padding: 3px 0;
 		position: absolute;
 	} 
-	.block_top_calendar .top_calendar_left, 
-	.block_top_calendar .top_calendar_right {
-		margin-top: 56px;
-		margin-bottom: 0;
-	}
-	.block_top_calendar .top_calendar_left {
-		margin-left: 10%;
-	} 
-	.block_top_calendar .top_calendar_right  {
-		margin-right: 10%;
-	}
 	.nw_cal_day .top-buttons-block {
 	  margin-top: 0px;
 	}
@@ -934,7 +976,9 @@
 }
 
 @media only screen and (max-width: 700px){
-
+	.block_top_calendar {
+		padding: 0;
+	}
 	.block_top_calendar .top_calendar_left {
 		margin-left: 5%;
 	} 
@@ -1021,19 +1065,6 @@
 
 
 @media only screen and (max-width: 666px){
-
-	.block_top_calendar .top_calendar_left {
-		margin-left: 35%;
-	} 
-	.block_top_calendar .top_calendar_right  {
-		margin-right: 35%;
-	}
-	.block_top_calendar .top_calendar_box .hieroglyphs_option{
-		margin-bottom: 56px;
-	}
-	.block_top_calendar .top_calendar_left, .block_top_calendar .top_calendar_right{
-		margin-top: 75px;
-	}
 	.calendar_nw .content_block {
 		padding: 20px 50px;
 	}
@@ -1379,6 +1410,21 @@
 	.calendar_nw .sidebar_btn-form-1 a{
 		width: 100%;
 	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option{
+		margin: 0 10px 40px;
+	}
+	.block_top_calendar .top_calendar_left,
+	.block_top_calendar .top_calendar_right{
+		top: auto;
+		bottom: 10px;
+		transform: none;
+	}
+	.block_top_calendar .top_calendar_left{
+		margin-left: calc(50% - 84px);
+	} 
+	.block_top_calendar .top_calendar_right{
+		margin-right: calc(50% - 84px);
+	}
 	.sidebar_detailed .sidebar_box_1{}
 	.sidebar_detailed .sidebar_box_2{
 		grid-column: 1/2;
@@ -1552,12 +1598,6 @@
     }
 	.calendar_nw .content_block {
 		padding: 20px 25px;
-	}
-	.block_top_calendar .top_calendar_left {
-		margin-left: 30%;
-	} 
-	.block_top_calendar .top_calendar_right  {
-		margin-right: 30%;
 	}
 }
 
@@ -1999,16 +2039,15 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	.block_top_calendar {
-		margin-right: 0;
-		margin-left: 0;
-	}
 	.block_top_calendar .slide_calendar_box .hieroglyphs_option #month {
 		margin-right: 0;
 		margin-left: 0;
 	}
 	.block_top_calendar .slide_calendar_box .hieroglyphs_option #year {
 		margin-right: 5px;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option{
+		margin: 0 0 40px;
 	}
 
 	.arch_tbl {
@@ -2040,16 +2079,6 @@
 	.ml_fal {
 	    margin-left: 69px;
 	}
-	.block_top_calendar .top_calendar_box{
-		display: flex;
-		justify-content: flex-end;
-	}
-	.block_top_calendar .top_calendar_box .hieroglyphs_option{
-		margin-top: 15px;
-	}
-	.content_block .list_calendar li .box_list_calendar_double {
-		width: 258px;
-	}
  	.change_table{
 		display: flex;
 		flex-direction: column;
@@ -2059,6 +2088,14 @@
   	}
   	.change_table .change_table_link {
 		margin-bottom: 5px;
+  	}
+  	.block_top_calendar .top_calendar_box{
+  		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+  	}
+  	.block_top_calendar .top_calendar_box .hieroglyphs{
+  		max-width: 60px;
   	}
 }
 
@@ -2159,22 +2196,26 @@
 }
 
 @media only screen and (max-width: 340px){
-	.block_top_calendar .top_calendar_box .hieroglyphs {
-		letter-spacing: 7px;
-	}
-	.block_top_calendar .top_calendar_box .numbers {
-		padding-left: 12px;
-		letter-spacing: 20px;
-	}
-	.block_top_calendar .top_calendar_box .hieroglyphs_option #year {
-		margin-right: 0;
-	}
 	.cal_date span{
 		width: 100%;
 		margin-bottom: 14px;
 	}
 	.cal_date span:last-of-type{
 		margin-bottom: 0;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option #month{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	.block_top_calendar .top_calendar_box .hieroglyphs_option #year{
+		width: 100%;
+	}
+	.block_top_calendar .top_calendar_left{
+		margin-left: calc(50% - 70px);
+	}
+	.block_top_calendar .top_calendar_right{
+		margin-right: calc(50% - 70px);
 	}
 }
 
