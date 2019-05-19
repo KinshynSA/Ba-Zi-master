@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1279px){
+/*@media only screen and (max-width: 1279px){
 	.nav_calendar_day_box .nav_calendar_day {
 		max-width: 460px;
 		margin-right: auto;
@@ -65,7 +65,6 @@
 		border: none;
 	}
 	.nav_calendar_day_box .list_nav_calendar_times_box table {
-		/*display: none;*/
 		width: 200px;
 		margin-top: 20px;
 	}
@@ -131,7 +130,7 @@
 	.nav_calendar_day_box .list_calendar_qimen_day li .nubm_calendar_qimen_day {
 		font-size: 14px;
 	}
-}
+}*/
 
 
 @media only screen and (max-width: 1218px){
@@ -172,42 +171,48 @@
 	}
 }
 
-@media only screen and (max-width: 1200px){
+/*@media only screen and (max-width: 1200px){
 	.box {
 		width: 970px;
 	} 
-}
+}*/
 
 @media only screen and (max-width: 1198px){
     .content_block .right_block div.hidden_block {
 		display: flex;
-	  }
-    .time_table {
-      display: none;
-    }
-    .top-buttons-block{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
 	}
-	
+
+    .time_table {
+    	display: none;
+    }
+
+	.nw_cal_day .content_block{
+		padding: 20px 0;
+	}
+    .top-buttons-block{
+    	display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    padding: 0 55px;
+	}
+	.new-string{
+		width: 20px;
+	}
+	.buttons-right{
+		justify-content: center;
+	}	
 	.buttons-right .cal_date {
 		margin-left: 0;
 	}
-
-	.buttons-black:first-child {
-		margin-left: -50px;
+	.top-content-bar{
+		padding: 0 55px;
 	}
-	.arch .buttons-black:first-child {
-		margin-left: 0px;
+	.opisli{
+		padding: 0 20px;
 	}
-
-	.buttons-black:last-child {
-		margin-left: 45px;
-	}
-
-	.rchnesc .buttons-black:last-child {
-		margin-left: 0px;
+	.all_fl_stars{
+		padding: 0 10px;
 	}
 }
 
@@ -284,9 +289,6 @@
 	.btn_qi {
 		width: 90px;
 	}
-	.opisli{
-		margin: 0 20px;
-	}
 	.arch .content_block{
 		padding: 20px;
 	}
@@ -308,6 +310,7 @@
 	.block_top_calendar .top_calendar_right {
 		margin-right: 4%;
 	}
+
 }
 
 
@@ -346,24 +349,6 @@
 	}
 }
 
-@media only screen and (max-width: 987px){
-	.table_main:first-child {
-		margin-bottom: 20px;
-	}
-	.buttons-black:first-child{
-		margin-left: 0;
-	}
-	.buttons-left, .buttons-right {
-		justify-content: center;
-	}
-	.new-string {
-		width: 100%;
-	}
-	.buttons-black:last-child {
-		margin-left: 0;
-	}
-}
-
 @media only screen and (max-width: 960px){
 	.center_bot_symb {
 		letter-spacing: 0.4px;
@@ -388,6 +373,31 @@
 	}
 	.soc_btn {
 		margin: 30px auto;
+	}
+}
+@media only screen and (max-width: 959px){
+	.buttons-left{
+		justify-content: center;
+	}
+	.new-string{
+		width: 100%;
+	}
+	.top-content-bar_box{
+		width: 100%;
+	}
+	.top-content-bar{
+		padding: 0 10px;
+	}
+	.top-content-bar_box{
+		width: 100%;
+	}
+	.content-bar-tables{
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.content-bar-tables .table_main{
+		margin: 0 10px 20px;
 	}
 }
 
@@ -496,7 +506,7 @@
 		padding: 0 5px; 
 	}
 	
-	.nav_calendar_day_box .list_calendar_day {
+	/*.nav_calendar_day_box .list_calendar_day {
 		justify-content: space-around;
 		max-width: none;
 		margin-right: 10px;
@@ -509,7 +519,7 @@
 	.nav_calendar_day_box .list_calendar_day li {
 		margin-right: 0;
 		margin-left: 0;
-	}
+	}*/
 	.opisli{
 		margin: 0 40px;
 	}
@@ -609,7 +619,7 @@
 		margin-right: 6%;
 	}
 	  	  
-	.nav_calendar_day_box .list_calendar_day {
+	/*.nav_calendar_day_box .list_calendar_day {
 		margin-right: 0;
 		margin-left: 0;
 	}
@@ -651,7 +661,7 @@
 		width: 30px !important;
 		padding-right: 4px;
 		padding-left: 4px;
-	}
+	}*/
 
 	.foots .logo_foot {
 		margin-right: 45px;
@@ -783,14 +793,30 @@
 		padding: 3px 0;
 		position: absolute;
 	} 
-	.nw_cal_day .top-buttons-block {
+	.top-buttons-block {
 	  margin-top: 0px;
 	}
 	.nw_cal_day .content_block {
 		padding: 20px 0;
 	}
 	.nw_cal_day .opisli {
-		margin: 0 30px;
+		margin: 0 20px;
+	}
+
+
+	.buttons-left{
+		justify-content: center;
+	}
+	.new-string{
+		width: 10px;
+	}
+	.ieghp-container{
+		margin: 20px 0;
+		width: 100%;
+		max-width: 100vw;
+	}
+	.ieghp-table{
+		min-width: 100%;
 	}
 
 
@@ -957,24 +983,6 @@
 	}
 }
 
-@media only screen and (max-width: 718px){
-	.buttons-black:first-child {
-		margin-left: 0px;
-	}
-	.top-buttons-block {
-		flex-direction: column-reverse;
-	}
-	.buttons-black:last-child {
-		margin-left: 0px;
-	}
-	.buttons-left, .buttons-right {
-		justify-content: center;
-	}
-	.new-string {
-		width: 100%;
-	  }
-}
-
 @media only screen and (max-width: 700px){
 	.block_top_calendar {
 		padding: 0;
@@ -984,6 +992,24 @@
 	} 
 	.block_top_calendar .top_calendar_right  {
 		margin-right: 5%;
+	}
+	.buttons-left{
+		justify-content: center;
+	}
+	.top-buttons-block{
+		padding: 0;
+	}
+	.new-string{
+		width: 100%;
+	}
+	.top-content-bar{
+		padding: 0 10px;
+	}
+	.ieghp-container{
+		margin: 20px 0;
+	}
+	.ieghp-table{
+		min-width: 722px;
 	}
 }
 
@@ -1103,16 +1129,9 @@
 	.calendar_nw .sidebar_btn-form-1 a{
 		width: 48%;
 	}
-}
-
-@media only screen and (max-width: 639px){
-    .content-bar-tables {
-      flex-direction: column;
-    }
-    .table_main {
-      margin: 0!important;
-      margin-bottom: 20px!important;
-    }
+	.content-bar-tables{
+		justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 632px){
@@ -1134,9 +1153,6 @@
 	.pmzm {
 		padding: 0!important;
 	}
-	/* .lpmz {
-		padding: 5px 10px!important;
-	} */
 	.person_way {
 		width: 100%;
 	}
@@ -1186,18 +1202,6 @@
 	footer .mic{
 		top: 0;
 	}	
-}
-
-@media only screen and (max-width: 614px){
-	.nw_cal_day .cal_date{
-		flex-direction: column;
-	}
-	.nw_cal_day .cal_date span:not(:last-of-type){
-		margin-bottom: 10px;
-	}
-	.nw_cal_day .content_block .right_block .but_right {
-		width: 80px;
-	}
 }
 
 @media only screen and (max-width: 607px){
@@ -1360,6 +1364,24 @@
 	}
 	.ierog .content_block {
 		padding: 25px 0px;
+	}
+	.nw_cal_day .cal_date{
+		flex-direction: column;
+	}
+	.nw_cal_day .cal_date span:not(:last-of-type){
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.nw_cal_day .content_block .right_block .but_right {
+		width: 80px;
+	}
+	.nw_cal_day .block_pop{
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 20px 40px;
 	}
 	.nxt_str {
 		width: 100%;
@@ -1561,7 +1583,6 @@
 @media only screen and (max-width: 500px){
 	.buttons-black {
 		width: 115px;
-		margin-left: 10px;
 	}
 }
 
@@ -1598,6 +1619,15 @@
     }
 	.calendar_nw .content_block {
 		padding: 20px 25px;
+	}
+	.new-string{
+		width: 0;
+	}
+	.buttons-left{
+		order: 4;
+	}
+	.buttons-right{
+		order: 2;
 	}
 }
 

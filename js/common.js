@@ -84,7 +84,7 @@
 
 
   // nav_calendar_day_box
-	$('.nav_calendar_time').click( function() {
+	/*$('.nav_calendar_time').click( function() {
 		$('.nav_calendar_time').hide('slow');
 		$('.nav_calendar_time_close').show('slow');
 		$('.nav_calendar_day_box .list_nav_calendar_times_box').addClass('show');
@@ -95,7 +95,7 @@
 		$('.nav_calendar_time').show('slow');
 		$('.nav_calendar_day_box .list_nav_calendar_times_box').removeClass('show');
 		// $('.content_block').removeClass('content_block_2');
-	});
+	});*/
 
 	// 
 	// $('.nav_calendar_time').on('click', function() {

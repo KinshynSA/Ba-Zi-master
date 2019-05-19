@@ -92,8 +92,8 @@
        url('../fonts/NotoSans-TC/noto-sans-tc-v4-latin_chinese-traditional-900.svg#NotoSansTC') format('svg'); /* Legacy iOS */
 }
 @font-face {
-  font-family: 'STSongti-SC';
+  font-family: 'STSongti-TC';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/STSongti-SC/STSongti-SC.woff');
+  src: url('../fonts/STSongti-TC/STSongti-TC.woff');
 }
