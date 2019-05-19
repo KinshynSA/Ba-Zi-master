@@ -1376,12 +1376,11 @@
 		width: 80px;
 	}
 	.nw_cal_day .block_pop{
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		flex-wrap: wrap;
 		width: 100%;
 		padding: 20px 40px;
+	}
+	.time_table_small{
+		margin: auto;
 	}
 	.nxt_str {
 		width: 100%;
