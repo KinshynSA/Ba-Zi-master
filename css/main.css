@@ -1904,9 +1904,11 @@ text-align: center;
           }
           .hieroglyph-item{
             order: 4;
+            min-height: 24px;
           }
           .hieroglyph-number{
             order: 2;
+            min-height: 0;
             margin-bottom: 4px;
             font-size: 12px;
             font-family: "OswaldLight", sans-serif;
