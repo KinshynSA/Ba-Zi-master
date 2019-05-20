@@ -1223,6 +1223,11 @@ text-align: center;
     text-align: center;
     z-index: 9999;
 }
+
+.block_pop .form_box .form_box_bg{
+  background-color: transparent;
+}
+
 .block_pop .b1{
     font-family: Oswald;
   font-size: 12px;
@@ -1520,12 +1525,6 @@ text-align: center;
 .ie{
     margin-bottom:25px;
 }
-.tablelist{
-    border: solid 19px #cccccc;
-    margin: 23px auto;
-    max-width: 937px;
-    margin-bottom: 0;
-}
 
 .btn_qi {
   width: 100px;
@@ -1539,322 +1538,13 @@ text-align: center;
   line-height: 1;
 }
 
-.tablelist .block .num{
-      font-family: Oswald;
-  font-size: 17.9px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.07;
-  letter-spacing: normal;
-  color: #000000;
-    position: absolute;
-   bottom: 5px;
-    right: 5px;
-}
-
-.tablelist .block{
-    border-radius: 3.8px;
-  border: solid 2.6px #b4b4b4;
-    position: relative;
-    padding: 5px;
-    margin-bottom: 30px;
-}
-.lin2 span{
-      border: solid 2.6px #ea5e68;
-    padding: 5px;
-}
 
 
-.lin1{
-     font-family: Oswald;
-        margin-top: 52px;
-  font-size: 23px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  text-align: center;
-  color: #000000;
-    display: block;
-}
-.lin2{
-    font-family: HiraginoSans-W3;
-  font-size: 30.7px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.88;
-  letter-spacing: normal;
-  color: #000000;
-    margin: 19px 0;
-}
-.lin3{
-    font-family: HiraginoSans-W3;
-  font-size: 30.7px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.88;
- margin-top: 40px;
-    letter-spacing: 9px;
-  color: #000000;
-}
-.tablelist .line1{    margin-bottom: 11px;
-        padding: 0px 7px;
-    position: relative;
-}
-.leftside{
-    font-family: Oswald;
-  font-size: 17.9px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.07;
-  letter-spacing: normal;
-  color: #9b9b9b;
-    position: absolute;
-    bottom: 62px;
-    left: 10px;
-
-}
-.rightside{
-    font-family: Oswald;
-  font-size: 17.9px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.07;
-  letter-spacing: normal;
-  color: #9b9b9b;
-    position: absolute;
-     bottom: 62px;
-    right: 10px;
-
-}
-
-.shen_symb{
-  font-size: 28px;
-  display: block;
-  margin-top: 12px;
-  font-family: "STSongti-TC", sans-serif;
-  font-weight: bold;
-}
-
-.m_top {
-  margin-top: 12px;
-}
-
-.tablelist .table_item{
-  border: 2.6px solid #b4b4b4;
-  border-radius: 3px;
-  overflow: hidden;
-  padding: 0 10px;
-  padding-top: 10px;
-  font-size: 12.8px;
-  position: relative;
-  width: 33%;
-}
-
-.bot_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px 0;
-  position: relative;
-  font-size: 10px;
-  letter-spacing: 0;
-}
-
-.rome {
-  position: absolute;
-  right: -3px;
-  bottom: -1px;
-  font-size: 14px;
-  color: #9b9b9b;
-}
-
-.content_block .right_block .calendar {
-  height: 60px;
-}
-
-.bot_cont td:first-child {
-  text-align-last: left;
-  font-size: 17.9px;
-  color: #9b9b9b;
-}
-
-.bot_num {
-  font-size: 11px;
-  color: #9b9b9b;
-}
-
-.grey_symb{
-  color: #4a4a4a;
-  font-size: 36px;
-  font-family: DejaVuSans;
-}
-
-.bot_cont td:last-child {
-  text-align-last: right;
-  font-size: 17.9px;
-  color: #9b9b9b;
-}
-
-.shen_tab tr td:first-child {
-  width: 45px;
-}
-
-.shen_tab tr td:last-child {
-  width: 45px;
-}
-
-.shen_tab tr {
-  margin-bottom: 10px;
-}
-
-.table_item::before {
-  content: '**';
-  font-size: 12px;
-  color: #276800;
-  position: absolute;
-  top: 3px;
-  left: 5px;
-}
-
-.table_item::after {
-  content: '******';
-  font-size: 12px;
-  color: #d0091b;
-  position: absolute;
-  top: 3px;
-  left: 18px;
-}
-
-.cont_items{
-  width: 100%;
-}
-
-.row_items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.table_item svg {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
-
-.blue_squere::after {
-  content: '';
-  width: 8.9px;
-  height: 8.9px;
-  background-color: #3c5193;
-  top: 5px;
-  left: 0;
-  position: absolute;
-}
-.lblue_squere::after {
-  content: '';
-  width: 8.9px;
-  height: 8.9px;
-  background-color: #4a90e2;
-  top: 5px;
-  left: 0;
-  position: absolute;
-}
-
-.green_squere::after {
-  content: '';
-  width: 8.9px;
-  height: 8.9px;
-  background-color: #266700;
-  top: 5px;
-  left: 0;
-  position: absolute;
-}
-
-.left_bot_btn {
-  display: flex;
-}
 
 
-.center_cont {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-
-.center_cont th {
-  font-size: 21px;
-  font-family: Oswaldmedium;
-  text-align: center;
-  width: 66px;
-  height: 37px;
-}
-
-.center_cont td {
-  font-size: 28px;
-  text-align: center;
-  height: 55px;
-  position: relative;
-  font-family: "STSongti-TC", sans-serif;
-  font-weight: bold;
-}
 
 
-.symb_star {
-  width: 20px;
-  height: 19px;
-}
 
-.bott_descs {
-  font-size: 18px;
-  font-family: Oswaldlight;
-}
-
-.bot_desc {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.center_bot_symb {
-  display: flex;
-  justify-content: center;
-  font-size: 28px;
-  letter-spacing: 6px;
-  margin-top: 30px;
-  word-wrap: normal;
-  word-break: keep-all;
-  font-family: "STSongti-TC", sans-serif;
-  font-weight: bold;
-}
-
-.tablelist .shen_tab td {
-  width: 60px;
-  text-align: center;
-  position: relative;
-  font-size: 10px;
-  
-}
-
-.small_shen_symb {
-  font-size: 21px;
-  display: block;
-  font-family: "STSongti-TC", sans-serif;
-  font-weight: bold;
-}
-
-.cont_items{
-  margin-bottom: 7px;
-}
-
-.cont_items:last-child {
-  margin-bottom: 0;
-}
 
 .smile {
   font-size: 21px;
@@ -1880,66 +1570,6 @@ text-align: center;
     font-family: "STSongti-TC", sans-serif;
     font-weight: bold;
 }
-.tablelist .line1 .bigstar{
-      position: absolute;
-    right: 0;
-    top: -5px;
-    color: #9b9b9b;
-    font-size: 26px;
-}
-.tablelist .line1 span{
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 5px;
-}
-.greensquare:before{
-     width: 8.9px;
-  height: 8.9px;
-  background-color: #266700;
-    position: absolute;
-        top: -10px;
-    left: calc(50% - 30px);
-    content: '';
-}
-.bluesquare:before{
-     width: 8.9px;
-  height: 8.9px;
-   background-color: #3c5193;
-    position: absolute;
-        top: -10px;
-    left: calc(50% - 30px);
-    content: '';
-}
-.greens{color: #276800;}
-.reds{color: #d0091b;}
-
-.tablelist .block .line2{
-        padding: 0 50px;
-}
-.tablelist .block .line3{
-        padding: 0 50px;
-}
-
-.tablelist .block .line2 span{
-    text-align: center;
-     font-family: HiraginoSans-W3;
-  font-size: 46px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.86;
-  letter-spacing: normal;
-  color: #000000;
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -2349,7 +1979,8 @@ text-align: center;
             line-height: 12px;
             letter-spacing: 1px;
             color: #ea5e68;
-            border: 1px solid #ea5e68; }
+            border: 1px solid #ea5e68;
+            cursor: pointer; }
             .content_block .list_calendar li .box_list_calendar .desc_list_calendar .link_calendar:hover {
               color: #fff;
               background-color: #ea5e68; }
@@ -3106,490 +2737,7 @@ input[type="checkbox"]:checked + label:after {
     .block_top_calendar .top_calendar_right:hover {
       background-image: url(../img/Arrows_right.png); }
 
-/*.ba_czi .form_box .form_box_bg {
-  padding-left: 19px;
-  padding-right: 14px; }
-  .ba_czi .form_box .form_box_bg .w_2 {
-    width: auto; }
-    .ba_czi .form_box .form_box_bg .w_2 label {
-      padding-right: 20px; }
-    .ba_czi .form_box .form_box_bg .w_2 .lebel_time {
-      padding-left: 35px; }
-  .ba_czi .form_box .form_box_bg .time_sun,
-  .ba_czi .form_box .form_box_bg .time_pecin {
-    width: 53%;
-    margin-left: 9px;
-    padding-right: 0;
-    padding-left: 44px; }
-  .ba_czi .form_box .form_box_bg p:last-child {
-    margin-bottom: 0; }*/
 
-/*.nav_calendar_day_box {
-  margin-left: auto; }
-  .nav_calendar_day_box h2 {
-    margin: 9px auto 19px;
-    font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 0.67;
-    letter-spacing: 0.5px;
-    text-align: center;
-    color: #ea5e68; }
-    .nav_calendar_day_box h2 .text_hieroglyphs {
-      font-family: "NotoSansTC", sans-serif;
-      font-weight: normal;
-      color: #000000; }
-    .nav_calendar_day_box h2 .text {
-      letter-spacing: 0.7px; }
-  .nav_calendar_day_box .nav_calendar_day {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none; }
-    .nav_calendar_day_box .nav_calendar_day li {
-      display: block;
-      margin-right: 20px;
-      margin-bottom: 20px; }
-      .nav_calendar_day_box .nav_calendar_day li a,
-      .nav_calendar_day_box .nav_calendar_day li input[type="date"] {
-        display: block;
-        width: 140px;
-        height: 40px;
-        padding: 12px 10px 12px 10px;
-        font-size: 14px;
-        font-family: "Oswald", sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 0.9px;
-        text-align: center;
-        line-height: 1;
-        border: 1px solid #4a4a4a;
-        color: #4a4a4a;
-        background-color: transparent; }
-      .nav_calendar_day_box .nav_calendar_day li ::-webkit-inner-spin-button {
-        display: none; }
-      .nav_calendar_day_box .nav_calendar_day li a:hover,
-      .nav_calendar_day_box .nav_calendar_day li span {
-        display: block;
-        width: 140px;
-        padding: 12px 10px 12px 10px;
-        font-size: 14px;
-        font-family: "Oswald", sans-serif;
-        font-weight: 500;
-        letter-spacing: 0.9px;
-        text-align: center;
-        line-height: 1;
-        color: #fff;
-        border: 1px solid #4a4a4a;
-        background-color: #f2a5ab; }
-      .nav_calendar_day_box .nav_calendar_day li:nth-child(3) {
-        margin-right: 80px; }
-      .nav_calendar_day_box .nav_calendar_day li:last-child {
-        margin-right: 0; }
-  .nav_calendar_day_box .list_calendar_day {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none; }
-    .nav_calendar_day_box .list_calendar_day li {
-      width: 300px;
-      margin-bottom: 20px;
-      padding: 4px 0px 18px;
-      border: 2px solid #b4b4b4;
-      border-radius: 5px; }
-      .nav_calendar_day_box .list_calendar_day li ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        list-style-type: none; }
-        .nav_calendar_day_box .list_calendar_day li ul li {
-          display: block;
-          margin: 0;
-          padding: 0;
-          border: none;
-          width: auto;
-          height: auto; }
-  .nav_calendar_day_box table {
-    margin: 0 5px 5px 8px; }
-    .nav_calendar_day_box table tr th {
-      padding: 5px;
-      font-family: "Oswald", sans-serif;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 1.67;
-      text-align: center;
-      color: #000; }
-    .nav_calendar_day_box table tr td {
-      padding: 5px;
-      text-align: center; }
-    .nav_calendar_day_box table tr th:last-child,
-    .nav_calendar_day_box table tr td:last-child {
-      padding: 5px 1px 5px 3px;
-      font-size: 8px;
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
-      font-weight: 300;
-      line-height: 1.33;
-      letter-spacing: 0.2px;
-      text-align: left;
-      color: #000000; }
-    .nav_calendar_day_box table tr th:last-child {
-      padding-bottom: 9px;
-      font-size: 8px;
-      vertical-align: bottom; }
-    .nav_calendar_day_box table .top_sign {
-      position: relative;
-      width: 47px;
-      padding: 2px 1px 5px;
-      font-size: 9px;
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 0.3px;
-      line-height: 1.22;
-      color: #000000;
-      border: 1px solid #b4b4b4;
-      border-radius: 3px; }
-      .nav_calendar_day_box table .top_sign .active_top_sign {
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 8px;
-        height: 8px;
-        background-color: #266700; }
-    .nav_calendar_day_box table .ni {
-      margin-bottom: 3px;
-      font-size: 20px;
-      font-family: "NotoSansTC", sans-serif;
-      color: #000000; }
-    .nav_calendar_day_box table .nb {
-      font-size: 9px;
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 0.3px;
-      line-height: 1.22;
-      color: #000000; }
-  .nav_calendar_day_box tr:last-child td {
-    position: relative;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 20px;
-    vertical-align: top; }
-    .nav_calendar_day_box tr:last-child td .na_last {
-      position: absolute;
-      top: 5px; }
-    .nav_calendar_day_box tr:last-child td .ni_last {
-      position: absolute;
-      top: 45%; }
-    .nav_calendar_day_box tr:last-child td .ng_last {
-      position: absolute;
-      bottom: 0; }
-  .nav_calendar_day_box .bot_sing {
-    width: 57px; }
-    .nav_calendar_day_box .bot_sing .ng {
-      position: absolute;
-      bottom: 5px;
-      left: 0;
-      right: 0;
-      font-size: 12px;
-      font-family: "Oswald", sans-serif;
-      font-weight: 500;
-      text-align: center;
-      line-height: 1;
-      color: #d10023; }
-  .nav_calendar_day_box .list_calendar_day_desk {
-    font-size: 10px;
-    font-family: "Oswald", sans-serif;
-    line-height: 1.2;
-    letter-spacing: 0.6px;
-    text-align: center;
-    color: #000000; }
-  .nav_calendar_day_box .title_days {
-    width: 280px;
-    height: 20px;
-    margin: 10px auto;
-    padding: 4px;
-    font-size: 12px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.7px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #d10023;
-    border-radius: 2px; }
-  .nav_calendar_day_box .list_calendar_day h4 {
-    margin: 0 10px 5px;
-    font-size: 10px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.6px; }
-  .nav_calendar_day_box .list_calendar_day p {
-    margin: 0 10px 10px;
-    font-size: 11px;
-    font-family: "Oswald", sans-serif;
-    line-height: 1.09;
-    letter-spacing: 0.3px;
-    color: #000000; }
-    .nav_calendar_day_box .list_calendar_day p b {
-      font-weight: 500; }
-  .nav_calendar_day_box .list_calendar_day .green .hieroglyphs {
-    font-size: 20px;
-    font-family: "NotoSansTC", sans-serif;
-    text-align: left;
-    color: #000000; }
-  .nav_calendar_day_box .list_nav_calendar_times_box {
-    width: 200px; }
-    .nav_calendar_day_box .list_nav_calendar_times_box .nav_calendar_time,
-    .nav_calendar_day_box .list_nav_calendar_times_box .nav_calendar_time_close {
-      display: none; }
-    .nav_calendar_day_box .list_nav_calendar_times_box table {
-      margin: 0;
-      background-color: #fff; }
-      .nav_calendar_day_box .list_nav_calendar_times_box table td {
-        width: 40px;
-        height: 40px;
-        border: 1px solid #9b9b9b;
-        border-radius: 1px; }
-        .nav_calendar_day_box .list_nav_calendar_times_box table td:first-child {
-          padding: 12px 3px 12px 3px;
-          font-size: 12px;
-          font-family: "Oswald", sans-serif;
-          font-weight: 300;
-          line-height: 1.33;
-          letter-spacing: 0.5px;
-          text-align: center; }
-        .nav_calendar_day_box .list_nav_calendar_times_box table td:nth-child(2) {
-          padding: 2px 5px 2px;
-          font-size: 14px;
-          font-family: "NotoSansTC", sans-serif;
-          line-height: 1.25;
-          text-align: center;
-          color: #000000; }
-        .nav_calendar_day_box .list_nav_calendar_times_box table td:nth-child(3) {
-          padding: 4px 16px;
-          font-size: 12px;
-          font-family: "Oswald", sans-serif;
-          font-weight: 300;
-          line-height: 1.3;
-          text-align: center;
-          color: #000000; }
-        .nav_calendar_day_box .list_nav_calendar_times_box table td:nth-child(4) {
-          padding: 12px 11px;
-          font-size: 12px;
-          font-family: "Oswald", sans-serif;
-          font-weight: 300;
-          line-height: 1.33;
-          letter-spacing: 0.5px;
-          text-align: center;
-          color: #000000; }
-        .nav_calendar_day_box .list_nav_calendar_times_box table td:last-child {
-          padding: 12px 5px;
-          font-size: 12px;
-          font-family: "Oswald", sans-serif;
-          font-weight: 300;
-          line-height: 1.33;
-          letter-spacing: 0.5px;
-          text-align: center;
-          color: #000000;
-          background-color: #f8e71c; }
-      .nav_calendar_day_box .list_nav_calendar_times_box table .active {
-        color: #fff;
-        background-color: #ea5e68; }
-  .nav_calendar_day_box .list_timezone {
-    max-width: 840px;
-    margin: 0 auto;
-    margin-bottom: 28px;
-    padding: 0;
-    list-style-type: none; }
-    .nav_calendar_day_box .list_timezone li {
-      display: inline-block;
-      margin-bottom: 20px;
-      border-right: 1px solid #4a4a4a; }
-      .nav_calendar_day_box .list_timezone li:last-child {
-        border-right: none; }
-      .nav_calendar_day_box .list_timezone li a {
-        display: block;
-        padding: 3px 17px 4px 15px;
-        font-size: 12px;
-        font-family: "Oswald", sans-serif;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: 0.5px;
-        text-align: center;
-        color: #ea5e68; }
-      .nav_calendar_day_box .list_timezone li a:hover,
-      .nav_calendar_day_box .list_timezone li span {
-        display: block;
-        padding: 3px 17px 4px 15px;
-        font-size: 12px;
-        font-family: "Oswald", sans-serif;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: 0.5px;
-        text-align: center;
-        color: #9b9b9b; }
-  .nav_calendar_day_box .list_calendar_qimen_day {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 848px;
-    margin: 0 auto;
-    padding: 0; }
-    .nav_calendar_day_box .list_calendar_qimen_day li {
-      position: relative;
-      display: block;
-      width: 276px;
-      height: 276px;
-      margin-bottom: 10px;
-      padding: 8px;
-      border-radius: 3px;
-      border: solid 2px #b4b4b4; }
-      .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) {
-        border: none; }
-        .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table {
-          margin-top: 40px;
-          margin-bottom: 17px; }
-          .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table tr:nth-child(4) td {
-            padding-top: 17px;
-            padding-bottom: 16px; }
-          .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table td {
-            width: 65px;
-            padding: 10px 7px 15px 7px; }
-          .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table .bd_reds {
-            padding: 3px 5px; }
-            .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table .bd_reds div {
-              width: 39px;
-              height: 39px;
-              margin-right: auto;
-              margin-left: auto;
-              padding: 7px 2px 12px 2px;
-              border: solid 2px #ea5e68; }
-          .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table th,
-          .nav_calendar_day_box .list_calendar_qimen_day li:nth-child(5) table th:last-child {
-            width: 65px;
-            padding: 8px 7px 13px 7px;
-            font-size: 18px;
-            font-family: "Oswald", sans-serif;
-            font-weight: 500;
-            line-height: 0.61;
-            text-align: center;
-            color: #000000; }
-      .nav_calendar_day_box .list_calendar_qimen_day li .nubm_calendar_qimen_day {
-        position: absolute;
-        left: 9px;
-        top: 50%; }
-    .nav_calendar_day_box .list_calendar_qimen_day .evaluation {
-      display: inline-block;
-      margin-bottom: 19px;
-      font-family: ArialUnicodeMS;
-      font-size: 18px;
-      line-height: 0.78;
-      text-align: left;
-      color: #d10023; }
-    .nav_calendar_day_box .list_calendar_qimen_day .stars {
-      display: inline-block;
-      float: right;
-      margin-bottom: 15px;
-      font-size: 18px;
-      font-family: ArialUnicodeMS;
-      line-height: 0.78;
-      text-align: center;
-      color: #9b9b9b; }
-    .nav_calendar_day_box .list_calendar_qimen_day table tr:nth-child(3) td {
-      padding-top: 23px; }
-    .nav_calendar_day_box .list_calendar_qimen_day table tr:nth-child(3) td,
-    .nav_calendar_day_box .list_calendar_qimen_day table tr:nth-child(4) td {
-      padding: 3px 5px;
-      vertical-align: middle; }
-    .nav_calendar_day_box .list_calendar_qimen_day table tr:nth-child(4) td {
-      padding-bottom: 5px; }
-    .nav_calendar_day_box .list_calendar_qimen_day table td,
-    .nav_calendar_day_box .list_calendar_qimen_day table td:last-child {
-      width: 40px;
-      padding: 5px;
-      font-size: 24px;
-      font-family: "NotoSans", sans-serif;
-      text-align: center;
-      line-height: 0.83;
-      color: #000000;
-      vertical-align: top; }
-      .nav_calendar_day_box .list_calendar_qimen_day table td .desc,
-      .nav_calendar_day_box .list_calendar_qimen_day table td:last-child .desc {
-        margin-top: 12px;
-        margin-bottom: 9px;
-        font-size: 9px;
-        font-family: "Oswald", sans-serif;
-        text-transform: uppercase;
-        line-height: 1.5;
-        text-align: center;
-        color: #000000; }
-      .nav_calendar_day_box .list_calendar_qimen_day table td .desc_2,
-      .nav_calendar_day_box .list_calendar_qimen_day table td:last-child .desc_2 {
-        font-size: 12px;
-        font-family: "Oswald", sans-serif;
-        line-height: 0.92;
-        text-align: center;
-        color: #9b9b9b; }
-      .nav_calendar_day_box .list_calendar_qimen_day table td .bg_yellows,
-      .nav_calendar_day_box .list_calendar_qimen_day table td:last-child .bg_yellows {
-        width: 46px;
-        height: 24px;
-        font-size: 18px;
-        font-family: "Oswald", sans-serif;
-        line-height: 1.22;
-        text-align: center;
-        color: #666666;
-        background-color: rgba(248, 231, 28, 0.3);
-        border: solid 1px #666666; }
-    .nav_calendar_day_box .list_calendar_qimen_day table .green_active,
-    .nav_calendar_day_box .list_calendar_qimen_day table .blue_active,
-    .nav_calendar_day_box .list_calendar_qimen_day table .light_blue_active {
-      position: relative; }
-      .nav_calendar_day_box .list_calendar_qimen_day table .green_active:before,
-      .nav_calendar_day_box .list_calendar_qimen_day table .blue_active:before,
-      .nav_calendar_day_box .list_calendar_qimen_day table .light_blue_active:before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        width: 8px;
-        height: 8px;
-        background-color: #266700; }
-    .nav_calendar_day_box .list_calendar_qimen_day table .light_blue_active:before {
-      background-color: #4a90e2; }
-    .nav_calendar_day_box .list_calendar_qimen_day table .blue_active:before {
-      background-color: #3c5193; }
-    .nav_calendar_day_box .list_calendar_qimen_day p {
-      margin-top: 6px;
-      margin-bottom: 7px;
-      font-size: 9px;
-      font-family: "Oswald", sans-serif;
-      line-height: 1.6;
-      text-align: center;
-      color: #000000; }
-  .nav_calendar_day_box .nav_list_calendar_qimen_day {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 27px; }
-    .nav_calendar_day_box .nav_list_calendar_qimen_day a {
-      display: block;
-      margin: 10px;
-      width: 80px;
-      height: 30px;
-      font-size: 18px;
-      font-family: "Oswald", sans-serif;
-      line-height: 1.3;
-      text-align: center;
-      color: #ea5e68;
-      border: solid 1px #666666; }*/
 
 .prof_box {
   max-width: 848px;
@@ -3657,6 +2805,7 @@ input[type="checkbox"]:checked + label:after {
 
         .cal_main {
           display: flex;
+          justify-content: space-between;
         }
 
         .calendar_box .form_box_bg input[type="time"] {
@@ -3751,6 +2900,7 @@ input[type="checkbox"]:checked + label:after {
 .cal_main_right {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .crt_box .form_box .form_box_bg {
@@ -4173,6 +3323,7 @@ a.btn_black_big {
 
 .main_add_content input[type=submit] {
   width: 240px;
+  margin-top: 5px;
   background: transparent;
   border: 2px solid #fff;
   font-size: 21px;
@@ -4195,22 +3346,7 @@ a.btn_black_big {
   min-width: 160px;
 }
 
-.de_block {
-  background-color: #FAEEA3;
-  width: 36px;
-  border: 1px solid #000;
-  margin: auto;
-  font-size: 12px;
-}
 
-.dp_block {
-  background-color: #bdd4f4;
-  width: 36px;
-  border: 1px solid #000;
-  margin: auto;
-  font-size: 12px;
-  margin-top: 5px;
-}
 
 
 .symb_spoil {
@@ -4395,55 +3531,11 @@ form.nes_new_form input[type="time"] {
 
 }
 
-.tablelist .shen_tab td.td_bot_symb_l{
-  text-align: right;
-  font-size: 11px;
-}
 
-.tablelist .shen_tab td.td_bot_symb_r{
-  text-align: left;
-  font-size: 11px;
-}
 
-td.td_bot_symb_r .small_shen_symb {
-  font-size: 16px;
-}
 
-.tablelist .shen_tab td.min_wdth {
-  width: 44px;
-}
 
-.l_num_cen {
-  position: relative;
-}
 
-.l_num_cen .num_abs {
-  position: absolute;
-  left: 0;
-  top: -20px;
-  font-size: 14px;
-  font-family: Oswald;
-}
-
-.r_num_cen {
-  position: relative;
-}
-
-.r_num_cen .num_abs {
-  position: absolute;
-  right: 0;
-  top: -20px;
-  font-size: 14px;
-  font-family: Oswald;
-}
-
-.bot_cont{
-  margin-top: 4px;
-}
-.bot_cont .bot_symb img{
-  width: 35px;
-  padding: 4px;
-}
 
 .red_square{
   border: 1px solid #ea5e68;
@@ -4465,7 +3557,7 @@ td.td_bot_symb_r .small_shen_symb {
   overflow-y: hidden;
 }
 
-/**/
+
 .sidebar_grid_box{
   height: 100%;
   display: flex;
@@ -4494,7 +3586,7 @@ td.td_bot_symb_r .small_shen_symb {
 .sidebar_box_2 *:first-child{
   margin-top: 20px;
 }
-/**/
+
 
 .black_bg{
   flex-grow: 100;
@@ -4561,9 +3653,6 @@ td.td_bot_symb_r .small_shen_symb {
 }
 
 
-.frst_cnt {
-  display: flex;
-}
 
 .menu_foots li {
   margin-right: 30px;
@@ -4586,10 +3675,7 @@ td.td_bot_symb_r .small_shen_symb {
 }
 
 
-.cal_main_right {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 .qimen_prim form input[type="submit"]{
   margin: 0;
@@ -4682,66 +3768,7 @@ div.tran_hlp {
   flex-wrap: wrap;
 }
 
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 20px;
-  width: auto;
-  max-width: 500px;
-  margin: 20px auto;
-}
 
-
-
-.my-mfp-zoom-in .zoom-anim-dialog {
-  opacity: 0;
-  transition: all 0.2s ease-in-out; 
-  transform: scale(0.8); 
-}
-.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
-  opacity: 1;
-  transform: scale(1); 
-}
-.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
-  transform: scale(0.8); 
-  opacity: 0;
-}
-.my-mfp-zoom-in.mfp-bg {
-  opacity: 0;
-  transition: opacity 0.3s ease-out;
-}
-.my-mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-.my-mfp-zoom-in.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-
-
-.my-mfp-slide-bottom .zoom-anim-dialog {
-  opacity: 0;
-  transition: all 0.2s ease-out;
-  transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
-
-}
-.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
-  opacity: 1;
-  transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
-}
-.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
-  opacity: 0;
-  transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
-}
-.my-mfp-slide-bottom.mfp-bg {
-  opacity: 0;
-  transition: opacity 0.3s ease-out;
-}
-.my-mfp-slide-bottom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-.my-mfp-slide-bottom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
 
 .cal_date input {
   padding-left: 3px;
@@ -4759,58 +3786,82 @@ div.tran_hlp {
   right: 20px;
 }
 
-#small-dialog {
-  background: #4a4a4a;
-  padding: 20px;
-  text-align: left;
-  max-width: 760px;
-  margin: 40px auto;
-  position: relative;
-  color: #000;
-  position: relative;
-}
-
-#small-dialog h1 {
-  text-align: center;
-  font-size: 18px;
-  color: #fff;
-  font-family: Oswald;
-}
-
-.popup_wrup {
-  background-color: #fdf4f4;
-}
-
-.my-mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: 0.6;
-}
-
-.popup_wrup .opisli {
-  margin: 0 20px;
-}
-
-.popup_wrup .opisli ul li {
-  font-size: 14px;
-  letter-spacing: 0.7px;
-}
 
 .nw_cal_day .content_block {
   padding: 20px 67px;
 }
 
-.nw_cal_day .tablelist {
-  max-width: 760px;
-  box-sizing: content-box;
-}
-
 .nw_cal_day .block_pop{
   padding: 10px 20px 10px 44px;
 }
-.block_pop .closeB{
+.nw_cal_day .block_pop .closeB{
   top: 10px;
   left: 10px;
 }
-.time_table_small{}
+
+
+
+
+.popup-qimen_container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: block;
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  opacity: 1;
+  overflow-y: scroll;
+  transition: top 0.2s linear, opacity 1s ease-in-out; 
+}
+.popup-qimen_container-hidden{
+  top: -200%;
+  opacity: 0;
+}
+.popup-qimen_background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: block;
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+}
+.popup-qimen_container-hidden .popup-qimen_background{
+  display: none;
+}
+.popup-qimen_box{
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+.popup-qimen_box .h1{
+  font-size: 18px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+.popup-qimen_content{
+  background-color: #fdf4f4;
+  color: #000000;
+}
+.popup-qimen_content .opisli{
+  padding: 0 20px;
+}
+.popup-qimen_content .ieghp-container{
+  max-width: 100%;
+}
+
 
 .content-bar-tables th {
   font-size: 12px;
@@ -4877,33 +3928,7 @@ p.mb_f {
   display: flex;
 }
 
-.calendar_nw .shen_symb {
-  font-size: 24px;
-}
 
-.calendar_nw .small_shen_symb{
-  font-size: 17px;
-}
-
-.calendar_nw .tablelist{
-  border: solid 18px #cccccc;
-}
-
-.calendar_nw .table_item:nth-child(even){
-  margin: 0 9px;
-}
-
-.calendar_nw .center_cont th{
-  width: 83px;
-}
-
-.calendar_nw .l_num_cen .num_abs{
-  left: -5px;
-}
-
-.calendar_nw .r_num_cen .num_abs{
-  right: -5px;
-}
 .eight .content_block {
   padding: 65px 50px 50px;
 }
@@ -4918,33 +3943,6 @@ p.mb_f {
   padding: 20px;
 }
 
-.qmff .table_item{
-  padding: 50px 5px;
-  padding-top: 38px;
-}
-
-.qmff .tablelist .shen_tab .bot_cont td{
-  font-size: 14px;
-}
-
-.qmff .table_item {
-  position: relative;
-}
-.qmff .table_item .bot_cont {
-  position: absolute;
-  bottom: 5px;
-  margin-bottom: 0;
-  font-family: Oswald;
-}
-
-.qmff .tablelist {
-  max-width: 908px;
-}
-
-.qmff td.center_td_tabl {
-  font-family: Oswaldmedium;
-  font-size: 21.5px;
-}
 
 
 .pl_dvad {
@@ -5131,10 +4129,8 @@ a.btn_black_big:hover {
 }
 
 .arch_mnu {
-  /* display: flex; */
   flex-direction: column;
   text-align: left;
-
 }
 
 .arch_mnu select {
@@ -5172,9 +4168,10 @@ a.btn_black_big:hover {
   color: #ea5e68;
 }
 
-.qi_men_n .block_pop {
-  padding: 40px 27px;
+.qi_men_n .block_pop{
+  padding: 25px 60px 0;
 }
+
 
 .qi_men_n .cal_date{
   margin-top: 15px;
@@ -5223,43 +4220,16 @@ a.btn_black_big:hover {
 }
 
 
-.qi_mn_d_f .tablelist .table_item {
-  padding-bottom: 10px;
-}
-
-.qi_mn_d_f .r_num_cen .num_abs {
-  top: -60px;
-}
-.qi_mn_d_f .l_num_cen .num_abs {
-  top: -60px;
-}
-
-.qi_mn_d_f .table_item::before {
-  content: '';
-}
-.qi_mn_d_f .table_item::after {
-  content: '';
-}
-
-.qi_mn_d_f .center_bot_symb{
-  margin-top: 0;
-}
-
-.qi_mn_d_f .center_cont th{
-  height: initial;
-}
-
-.qi_mn_d_f .center_td_tabl {
-  font-family: Oswaldmedium;
-  font-size: 18px;
-}
-
 .qi_mn_d_f .block_pop {
-  padding: 40px 68px;
+  padding: 50px 30px 3 0px;
 }
 
 .ci_men .born_map {
   margin-bottom: 0;
+}
+
+.qi_men_n .content_block{
+  padding: 28px 78px 70px;
 }
 
 .qi_men_n .cal_main_left span {
@@ -5970,6 +4940,7 @@ a.btn_black_big:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 150px;
   padding: 18px 10px 5px;
   font-size: 11px;
   text-align: center;
@@ -6020,7 +4991,6 @@ a.btn_black_big:hover {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 4;
   display: inline-block;
   width: 7px;
   height: 7px;
@@ -6113,3 +5083,10 @@ a.btn_black_big:hover {
   padding: 0 10px;
 }
 .iegph-span{}
+.ieghp-item-middle_columns{}
+.ieghp-item-middle_column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
