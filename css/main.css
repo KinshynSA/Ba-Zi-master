@@ -3283,6 +3283,10 @@ a.btn_black_big {
   align-self: center;
   margin-bottom: 20px;
 }
+a.btn_black_big:hover{
+  color: #ffffff;
+  background-color: rgba(234, 94, 104, 0.3);
+}
 
 .voprosi {
   font-size: 14px;
@@ -4069,10 +4073,6 @@ div.cal_date input {
 }
 
 a.btn_black:hover {
-  color: #ea5e68;
-}
-
-a.btn_black_big:hover {
   color: #ea5e68;
 }
 
