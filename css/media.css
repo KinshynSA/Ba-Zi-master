@@ -493,6 +493,11 @@
 		width: 100%;
 	}
 
+	.eight .block_pop{
+		width: 100%;
+		padding: 40px 10px 20px;
+	}
+
 
 	.buttons-left{
 		justify-content: center;

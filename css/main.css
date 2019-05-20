@@ -564,13 +564,6 @@ h3.dom_zachat {
   margin-top: 20px;
 }
 
-.arch_btn {
-  padding: 10px 0px;
-  width: 150px;
-  margin-bottom: 5px;
-  margin-right: 0;
-}
-
 .name_inp {
   background-color: #f0f0f0;
   border: 0.5px solid #4a4a4a;
@@ -578,10 +571,28 @@ h3.dom_zachat {
   padding: 2px;
   padding-left: 10px;
 }
+.name_inp::-moz-placeholder{
+  color: #000000;
+}
+.name_inp::-webkit-input-placeholder{
+  color: #000000;
+}
+.name_inp:-ms-input-placeholder{
+  color: #000000;
+}
+.name_inp::-ms-input-placeholder{
+  color: #000000;
+}
 
 .mr_std {
-  margin-right: 20px;
   margin-top: 5px;
+  margin-right: 20px;
+}
+select.mr_std{
+  padding: 0 10px;
+  width: 140px;
+  background-color: #f0f0f0;
+  border: solid 0.5px #4a4a4a;
 }
 
 .btn_spot {
@@ -2039,8 +2050,13 @@ text-align: center;
         color: #fff;
         background-color: rgba(234, 94, 104, 0.8); }
 
-        
 
+  .arch_btn {
+    padding: 8px 10px;
+    width: 150px;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
 
         .top-buttons-block{
           padding: 0 28px;
@@ -4135,6 +4151,7 @@ a.btn_black:hover {
 .arch_mnu select {
   width: 180px;
   background-color: #f0f0f0;
+  border: none;
 }
 
 .arch_mnu p {
@@ -4147,6 +4164,24 @@ a.btn_black:hover {
   background-color: #f0f0f0;
   margin-bottom: 10px;
   width: 180px;
+  padding: 2px 4px;
+  border: none;
+  outline: none;
+}
+.arch_mnu input::-moz-placeholder{
+  color: #000000;
+}
+.arch_mnu input::-webkit-input-placeholder{
+  color: #000000;
+}
+.arch_mnu input:-ms-input-placeholder{
+  color: #000000;
+}
+.arch_mnu input::-ms-input-placeholder{
+  color: #000000;
+}
+.arch_mnu input::placeholder{
+  color: #000000;
 }
 
 .eight .block_pop .b3 button {
