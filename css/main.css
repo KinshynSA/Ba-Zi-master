@@ -1609,30 +1609,6 @@ text-align: center;
   }
 
 
-  .fl_date{
-    display: flex;
-    justify-content: center;
-  }
-  .fl_date > input[type="checkbox"] + label {
-    width: 0;
-  }
-  .fl_date > input[type="checkbox"] + label:before{
-    top: 21px;
-    left: 10px;
-  }
-  .fl_date_day{
-    width: 40px;
-    margin: 20px 0;
-  }
-  .fl_date_month{
-    width: 80px;
-    margin: 20px 0;
-  }
-  .fl_date_year{
-    width: 60px;
-    margin: 20px 0;
-  }
-
 
 
 
@@ -2985,6 +2961,34 @@ input[type="checkbox"]:checked + label:after {
 .crt_box .info_box form {
   margin: 0;
 }
+
+
+
+  .fl_date{
+    display: flex;
+    justify-content: center;
+  }
+  .fl_date > input[type="checkbox"] + label {
+    width: 0;
+  }
+  .fl_date > input[type="checkbox"] + label:before{
+    top: 21px;
+    left: 10px;
+  }
+  .fl_date_day{
+    width: 40px;
+    margin: 20px 0;
+  }
+  .fl_date_month{
+    width: 80px;
+    margin: 20px 0;
+  }
+  .fl_date_year{
+    width: 60px;
+    margin: 20px 0;
+  }
+
+
 
 .box_nmr {
   text-align: center;
