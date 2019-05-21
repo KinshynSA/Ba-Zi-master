@@ -143,6 +143,9 @@
 	.soc_btn {
 		margin: 30px auto;
 	}
+	.calendar_nw .content_block{
+		padding: 20px 40px;
+	}
 }
 
 @media only screen and (max-width: 959px){
@@ -171,9 +174,18 @@
 	}
 }
 
-@media only screen and (max-width: 923px){
+@media only screen and (max-width: 920px){
 	.nw_cal_day .content_block{
 		padding: 20px 0;
+	}
+	.select_filter_card{
+		flex-wrap: wrap;
+	}
+	.mr_std{
+		margin: 5px 10px 10px;
+	}
+	.nxt_str_a{
+		width: 100%;
 	}
 }
 
@@ -514,6 +526,37 @@
 		min-width: 100%;
 	}
 
+	.select_filter_card{
+		flex-wrap: wrap;
+	}
+	.mr_std{
+		margin: 5px 20px 0 0;
+	}
+	.nxt_str_a{
+		width: 0;
+	}
+
+	.arch .block_pop{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+	}
+	.arch_mnu-cont{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.arch_mnu-box{
+		display: inline-block;
+		margin: 0 10px 10px;
+		text-align: left;
+	}
+	.arch_mnu select,
+	.arch_mnu input{
+		width: 150px;
+	}
 
 	.sidebar_grid_box{
 		display: grid;
@@ -706,13 +749,19 @@
 	.ieghp-table{
 		min-width: 722px;
 	}
+	select.mr_std{
+		width: 120px;
+	}
+	.name_inp{
+		width: 120px;
+	}
 }
 
 
 
 @media only screen and (max-width: 666px){
 	.calendar_nw .content_block {
-		padding: 20px 50px;
+		padding: 20px 65px;
 	}
 }
 
@@ -823,6 +872,16 @@
 
 	.info_box .menu_info_box li{
 		margin-bottom: 14px;
+	}
+
+	.nxt_str_a{
+		width: 100%;
+	}
+	.mr_std{
+		margin: 5px 10px 10px;
+	}
+	.calendar_nw .content_block {
+		padding: 20px 50px;
 	}
 
 	footer .pause,
@@ -1083,12 +1142,6 @@
 	.arch .content_block {
 		padding: 20px 0;
 	}
-	.arch .h3 {
-		margin-left: 20px;
-	}
-	.arch .select_filter_card {
-		flex-wrap: wrap;
-	}
 	.arch .nxt_str_a {
 		width: 100%;
 	}
@@ -1110,9 +1163,6 @@
     .change_table{
       text-align: center;
     }
-	.calendar_nw .content_block {
-		padding: 20px 25px;
-	}
 	.new-string{
 		width: 0;
 	}
@@ -1314,6 +1364,12 @@
 	.sidebar_qimen_short .sidebar_btn-form-1{
 		grid-column: 1/3;
 	}
+	.calendar_nw .content_block {
+		padding: 20px 20px;
+	}
+	.content_block .list_calendar{
+		justify-content: center;
+	}
 }
 
 
@@ -1470,6 +1526,16 @@
 	}
 	.sidebar_sel_inp input {
 	    width: 69px;
+	}
+
+	.mr_std{
+		margin: 5px 5px 10px;
+	}
+	select.mr_std{
+		width: 100px;
+	}
+	.name_inp{
+		width: 100px;
 	}
 }
 
@@ -1668,6 +1734,12 @@
 	.table_f{
 		padding: 0 10px;
 	}
+	.popup_hexagrams_name .popup_hexagrams_textarea{
+		max-width: 360px;
+	}
+	.popup_hexagrams_textarea_block{
+		width: 220px;
+	}
 	.table_phenomenon_column:nth-of-type(3){
 		min-width: 74px;
 	}
@@ -1679,6 +1751,10 @@
 	}
 	.popup_phenomenon{
 		padding: 20px;
+		text-align: center;
+	}
+	.popup_phenomenon_content{
+		display: inline-block;
 	}
 	.popup_phenomenon_close{
 		position: static;
@@ -1689,8 +1765,21 @@
 	.popup_phenomenon_item_var:before{
 		margin-right: 6px;
 	}
+	.popup_phenomenon_input,
+	.popup_phenomenon_textarea{
+		min-width: 330px;
+	}
+	.popup_phenomenon_flex-select select{
+		margin-right: 240px;
+	}
 }
 @media screen and (max-width: 768px){
+	.popup_hexagrams_name .popup_hexagrams_textarea{
+		max-width: 420px;
+	}
+	.popup_hexagrams_textarea_block{
+		width: 280px;
+	}
 	.phenomenon_title{
 		margin-bottom: 15px;
 	}
@@ -1716,14 +1805,21 @@
 	.popup_phenomenon{
 		padding: 20px 100px 20px 40px;
 	}
+	.popup_phenomenon_content{
+		display: block;
+	}
 	.popup_phenomenon_close{
 		position: relative;
 	}
+	.popup_phenomenon_input,
+	.popup_phenomenon_textarea{
+		min-width: 420px;
+	}
+	.popup_phenomenon_flex-select select{
+		margin-right: 330px;
+	}
 }
 @media screen and (max-width: 700px){
-	.popup_hexagrams{
-		padding: 20px 30px;
-	}
 	.popup_hexagrams_textarea_right{
 		padding: 0;
 	}
@@ -1830,9 +1926,6 @@
 	.right_block_padding{
 		padding: 0;
 	}
-	.popup_hexagrams{
-		padding: 20px;
-	}
 	.popup_hexagrams_title{
 		left: 20px;
 	}
@@ -1898,10 +1991,6 @@
 	}
 	.popup_stratagema .popup_hexagrams_nick{
 		font-size: 12px;
-	}
-	.popup_hexagrams_name .popup_hexagrams_textarea{
-		max-width: 100%;
-		margin-left: 0;
 	}
 	.popup_stratagema .popup_hexagrams_input{
 		margin: 0 100px 0 18px;
@@ -2005,6 +2094,15 @@
 		max-width: 100%;
 		width: 250px;
 	}
+	.popup_hexagrams{
+		padding: 20px;
+	}
+	.popup_hexagrams_content{
+		position: relative;
+	}
+	.popup_hexagrams_title{
+		top: -52px;
+	}
 	.popup_hexagrams_flex{
 		flex-wrap: wrap;
 	}
@@ -2024,9 +2122,10 @@
 	}
 	.popup_hexagrams_description{
 		position: absolute;
-	    top: 20px;
-	    left: 20px;
+	    top: 0;
+	    left: 0;
 	    width: 120px;
+	    z-index: 4;
 	    justify-content: flex-start;
 	}
 	.popup_hexagrams_description .popup_hexagrams_nick{
@@ -2049,8 +2148,9 @@
 	}
 	.popup_hexagrams_number{
 		position: absolute;
-		top: 100px;
-		right: 20px;
+		top: 80px;
+		right: 0;
+		z-index: 4;
 	}
 	.popup_hexagrams_number .popup_hexagrams_nick{}
 	.popup_hexagrams_number .popup_hexagrams_input{}
@@ -2083,6 +2183,9 @@
 	}
 	.table_phenomenon_row{
 		width: 500px;
+	}
+	.popup_phenomenon_content{
+		position: relative;
 	}
 	.popup_phenomenon_table{
 		overflow-x: scroll;
@@ -2119,7 +2222,9 @@
 		font-size: 10px;
 	}
 	.square_high{
-		overflow: hidden;
+	    width: 100%;
+	    padding: 30px calc(50% - 125px);
+		overflow-x: scroll;
 	}	
 	.square_high .dsquare_high{
 		height: 74px;
