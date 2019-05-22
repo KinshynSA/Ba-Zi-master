@@ -1829,6 +1829,15 @@
 	.popup_hexagrams_textarea_block{
 		width: 220px;
 	}
+	.popup_stratagema{
+		padding: 20px;
+	}
+	.popup_stratagema_textarea{
+		width: 220px;
+	}
+	.popup_stratagema .popup_hexagrams_input{
+		margin-right: 80px;
+	}
 	.table_phenomenon_column:nth-of-type(3){
 		min-width: 74px;
 	}
@@ -1867,7 +1876,13 @@
 		max-width: 420px;
 	}
 	.popup_hexagrams_textarea_block{
-		width: 280px;
+		width: 420px;
+	}
+	.popup_stratagema_textarea{
+		width: 420px;
+	}
+	.popup_stratagema .popup_hexagrams_input{
+		margin-right: 280px;
 	}
 	.phenomenon_title{
 		margin-bottom: 15px;
@@ -2059,6 +2074,9 @@
 	}
 	.table_stratagema_text_redact{
 		display: none;
+	}
+	.popup_stratagema .popup_hexagrams_content{
+		width: 100%;
 	}
 	.popup_stratagema_name,
 	.popup_stratagema_number,
