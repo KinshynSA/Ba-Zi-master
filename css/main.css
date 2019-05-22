@@ -2964,30 +2964,6 @@ input[type="checkbox"]:checked + label:after {
 
 
 
-  .fl_date{
-    display: flex;
-    justify-content: center;
-  }
-  .fl_date > input[type="checkbox"] + label {
-    width: 0;
-  }
-  .fl_date > input[type="checkbox"] + label:before{
-    top: 21px;
-    left: 10px;
-  }
-  .fl_date_day{
-    width: 40px;
-    margin: 20px 0;
-  }
-  .fl_date_month{
-    width: 80px;
-    margin: 20px 0;
-  }
-  .fl_date_year{
-    width: 60px;
-    margin: 20px 0;
-  }
-
 
 
 .box_nmr {
@@ -4256,7 +4232,40 @@ a.btn_black:hover {
   padding: 40px 48px;
   padding-bottom: 25px;
 }
-
+.stars-pop_block{
+  max-width: 160px;
+  margin: auto auto 13px;
+  color: #ffffff;
+}
+.stars-pop_block p{
+  margin-bottom: 13px;
+}
+.stars-pop_block select{
+  width: 100%;
+}
+.stars-pop_box{
+  margin-bottom: 13px;
+}
+.stars-pop_block-3 .stars-pop_box label{
+  padding-right: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  text-transform: none;
+}
+.stars-pop_block-3 .stars-pop_box label:before{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.stars-pop_block-4{
+  max-width: 240px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.stars-pop_block-4 .b3 button{
+  max-width: 100%;
+  margin: 0;
+}
 
 .qi_mn_d_f .block_pop {
   padding: 50px 30px 3 0px;
@@ -4274,9 +4283,6 @@ a.btn_black:hover {
   text-transform: uppercase;
 }
 
-.stars .block_pop .b3 button {
-  margin-right: 0;
-}
 
 
 
