@@ -2910,6 +2910,7 @@ input[type="checkbox"]:checked + label:after {
 .crt_box .form_box .form_box_bg {
   background-color: #4a4a4a;
   border: 10px solid #9b9b9b;
+  margin-bottom: 10px;
 }
 
 .crt_box {
@@ -2979,14 +2980,17 @@ input[type="checkbox"]:checked + label:after {
 
 .crd_f_box {
   display: flex;
-  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .crd_f_box .form_box {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: auto;
+  margin: 0 20px 20px;
 }
 
 .rasche_crt {

@@ -100,6 +100,9 @@
 	.block_top_calendar .top_calendar_right {
 		margin-right: 4%;
 	}
+	.crd_f_box .form_box{
+		margin: 0 auto 20px;
+	}
 
 }
 
@@ -1724,6 +1727,9 @@
 	}
 	.cal_main{
 		flex-wrap: wrap;
+	}
+	.crt_box .info_box form{
+		max-width: 100vw;
 	}
 	.sidebar_detailed .content_block{
 		overflow-x: scroll;
