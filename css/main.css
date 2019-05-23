@@ -3960,6 +3960,34 @@ p.mb_f {
 }
 
 
+.bzi .block_pop{
+  max-width: 490px;
+  padding-bottom: 0;
+}
+.bzi .form_box .form_box_bg{
+  padding: 0;
+  margin-bottom: 8px;
+}
+.bzi .form_box form{
+  margin-bottom: 0;
+}
+.bzi .form_box .sex label{
+  width: 39%;
+}
+.bzi .cal_block{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bzi .cal_item{
+  width: 50%;
+  margin-bottom: 12px;
+}
+.bzi .cal_item label{
+  width: 100%;
+  text-align: left;
+}
+
 
 .pl_dvad {
   margin-bottom: 10px;

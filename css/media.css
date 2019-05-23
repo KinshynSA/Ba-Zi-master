@@ -578,6 +578,19 @@
 		margin: 0 auto;
 	}
 
+	.bzi .block_pop{
+		width: 100%;
+		max-width: 100%;
+		padding: 40px 20px 0;
+	}
+	.bzi .form_box{
+		max-width: 370px;
+		margin: 0 auto;
+	}
+	.bzi .info_box form input[type="submit"]{
+		min-width: 100%;
+	}
+
 	.sidebar_grid_box{
 		display: grid;
 		align-content: flex-start;
@@ -1277,6 +1290,10 @@
 	.stars-pop_block-5 .b4{
 		margin-top: 0;
 		text-align: center;
+	}
+
+	.bzi .block_pop{
+		padding: 60px 20px 0;
 	}
 
 	header .container-fluid {
