@@ -4973,20 +4973,24 @@ a.btn_black:hover {
 /* таблица для calendar-day и qi-men */
 .ieghp-container{
   width: 760px;
-  max-width: calc(100vw - 240px);
+  max-width: 100%;
   margin: 20px auto;  
 }
 .ieghp-box{
-  overflow-x: auto;
+  position: relative;
+  padding-bottom: 100%;
+  overflow-x: hidden;
 }
 .ieghp-table{
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  width: 100%;
   min-width: 722px;
   border: 19px solid #ccc;
 }

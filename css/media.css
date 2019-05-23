@@ -520,15 +520,6 @@
 	.new-string{
 		width: 10px;
 	}
-	.ieghp-container{
-		margin: 20px 0;
-		width: 100%;
-		max-width: 100vw;
-	}
-	.ieghp-table{
-		min-width: 100%;
-	}
-
 	.select_filter_card{
 		flex-wrap: wrap;
 	}
@@ -771,12 +762,6 @@
 	}
 	.top-content-bar{
 		padding: 0 10px;
-	}
-	.ieghp-container{
-		margin: 20px 0;
-	}
-	.ieghp-table{
-		min-width: 722px;
 	}
 	select.mr_std{
 		width: 120px;

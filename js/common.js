@@ -13,7 +13,8 @@ $(document).ready(function() {
     // hexagrams
     $('.table_hexagrams_redact_butt').click(function(){
     	$('.table_hexagrams').hide();
-    	$('.block_pop').show(); 
+    	
+    	$('.block_pop').show();
     });
     $('.table_hexagrams_close').click(function(){
 		$('.table_hexagrams').show();
@@ -127,4 +128,20 @@ $(document).ready(function() {
 		}
 	});
 
+
+	var ieghpTableResize = function(){
+	    var arr = document.querySelectorAll('.ieghp-table');
+	    arr.forEach(function(item,i,arr){
+	    	var sizeParentX = Math.min(item.parentElement.offsetWidth, 722);
+	    	var sizeTableX = 722;
+	    	item.style.transform = 'scale(' + sizeParentX/sizeTableX + ')'; 
+	    	item.style.left = -(sizeTableX*(1 - sizeParentX/sizeTableX))/2 + 'px';
+	    	item.style.top = -(sizeTableX*(1 - sizeParentX/sizeTableX))/2 + 'px';
+	    });
+	};
+
+	ieghpTableResize();
+	window.addEventListener('resize',ieghpTableResize);
 });
+
+
