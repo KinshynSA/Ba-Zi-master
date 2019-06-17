@@ -1678,7 +1678,7 @@
 
 @media only screen and (max-width: 369px){
 	.menu_box_2 .menu li{
-		min-width: calc(100% / 3);
+		min-width: 32%;
 	}
 	.form_box .form_box_bg .w_2,
 	.form_box .form_box_bg .w_2.tar {
