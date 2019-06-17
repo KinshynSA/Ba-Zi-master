@@ -279,7 +279,7 @@ section {
     border-left: 1px solid #fff;
     transition: 0.8s linear; }
     .menu li:first-child {
-      border-left: 0; }
+      border-left: 0!important; }
     .menu li img {
       display: inline-block;
       height: 100%;

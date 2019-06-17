@@ -959,12 +959,6 @@
 		margin-bottom: 10px;
 		padding: 5px 0;
 	}
-	.menu_box_2 .menu li:nth-child(4) {
-		border-left: 1px solid #fff;
-	}
-	.menu_box_2 .menu li:nth-child(5) {
-		border-left: 0;
-	}
 	.header-shablon-2 .mic{
 		display: none;
 	}
