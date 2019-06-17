@@ -348,7 +348,8 @@ section {
   min-height: 80px;
   margin-bottom: 20px; }
   .menu_box_2 .menu {
-    width: auto;
+    width: 100%;
+    max-width: 800px;
     justify-content: center;
     flex-wrap: wrap; }
     .menu_box_2 .menu li {
