@@ -1669,6 +1669,37 @@ text-align: center;
       margin-bottom: 0;
       transform: rotate(45deg); }
 
+.sidebar_timer{
+  display: block;
+  max-width: 120px;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Oswaldlight", sans-serif;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar_timer .timerok{
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  max-width: 120px;
+  padding: 0 10px;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid #EA5E67;
+  cursor: pointer;
+}
+.sidebar_timer:hover{
+  color: #ffffff;
+}
+.sidebar_timer:hover .timerok{
+  background-color: rgba(234, 94, 104, 0.2);
+}
+
 .mobile_side {
   transition: 1s;
   opacity: 1; }
@@ -1679,7 +1710,8 @@ text-align: center;
 
 
 .sidebar_nav {
-  position: relative; }
+  position: relative;
+  display: none; }
 
 .sidebar {
   position: relative;
@@ -1692,8 +1724,6 @@ text-align: center;
     margin-top: 22px; }
     .sidebar .sidebar_info .avatar:after {
       display: none; }
-  .sidebar .sidebar_nav {
-    display: none; }
     .sidebar .sidebar_nav .avatar h3 {
       display: none; }
   .sidebar .sidebar_box {
@@ -1743,6 +1773,7 @@ text-align: center;
       border: 2px solid #EA5E67;
       vertical-align: top; }
     .sidebar .sidebar_box .lins_2 {
+      max-width: 120px;
       padding: 0 10px;
       font-size: 20px;
       line-height: 36px;

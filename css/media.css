@@ -371,7 +371,8 @@
 		height: 60px;
 	}
 	.sidebar .sidebar_nav{
-		display: block;
+		display: flex;
+  		justify-content: space-between;
 		overflow: hidden;
     	transition: all 0.2s ease-in-out;
 	}
@@ -389,6 +390,10 @@
 		width: 0;
 	    height: 0;
 	    opacity: 0;
+	}
+	.sidebar_timer{		
+		margin: 10px 30px 10px auto;
+  		text-align: right;
 	}
 	.sidebar_2 .sidebar_info{
 		width: auto;
@@ -985,9 +990,6 @@
 	.time_table_small{
 		margin: auto;
 	}
-	.nxt_str {
-		width: 100%;
-	}
 	.menu_box_2 .menu {
 		flex-wrap: wrap;
 	}
@@ -1209,6 +1211,9 @@
 @media only screen and (max-width: 480px){
     .left_top_btn .buttons-black {
       margin-right: 0;
+    }
+    .sidebar_timer{
+    	display: none;
     }
     .change_table{
       text-align: center;

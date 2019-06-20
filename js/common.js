@@ -149,6 +149,22 @@ $(document).ready(function() {
 	});
 
 
+	// Кнопка таймера
+	document.querySelectorAll('.timerok').forEach(function(item){
+		function func(){
+			var t = new Date();
+			function timeFormatter(i){
+				return i = (i>=10) ? i : `0${i}`;
+			}
+			item.innerHTML = `${timeFormatter(t.getHours())}:${timeFormatter(t.getMinutes())}:${timeFormatter(t.getSeconds())}`;
+		}
+		func();
+		setInterval(func,1000);
+	})
+
+
+
+	// "Разиновость" таблицы иароглифов
 	var ieghpTableResize = function(){
 	    var arr = document.querySelectorAll('.ieghp-table');
 	    arr.forEach(function(item,i,arr){
