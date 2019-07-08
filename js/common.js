@@ -258,13 +258,7 @@ $(document).ready(function() {
 
 	ieghpTableResize();
 	window.addEventListener('resize',ieghpTableResize);
-
-
-	document.querySelectorAll('.input-box_required input').forEach(function(item){
-		item.addEventListener('focusout',function(){checkInput(event.target)});
-	});
 });
-
 
 
 
@@ -277,48 +271,64 @@ function formValidation(e){
 	inputBoxArr.forEach(function(item){
 		item.classList.remove('invalid')
 		item.querySelectorAll('input').forEach(function(n){
-			checkInput(n);
+			console.log(n.type, n.value);
+			item.classList.remove('invalid')
+			switch (n.type){
+				case 'text':
+				case 'tel':
+				case 'password':
+					failValidation(item,mainForm,n.value == '');
+					break;
+				case 'email':
+					failValidation(item,mainForm,!checkEmailValidation(n.value));
+					break;
+				case 'radio':
+				case 'checkbox':
+					var nName = n.name;
+					var nCounter = 0;
+					item.querySelectorAll('input[name="' + n.name + '"]').forEach(function(i){
+						if(i.checked) nCounter++;
+						console.log('radio: ' + i.value, nCounter);
+					});
+					failValidation(item,mainForm,!nCounter);
+					break;
+			}
 		});
+
 
 		item.querySelectorAll('select').forEach(function(n){
 			if(!n.options[n.selectedIndex].value) failValidation(item,mainForm);
 		});
 	});
 
-	//if(formFlag) mainForm.submit();	
+	if(formFlag) mainForm.submit();	
 };
 
 
-	
-	
 
+function checkInput(){
+	document.querySelectorAll('.input-box_required input[type="text"],.input-box_required input[type="tel"],.input-box_required input[type="email"]').forEach(function(item){
+		item.addEventListener('focusout',function(){func(event)});
+	})
 
-function checkInput(item){
-	var parentBox = item.closest('.input-box_required');
-	var parentForm = item.closest('form');
-	switch (item.type){
-		case 'text':
-		case 'password':
-			failValidation(parentBox,parentForm,item.value.length < 1 && !item.classList.contains('datepicker'));
-			break;
-		case 'tel':
-			failValidation(parentBox,parentForm,item.value.length < 6);
-			break;
-		case 'email':
-			failValidation(parentBox,parentForm,!checkEmailValidation(item.value));
-			break;
-		case 'radio':
-		case 'checkbox':
-			var nName = item.name;
-			var nCounter = 0;
-			item.querySelectorAll('input[name="' + item.name + '"]').forEach(function(i){
-				if(i.checked) nCounter++;
-				console.log('radio: ' + i.value, nCounter);
-			});
-			failValidation(parentBox,parentForm,!nCounter);
-			break;
+	function func(e){
+		var parentBox = e.target.closest('.input-box_required');
+		var parentForm = e.target.closest('form');
+		switch (e.target.type){
+			case 'text':
+			case 'password':
+				failValidation(parentBox,parentForm,e.target.value.length < 1 && !e.target.classList.contains('datepicker'));
+				break;
+			case 'tel':
+				failValidation(parentBox,parentForm,e.target.value.length < 6);
+				break;
+			case 'email':
+				failValidation(parentBox,parentForm,!checkEmailValidation(e.target.value));
+				break;
+		}
 	}
 };
+checkInput();
 
 
 function checkEmailValidation(email){
