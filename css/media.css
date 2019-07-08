@@ -392,8 +392,12 @@
 	    opacity: 0;
 	}
 	.sidebar_timer{		
-		margin: 10px 30px 10px auto;
-  		text-align: right;
+		margin: 18px auto 18px 10px;
+		font-size: 15px;
+		line-height: 22px;
+	}
+	.sidebar_timer .timerok{
+		height: 26px;
 	}
 	.sidebar_2 .sidebar_info{
 		width: auto;
@@ -463,6 +467,9 @@
 		margin: 10px 0;
 		margin-right: 40px;
 		text-align: right;
+	}
+	.sidebar_timer{
+		margin: 18px auto 18px 0;
 	}
 	.sidebar .sidebar_info .avatar img {
 		float: right;
@@ -1211,9 +1218,6 @@
 @media only screen and (max-width: 480px){
     .left_top_btn .buttons-black {
       margin-right: 0;
-    }
-    .sidebar_timer{
-    	display: none;
     }
     .change_table{
       text-align: center;
@@ -2333,6 +2337,7 @@
 @media screen and (max-width: 370px){
 	.sidebar .sidebar_nav .avatar h3{
     	margin: 0 4px 0 0;
+    	max-width: 110px;
 		font-size: 10px;
 	}
 	.square_high{

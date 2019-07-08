@@ -1089,6 +1089,9 @@ td.pmz {
   border: 2px solid #EA5E67;
   vertical-align: top; 
 }
+.right_block .sidebar_timer{
+  display: none;
+}
   .right_block .lins_2 {
   padding: 0 10px;
   font-size: 20px;
@@ -1671,8 +1674,7 @@ text-align: center;
 
 .sidebar_timer{
   display: block;
-  max-width: 120px;
-  margin: 10px auto;
+  margin: 10px 0;
   color: #fff;
   font-size: 20px;
   font-family: "Oswaldlight", sans-serif;
@@ -1685,8 +1687,8 @@ text-align: center;
 .sidebar_timer .timerok{
   display: inline-block;
   width: 100%;
+  /*max-width: 120px;*/
   height: 40px;
-  max-width: 120px;
   padding: 0 10px;
   background-color: transparent;
   text-align: center;

@@ -150,17 +150,26 @@ $(document).ready(function() {
 
 
 	// Кнопка таймера
-	document.querySelectorAll('.timerok').forEach(function(item){
-		function func(){
-			var t = new Date();
-			function timeFormatter(i){
-				return i = (i>=10) ? i : `0${i}`;
+	function timerMake(){
+		document.querySelectorAll('.timerok').forEach(function(item){
+			function func(){
+				var t = new Date();
+				function timeFormatter(i){
+					return i = (i>=10) ? i : `0${i}`;
+				}
+				if(document.body.offsetWidth>480){
+					item.innerHTML = `${timeFormatter(t.getHours())}:${timeFormatter(t.getMinutes())}:${timeFormatter(t.getSeconds())}`;
+				} else {
+					item.innerHTML = `${timeFormatter(t.getHours())}:${timeFormatter(t.getMinutes())}`;
+				}				
 			}
-			item.innerHTML = `${timeFormatter(t.getHours())}:${timeFormatter(t.getMinutes())}:${timeFormatter(t.getSeconds())}`;
-		}
-		func();
-		setInterval(func,1000);
-	})
+			func();
+			setInterval(func,1000);
+		})
+	};
+
+	timerMake();	
+	window.addEventListener('resize',timerMake);
 
 
 
