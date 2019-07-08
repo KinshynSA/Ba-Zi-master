@@ -65,6 +65,7 @@ $(document).ready(function() {
 	});
 
 
+	// Top menu
 	function topMenuPunktsDecor(){
 		document.querySelectorAll('.menu_box_2 .menu').forEach(function(item){
 			var parentWidth = item.offsetWidth;
@@ -98,7 +99,7 @@ $(document).ready(function() {
 		$('.body_slides').toggleClass('pause_slide');
 
 		var status = getCookie('sliderSwitch');
-		console.log(status,toggleStatus(status));
+		//console.log(status,toggleStatus(status));
 		setCookie('sliderSwitch', toggleStatus(status), {expires: 0, path: "/"});
 	});
 
@@ -108,7 +109,7 @@ $(document).ready(function() {
 
 	function sliderChekStatus(){
 		var status = getCookie('sliderSwitch');
-		console.log(+status);
+		//console.log(+status);
 		if(status == undefined){
 			setCookie('sliderSwitch', false, {expires: 0, path: "/"})
 		} else if(+status) $('.pause').addClass('play');
@@ -162,7 +163,6 @@ $(document).ready(function() {
 				item.style.minHeight = 'auto';
 				var computedStyle = getComputedStyle(item);
 				var currentHeight = parseFloat(computedStyle.height);
-				console.log(i,currentHeight);
 				minHeight = Math.max(minHeight, currentHeight);
 			});
 			arr.forEach(function(item,i,arr){
@@ -184,7 +184,11 @@ $(document).ready(function() {
 
 
 	if (document.getElementsByClassName('datepicker').length !== 0) {
-		$( ".datepicker" ).datepicker();
+		$( ".datepicker" ).datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: "-100:+0",
+                });
 
 		$('.additionalDt').click(function(){
 			$(this).siblings( ".datepicker" ).datepicker( "show" );
@@ -192,12 +196,26 @@ $(document).ready(function() {
 	}
 
 
-	// Опции отображения в сайдбаре
+	// Sidebar checkbox options
 	$('.sidebar-switcher').click(function(){
 		var c = this.dataset.option;
 		jQuery('.' + c + '').toggleClass('hidden');
 		if($('.box_calendar').length){
 			heightEqualize('.box_calendar');
+		}
+	});
+
+
+	//Phone input mask
+	document.querySelectorAll('input[type="tel"').forEach(function(item,i,arr){
+		item.onkeydown = function checkKeycode(event){
+		    var keycode;
+		    if(!event) var event = window.event;
+		    if (event.keyCode) keycode = event.keyCode; // IE
+		    else if(event.which) keycode = event.which; // all browsers
+		    if ((44 < keycode && keycode < 58)||(keycode == 187)||(keycode == 8)||(keycode == 37)||(keycode == 39)){} else {
+		        return false;
+		    }
 		}
 	});
 
@@ -226,7 +244,7 @@ $(document).ready(function() {
 
 
 
-	// "Разиновость" таблицы иароглифов
+	// table ierogliph resize
 	var ieghpTableResize = function(){
 	    var arr = document.querySelectorAll('.ieghp-table');
 	    arr.forEach(function(item,i,arr){
@@ -241,3 +259,94 @@ $(document).ready(function() {
 	ieghpTableResize();
 	window.addEventListener('resize',ieghpTableResize);
 });
+
+
+
+//Form validation
+function formValidation(e){
+	var mainForm = e.currentTarget.closest('form')
+	var inputBoxArr = mainForm.querySelectorAll('.input-box_required');
+	var formFlag = 1;
+
+	inputBoxArr.forEach(function(item){
+		item.classList.remove('invalid')
+		item.querySelectorAll('input').forEach(function(n){
+			console.log(n.type, n.value);
+			item.classList.remove('invalid')
+			switch (n.type){
+				case 'text':
+				case 'tel':
+				case 'password':
+					failValidation(item,mainForm,n.value == '');
+					break;
+				case 'email':
+					failValidation(item,mainForm,!checkEmailValidation(n.value));
+					break;
+				case 'radio':
+				case 'checkbox':
+					var nName = n.name;
+					var nCounter = 0;
+					item.querySelectorAll('input[name="' + n.name + '"]').forEach(function(i){
+						if(i.checked) nCounter++;
+						console.log('radio: ' + i.value, nCounter);
+					});
+					failValidation(item,mainForm,!nCounter);
+					break;
+			}
+		});
+
+
+		item.querySelectorAll('select').forEach(function(n){
+			if(!n.options[n.selectedIndex].value) failValidation(item,mainForm);
+		});
+	});
+
+	if(formFlag) mainForm.submit();	
+};
+
+
+
+function checkInput(){
+	document.querySelectorAll('.input-box_required input[type="text"],.input-box_required input[type="tel"],.input-box_required input[type="email"]').forEach(function(item){
+		item.addEventListener('focusout',function(){func(event)});
+	})
+
+	function func(e){
+		var parentBox = e.target.closest('.input-box_required');
+		var parentForm = e.target.closest('form');
+		switch (e.target.type){
+			case 'text':
+			case 'password':
+				failValidation(parentBox,parentForm,e.target.value.length < 1 && !e.target.classList.contains('datepicker'));
+				break;
+			case 'tel':
+				failValidation(parentBox,parentForm,e.target.value.length < 6);
+				break;
+			case 'email':
+				failValidation(parentBox,parentForm,!checkEmailValidation(e.target.value));
+				break;
+		}
+	}
+};
+checkInput();
+
+
+function checkEmailValidation(email){
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	if(reg.test(email) == false) {
+    	return false;
+   }
+   return true;
+};
+
+
+function failValidation(item,parentItem,condition){
+	item.classList.remove('invalid');
+	parentItem.classList.remove('invalid');
+
+	if(condition){
+		item.classList.add('invalid');
+		parentItem.classList.add('invalid');
+		formFlag = 0;
+	}
+};

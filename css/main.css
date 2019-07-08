@@ -2519,6 +2519,7 @@ select {
   width: 80px;
   height: 20px;
   color: #000;
+  border: none;
   border-radius: 0;
   background-color: #ccc; 
   -webkit-appearance:none;
@@ -3165,13 +3166,38 @@ td.td_p_cus {
   font-size: 12px;
 }
 
-.pr_avatar img {
+/*.pr_avatar img {
+  width: 100%;
+  height: 104px;
   max-width: 104px;
   margin-bottom: 5px;
   border-radius: 50%;
   border: 1px solid #4a4a4a;
   padding: 2px;
   
+}*/
+.prof_pic{
+  position: relative;
+  width: 100%;
+  max-width: 104px;
+  min-width: 104px;
+  padding-top: 100%;
+  margin-bottom: 7px;
+}
+.prof_pic img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid #4a4a4a;
+  box-sizing: border-box;
 }
 
 .pr_info .profile_inp {
@@ -3188,7 +3214,7 @@ td.td_p_cus {
 
 .profile_inp li {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 10px;
   padding: 5px 10px;
   font-size: 12px; 
@@ -3199,16 +3225,34 @@ td.td_p_cus {
 }
 
 .pr_descr {
+  display: flex;
+  align-items: center;
   width: 140px;
+  min-width: 140px;
+  margin-right: 13px;
+  border-right: 1px solid #000;
   text-transform: uppercase;
+}
+.profile_inp li.invalid .pr_descr{
+  color: #ea5e68;
+  border-right: 2px solid #ea5e68;
+}
+.profile_inp li.invalid input{
+  color: #ea5e68;  
 }
 
 .profile_inp input{
   background: transparent;
   border: none;
-  padding-left: 13px;
-  border-left: 1px solid #000;
 }
+
+.profile_inp select{
+  background-color: transparent;
+}
+.profile_inp select option{
+  background-color: #cccccc;
+}
+
 
 .pr_info {
   width: 400px;
@@ -3230,11 +3274,6 @@ td.td_p_cus {
   right: -25px;
 }
 
-.sex_prof {
-  padding-left: 13px;
-  border-left: 1px solid #000;
-}
-
 .sex_prof input[type="radio"] + label{
   padding-top: 3px;
 }
@@ -3248,11 +3287,7 @@ td.td_p_cus {
   font-size: 12px;
 }
 
-.exp_prof {
-  padding-left: 13px;
-  border-left: 1px solid #000;
-  margin-left: 53px;
-}
+.exp_prof {}
 
 .exp_prof input[type="radio"]:checked + label:after, input[type="checkbox"]:checked + label:after {
   background-color: #ea5e68;
@@ -3299,6 +3334,7 @@ input.dolg_shir {
   border: 1px solid #979797;
   background-color: #fff;
   margin-right: 3px;
+  text-align: center;
 }
 
 input.dolg_shir::placeholder {
