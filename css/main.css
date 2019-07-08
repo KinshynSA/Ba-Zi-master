@@ -565,15 +565,12 @@ footer {
   }
   footer .pause:hover,
   footer .play:hover {
-    background-image: url(../img/bz_play.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transform: scale(1.1);
   }
-  footer .play:hover {
-    background-image: url(../img/bz_pauza.svg);
-  }
+  footer .play:hover {}
   footer .mic:hover {
     transform: scale(1.1);
   }

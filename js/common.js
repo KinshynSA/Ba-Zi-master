@@ -96,7 +96,60 @@ $(document).ready(function() {
 	$('.pause').on('click', function() {
 		$('.pause').toggleClass('play');
 		$('.body_slides').toggleClass('pause_slide');
+
+		var status = getCookie('sliderSwitch');
+		console.log(status,toggleStatus(status));
+		setCookie('sliderSwitch', toggleStatus(status), {expires: 0, path: "/"});
 	});
+
+	function toggleStatus(n){
+		return +n ? n=0 : n=1;
+	}
+
+	function sliderChekStatus(){
+		var status = getCookie('sliderSwitch');
+		console.log(+status);
+		if(status == undefined){
+			setCookie('sliderSwitch', false, {expires: 0, path: "/"})
+		} else if(+status) $('.pause').addClass('play');
+	}
+	sliderChekStatus();
+
+	function getCookie(name) {
+	  var matches = document.cookie.match(new RegExp(
+	    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+	  ));
+	  return matches ? decodeURIComponent(matches[1]) : undefined;
+	}
+
+	function setCookie(name, value, options) {
+	  options = options || {};
+
+	  var expires = options.expires;
+
+	  if (typeof expires == "number" && expires) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + expires * 1000);
+	    expires = options.expires = d;
+	  }
+	  if (expires && expires.toUTCString) {
+	    options.expires = expires.toUTCString();
+	  }
+
+	  value = encodeURIComponent(value);
+
+	  var updatedCookie = name + "=" + value;
+
+	  for (var propName in options) {
+	    updatedCookie += "; " + propName;
+	    var propValue = options[propName];
+	    if (propValue !== true) {
+	      updatedCookie += "=" + propValue;
+	    }
+	  }
+
+	  document.cookie = updatedCookie;
+	}
 
 	
 	// align items to height (start)
