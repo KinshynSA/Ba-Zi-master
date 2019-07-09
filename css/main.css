@@ -1651,11 +1651,10 @@ text-align: center;
     margin-bottom: 9px; }
 
 .sidebar_nav_close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  display: none;
+  top: 18px;
   width: 24px;
-  margin: 0;
+  margin: 0 36px 0 20px;
   height: 24px; }
   .sidebar_nav_close .line_menu {
     position: absolute;
@@ -1719,11 +1718,15 @@ text-align: center;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.8s linear; }
+  .sidebar .avatar{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
   .sidebar .sidebar_info .avatar {
     margin-top: 22px; }
     .sidebar .sidebar_info .avatar:after {
-      display: none; }
-    .sidebar .sidebar_nav .avatar h3 {
       display: none; }
   .sidebar .sidebar_box {
     margin: 0 auto;
@@ -3638,6 +3641,12 @@ form.nes_new_form input[type="time"] {
   justify-content: space-between;
   height: 100%;
   overflow-y: hidden;
+}
+.sidebar_info .sidebar_nav{
+  display: flex;
+}
+.sidebar_info .sidebar_nav .sidebar_timer{
+  display: none;
 }
 
 

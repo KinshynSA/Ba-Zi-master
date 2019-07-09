@@ -266,9 +266,6 @@
 		width: 240px;
 		min-width: 240px;
 	}
-	.sidebar_nav_close {
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 768px){
@@ -373,6 +370,7 @@
 	.sidebar .sidebar_nav{
 		display: flex;
   		justify-content: space-between;
+  		align-items: flex-start;
 		overflow: hidden;
     	transition: all 0.2s ease-in-out;
 	}
@@ -391,14 +389,30 @@
 	    height: 0;
 	    opacity: 0;
 	}
-	.sidebar_timer{		
-		margin: 18px auto 18px 10px;
-		font-size: 15px;
-		line-height: 22px;
+	.sidebar_2 .sidebar_info .sidebar_nav{
+		width: auto;
+		height: 60px;
+		opacity: 1;
+	}
+	.sidebar_2 .sidebar_nav_close{
+		display: inline-block;
+	}
+	.sidebar_info .sidebar_nav .sidebar_timer{
+		display: block;
+	}
+	.sidebar_timer{
+		width: 120px;
+		height: 30px;
+		margin: 15px auto 15px 10px;
+		font-size: 16px;
+		line-height: 26px;
 	}
 	.sidebar_timer .timerok{
-		height: 26px;
+		height: 100%;
 	}
+	.sidebar_grid_box .sidebar_timer{
+		display: none;
+	}	
 	.sidebar_2 .sidebar_info{
 		width: auto;
 		height: auto;
@@ -409,9 +423,10 @@
 		margin: 9px 20px 18px;
 		display: inline-block;
 	}
+	.sidebar .avatar{
+		flex-direction: row;
+	}
 	.sidebar .sidebar_nav .avatar {
-		float: right;
-		display: inline-block;
 		width: auto;
 		margin: 10px 0;
 		margin-right: 40px;
@@ -457,26 +472,17 @@
 	.sidebar .sidebar_info .sidebar_box + img {
 		display: none;
 	}
-	.sidebar_nav_close {
-		right: initial;
-		top: 18px;
-		left: 20px;
-	}
 	.sidebar .sidebar_info .avatar {
 		width: auto;
 		margin: 10px 0;
 		margin-right: 40px;
 		text-align: right;
 	}
-	.sidebar_timer{
-		margin: 18px auto 18px 0;
-	}
 	.sidebar .sidebar_info .avatar img {
-		float: right;
+		order: 2;
 	}
 	.sidebar .sidebar_info .avatar h3 {
-		margin: 14px 15px 14px 0;
-		display: inline-block;
+		order: 1;
 	}
 	.sidebar .sidebar_info .sidebar_box_bottom {
 		display: none;
@@ -1216,6 +1222,13 @@
 }
 
 @media only screen and (max-width: 480px){
+	.sidebar_timer{
+		width: 60px;
+		margin-left: 0;
+	}
+	.sidebar_nav_close{
+		margin-right: 24px;
+	}
     .left_top_btn .buttons-black {
       margin-right: 0;
     }
