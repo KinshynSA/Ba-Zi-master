@@ -261,14 +261,18 @@ $(document).ready(function() {
 
 
 	document.querySelectorAll('.input-box_required input').forEach(function(item){
-		item.addEventListener('focusout',function(){checkInput(event.target)});
+		if(item.type=='checkbox' || item.type=='radio'){
+			item.addEventListener('click',function(){checkInput(event.target)})
+		} else {
+			item.addEventListener('focusout',function(){checkInput(event.target)})
+		}
 	});
 });
 
 
 
 
-//Form validation
+//Form validation start
 function formValidation(e){
 	var mainForm = e.currentTarget.closest('form')
 	var inputBoxArr = mainForm.querySelectorAll('.input-box_required');
@@ -277,11 +281,11 @@ function formValidation(e){
 	inputBoxArr.forEach(function(item){
 		item.classList.remove('invalid')
 		item.querySelectorAll('input').forEach(function(n){
-			checkInput(n);
+			checkInput(n,formFlag);
 		});
 
 		item.querySelectorAll('select').forEach(function(n){
-			if(!n.options[n.selectedIndex].value) failValidation(item,mainForm);
+			failValidation(item,mainForm,!n.options[n.selectedIndex].value,flag);
 		});
 	});
 
@@ -289,33 +293,29 @@ function formValidation(e){
 };
 
 
-	
-	
-
-
-function checkInput(item){
+function checkInput(item,flag){
 	var parentBox = item.closest('.input-box_required');
 	var parentForm = item.closest('form');
 	switch (item.type){
 		case 'text':
 		case 'password':
-			failValidation(parentBox,parentForm,item.value.length < 1 && !item.classList.contains('datepicker'));
+			failValidation(parentBox,parentForm,item.value.length < 1 && !item.classList.contains('datepicker'),flag);
 			break;
 		case 'tel':
-			failValidation(parentBox,parentForm,item.value.length < 6);
+			failValidation(parentBox,parentForm,item.value.length < 6,flag);
 			break;
 		case 'email':
-			failValidation(parentBox,parentForm,!checkEmailValidation(item.value));
+			failValidation(parentBox,parentForm,!checkEmailValidation(item.value),flag);
 			break;
 		case 'radio':
 		case 'checkbox':
 			var nName = item.name;
 			var nCounter = 0;
-			item.querySelectorAll('input[name="' + item.name + '"]').forEach(function(i){
+			parentBox.querySelectorAll('input[name="' + item.name + '"]').forEach(function(i){
 				if(i.checked) nCounter++;
-				console.log('radio: ' + i.value, nCounter);
+				//console.log('radio: ' + i.value, nCounter);
 			});
-			failValidation(parentBox,parentForm,!nCounter);
+			failValidation(parentBox,parentForm,!nCounter,flag);
 			break;
 	}
 };
@@ -330,13 +330,14 @@ function checkEmailValidation(email){
 };
 
 
-function failValidation(item,parentItem,condition){
+function failValidation(item,parentItem,condition,flag){
 	item.classList.remove('invalid');
 	parentItem.classList.remove('invalid');
 
 	if(condition){
 		item.classList.add('invalid');
 		parentItem.classList.add('invalid');
-		formFlag = 0;
+		flag = 0;
 	}
 };
+//Form validation end
