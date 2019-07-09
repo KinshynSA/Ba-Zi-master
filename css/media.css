@@ -373,6 +373,7 @@
 	.sidebar .sidebar_nav{
 		display: flex;
   		justify-content: space-between;
+  		align-items: flex-start;
 		overflow: hidden;
     	transition: all 0.2s ease-in-out;
 	}
@@ -384,20 +385,25 @@
 	}
 	.sidebar_2 {
 		z-index: 3;
-		background-color: rgba(0,0,0,0.3);
+		background-color: rgba(0,0,0,0.7);
 	}
-	.sidebar_2 .sidebar_nav{
-		width: 0;
-	    height: 0;
-	    opacity: 0;
+	.sidebar .sidebar_info .sidebar_timer{
+		display: none;
 	}
-	.sidebar_timer{		
-		margin: 18px auto 18px 10px;
-		font-size: 15px;
-		line-height: 22px;
+	.sidebar_2 .sidebar_nav_button{
+		display: none;
+	}
+	.sidebar_2 .sidebar_nav_close{
+		display: inline-block;
+	}
+	.sidebar_timer{
+		width: 120px;
+		margin: 15px auto 15px 10px;
+		font-size: 16px;
+		line-height: 26px;
 	}
 	.sidebar_timer .timerok{
-		height: 26px;
+		height: 30px;
 	}
 	.sidebar_2 .sidebar_info{
 		width: auto;
@@ -411,7 +417,8 @@
 	}
 	.sidebar .sidebar_nav .avatar {
 		float: right;
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
 		width: auto;
 		margin: 10px 0;
 		margin-right: 40px;
@@ -427,10 +434,6 @@
 		height: initial;
 	}
 	.sidebar .sidebar_info {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
 		background-color: rgba(0,0,0,0.7);
 	}
 	.sidebar .sidebar_info .sidebar_box_1 {
@@ -456,27 +459,6 @@
 	}
 	.sidebar .sidebar_info .sidebar_box + img {
 		display: none;
-	}
-	.sidebar_nav_close {
-		right: initial;
-		top: 18px;
-		left: 20px;
-	}
-	.sidebar .sidebar_info .avatar {
-		width: auto;
-		margin: 10px 0;
-		margin-right: 40px;
-		text-align: right;
-	}
-	.sidebar_timer{
-		margin: 18px auto 18px 0;
-	}
-	.sidebar .sidebar_info .avatar img {
-		float: right;
-	}
-	.sidebar .sidebar_info .avatar h3 {
-		margin: 14px 15px 14px 0;
-		display: inline-block;
 	}
 	.sidebar .sidebar_info .sidebar_box_bottom {
 		display: none;
@@ -1216,6 +1198,10 @@
 }
 
 @media only screen and (max-width: 480px){
+	.sidebar_timer{
+		width: 60px;
+		margin-left: 0;
+	}
     .left_top_btn .buttons-black {
       margin-right: 0;
     }
@@ -1346,9 +1332,6 @@
 		margin-bottom: 14px;
 	}
 	.sidebar .sidebar_nav .avatar {
-		margin-right: 20px;
-	}
-	.sidebar .sidebar_info .avatar {
 		margin-right: 20px;
 	}
 
