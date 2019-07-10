@@ -413,45 +413,59 @@ section {
   width: 90%;
   margin: 0 auto 20px;
   padding: 0; }
-  .info_box form input,
+  .info_box form input[type='submit'],
   .info_box form button {
     display: block;
     width: 100%;
     margin-bottom: 20px;
     padding: 12px 10px;
+    background-color: rgba(20, 20, 20, 0.3);
     font-size: 21px;
     font-family: "Oswaldlight", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
-    background-color: rgba(20, 20, 20, 0.3);
+    color: #E95E68; 
+    letter-spacing: 0.1em;
     border: 2px solid #fff;
     transition: 0.8s; }
-    .info_box form input:hover,
+    .info_box form input[type='submit']:hover,
     .info_box form button:hover {
       color: #fff;
       background-color: rgba(234, 94, 104, 0.2); }
-    .info_box form input::-webkit-input-placeholder,
+    .info_box form input[type='submit']::-webkit-input-placeholder,
     .info_box form button::-webkit-input-placeholder {
       color: #fff; }
-    .info_box form input::-moz-placeholder,
+    .info_box form input[type='submit']::-moz-placeholder,
     .info_box form button::-moz-placeholder {
       color: #fff; }
-    .info_box form input:-moz-placeholder,
+    .info_box form input[type='submit']:-moz-placeholder,
     .info_box form button:-moz-placeholder {
       color: #fff; }
-    .info_box form input:-ms-input-placeholder,
+    .info_box form input[type='submit']:-ms-input-placeholder,
     .info_box form button:-ms-input-placeholder {
       color: #fff; }
-    .info_box form input:focus,
+    .info_box form input[type='submit']:focus,
     .info_box form button:focus {
       background-color: rgba(0, 0, 0, 0.4);
       outline: none; }
-  .info_box form input[type="submit"],
-  .info_box form button {
-    color: #E95E68; 
-    letter-spacing: 0.1em;
-  }
+      .info_box form .form-alert{
+        display: none;
+        padding: 8px 4px;
+        margin: -10px auto 20px;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1;
+        text-align: center;
+      }
+      .info_box form .form-alert_fail{
+        background-color: #ea5e68;
+      }
+      body form .form-alert{
+        display: none;
+      }
+      body form.invalid .form-alert{
+        display: block;
+      }
   .info_box .info_box-footer{
     position: relative;
     z-index: 200;
@@ -3154,6 +3168,7 @@ td.td_p_cus {
 }
 
 .profile_main_th {
+  position: relative;
   display: flex;
   max-width: 100%;
 }
@@ -3208,7 +3223,6 @@ td.td_p_cus {
   border-top: 1px solid #979797;
   padding-left: 0;
   margin-left: 40px;
-  padding-top: 10px;
 }
 
 .profile_inp {
@@ -3218,13 +3232,30 @@ td.td_p_cus {
 .profile_inp li {
   display: flex;
   align-items: stretch;
-  margin-bottom: 10px;
+  margin-top: 10px;
   padding: 5px 10px;
   font-size: 12px; 
 }
 
 .profile_inp li:nth-child(even) {
   background: #f0f0f0;
+}
+
+
+.invalid .profile_main_th{
+  margin-top: 30px;
+}
+.invalid .profile_inp{
+  position: relative;
+}
+.invalid .profile_inp .form-alert{
+  position: absolute;
+  top: 0;
+  display: flex;
+  margin-top: 0;
+  color: #ea5e68;
+  font-family: Oswaldmedium, sans-serif;
+  transform: translateY(calc(-100% - 10px));
 }
 
 .pr_descr {
@@ -3236,6 +3267,7 @@ td.td_p_cus {
   border-right: 1px solid #000;
   text-transform: uppercase;
 }
+.profile_inp li.form-alert_fail .pr_descr,
 .profile_inp li.invalid .pr_descr{
   color: #ea5e68;
   border-right: 2px solid #ea5e68;
@@ -4054,14 +4086,51 @@ p.mb_f {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 21px;
 }
 .bzi .cal_item{
-  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  width: 33%;
   margin-bottom: 12px;
 }
+.bzi .cal_item-half{
+  width: 49%;
+}
+.bzi .cal_item-full{
+  width: 100%;
+}
 .bzi .cal_item label{
+  display: flex;
+  align-items: center;
   width: 100%;
   text-align: left;
+}
+.cal_item_time{
+  min-width: 80px;
+  margin-right: 20px;
+}
+.cal_item_city{
+  width: 110px;
+}
+.bzi .cal_item_grad{
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 4px;
+  background-color: #cccccc;
+  color: #000;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  text-align: center;
+  border: none;
+}
+.bzi .cal_item_grad:hover{
+  color: #000;
+  background-color: #cccccc;
 }
 
 

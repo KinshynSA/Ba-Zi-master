@@ -180,10 +180,15 @@
                                     <img src="./img/profile_pic.png" alt="">
                             </div>
                            <a href="#">заменить аватарку</a> 
-			</div>
+						</div>
 			
                         <div class="pr_info">
                             <ul class="profile_inp">
+                                <li class="form-alert form-alert_fail">
+                                    <div class="pr_descr">
+                                    </div>
+                                    <span>проверьте информацию, обязательную для заполнения</span>
+                                </li>
                                 <li class="input-box_required">
                                     <div class="pr_descr">
                                         Логин *
@@ -435,7 +440,7 @@
 					    </div>
 				    </li>
 			    </ul>
-			    <a class="btn_black_big" onclick="event.preventDefault(); formValidation(event);">СОХРАНИТЬ</a>
+			    <a class="btn_black_big" onclick="event.preventDefault(); formValidator.validateForm(event);">СОХРАНИТЬ</a>
 			    <p class="required_p">* обязятельно для заполнения</p>
 		    </div>
         </div>

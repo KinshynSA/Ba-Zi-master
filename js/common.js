@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
 
     $('.but_right').click(function(){
@@ -220,7 +222,7 @@ $(document).ready(function() {
 	});
 
 
-	// Кнопка таймера
+	// Timer button
 	function timerMake(){
 		document.querySelectorAll('.timerok').forEach(function(item){
 			function func(){
@@ -260,84 +262,95 @@ $(document).ready(function() {
 	window.addEventListener('resize',ieghpTableResize);
 
 
-	document.querySelectorAll('.input-box_required input').forEach(function(item){
-		if(item.type=='checkbox' || item.type=='radio'){
-			item.addEventListener('click',function(){checkInput(event.target)})
-		} else {
-			item.addEventListener('focusout',function(){checkInput(event.target)})
-		}
-	});
+	//Form validation
+	formValidator.prepare();
 });
 
 
-
-
+	
 //Form validation start
-function formValidation(e){
-	var mainForm = e.currentTarget.closest('form')
-	var inputBoxArr = mainForm.querySelectorAll('.input-box_required');
-	var formFlag = 1;
+function formValidator(){
+	var self = this;
 
-	inputBoxArr.forEach(function(item){
-		item.classList.remove('invalid')
-		item.querySelectorAll('input').forEach(function(n){
-			checkInput(n,formFlag);
-		});
+	this.formFlag = 1;
 
-		item.querySelectorAll('select').forEach(function(n){
-			failValidation(item,mainForm,!n.options[n.selectedIndex].value,flag);
-		});
-	});
-
-	//if(formFlag) mainForm.submit();	
-};
-
-
-function checkInput(item,flag){
-	var parentBox = item.closest('.input-box_required');
-	var parentForm = item.closest('form');
-	switch (item.type){
-		case 'text':
-		case 'password':
-			failValidation(parentBox,parentForm,item.value.length < 1 && !item.classList.contains('datepicker'),flag);
-			break;
-		case 'tel':
-			failValidation(parentBox,parentForm,item.value.length < 6,flag);
-			break;
-		case 'email':
-			failValidation(parentBox,parentForm,!checkEmailValidation(item.value),flag);
-			break;
-		case 'radio':
-		case 'checkbox':
-			var nName = item.name;
-			var nCounter = 0;
-			parentBox.querySelectorAll('input[name="' + item.name + '"]').forEach(function(i){
-				if(i.checked) nCounter++;
-				//console.log('radio: ' + i.value, nCounter);
+	this.prepare = function(){
+		document.querySelectorAll('.input-box_required').forEach(function(box){
+			box.querySelectorAll('input').forEach(function(item){
+				if(item.type == 'radio' || item.type == 'checkbox'){
+					item.addEventListener('click',checkInput);
+				} else {
+					item.addEventListener('focusout',checkInput);
+					item.addEventListener('keydown',checkInput);
+				}
 			});
-			failValidation(parentBox,parentForm,!nCounter,flag);
-			break;
+		});
 	}
-};
 
 
-function checkEmailValidation(email){
-	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-	if(reg.test(email) == false) {
-    	return false;
-   }
-   return true;
-};
+	function checkInput(){
+		var item = this;
 
-
-function failValidation(item,parentItem,condition,flag){
-	item.classList.remove('invalid');
-	parentItem.classList.remove('invalid');
-
-	if(condition){
-		item.classList.add('invalid');
-		parentItem.classList.add('invalid');
-		flag = 0;
+		switch (item.type){
+			case 'text':
+			case 'password':
+				failValidation(item,item.value.length < 1 && !item.classList.contains('datepicker'));
+				break;
+			case 'tel':
+				failValidation(item,item.value.length < 6);
+				break;
+			case 'email':
+				failValidation(item,!checkEmailValidation(item.value));
+				break;
+			case 'radio':
+			case 'checkbox':
+				var nCounter = 0;
+				item.closest('.input-box_required').querySelectorAll('input[name="' + item.name + '"]').forEach(function(i){
+					if(i.checked) nCounter++;
+					//console.log('radio: ' + i.value, nCounter);
+				});
+				failValidation(item,!nCounter);
+				break;
+		}
 	}
+
+	function failValidation(item,condition){
+		item.closest('.input-box_required').classList.remove('invalid')
+
+		if(condition){
+			item.closest('.input-box_required').classList.add('invalid');
+			self.formFlag = 0;
+		}
+		//console.log(self.formFlag,item);
+	}
+
+	function checkEmailValidation(email){
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		if(reg.test(email) == false) {
+	    	return false;
+	   }
+	   return true;
+	};
+
+	this.validateForm = function(e){
+		self.formFlag = 1;
+		var butt = e.target;
+		var parentForm = butt.closest('form');
+		parentForm.classList.remove('invalid');
+
+		parentForm.querySelectorAll('.input-box_required').forEach(function(box){
+			box.querySelectorAll('input').forEach(function(item){
+				checkInput.call(item);
+			});
+		});
+
+		if(self.formFlag){
+			console.log('da');
+		} else {
+			parentForm.classList.add('invalid');
+			console.log('net');
+		}
+	};
 };
-//Form validation end
+var formValidator = new formValidator();
+// Form valiadtion end

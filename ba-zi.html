@@ -304,14 +304,14 @@
 															<form action="">
 										
 																<div class="form_box_bg">
-																	<p class="sex">
+																	<p class="sex input-box_required">
 																		<span>ПОЛ</span>
 																		<input type="radio" name="sex" id="male" value="male"><label for="male">МУЖСКОЙ</label>
 																		<input type="radio" name="sex" id="female" value="female"><label for="female" class="female">ЖЕНСКИЙ</label>
 																	</p>
 
 																	<div class="cal_date">
-																		<span>
+																		<span class="input-box_required">
 																			<label for="date">Дата</label> <input name="date" type="text" class="datepicker" placeholder="ДЕНЬ / МЕСЯЦ / ГОД">
 																			<svg class="additionalDt" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 																				<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -351,35 +351,46 @@
 																				</g>
 																				</svg>
 																			</span>
-																			<span>
+																			<span class="input-box_required">
 																				<label for="time">время</label>
 																				<input type="time" name="time" value="00:00" id="time-pick">
 																			</span>
 																	</div>
 
 																	<div class="cal_block">
-																		<div class="cal_item">
-																			<input type="checkbox" id="tn"><label for="tn">ВРЕМЯ НЕИЗВЕСТНО</label>
-																		</div>
-																		<div class="cal_item">
-																			<input type="checkbox" id="ts"><label for="ts">ИСПОЛЬЗОВАТЬ СОЛНЕЧНОЕ ВРЕМЯ ДЛЯ КАЛЬКУЛЯТОРА</label>
-																		</div>
-																		<div class="cal_item">
-																			<label>РАЗНИЦА С ГРИНВИЧЕМ</label>
-																			<select>
+																		<div class="cal_item cal_item-half">
+																			<select class="cal_item_time">
 																				<option>UTC+2</option>
 																				<option>UTC+3</option>
 																				<option>UTC+4</option>
 																			</select>
+																			<label>РАЗНИЦА С ГРИНВИЧЕМ</label>
+																		</div>
+																		<div class="cal_item cal_item-half">
+																			<input type="checkbox" id="tn"><label for="tn">ВРЕМЯ НЕИЗВЕСТНО</label>
+																		</div>
+																		<div class="cal_item cal_item-full">
+																			<input type="checkbox" id="tp"><label for="tp">ИСПОЛЬЗОВАТЬ ПОПРАВКУ НА ПЕКИНСКОЕ ВРЕМЯ</label>
 																		</div>
 																		<div class="cal_item">
-																			<input type="checkbox" id="tp"><label for="tp">ИСПОЛЬЗОВАТЬ ПОПРАВКУ НА ПЕКИНСКОЕ ВРЕМЯ</label>
+																			<input type="checkbox" id="ts"><label for="ts">СОЛНЕЧНОЕ ВРЕМЯ</label>
+																		</div>
+																		<div class="cal_item input-box_required">
+																			<select class="cal_item_city">
+																				<option value disabled selected>Город</option>
+																				<option value="1">Киев</option>
+																				<option value="2">Нурслултан</option>
+																			</select>
+																		</div>
+																		<div class="cal_item">
+																			<input type="text" class="cal_item_grad" placeholder="00">°
+																			<input type="text" class="cal_item_grad" placeholder="00">′
 																		</div>
 																	</div>																			
 																																																
 																</div>
-																<input type="submit" value="РАССЧИТАТЬ ЦИ МЭНЬ">
-										
+																<input type="submit" onclick="event.preventDefault(); formValidator.validateForm(event);" value="РАССЧИТАТЬ ЦИ МЭНЬ">
+																<div class="form-alert form-alert_fail">проверьте информацию, обязательную для заполнения</div>
 															</form>				
 														</div>
 										</div>
