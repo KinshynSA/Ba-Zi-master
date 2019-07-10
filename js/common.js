@@ -342,10 +342,15 @@ function formValidator(){
 			box.querySelectorAll('input').forEach(function(item){
 				checkInput.call(item);
 			});
+
+			box.querySelectorAll('select').forEach(function(item){
+				failValidation(item,!item.options[item.selectedIndex].value);
+			});
 		});
 
 		if(self.formFlag){
 			console.log('da');
+			//parentForm.submit();
 		} else {
 			parentForm.classList.add('invalid');
 			console.log('net');

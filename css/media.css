@@ -1157,6 +1157,12 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	.invalid .profile_main_th{
+		margin-top: 0;
+	}
+	.invalid .pr_info{
+		margin-top: 50px;
+	}
 	.pr_info .profile_inp {
 		margin-left: 0;
 	}
