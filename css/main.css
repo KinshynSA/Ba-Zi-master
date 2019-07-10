@@ -4079,8 +4079,32 @@ p.mb_f {
 .bzi .form_box form{
   margin-bottom: 0;
 }
+.bzi .form_box .sex{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .bzi .form_box .sex label{
-  width: 39%;
+  width: calc(49% - 58px);
+}
+.info_box form .sex-cards{
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  max-width: 80px;
+  margin-bottom: 5px;
+  padding: 0px 2px;
+  color: #ffffff;
+  font-size: 9px;
+  font-family: Oswaldlight, sans-serif;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+}
+.info_box form .sex-cards:hover{
+  background-color: rgba(234, 94, 104, 0.2);
+  color: #ffffff;
 }
 .bzi .cal_block{
   display: flex;

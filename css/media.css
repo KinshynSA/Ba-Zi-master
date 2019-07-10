@@ -1272,6 +1272,9 @@
 	.form_box .form_box_bg .sex .female {
 		margin-left: 5px;
 	}
+	.bzi .form_box .form_box_bg .sex .female{
+		margin-left: 0;
+	}
 	.menu_box .menu li p,
 	.info  {
 		display: none;
@@ -1725,6 +1728,19 @@
 	}
 	.bzi .content_block{
 		overflow-x: scroll;
+	}
+	.bzi .form_box .sex{
+		flex-wrap: wrap;
+	}
+	.bzi .form_box .sex label{
+		width: calc(49% - 17px);
+		margin-bottom: 10px;
+	}
+	.bzi .cal_item{
+		width: 100%;
+	}
+	.bzi .cal_item_grad:first-of-type{
+		margin-left: 0;
 	}
 	.eight .content_block{
 		padding: 65px 20px 20px;
