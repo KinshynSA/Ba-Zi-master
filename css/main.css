@@ -457,18 +457,6 @@ section {
     .info_box form button:focus {
       background-color: rgba(0, 0, 0, 0.4);
       outline: none; }
-      .info_box form .form-alert{
-        display: none;
-        padding: 8px 4px;
-        margin: -10px auto 20px;
-        color: #ffffff;
-        font-size: 14px;
-        line-height: 1;
-        text-align: center;
-      }
-      .info_box form .form-alert_fail{
-        background-color: #ea5e68;
-      }
       body form .form-alert{
         display: none;
       }
@@ -1329,6 +1317,19 @@ text-align: center;
     padding: 19px 0;
     width: 280px;
     margin-right: 25px;
+}
+
+.block_pop form .form-alert{
+  display: none;
+  padding: 8px 4px;
+  margin: -10px auto 20px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+.block_pop form .form-alert_fail{
+  background-color: #ea5e68;
 }
 
 .cell7:before{

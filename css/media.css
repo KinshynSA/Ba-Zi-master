@@ -785,6 +785,7 @@
 	}
 	.info p{
 		position: relative;
+		max-width: 190px;
 	}
 	.info p br{
 		display: none;
@@ -844,7 +845,6 @@
 		column-count:2; 
 	}
 	.info p {
-		max-width: 190px;
 		padding-top: 0;
 		font-size: 12px;
 	}
