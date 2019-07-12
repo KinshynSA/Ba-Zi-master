@@ -544,6 +544,11 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
   }
+  .footer-main-block:after{
+    content: "";
+    display: block;
+    width: 40px;
+  }
   footer p {
     text-align: center; }
     .footer-copyright{
@@ -2702,6 +2707,92 @@ input[type="checkbox"]:checked + label:after {
   justify-content: space-between;
 }
 
+
+
+.footer-shablon-2_special{
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 1280px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 25px;
+  padding-bottom: 30px;
+  transform: translate(-50%,100%);
+  transition: 0.6s ease-in-out;
+}
+.footer-shablon-2_special.active{
+  transform: translate(-50%,0);
+}
+.footer-shablon-2_special:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to left, #9b9b9b 42px, transparent 42px, transparent 88px, #9b9b9b 88px);
+}
+.footer-shablon-2_special .footer_butt{
+  width: 50px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 100;
+  background-blend-mode: multiply;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #9b9b9b;
+  border-bottom: none;
+  cursor: pointer;
+  transform: translateY(-100%);
+}
+.footer-shablon-2_special .footer_butt:hover{}
+.footer-shablon-2_special .footer_butt:before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  border-bottom: 7px solid #9b9b9b;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  transform: translate(-50%,0);
+  transition: all 0.2s ease-in-out;
+}
+.footer-shablon-2_special .footer_butt:after{
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  border-top: 7px solid #9b9b9b;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  transform: translate(-50%,0);
+  transition: all 0.2s ease-in-out;
+}
+.footer-shablon-2_special .footer_butt:hover:before{
+  border-bottom: 7px solid #ffffff;
+}
+.footer-shablon-2_special .footer_butt:hover:after{
+  border-top: 7px solid #ffffff;
+}
+.footer-shablon-2_special .first_cont_foot{
+  align-items: center;
+}
+.footer-shablon-2_special .logo_foot{
+  margin-top: 0;
+}
+.footer-shablon-2_special .foots .menu_foots{
+  margin: 0;
+}
+.footer-shablon-2_special .soc_btn a img{
+  filter: none;
+}
 
 
 

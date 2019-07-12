@@ -67,6 +67,12 @@ $(document).ready(function() {
 	});
 
 
+	// Footer special
+	$('.footer_butt').click(function(){
+		$('.footer-shablon-2_special').toggleClass('active');
+	});
+
+
 	// Top menu
 	function topMenuPunktsDecor(){
 		document.querySelectorAll('.menu_box_2 .menu').forEach(function(item){

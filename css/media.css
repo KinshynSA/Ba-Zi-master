@@ -305,6 +305,12 @@
 		width: 60%;
 		columns: 3;
 	}
+	.footer-shablon-2_special{
+		padding-bottom: 0;
+	}
+	.footer-shablon-2_special .first_cont_foot{
+		align-items: stretch;
+	}
 
 	.block_top_calendar{
 		padding: 0 calc(54px + 6%);
@@ -1257,6 +1263,12 @@
 	.sidebar_nav_close{
 		margin-right: 24px;
 	}
+	.footer-shablon-2_special:before{
+		background-image: linear-gradient(to left, #9b9b9b 22px, transparent 22px, transparent 68px, #9b9b9b 68px);
+	}
+	.footer-shablon-2_special .footer_butt{
+		right: 20px;
+	}
     .left_top_btn .buttons-black {
       margin-right: 0;
     }
@@ -1523,8 +1535,8 @@
 	.foots .logo_foot {
 		width: 100%;
 		text-align: center;
-		margin-right: 40px;
-		margin-left: 40px;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 	.foots .menu_foots {
 		width: 90%;
@@ -1686,6 +1698,13 @@
 }
 
 @media only screen and (max-width: 375px){
+	.footer-shablon-2_special:before{
+		background-image: linear-gradient(to left, #9b9b9b 17px, transparent 17px, transparent 63px, #9b9b9b 63px);
+	}
+	.footer-shablon-2_special .footer_butt{
+		right: 15px;
+	}
+
 	.arch_tbl td {
 		padding: 5px 2px;
 	}
