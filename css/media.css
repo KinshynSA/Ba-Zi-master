@@ -504,6 +504,7 @@
 		margin: 0 20px;
 	}
 	.main_add_content{
+		max-width: 100%;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -517,6 +518,7 @@
 
 	.eight .block_pop{
 		width: 100%;
+		max-width: 100%;
 		padding: 40px 10px 20px;
 	}
 
@@ -539,6 +541,7 @@
 
 	.arch .block_pop{
 		width: 100%;
+		max-width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
 		text-align: center;
@@ -1335,6 +1338,7 @@
 	.stars-pop_block-4{
 		grid-column: 1/4;
 		grid-row: 5/6;
+		max-width: 280px;
 		margin: 7px auto 13px;
 	}
 	.stars-pop_block-5{
@@ -1768,6 +1772,9 @@
 	.sidebar .sidebar_info .sidebar_saves {
 		position: initial;
 	}
+	.block_pop{
+		padding: 40px 4 0px 25px;
+	}
 	.cal_date,
 	.reg_mail{
 		flex-wrap: wrap;
@@ -2065,6 +2072,7 @@
 @media screen and (max-width: 640px){
 	.popup_high{
 		width: 100%;
+		max-width: 100%;
 	}
 	.table_hexagrams_column:nth-of-type(1){
 		min-width: 64px;

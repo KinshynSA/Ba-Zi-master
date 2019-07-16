@@ -1327,11 +1327,16 @@ text-align: center;
 .block_pop form .form-alert{
   display: none;
   padding: 8px 4px;
-  margin: -10px auto 20px;
+  margin: 10px auto 0;
   color: #ffffff;
   font-size: 14px;
   line-height: 1;
   text-align: center;
+}
+.info_box form input[type='submit']+.form-alert,
+.info_box form button+.form-alert{
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 .block_pop form .form-alert_fail{
   background-color: #ea5e68;
@@ -2742,9 +2747,7 @@ input[type="checkbox"]:checked + label:after {
   top: 0;
   right: 40px;
   z-index: 100;
-  background-blend-mode: multiply;
-  background-color: transparent;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: rgba(0, 0, 0, 0.8);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 2px solid #9b9b9b;
@@ -3057,6 +3060,7 @@ input[type="checkbox"]:checked + label:after {
 .crt_box .form_box .form_box_bg {
   background-color: #4a4a4a;
   border: 10px solid #9b9b9b;
+  padding: 10px 10px 0;
   margin-bottom: 10px;
 }
 
@@ -3083,6 +3087,7 @@ input[type="checkbox"]:checked + label:after {
 
 .nm_prim {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .crt_box input.crd_inp {
@@ -3537,17 +3542,9 @@ a.btn_black_big:hover{
   font-size: 18px;
 }
 
-.main_add_content input[type=submit] {
-  width: 240px;
-  margin-top: 5px;
-  background: transparent;
-  border: 2px solid #fff;
-  font-size: 21px;
-  padding: 10px 20px;
-  letter-spacing: 0.1em;
-}
-
 .main_add_content {
+  width: 100%;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3562,6 +3559,16 @@ a.btn_black_big:hover{
   min-width: 160px;
 }
 
+
+.main_add_content input[type=submit] {
+  width: 240px;
+  margin-top: 5px;
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 21px;
+  padding: 10px 20px;
+  letter-spacing: 0.1em;
+}
 
 
 
@@ -3899,9 +3906,6 @@ form.nes_new_form input[type="time"] {
 
 
 
-.qimen_prim form input[type="submit"]{
-  margin: 0;
-}
 
 .calendar_nw .content_block {
   padding: 20px 70px;
@@ -4466,12 +4470,13 @@ a.btn_black:hover {
   outline: none;
 }
 
-.eight .block_pop .b3 button {
-  margin-right: 0;
+.eight .block_pop {
+  max-width: 380px;
+  padding: 40px 50px;
 }
 
-.eight .block_pop {
-  padding: 40px 48px;
+.eight .block_pop .b3 button {
+  margin-right: 0;
 }
 
 .arch_button_w:hover {
@@ -4491,11 +4496,6 @@ a.btn_black:hover {
 
 .qi_men_n .cal_date{
   margin-top: 15px;
-}
-
-.qi_men_n .form_box_bg + input[type="submit"] {
-  margin: 0;
-  width: 100%;
 }
 
 .mf_bl {
@@ -4520,6 +4520,7 @@ a.btn_black:hover {
 }
 
 .arch .block_pop {
+  max-width: 290px;
   padding: 50px 60px 20px;
 }
 .block_pop button:hover, .block_pop input[type="submit"]:hover{
@@ -4566,9 +4567,6 @@ a.btn_black:hover {
   margin: 0;
 }
 
-.qi_mn_d_f .block_pop {
-  padding: 50px 30px 3 0px;
-}
 
 .ci_men .born_map {
   margin-bottom: 0;
@@ -4589,6 +4587,7 @@ a.btn_black:hover {
 
 /* high-rise */
 .popup_high{
+  max-width: 366px;
   color: #ffffff;
 }
 .popup_high p{}

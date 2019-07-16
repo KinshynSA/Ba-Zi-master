@@ -296,11 +296,12 @@ function formValidator(){
 
 	function checkInput(){
 		var item = this;
+		console.log(item,item.value,item.value.length);
 
 		switch (item.type){
 			case 'text':
 			case 'password':
-				failValidation(item,item.value.length < 1 && !item.classList.contains('datepicker'));
+				failValidation(item,item.value.length < 1);
 				break;
 			case 'tel':
 				failValidation(item,item.value.length < 6);
@@ -350,6 +351,7 @@ function formValidator(){
 			});
 
 			box.querySelectorAll('select').forEach(function(item){
+				console.log(item,item.options[item.selectedIndex].value);
 				failValidation(item,!item.options[item.selectedIndex].value);
 			});
 		});

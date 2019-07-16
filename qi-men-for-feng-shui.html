@@ -231,26 +231,30 @@
 												<div class="period_add calendar_box">
 														<form action="">
                                                             <div class="main_add_content">
-                                                            	<div class="main_add_content-box">
+                                                            	<div class="main_add_content-box input-box_required">
 	                                                                <p>Период</p>
 	                                                                <select name="period">
+	                                                                    <option value="" disabled selected>----</option>
 	                                                                    <option value="8">8 Период 2004-2024</option>
 	                                                                </select>
                                                             	</div>
-                                                            	<div class="main_add_content-box">
+                                                            	<div class="main_add_content-box input-box_required">
 	                                                                <p>Направление фасада:</p>
 	                                                                <select name="period">
+	                                                                    <option value="" disabled selected>----</option>
 	                                                                    <option value="server">Север</option>
 	                                                                </select>
                                                             	</div>
-                                                            	<div class="main_add_content-box">
+                                                            	<div class="main_add_content-box input-box_required">
 	                                                                <p>Направление двери:</p>
 	                                                                <select name="period">
+	                                                                    <option value="" disabled selected>----</option>
 	                                                                    <option value="shirota">С 337.50° – 22.49°</option>
 	                                                                </select>
                                                                 </div>
                                                                 <span class="main_add_content-separated"></span>
-                                                                <input type="submit" value="ПОСТРОИТЬ КАРТУ">
+                                                                <input type="submit" value="ПОСТРОИТЬ КАРТУ"  onclick="event.preventDefault(); formValidator.validateForm(event);">
+																<div class="form-alert form-alert_fail">проверьте информацию, обязательную для заполнения</div>
                                                             </div>
 															
 															

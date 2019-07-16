@@ -197,17 +197,21 @@
 										</g>
 									</g>
 								</svg>
-					        <div class="b1">
-					            Направление тыла <br>
-                                (в градусах 0 - 360)
-					        </div>
-					        <div class="b2">
-					            <select name="" id="">
-					                <option value="">C 337.50 - C 22.49</option>
-					                <option value="">C 337.50 - C 22.49</option>
-					            </select>
-					        </div>
-					        <div class="b3"><button>РАССЧИТАТЬ</button></div>
+							<form>
+						        <div class="b1">
+						            Направление тыла <br>
+	                                (в градусах 0 - 360)
+						        </div>
+						        <div class="b2 input-box_required">
+						            <select name="" id="">
+						                <option value="" disabled selected>-------</option>
+						                <option value="1">C 337.50 - C 22.49</option>
+						                <option value="2">C 337.50 - C 22.49</option>
+						            </select>
+						        </div>
+						        <div class="b3"><button onclick="event.preventDefault(); formValidator.validateForm(event);">РАССЧИТАТЬ</button></div>
+								<div class="form-alert form-alert_fail">проверьте информацию, обязательную для заполнения</div>
+					    	</form>
 					    </div>
 					    
 					 

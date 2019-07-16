@@ -214,22 +214,26 @@
                                                                                         </g>
                                                                                 </g>
                                                                         </svg>
-
-                                                        <h3 class="h3">Управление группами</h3>
-                                                        <div class="arch_mnu-cont">
-                                                        	<div class="arch_mnu-box">
-                                                                <p>Стараое название</p>
-	                                                            <select name="" id="">
-	                                                                <option value="">Группа</option>
-	                                                            </select>
-                                                            </div>
-                                                        	<div class="arch_mnu-box">
-                                                            	<p>Новое название</p>
-                                                            	<input type="text" placeholder="Название">
-                                                        	</div>
-                                                        </div>
+                                                        <form>
+	                                                        <h3 class="h3">Управление группами</h3>
+	                                                        <div class="arch_mnu-cont">
+	                                                        	<div class="arch_mnu-box input-box_required">
+	                                                                <p>Старое название</p>
+		                                                            <select name="" id="">
+		                                                                <option value="" disabled selected>-----</option>
+		                                                                <option value="1">Группа 1</option>
+		                                                                <option value="2">Группа 2</option>
+		                                                            </select>
+	                                                            </div>
+	                                                        	<div class="arch_mnu-box input-box_required">
+	                                                            	<p>Новое название</p>
+	                                                            	<input type="text" placeholder="Название">
+	                                                        	</div>
+	                                                        </div>
                                                         
-                                                        <div class="b3"><button>РАССЧИТАТЬ</button></div>
+	                                                        <div class="b3"><button onclick="event.preventDefault(); formValidator.validateForm(event);">РАССЧИТАТЬ</button></div>
+															<div class="form-alert form-alert_fail">проверьте информацию, обязательную для заполнения</div>
+                                                        </form>
                                                         
                                                     </div>
                                                     
