@@ -415,6 +415,33 @@ section {
           color: #E95E68;
           background-color: transparent; }
 
+.login_input{
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding: 12px 10px;
+  line-height: 25px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Oswaldlight", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  border: solid 2px #ffffff;
+}
+body div input.login_input::placeholder{
+  color: #ffffff;
+  opacity: 1;
+}
+body div input.login_input:focus{
+  background-color: #ffffff;
+  color: #000000;
+}
+body div input.login_input:focus::placeholder{
+  color: #000000;
+}
 
 .info_box form {
   display: block;
