@@ -430,13 +430,15 @@ section {
   text-transform: uppercase;
   outline: none;
   border: solid 2px #ffffff;
+  transition: all 0.2s ease-in-out;
 }
 body div input.login_input::placeholder{
   color: #ffffff;
   opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 body div input.login_input:focus{
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.9);
   color: #000000;
 }
 body div input.login_input:focus::placeholder{
