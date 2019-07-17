@@ -5472,3 +5472,58 @@ a.btn_black:hover {
   justify-content: space-between;
   min-height: 100%;
 }
+
+
+
+.lost_content{
+  padding: 20px 40px 10px;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+}
+.lost_image{
+  margin-bottom: 25px;
+  text-align: center;
+}
+.lost_image img{
+  width: 100%;
+  max-width: 103px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.lost_image img:hover{
+  filter: grayscale(1);
+}
+.lost_image p{
+  font-family: "OswaldMedium", sans-serif;
+  font-size: 21px;
+  line-height: 1.33;
+  letter-spacing: 0.58px;
+}
+.lost_links{
+  width: 100%;
+  max-width: 400px;
+  margin: 25px auto 0;
+}
+.lost_link{
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "OswaldMedium", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  cursor: pointer;
+  border: solid 2px #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.lost_link:hover{
+  color: #ffffff;
+  background-color: rgba(234, 94, 104, 0.2);
+}
+.lost_link:active,
+.lost_link:focus,
+.lost_link:visited{
+  color: #ffffff;
+}
