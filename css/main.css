@@ -5295,8 +5295,8 @@ a.btn_black:hover {
 
 /* таблица для calendar-day и qi-men */
 .ieghp-container{
-  width: 760px;
-  max-width: 100%;
+  max-width: 760px;
+  width: 100%;
   margin: 20px auto;  
 }
 .ieghp-box{
