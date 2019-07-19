@@ -86,23 +86,22 @@
 				
 				<div class="login login_mobile_wrap">
 					<img src="img/Log.svg" alt="" width="40" height="40">
-					<p>Имя Фамилия</p>
+					<p class="login_text">Имя Фамилия</p>
+					<p data-id="lg4" class="form-alert form-alert_fail">Проверьте введеные данные</p>
 				</div>
 				
 				<div class="info_box form_box">
-					<form action="">
+					<form data-for="lg4" class="form-shablon-1" action="">
 
 						<div class="form_box_bg">
-							<p class="sex">
+							<p class="sex input-box_required">
 								<span>Пол</span>
 								<input type="radio" name="sex" id="male" value="male"><label for="male">Мужской</label>
 								<input type="radio" name="sex" id="female" value="female"><label for="female" class="female">Женский</label>
 							</p>
-							<p>
-								ДАТА И ВРЕМЯ ВАШЕГО РОЖДЕНИЯ
-							</p>
+							<p>ДАТА И ВРЕМЯ ВАШЕГО РОЖДЕНИЯ</p>
 							<div class="cal_date">
-								<span>
+								<span class="input-box_required">
 									<label for="date">Дата</label>
 									<input name="date" type="text" class="datepicker" placeholder="ДЕНЬ / МЕСЯЦ / ГОД">
 									<svg class="additionalDt" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -143,19 +142,19 @@
 											</g>
 									</svg>
 								</span>
-								<span>
+								<span class="input-box_required">
 									<label for="time">время</label>
 									<input type="time" name="time" value="00:00" id="time-pick">
 								</span>
 
 							</div>
-							<p class="reg_mail">
+							<p class="reg_mail input-box_required">
 								<label>Ваш E-mail</label><input type="email" name="email" >
 							</p>
 
 
 						</div>
-						<input type="submit" value="Регистрация">
+						<input type="submit" value="Регистрация" onclick="event.preventDefault(); formValidator.validateForm(event);">
 
 					</form>				
 				</div>

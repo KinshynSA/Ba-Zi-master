@@ -299,7 +299,6 @@ function formValidator(){
 
 	function checkInput(){
 		var item = this;
-		console.log(item,item.value,item.value.length);
 
 		switch (item.type){
 			case 'text':
@@ -317,7 +316,6 @@ function formValidator(){
 				var nCounter = 0;
 				item.closest('.input-box_required').querySelectorAll('input[name="' + item.name + '"]').forEach(function(i){
 					if(i.checked) nCounter++;
-					//console.log('radio: ' + i.value, nCounter);
 				});
 				failValidation(item,!nCounter);
 				break;
@@ -331,7 +329,6 @@ function formValidator(){
 			item.closest('.input-box_required').classList.add('invalid');
 			self.formFlag = 0;
 		}
-		//console.log(self.formFlag,item);
 	}
 
 	function checkEmailValidation(email){
@@ -354,16 +351,23 @@ function formValidator(){
 			});
 
 			box.querySelectorAll('select').forEach(function(item){
-				console.log(item,item.options[item.selectedIndex].value);
 				failValidation(item,!item.options[item.selectedIndex].value);
 			});
 		});
 
 		if(self.formFlag){
 			console.log('da');
+			if(parentForm.classList.contains('form-shablon-1')){
+				document.querySelector('.login_text').style.display = 'block';
+				document.querySelector('.form-alert[data-id="' + parentForm.dataset.for + '"]').classList.remove('active');
+			}
 			//parentForm.submit();
 		} else {
 			parentForm.classList.add('invalid');
+			if(parentForm.classList.contains('form-shablon-1')){
+				document.querySelector('.login_text').style.display = 'none';
+				document.querySelector('.form-alert[data-id="' + parentForm.dataset.for + '"]').classList.add('active');
+			}
 			console.log('net');
 		}
 	};

@@ -85,15 +85,16 @@
 				
 				<div class="login">
 					<img src="img/Log.svg" alt="" width="40" height="40">
-					<p>Имя Фамилия</p>
+					<p class="login_text">Имя Фамилия</p>
+					<p data-id="lg3" class="form-alert form-alert_fail">Проверьте введеные данные</p>
 				</div>
 				
 				<div class="info_box form_box">
-					<form action="">
+					<form data-for="lg3" class="form-shablon-1" action="">
 
 						<div class="form_box_bg">							
 								<div class="cal_date">
-									<span>
+									<span class="input-box_required">
 										<label for="date">Дата</label> <input name="date" type="text" class="datepicker" placeholder="ДЕНЬ / МЕСЯЦ / ГОД">
 											<svg class="additionalDt" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 												<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -133,7 +134,7 @@
 												</g>
 												</svg>
 									</span>
-									<span>
+									<span class="input-box_required">
 										<label for="time">время</label><input type="time" name="time" value="00:00" id="time-pick">
 									</span>
 
@@ -162,10 +163,15 @@
 
 
 						</div>
-						<input type="submit" value="Рассчитать Ци Мэнь">
+						<input type="submit" value="Рассчитать Ци Мэнь"  onclick="event.preventDefault(); formValidator.validateForm(event);">
 
 					</form>				
 				</div>
+				<div class="bot_links">
+                    <a href="#">&gt; Мой архив</a>
+                    <a href="#" class="bot_links_center">&gt; Выйти</a>
+                    <span>Ваша подписка<br> до 14.02.2018</span>
+                </div>
 			</div>
 
 		</div>
