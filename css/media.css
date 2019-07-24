@@ -1302,12 +1302,12 @@
 }
 
 @media only screen and (max-width: 470px){
-	.form_box .form_box_bg .w_2 {
+	/*.form_box .form_box_bg .w_2 {
 		margin: 10px auto;
 	}
 	.form_box .form_box_bg .w_2 .lebel_time {
 		padding-left: 20px;
-	}
+	}*/
 	.form_box .form_box_bg .sex .female {
 		margin-left: 5px;
 	}
@@ -1645,6 +1645,9 @@
 		padding: 10px 14px 5px;
 		margin-bottom: 14px;
 	}
+	.ci_men .form_box .form_box_bg{
+		padding: 20px;
+	}
 	.form_box .form_box_bg .lins {
 		width: 170px;
 		padding-right: 5px;
@@ -1661,7 +1664,7 @@
 		margin-bottom: 15px;
 	}
 	.info_box form input.datepicker{
-	margin-bottom: 0;
+		margin-bottom: 0;
 	}
 	.login_mobile_wrap{
 		display: block;
@@ -1763,14 +1766,14 @@
 	.menu_box_2 .menu li{
 		min-width: 32%;
 	}
-	.form_box .form_box_bg .w_2,
+	/*.form_box .form_box_bg .w_2,
 	.form_box .form_box_bg .w_2.tar {
 		display: block;
 		width: 70%;
 		margin-right: auto;
 		margin-left: auto;
 		text-align: left;
-	}
+	}*/
 	.sidebar .sidebar_info .sidebar_saves {
 		position: initial;
 	}
@@ -1875,14 +1878,24 @@
 		max-width: 100%;
 	}
 }
-
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 359px){
 	.cal_date span{
 		width: 100%;
 		margin-bottom: 14px;
 	}
 	.cal_date span:last-of-type{
 		margin-bottom: 0;
+	}	
+}
+@media only screen and (max-width: 340px){
+	.ci-men-form_box{
+		flex-wrap: wrap;
+	}
+	.ci-men-form_item{
+		width: 100%;
+	}
+	.form_box .form_box_bg .lins{
+		margin-top: 20px;
 	}
 	.block_top_calendar .top_calendar_box .hieroglyphs_option #month{
 		width: 100%;

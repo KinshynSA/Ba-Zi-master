@@ -368,6 +368,10 @@ header {
     padding-top: 14px;
     padding-bottom: 14px; }
 
+.header-shablon-1 .menu_box_2{
+  min-height: 0;
+  margin-bottom: 0;
+}
 
 
 section {
@@ -2523,7 +2527,7 @@ text-align: center;
     .form_box .form_box_bg input[type="time"] {
       width: 80px;
       margin-bottom: 0; }
-    .form_box .form_box_bg .w_2 {
+    /*.form_box .form_box_bg .w_2 {
       position: relative;
       display: inline-block;
       width: 49%;
@@ -2542,7 +2546,7 @@ text-align: center;
       .form_box .form_box_bg .w_2 label {
         padding-left: 0; }
       .form_box .form_box_bg .w_2 .lebel_time {
-        padding-left: 31px; }
+        padding-left: 31px; }*/
     .form_box .form_box_bg .is_time,
     .form_box .form_box_bg .label_timeZone {
       width: 44%;
@@ -2558,6 +2562,7 @@ text-align: center;
     .form_box .form_box_bg .lins {
       display: inline-block;
       width: 180px;
+      max-width: 100%;
       height: 40px;
       padding: 10px 10px;
       font-size: 14px;
@@ -2574,7 +2579,7 @@ text-align: center;
       .form_box .form_box_bg .lins_2 img {
         width: 28px;
         vertical-align: text-top; }
-    .form_box .form_box_bg .hours_days_box input[type="radio"] + label,
+    /*.form_box .form_box_bg .hours_days_box input[type="radio"] + label,
     .form_box .form_box_bg .hours_days_box input[type="checkbox"] + label {
       padding-left: 0;
       padding-bottom: 25px;
@@ -2587,7 +2592,7 @@ text-align: center;
         bottom: 0; }
     .form_box .form_box_bg .days,
     .form_box .form_box_bg .hours {
-      width: 48%; }
+      width: 48%; }*/
 
 .form_box_bg + input[type="submit"] {
   margin-right: auto;
@@ -4546,21 +4551,6 @@ a.btn_black:hover {
   flex-wrap: wrap;
 }
 
-.cimnbl {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cimnbl .w_2{
-  margin-bottom: 0;
-}
-
-.cm_dn_t {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .arch .block_pop {
   max-width: 290px;
@@ -4611,9 +4601,47 @@ a.btn_black:hover {
 }
 
 
-.ci_men .born_map {
-  margin-bottom: 0;
+.ci_men .form_box .form_box_bg{
+  padding: 20px;
 }
+.ci-men-form_box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.ci-men-form_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 160px;
+}
+.ci-men-form_time{}
+.ci-men-form_time input[type="radio"] + label,
+.ci-men-form_time input[type="checkbox"] + label{
+  width: auto;
+  margin-right: 24px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 29px;
+}
+.ci-men-form_time input[type="radio"] + label:last-of-type,
+.ci-men-form_time input[type="checkbox"] + label:last-of-type{
+  margin-right: 0;
+}
+.ci-men-form_time input[type="radio"] + label:before,
+.ci-men-form_time input[type="checkbox"] + label:before{
+  top: auto;
+  bottom: 0;
+}
+.ci-men-form_item .lins{}
+.ci-men-form_item .born_map{
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
 
 .qi_men_n .content_block{
   padding: 28px 78px 70px;
