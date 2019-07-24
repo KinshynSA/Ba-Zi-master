@@ -84,7 +84,6 @@
 				<div class="login login_mobile_wrap">
 					<img src="img/Log.svg" alt="" width="40" height="40">
 					<p class="login_text">Напоминание пароля</p>
-					<p class="form-alert form-alert_fail">Проверьте Эмейл</p>
 				</div>
 				
 				<div class="info_box">
@@ -92,7 +91,7 @@
 						<div class="input-box_required">
 							<input type="email" placeholder="Введите ваш Email" class="login_input">
 						</div>
-						<input type="submit" value="Отправить" data-show=".form-alert_fail" data-hide=".login_text, .form-alert_succes" onclick="event.preventDefault(); formValidator.validateForm(event);">
+						<input type="submit" value="Отправить" data-hide=".login_text, .form-alert_succes" onclick="event.preventDefault(); formValidator.validateForm(event);">
 						<div class="info_box-footer">
 							<p class="form-alert form-alert_succes hidden">Пароль был успешно отправлен вам на Email</p>
 						</div>
