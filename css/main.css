@@ -1363,6 +1363,7 @@ text-align: center;
   display: none;
   padding: 8px 4px;
   margin: 10px auto 0;
+  background-color: #ea5e68;
   color: #ffffff;
   font-size: 14px;
   line-height: 1;
@@ -1372,9 +1373,6 @@ text-align: center;
 .info_box form button+.form-alert{
   margin-top: -10px;
   margin-bottom: 20px;
-}
-.block_pop form .form-alert_fail{
-  background-color: #ea5e68;
 }
 
 .cell7:before{
