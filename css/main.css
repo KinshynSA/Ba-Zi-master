@@ -2552,9 +2552,9 @@ text-align: center;
     .rchnesc .form_box .form_box_bg .label_timeZone{
       width: 42%;
     }
-    .form_box .form_box_bg .time_sun,
+/*    .form_box .form_box_bg .time_sun,
     .form_box .form_box_bg .time_pecin {
-      width: 54%; }
+      width: 54%; }*/
     .form_box .form_box_bg .lins {
       display: inline-block;
       width: 180px;
@@ -3708,11 +3708,14 @@ a.btn_black_big:hover{
   background: #B4B4B4;
 }
 
-input[name="sex"] + label:before {
+input[name="sex"] + label:before,
+input[name="gender"] + label:before
+{    
   border-radius: 50%;
 }
 
-input[name="sex"] + label::after {
+input[name="sex"] + label::after, 
+input[name="gender"] + label::after{
   border-radius: 50%;
   background-color: #EA5E67;
 }
@@ -4383,12 +4386,12 @@ div.cal_date input {
 }
 
 .ft_calculator td.lpmz {
-  padding: 0;
+  padding: 5px 33px;
 }
 
 .ft_calculator td.lpmz a {
   display:block;
-  padding: 5px 33px;
+  /*padding: 5px 33px;*/
   color: #000;
 }
 

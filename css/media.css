@@ -1555,10 +1555,10 @@
 }
 
 @media only screen and (max-width: 456px){
-	.ft_calculator td.lpmz a{
+	.ft_calculator td.lpmz{
 		padding: 5px 0px;
 		width: 83px;
-	}
+	}        
 	.ml_mins {
 		margin-left: -10px;
 	}
