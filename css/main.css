@@ -2,48 +2,6 @@
 body{
   position: relative;
 }
-body:after{
-  /*content: "";*/
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: 1280px;
-  min-height: 100vh;
-  margin: auto;
-  background-image: url(../../Ba-Zi-master-screen/Calendar/2-1280.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-}
-@media screen and (max-width: 960px){
-  body:after{
-    background-image: url(../../Ba-Zi-master-screen/Calendar/2-960.png);
-  }
-}
-@media screen and (max-width: 768px){
-  body:after{
-    background-image: url(../../Ba-Zi-master-screen/Calendar/2-768.png);
-  }
-}
-@media screen and (max-width: 640px){
-  body:after{
-    background-image: url(../../Ba-Zi-master-screen/Calendar/2-640.png);
-  }
-}
-@media screen and (max-width: 480px){
-  body:after{
-    background-image: url(../../Ba-Zi-master-screen/Calendar/2-480.png);
-  }
-}
-@media screen and (max-width: 375px){
-  body:after{
-    background-image: url(../../Ba-Zi-master-screen/Calendar/2-375.png);
-  }
-}
-
 b,strong{
   font-family: Oswaldmedium;
   font-weight: normal;
