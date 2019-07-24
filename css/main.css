@@ -363,6 +363,7 @@ section {
     display: none;
     width: 100%;
     max-width: 400px;
+    background-color: #ea5e68;
     padding: 6px 4px;
     color: #ffffff;    
     margin: 0 auto -12px;
@@ -373,9 +374,6 @@ section {
   }
   .login .form-alert.active{
     display: block;
-  }
-  .login .form-alert_fail{
-    background-color: #ea5e68;
   }
   .login .menu {
     width: auto;
@@ -473,10 +471,37 @@ body div input.login_input:focus::placeholder{
       body form.invalid .form-alert{
         display: block;
       }
+      .form-shablon-1 .input-box_required.invalid input[type=text],
+      .form-shablon-1 .input-box_required.invalid input[type=email],
+      .form-shablon-1 .input-box_required.invalid input[type=time],
+      .form-shablon-1 .input-box_required.invalid input[type=password]{
+        background-color: #F5C2C5
+      }
+      .form-shablon-1 .input-box_required.invalid input[type=text]::placeholder,
+      .form-shablon-1 .input-box_required.invalid input[type=email]::placeholder,
+      .form-shablon-1 .input-box_required.invalid input[type=time]::placeholder,
+      .form-shablon-1 .input-box_required.invalid input[type=password]::placeholder{
+        color: #000;
+      }
   .info_box .info_box-footer{
     position: relative;
     z-index: 200;
     margin: -6px auto -40px;
+  }
+  .info_box-footer .form-alert_succes{
+    display: block;
+    width: 100%;
+    padding: 8px 4px;
+    background-color: #ea5e68;
+    color: #ffffff;    
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1.4px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .info_box-footer .form-alert_succes.hidden{
+    display: none;
   }
   .info_box form p {
     font-size: 10px;

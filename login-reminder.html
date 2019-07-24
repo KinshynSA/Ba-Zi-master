@@ -83,22 +83,18 @@
 				
 				<div class="login login_mobile_wrap">
 					<img src="img/Log.svg" alt="" width="40" height="40">
-					<p class="login_text">Вход</p>
+					<p class="login_text">Напоминание пароля</p>
 					<p class="form-alert form-alert_fail">Проверьте Эмейл</p>
 				</div>
 				
 				<div class="info_box">
 					<form data-for="lg1" class="form-shablon-1" action="">
-						<div class="input-box_required email_box">
-							<input type="text" placeholder="логин" class="login_input">
-						</div>
 						<div class="input-box_required">
-							<input type="password" placeholder="пароль" class="login_input">
+							<input type="email" placeholder="Введите ваш Email" class="login_input">
 						</div>
-						<input type="submit" value="Вход" onclick="event.preventDefault(); formValidator.validateForm(event);">
+						<input type="submit" value="Отправить" data-show=".form-alert_fail" data-hide=".login_text, .form-alert_succes" onclick="event.preventDefault(); formValidator.validateForm(event);">
 						<div class="info_box-footer">
-							<p><a data-show=".form-alert" data-hide=".login_text" onclick="event.preventDefault(); formValidator.validateForm(event,'.email_box');">Напоминание пароля</a></p>
-							<p><a href="#">Регистрация</a></p>
+							<p class="form-alert form-alert_succes hidden">Пароль был успешно отправлен вам на Email</p>
 						</div>
 					</form>				
 				</div>
