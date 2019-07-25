@@ -300,9 +300,9 @@
 															<form class="bzi_form" action="">
 										
 																<div class="form_box_bg">
-																	<p class="sex sex_bzi input-box_required">
+																	<p class="sex sex_bzi">
 																		<span>ПОЛ</span>
-																		<input type="radio" name="sex" id="male" value="male"><label for="male">МУЖСКОЙ</label>
+																		<input type="radio" name="sex" id="male" value="male" checked><label for="male">МУЖСКОЙ</label>
 																		<input type="radio" name="sex" id="female" value="female"><label for="female" class="female">ЖЕНСКИЙ</label>
 																		<button class="sex-cards">Несколько карт</button>
 																	</p>
@@ -348,7 +348,7 @@
 																				</g>
 																				</svg>
 																			</span>
-																			<span class="input-box_required">
+																			<span>
 																				<label for="time">время</label>
 																				<input type="time" name="time" value="00:00" id="time-pick">
 																			</span>
@@ -366,22 +366,21 @@
 																		<div class="cal_item cal_item-half">
 																			<input type="checkbox" id="tn"><label for="tn">ВРЕМЯ НЕИЗВЕСТНО</label>
 																		</div>
-																		<div class="cal_item cal_item-full">
+																		<div class="cal_item cal_item-half">
 																			<input type="checkbox" id="tp"><label for="tp">ИСПОЛЬЗОВАТЬ ПОПРАВКУ НА ПЕКИНСКОЕ ВРЕМЯ</label>
 																		</div>
-																		<div class="cal_item">
+																		<div class="cal_item  cal_item-half">
 																			<input type="checkbox" id="ts"><label for="ts">СОЛНЕЧНОЕ ВРЕМЯ</label>
 																		</div>
-																		<div class="cal_item input-box_required">
+																		<div class="cal_item cal_item-big">
 																			<select class="cal_item_city">
-																				<option value disabled selected>Город</option>
 																				<option value="1">Киев</option>
 																				<option value="2">Нурслултан</option>
 																			</select>
 																		</div>
 																		<div class="cal_item">
-																			<input type="text" class="cal_item_grad" placeholder="00">°
-																			<input type="text" class="cal_item_grad" placeholder="00">′
+																			<input type="text" class="cal_item_grad" placeholder="000">°
+																			<input type="text" class="cal_item_grad" placeholder="000">′
 																		</div>
 																	</div>																			
 																																																

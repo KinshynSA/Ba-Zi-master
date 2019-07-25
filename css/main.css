@@ -298,9 +298,7 @@ header {
       margin-top: 9px;
       height: 2px;
       background-color: #8b8b8b;
-      transition: all 1s; }
-      .nav_mob .icon_menu .line_menu:hover {
-        background-color: #ea5e68; }
+      transition: all 0.4s; }
       .nav_mob .icon_menu .line_menu:last-child {
         margin-bottom: 9px; }
   .nav_mob .icon_menu1 .line_menu {
@@ -471,16 +469,16 @@ body div input.login_input:focus::placeholder{
       body form.invalid .form-alert{
         display: block;
       }
-      .form-shablon-1 .input-box_required.invalid input[type=text],
-      .form-shablon-1 .input-box_required.invalid input[type=email],
-      .form-shablon-1 .input-box_required.invalid input[type=time],
-      .form-shablon-1 .input-box_required.invalid input[type=password]{
+      .info_box .input-box_required.invalid input[type=text],
+      .info_box .input-box_required.invalid input[type=email],
+      .info_box .input-box_required.invalid input[type=time],
+      .info_box .input-box_required.invalid input[type=password]{
         background-color: #F5C2C5
       }
-      .form-shablon-1 .input-box_required.invalid input[type=text]::placeholder,
-      .form-shablon-1 .input-box_required.invalid input[type=email]::placeholder,
-      .form-shablon-1 .input-box_required.invalid input[type=time]::placeholder,
-      .form-shablon-1 .input-box_required.invalid input[type=password]::placeholder{
+      .info_box .input-box_required.invalid input[type=text]::placeholder,
+      .info_box .input-box_required.invalid input[type=email]::placeholder,
+      .info_box .input-box_required.invalid input[type=time]::placeholder,
+      .info_box .input-box_required.invalid input[type=password]::placeholder{
         color: #000;
       }
   .info_box .info_box-footer{
@@ -4252,6 +4250,9 @@ p.mb_f {
 .bzi_form .cal_item-half{
   width: 49%;
 }
+.bzi_form .cal_item-big{
+  width: 67%;
+}
 .bzi_form .cal_item-full{
   width: 100%;
 }
@@ -4266,7 +4267,9 @@ p.mb_f {
   margin-right: 20px;
 }
 .cal_item_city{
-  width: 110px;
+  width: 100%;
+  padding-left: 11px;
+  margin-right: 10px;
 }
 .bzi_form .cal_item_grad{
   display: inline-block;
