@@ -1888,14 +1888,21 @@
 	}	
 }
 @media only screen and (max-width: 340px){
-	.ci-men-form_box{
+	.ci-men-form_time{
 		flex-wrap: wrap;
+	}
+	.ci-men-form_time input[type="radio"] + label,
+	.ci-men-form_time input[type="checkbox"] + label{
+		width: 100%;
+		margin-top: 10px;
 	}
 	.ci-men-form_item{
 		width: 100%;
+		max-width: 160px;
 	}
-	.form_box .form_box_bg .lins{
-		margin-top: 20px;
+	.ci-men-form_item:last-of-type{
+		padding-left: 0;
+		margin-top: 10px;
 	}
 	.block_top_calendar .top_calendar_box .hieroglyphs_option #month{
 		width: 100%;

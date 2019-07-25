@@ -93,9 +93,9 @@
 					<form class="form-shablon-1" action="">
 
 						<div class="form_box_bg">							
-								<div class="cal_date">
-									<span class="input-box_required">
-										<label for="date">Дата</label> <input name="date" type="text" class="datepicker" placeholder="ДЕНЬ / МЕСЯЦ / ГОД">
+							<div class="cal_date">
+								<span class="input-box_required">
+									<label for="date">Дата</label> <input name="date" type="text" class="datepicker" placeholder="ДЕНЬ / МЕСЯЦ / ГОД">
 											<svg class="additionalDt" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 												<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 												<g id="Qi-Men-1280x700-Primer" transform="translate(-1198.000000, -340.000000)" fill="#FFFFFF">
@@ -133,31 +133,44 @@
 												</g>
 												</g>
 												</svg>
-									</span>
-									<span class="input-box_required">
-										<label for="time">время</label><input type="time" name="time" value="00:00" id="time-pick">
-									</span>
-
-								</div>
+								</span>
+								<span class="input-box_required">
+									<label for="time">время</label><input type="time" name="time" value="00:00" id="time-pick">
+								</span>
+							</div>
 							<div class="ci-men-form_box">
-								<div class="ci-men-form_item">
-									<label for="">КАРТА ЦИ МЭНЬ:</label>	
-									<div class="ci-men-form_time">																		
-										<input type="checkbox" name="hours" value="1" id="hours" checked>
-										<label for="hours" class="hours">для часа</label>
-										<input type="checkbox" name="days" value="1" id="days">
-										<label for="days" class="days">для дня</label>
-									</div>
-									<input type="checkbox" name="born_map" value="1" id="born_map">
-									<label for="born_map" class="born_map">карта рождения</label>
+								<div class="ci-men-form_time">
+									<input id="map_hour" type="radio" name="map_time" value="1" checked>
+									<label for="map_hour">КАРТА ЧАСА</label>
+									<input id="map_day" type="radio" name="map_time" value="2">
+									<label for="map_day">КАРТА ДНЯ</label>
+									<input id="map_choose" type="checkbox" name="map_choose" value="1">
+									<label for="map_choose" onclick="(()=>{map_hour.checked = !map_choose.checked})()">Карта рождения</label>
 								</div>
 								<div class="ci-men-form_item">
-									<a href="#" class="lins lins_2">JFN <img src="img/Emotes-face-smile-icon.png" alt=""></a>
 									<a href="#" class="lins">ци мэнь для фэншуй</a>
+									<div class="ci-men-form_chine">
+										<input id="zhi_run" type="radio" name="chine" value="1" checked>
+										<label for="zhi_run">ZHI RUN</label>
+										<input id="chai_bu" type="radio" name="chine" value="2">
+										<label for="chai_bu">CHAI BU</label>
+									</div>
+								</div>
+								<div class="ci-men-form_item">	
+									<div class="ci-men-form_sun-time">								
+										<input id="sun_time" type="checkbox" name="sun_time" value="1" checked>
+										<label for="sun_time">СОЛНЕЧНОЕ ВРЕМЯ</label>
+									</div>									
+									<select class="ci-men-form_city">
+										<option value="1">Киев</option>
+										<option value="2">Нурслултан</option>
+									</select>
+									<div class="ci-men-form_grads">
+										<input type="text" class="ci-men-form_grad" placeholder="000"><span>°</span>
+										<input type="text" class="ci-men-form_grad" placeholder="000"><span>′</span>
+									</div>									
 								</div>
 							</div>
-
-
 						</div>
 						<input type="submit" value="Рассчитать Ци Мэнь"  onclick="event.preventDefault(); formValidator.validateForm(event);">
 
