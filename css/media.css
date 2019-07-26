@@ -1299,6 +1299,9 @@
 	.popup-qimen_box .opisli ul{
 		margin-bottom: 0;
 	}
+	.profile_close{
+		right: 13px;
+	}
 }
 
 @media only screen and (max-width: 470px){
@@ -1719,7 +1722,7 @@
 	}
 
 	.prof .content_block{
-		padding: 10px;
+		padding: 25px 10px;
 	}
 
 	.prof .required_p, .prof h3.h3 {
