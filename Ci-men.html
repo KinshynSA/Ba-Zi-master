@@ -145,7 +145,7 @@
 									<input id="map_day" type="radio" name="map_time" value="2">
 									<label for="map_day">КАРТА ДНЯ</label>
 									<input id="map_choose" type="checkbox" name="map_choose" value="1">
-									<label for="map_choose" onclick="(()=>{map_hour.checked = !map_choose.checked})()">Карта рождения</label>
+									<label for="map_choose" onclick="(()=>{if(!map_choose.checked) map_hour.checked = true;})()">Карта рождения</label>
 								</div>
 								<div class="ci-men-form_item">
 									<a href="#" class="lins">ци мэнь для фэншуй</a>

@@ -294,7 +294,11 @@ function formValidator(){
 				}
 			});
 		});
-	}
+
+		$('.datepicker').change(function(){
+			checkInput.apply(this);
+		});
+	};
 
 
 	function checkInput(){

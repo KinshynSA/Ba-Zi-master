@@ -4665,18 +4665,10 @@ a.btn_black:hover {
   justify-content: space-between;
 }
 .ci-men-form_chine input + label{
-  position: relative;
   width: auto;
-  padding-right: 35px;
-  padding-left: 0;
   margin-bottom: 0;
+  padding-right: 0;
   line-height: 20px;
-}
-.ci-men-form_chine input + label:before{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: auto;
 }
 .ci-men-form_sun-time{
   display: flex;
