@@ -2400,18 +2400,39 @@
 		overflow-y: visible;
 		overflow-x: scroll;
 	}
+	.bzi_form .form_box_bg{
+		padding: 20px 10px 0;
+	}
 	.sex.sex_bzi{
 		flex-wrap: wrap;
 	}
-	.sex.sex_bzi label{
-		width: calc(49% - 17px);
+	.bzi_form  .sex.sex_bzi label{
+		width: calc(35% - 17px);
 		margin-bottom: 10px;
 	}
+	.bzi_form .cal_item-half{
+		width: 64%;
+	}
+	.bzi_form .cal_item-half:nth-of-type(2n+2){
+		width: 36%;
+	}
+	.cal_item_time{
+		margin-right: 10px;
+	}
+	.bzi_form .cal_item-big{
+		width: 54%;
+	}
 	.bzi_form .cal_item{
-		width: 100%;
+		width: 46%;
+	}
+	.bzi_form .cal_item_grad{
+		width: 50px;
 	}
 	.bzi_form .cal_item_grad:first-of-type{
 		margin-left: 0;
+	}
+	.bzi .block_pop{
+		padding: 60px 10px 0;
 	}
 	.eight .content_block{
 		padding: 65px 20px 20px;
