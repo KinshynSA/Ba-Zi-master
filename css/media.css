@@ -2294,6 +2294,9 @@
 	.menu_box_2 .menu li{
 		min-width: 32%;
 	}
+	.info_box .info_box-footer{
+		display: block;
+	}
 	.sidebar .sidebar_info .sidebar_saves {
 		position: initial;
 	}
