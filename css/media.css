@@ -1021,11 +1021,12 @@
 	}
 	.qi_men_n .block_pop{
 		width: 100%;
-		padding: 25px 10px 0;
+		max-width: 100%;
 	}
 	.qimen_prim{
-		display: inline-block;
-		width: auto;
+		display: block;
+		max-width: 340px;
+		margin: auto;
 	}
 
 	.popup_high{
@@ -1712,6 +1713,9 @@
 		text-align: center;
 	}
 
+	.qi_men_n .block_pop{
+		padding: 45px 20px 0;
+	}
 	.bzi .block_pop{
 		padding: 60px 20px 0;
 	}
@@ -2200,9 +2204,6 @@
   		max-width: 60px;
   	}
 
-	.qi_men_n .block_pop{
-		padding: 45px 20px 0;
-	}
 	.qimen_prim{
 		width: 100%;
 	}
@@ -2357,9 +2358,9 @@
 	.reg_mail{
 		flex-wrap: wrap;
 	}
-	.form_box .form_box_bg .lins{
+	/*.form_box .form_box_bg .lins{
 		width: 160px;
-	}
+	}*/
 	.form_box .ci-men-form_box_bg{
 		padding: 20px 10px;
 	}
@@ -2388,6 +2389,9 @@
 	.ci-men-form_sun-time input + label:before{
 		top: 50%;
 		transform: translateY(-50%);
+	}
+	.qi_men_n .block_pop{
+		padding: 45px 10px 0;
 	}
 	.bzi{
 		overflow-y: visible;
