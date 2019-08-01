@@ -1896,6 +1896,9 @@
 
 
 @media screen and (max-width: 1000px){
+	.ieghp-container{
+  		font-size: calc((100vw - 240px)/80);
+	}
 	.square_high{
 		margin: 32px auto 150px;
 		max-width: 100%;

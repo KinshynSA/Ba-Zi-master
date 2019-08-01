@@ -5309,7 +5309,7 @@ a.btn_black:hover {
   max-width: 760px;
   width: 100%;
   margin: 20px auto;
-  font-size: calc((100vw - 240px)/80);
+  font-size: 10px;
 }
 /*.ieghp-box{
   position: relative;
