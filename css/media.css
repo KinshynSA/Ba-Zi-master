@@ -497,6 +497,9 @@
 	.qi_men_n .opisli {
 		margin: 0 20px;
 	}
+	.ieghp-container{
+		font-size: 1.3vw;
+	}
 	.main_add_content{
 		max-width: 100%;
 		flex-direction: row;

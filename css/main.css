@@ -5308,74 +5308,78 @@ a.btn_black:hover {
 .ieghp-container{
   max-width: 760px;
   width: 100%;
-  margin: 20px auto;  
+  margin: 20px auto;
+  font-size: calc((100vw - 240px)/80);
 }
-.ieghp-box{
+/*.ieghp-box{
   position: relative;
   padding-bottom: 100%;
   overflow-x: hidden;
-}
+}*/
 .ieghp-table{
-  position: absolute;
+  /*position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 2;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  min-width: 722px;
-  border: 19px solid #ccc;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  /*min-width: 722px;*/
+  border: 1.9em solid #ccc;
 }
 .ieghp-item{
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 150px;
-  padding: 18px 10px 5px;
-  font-size: 11px;
+  /*min-height: 150px;*/
+  padding: 1.8em 1em 0.5em;
   text-align: center;
-  border-radius: 2px;
-  border: solid 2px #b4b4b4;
+  border-radius: 0.2em;
+  border: solid 0.2em #b4b4b4;
 }
 .ieghp-part-special{
   color: #9b9b9b;
-  font-size: 14px;
+  font-size: 1.4em;
 }
 .ieghp-stars{
   position: absolute;
-  top: 2px;
-  left: 6px;
+  top: 0.15em;
+  left: 0.45em;
 }
 .ieghp-star{
   position: absolute;
-  top: 2px;
-  right: 3px;
+  top: 0.15em;
+  right: 0.225em;
+}
+.ieghp-star svg{
+  width: 1.07em;
 }
 .iegph-number{
   position: absolute;
 }
 .iegph-number-left{
   top: 50%;
-  left: 3px;
+  left: 0.225em;
   transform: translateY(-50%);
 }
 .iegph-number-right{
   top: 50%;
-  right: 3px;
+  right: 0.225em;
   transform: translateY(-50%);
 }
 .iegph-number-rome{
-  right: 3px;
-  bottom: 3px;
+  right: 0.225em;
+  bottom: 0.225em;
 }
 .ieghp-item_part{
   position: relative;
   width: 20%;
-  padding: 2px 3px;
-  margin-bottom: 6px;
+  padding: 0.18em 0.27em;
+  margin-bottom: 0.54em;
+  font-size: 1.1em;
 }
 .ieghp-item_part-green:before,
 .ieghp-item_part-blue:before,
@@ -5385,8 +5389,8 @@ a.btn_black:hover {
   top: 0;
   left: 0;
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 0.64em;
+  height: 0.64em;
   background-color: #417505;
 }
 .ieghp-item_part-blue:before{
@@ -5398,7 +5402,7 @@ a.btn_black:hover {
 .ieghp-ierglph{
   display: inline-block;
   width: 100%;
-  font-size: 28px;
+  font-size: 2.54em;
   font-family: "STSongti-TC";
   font-weight: bold;
 }
@@ -5406,74 +5410,73 @@ a.btn_black:hover {
 .ieghp-de,
 .ieghp-dp{
   display: inline-block;
-  min-width: 30px;
-  margin-top: 7px;
-  padding: 1px 4px;
+  min-width: 2.72em;
+  margin-top: 0.64em;
+  padding: 0.1em 0.36em;
   background-color: #faeea3;
   font-family: "Oswaldmedium", sans-serif;
-  line-height: 11px;
-  border: solid 1px #666666;
+  line-height: 1em;
+  border: solid 0.1em #666666;
 }
 .ieghp-dp{
-  margin-top: 5px;
+  margin-top: 0.46em;
   background-color: #bdd4f4;
 }
 .ieghp-down-num{
   display: block;
-  padding-top: 2px;
-  margin-bottom: 2px;
+  padding-top: 0.18em;
+  margin-bottom: 0.18em;
   text-align: right;
 }
 .ieghp-down-ieghp{
   display: block;
-  margin-bottom: 1px;
-  font-size: 14px;
+  margin-bottom: 0.071em;
+  font-size: 1.28em;
   font-family: "STSongti-TC", sans-serif;
   font-weight: bold;
   text-align: left;
 }
 .iegph-img{
-  height: 33px;
-  width: 29px;
+  height: 3em;
+  width: 2.64em;
 }
 .ieghp-item_part-full{
   width: 100%;
-  margin-top: -2px;
-  font-size: 10px;
+  margin-top: -0.2em;
   line-height: 1.4;
 }
 .ieghp-item-middle{
-  padding: 15px 10px 12px;
-  font-size: 28px;
+  padding: 0.54em 0.36em 0.43em;
+  font-size: 2.8em;
   font-family: "STSongti-TC", sans-serif;
   font-weight: bold;
   line-height: 1;
   border: none;
 }
 .ieghp-item-middle_part{
-  margin-bottom: 20px;
+  margin-bottom: 0.72em;
   width: 25%;
   text-align: center;
 }
 .iegph-time{
   display: inline-block;
-  margin-bottom: 5px;
-  font-size: 21px;
+  margin-bottom: 0.24em;
+  font-size: 0.75em;
   font-family: "Oswaldmedium", sans-serif;
   font-weight: normal;
 }
 .iegph-red-iegph{
   display: inline-block;
-  width: 35px;
-  line-height: 35px;
-  border: 1px solid #ea5e68;
+  width: 1.32em;
+  line-height: 1.32em;
+  border: 0.036em solid #ea5e68;
 }
 .ieghp-item-middle_part-full{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
-  padding: 0 10px;
+  margin-top: 0.64em;
+  padding: 0 0.64em;
 }
 .iegph-span{}
 .ieghp-item-middle_columns{}

@@ -253,7 +253,7 @@ $(document).ready(function() {
 
 
 	// table ierogliph resize
-	var ieghpTableResize = function(){
+	/*var ieghpTableResize = function(){
 	    var arr = document.querySelectorAll('.ieghp-table');
 	    arr.forEach(function(item,i,arr){
 	    	item.parentElement.style.paddingBottom = item.offsetHeight/item.offsetWidth * 100 + '%';
@@ -264,11 +264,12 @@ $(document).ready(function() {
 	    	item.style.transform = 'scale(' + sizeParentX/sizeTableX + ')'; 
 	    	item.style.left = -(sizeTableX*(1 - sizeParentX/sizeTableX))/2 + 'px';
 	    	item.style.top = -(sizeTableY*(1 - sizeParentY/sizeTableY))/2 + 'px';
+	    	console.log(getComputedStyle(item).transform)
 	    });
 	};
 
 	ieghpTableResize();
-	window.addEventListener('resize',ieghpTableResize);
+	window.addEventListener('resize',ieghpTableResize);*/
 
 
 	//Form validation
