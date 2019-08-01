@@ -569,7 +569,6 @@ body div input.login_input:focus::placeholder{
 footer {
   font-size: 10px;
   letter-spacing: 1px;
-  /*font-family: "LucidaGrande", sans-serif;*/
   color: #fff; }
   .footer-main-block{
     padding: 0 38px 20px;
@@ -1044,7 +1043,6 @@ td.pmz {
 .dsquare{
  
     width: 81px;
-    /* height: 80.9px; */
     border: solid 1px #979797;
     float: left;
     margin: 2.5px;
@@ -1748,7 +1746,6 @@ text-align: center;
 .sidebar_timer .timerok{
   display: inline-block;
   width: 100%;
-  /*max-width: 120px;*/
   height: 40px;
   padding: 0 10px;
   background-color: transparent;
@@ -1921,8 +1918,7 @@ text-align: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-start;
-        /*width: 120px;*/ }
+        align-items: flex-start; }
         .content_block .list_calendar li .box_list_calendar:hover {
           box-shadow: -3px 3px 0 #f5c2c5, 3px 3px 0 #f5c2c5, 3px -3px 0 #f5c2c5, -3px -3px 0 #f5c2c5; }
           .content_block .list_calendar li .box_list_calendar:hover .box_calendar {
@@ -2475,7 +2471,6 @@ text-align: center;
     .form_box .form_box_bg p {
       font-size: 12px;
       font-family: "Oswaldlight", sans-serif;
-      /*text-transform: uppercase;*/
       text-align: left; }
     .form_box .form_box_bg .sex span {
       display: inline-block;
@@ -2508,26 +2503,6 @@ text-align: center;
     .form_box .form_box_bg input[type="time"] {
       width: 80px;
       margin-bottom: 0; }
-    /*.form_box .form_box_bg .w_2 {
-      position: relative;
-      display: inline-block;
-      width: 49%;
-      margin-bottom: 10px;
-      text-transform: uppercase; }
-      .w_2 svg.cal_m_a {
-        position: absolute;
-        right: -27px;
-        top: -1px;
-      }
-      .w_2 svg.cal_m_b {
-        position: absolute;
-        right: 3px;
-        top: -1px;
-      }
-      .form_box .form_box_bg .w_2 label {
-        padding-left: 0; }
-      .form_box .form_box_bg .w_2 .lebel_time {
-        padding-left: 31px; }*/
     .form_box .form_box_bg .is_time,
     .form_box .form_box_bg .label_timeZone {
       width: 44%;
@@ -2537,9 +2512,6 @@ text-align: center;
     .rchnesc .form_box .form_box_bg .label_timeZone{
       width: 42%;
     }
-/*    .form_box .form_box_bg .time_sun,
-    .form_box .form_box_bg .time_pecin {
-      width: 54%; }*/
     .form_box .form_box_bg .lins {
       display: inline-block;
       width: 180px;
@@ -2560,20 +2532,6 @@ text-align: center;
       .form_box .form_box_bg .lins_2 img {
         width: 28px;
         vertical-align: text-top; }
-    /*.form_box .form_box_bg .hours_days_box input[type="radio"] + label,
-    .form_box .form_box_bg .hours_days_box input[type="checkbox"] + label {
-      padding-left: 0;
-      padding-bottom: 25px;
-      vertical-align: top; }
-      .form_box .form_box_bg .hours_days_box input[type="radio"] + label:before,
-      .form_box .form_box_bg .hours_days_box input[type="checkbox"] + label:before {
-        top: initial;
-        left: 0;
-        right: 0;
-        bottom: 0; }
-    .form_box .form_box_bg .days,
-    .form_box .form_box_bg .hours {
-      width: 48%; }*/
 
 .form_box_bg + input[type="submit"] {
   margin-right: auto;
@@ -2828,7 +2786,6 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 20px;
   border: solid 2px #b4b4b4; }
   .block_top_calendar .top_calendar_box {
-    /*max-width: 330px;*/
     margin: 5px auto;
     padding: 0;
     text-align: center; }
@@ -2915,45 +2872,6 @@ input[type="checkbox"]:checked + label:before {
       background-image: url(../img/Arrows_right.png); }
 
 
-
-/*.prof_box {
-  max-width: 848px;
-  margin: 0 auto; }
-  .prof_box .prof_list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style-type: none; }
-    .prof_box .prof_list li {
-      margin: 0 auto; }
-    .prof_box .prof_list .title_prof_list {
-      width: 160px;
-      height: 32px;
-      margin: 0 auto;
-      font-family: "Oswald", sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 1.33;
-      letter-spacing: 0.5px;
-      text-align: center;
-      color: #000000; }
-    .prof_box .prof_list table td {
-      width: 39px;
-      height: 40px;
-      font-size: 12px;
-      font-family: "Oswald", sans-serif;
-      font-weight: 500;
-      line-height: 1.33;
-      text-align: center;
-      color: #000000; }
-      .prof_box .prof_list table td .star_one {
-        width: 30px;
-        height: 30px;
-        margin: 0 auto;
-        padding: 8px 10px;
-        border-radius: 2px;
-        background-color: #cccccc; }*/
 
         .calendar_box .form_box_bg input[type="date"] {
           width: 104px;
@@ -3310,16 +3228,6 @@ td.td_p_cus {
   font-size: 12px;
 }
 
-/*.pr_avatar img {
-  width: 100%;
-  height: 104px;
-  max-width: 104px;
-  margin-bottom: 5px;
-  border-radius: 50%;
-  border: 1px solid #4a4a4a;
-  padding: 2px;
-  
-}*/
 .prof_pic{
   position: relative;
   width: 100%;
@@ -3557,21 +3465,18 @@ a.btn_black_big:hover{
 }
 
 .voprosi {
+  padding: 0 50px;
   font-size: 14px;
   letter-spacing: 0.6px;
   font-family: Oswaldlight;
 }
 
-.voprosi .content_block {
-  padding: 20px 50px;
-  padding-top: 0;
-}
-
 .voprosi > .h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 18px;
   font-family: Oswaldmedium;
   letter-spacing: 0.5px;
-  margin-bottom: 30px;
 }
 
 
@@ -3960,8 +3865,8 @@ form.nes_new_form input[type="time"] {
 
 
 
-.calendar_nw .content_block {
-  padding: 20px 70px;
+.calendar_nw{
+  padding: 0 70px;
 }
 
 div.pink_hlp {
@@ -4066,10 +3971,9 @@ div.tran_hlp {
 }
 
 
-.nw_cal_day .content_block {
-  padding: 20px 67px;
+.nw_cal_day{
+  padding: 0 67px;
 }
-
 .nw_cal_day .block_pop{
   padding: 10px 20px 10px 44px;
 }
@@ -4211,18 +4115,13 @@ p.mb_f {
 .eight .content_block {
   padding: 65px 50px 50px;
 }
-.arch .content_block {
-  padding: 20px 50px;
-}
-.polit .content_block {
-  padding: 0px 50px;
-  padding-bottom: 20px;
-}
-.bzi .content_block {
-  padding: 20px;
+.arch{
+  padding: 0 50px;
 }
 
-
+.bzi{
+  padding: 0 20px;
+}
 .bzi .block_pop{
   max-width: 490px;
   padding-bottom: 0;
@@ -4409,7 +4308,6 @@ div.cal_date input {
 
 .ft_calculator td.lpmz a {
   display:block;
-  /*padding: 5px 33px;*/
   color: #000;
 }
 
@@ -4550,15 +4448,6 @@ a.btn_black:hover {
   color: #ea5e68;
 }
 
-.qi_men_n .block_pop{
-  padding: 25px 60px 0;
-}
-
-
-.qi_men_n .cal_date{
-  margin-top: 15px;
-}
-
 .mf_bl {
   display: flex;
   flex-wrap: wrap;
@@ -4614,7 +4503,7 @@ a.btn_black:hover {
 }
 
 
-.ci_men .form_box .form_box_bg{
+.form_box .ci-men-form_box_bg{
   padding: 20px;
 }
 .ci-men-form_box{
@@ -4716,14 +4605,19 @@ a.btn_black:hover {
 }
 
 
-.qi_men_n .content_block{
-  padding: 28px 78px 70px;
+
+.qi_men_n{
+  padding: 3px 78px 70px;
 }
 .qi_men_n .block_pop{
   max-width: 460px;
+  padding: 25px 60px 0;
 }
 .qi_men_n .cal_main_left span {
   text-transform: uppercase;
+}
+.qi_men_n .cal_date{
+  margin-top: 15px;
 }
 
 
