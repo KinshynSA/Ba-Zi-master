@@ -1321,8 +1321,8 @@ text-align: center;
 }
 .block_pop .closeB{
     position: absolute;
-    left: 20px;
     top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 .block_pop .b2 select{
@@ -3979,7 +3979,7 @@ div.tran_hlp {
 }
 .nw_cal_day .block_pop .closeB{
   top: 10px;
-  left: 10px;
+  right: 10px;
 }
 
 
