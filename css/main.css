@@ -4593,7 +4593,7 @@ a.btn_black:hover {
   background-color: #cccccc;
   color: #000;
   font-size: 12px;
-  line-height: 1;
+  line-height: 20px;
   letter-spacing: 1.2px;
   text-align: center;
   border: none;
