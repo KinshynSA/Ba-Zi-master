@@ -2460,6 +2460,9 @@
 	.crt_box .info_box form{
 		max-width: 100vw;
 	}
+	.footer-copyright_gap{
+		display: inline-block;
+	}
 }
 
 

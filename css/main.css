@@ -586,6 +586,9 @@ footer {
     .footer-copyright{
       margin-bottom: 0;
     }
+    .footer-copyright_gap{
+      display: none;
+    }
   footer .pause,
   footer .play,
   footer .mic {
