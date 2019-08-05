@@ -5385,6 +5385,7 @@ a.btn_black:hover {
 }
 .ieghp-star svg{
   width: calc(var(--s1) * 1.5);
+  height: calc(var(--s1) * 1.5);
 }
 .iegph-number{
   position: absolute;
