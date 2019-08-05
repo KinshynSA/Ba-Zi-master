@@ -5397,7 +5397,12 @@ a.btn_black:hover {
   width: 20%;
   padding: 0.18em 0.27em;
   margin-bottom: 0.54em;
-  /*font-size: 1.1em;*/
+}
+.ieghp-item_part:first-of-type .ieghp-ierglph,
+.ieghp-item_part:nth-of-type(5n+1) .ieghp-ierglph,
+.ieghp-item_part:nth-of-type(5n+2) .ieghp-ierglph{
+  font-size: 2.2em;
+  line-height: 1.4;
 }
 .ieghp-item_part-green:before,
 .ieghp-item_part-blue:before,
