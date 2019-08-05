@@ -106,8 +106,8 @@
 }
 
 @media screen and (max-width: 1000px){
-	.ieghp-container{
-  		font-size: calc((100vw - 240px)/80);
+	:root{
+		--s1: calc((100vw - 240px)/80);
 	}
 	.square_high{
 		margin: 32px auto 150px;
@@ -361,6 +361,9 @@
 }
 
 @media only screen and (max-width: 768px){
+	:root{
+		--s1: 1.22vw;
+	}
 	.top-buttons-block {
 		margin-top: 80px;
 	}
@@ -626,7 +629,6 @@
 	}
 	.ieghp-container{
 		max-width: 720px;
-		font-size: 1.3vw;
 	}
 	.ieghp-form{
 		grid-template-columns: 1.1fr 0.6fr 1.6fr 0.9fr 0.8fr;
