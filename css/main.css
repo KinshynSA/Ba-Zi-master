@@ -5437,7 +5437,6 @@ a.btn_black:hover {
   margin-top: 0.64em;
   padding: 0.1em 0.36em;
   background-color: #faeea3;
-  font-family: "Oswaldmedium", sans-serif;
   line-height: 1em;
   border: solid 0.1em #666666;
 }
@@ -5471,8 +5470,8 @@ a.btn_black:hover {
 .ieghp-item-middle{
   padding: 0.54em 0.36em 0.43em;
   font-size: 2.8em;
-  font-family: "STSongti-TC", sans-serif;
-  font-weight: bold;
+  font-family: "NotoSansTC", "STSongti-TC", sans-serif;
+  font-weight: 500;
   line-height: 1;
   border: none;
 }
@@ -5485,8 +5484,8 @@ a.btn_black:hover {
   display: inline-block;
   margin-bottom: 0.24em;
   font-size: 0.75em;
-  font-family: "Oswaldmedium", sans-serif;
-  font-weight: normal;
+  font-family: "NotoSansTC", "STSongti-TC", sans-serif;
+  font-weight: 500;
 }
 .iegph-red-iegph{
   display: inline-block;
