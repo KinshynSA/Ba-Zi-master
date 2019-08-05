@@ -83,7 +83,7 @@
 				
 				<div class="flex_box flex_nofw">
 
-					<div class="sidebar sidebar_qimen">
+					<div class="sidebar">
 
 						<div class="sidebar_nav">
 							<button class="sidebar_nav_button">
@@ -118,7 +118,7 @@
 								</div>
 							</div>
 
-							<div class="sidebar_grid_box">
+							<div class="sidebar_grid_box sidebar_grid_box-qi-men">
 									<div class="sidebar_box sidebar_box_1">
 											<p>Ваша подписка: 
 											<br><b>Калькулятор Ба-Цзы 
@@ -139,10 +139,10 @@
 
 								<div class="sidebar_box sidebar_box_2">
 
-												<h3>ОПЦИИ ОТОБРАЖЕНИЯ</h3>
+											<h3>ОПЦИИ ОТОБРАЖЕНИЯ</h3>
 												
-												<form action="">
-													<div class="otst_fiv">
+											<form action="">
+												<div class="otst_fiv">
 													<input type="radio" name="subs" id="checkbox_15">
 													<label for="checkbox_15">Подписи на пиньинь</label>
 													<input type="radio" name="subs" id="checkbox_16">
@@ -162,35 +162,35 @@
 												</div>
 													<input type="checkbox" name="" id="checkbox_19">
 													<label for="checkbox_19">Гексаграммы и Стратагемы</label>
-												</form>				
+											</form>				
 								</div>
 
-									<div class="sidebar_box sidebar_btn sidebar_btn-form-1">
-										<a href="#" class="buttons">СОХРАНИТЬ ОПЦИИ</a>
-										<a href="#" class="buttons">ВЕРСИЯ ДЛЯ ПЕЧАТИ</a>
-									</div>
+								<div class="sidebar_box sidebar_btn sidebar_btn-form-1">
+									<a href="#" class="buttons">СОХРАНИТЬ ОПЦИИ</a>
+									<a href="#" class="buttons">ВЕРСИЯ ДЛЯ ПЕЧАТИ</a>
+								</div>
 
 								<div class="sidebar_box sidebar_box_3">
-										<form action="">
-											<h3>Вариант базы Ци Мэнь</h3>
-											<div class="baza_box">
-												<input type="radio" name="radio_1" id="radio_2_1">
-												<label for="radio_2_1">1 База</label>
-												<input type="radio" name="radio_1" id="radio_2_2">
-												<label for="radio_2_2">2 База</label>
+											<div class="sidebar_sel_inp">
+												<select>
+													<option value="geroup">Группа </option>
+												</select>
+												<input type="text" placeholder="Название">
 											</div>
-												<div class="sidebar_sel_inp">
-														<select>
-																<option value="geroup">Группа </option>
-															</select>
-															<input type="text" placeholder="Название">
-												</div>
-												<div class="sidebar_btn">
-														<a href="#" class="buttons">СОХРАНИТЬ В АРХИВЕ</a>
-													</div>
-										</form>
-										
-										
+											<div class="sidebar_btn">
+												<a href="#" class="buttons">СОХРАНИТЬ В АРХИВЕ</a>
+											</div>
+
+								</div>
+								<div class="sidebar_box sidebar_box_4">
+
+									<h3>Вариант базы Ци Мэнь</h3>
+									<div class="baza_box">
+										<input type="radio" name="radio_1" id="radio_2_1">
+										<label for="radio_2_1">1 База</label>
+										<input type="radio" name="radio_1" id="radio_2_2">
+										<label for="radio_2_2">2 База</label>
+									</div>									
 											
 								</div>
 								
@@ -346,7 +346,11 @@
 							</div>
 
 							<div class="con_b">
-								<div class="t1 center">Ци Мэнь</div>
+
+								<div class="leftright">
+									<button class="btn_qi"><<<</button><div class="t1 center">Калькулятор Ци Мэнь</div><button class="btn_qi">>>></button>
+								</div>
+								
 							</div>
 							
 
@@ -1016,12 +1020,37 @@
 			                                </div>
 			                            </div>
 			                        </div>
+			                        <form class="ieghp-form">
+			                        	<div class="ieghp-form_box">
+											<input type="radio" name="iegph_subs" id="ieghp_input_1">
+											<label for="ieghp_input_1">Подписи на пиньинь</label>
+											<input type="radio" name="iegph_subs" id="ieghp_input_2">
+											<label for="ieghp_input_2">Подписи на русском </label>
+			                        	</div>
+			                        	<div class="ieghp-form_box">
+											<input type="radio" name="iegph_subs2" id="ieghp_input_3">
+											<label for="ieghp_input_3">Звезда</label>
+											<input type="radio" name="iegph_subs2" id="ieghp_input_4">
+											<label for="ieghp_input_4">Ju</label>
+			                        	</div>
+			                        	<div class="ieghp-form_box ieghp-form_box-middle">
+			                        		<button class="btn_qi"><<<</button>
+			                        		<button class="btn_qi">>>></button>
+			                        	</div>
+			                        	<div class="ieghp-form_box">
+											<input type="radio" name="iegph_subs3" id="ieghp_input_5">
+											<label for="ieghp_input_5">Перемещение</label>
+											<input type="radio" name="iegph_subs3" id="ieghp_input_6">
+											<label for="ieghp_input_6">Полет</label>
+			                        	</div>
+			                        	<div class="ieghp-form_box">
+			                        		<input type="checkbox" name="" id="ieghp_input_7">
+			                        		<label for="ieghp_input_7">Гексаграммы и Стратагемы</label>
+			                        	</div>
+			                        </form>
 			                    </div>
 			                </div>
 							
-							<div class="leftright">
-								<button class="btn_qi"><<<</button><button class="btn_qi">>>></button>
-							</div>
 							<div class="opisli">
 									<ul>
 											<li>

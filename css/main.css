@@ -1246,11 +1246,6 @@ text-align: center;
     margin-top: 39px;
 }
 
-.leftright {
-  display: flex;
-  justify-content: center;
-}
-
 .content_block .right_block .but_right{
     position: absolute;
     top:0;
@@ -1613,19 +1608,33 @@ text-align: center;
     margin-bottom:25px;
 }
 
+
+
+.leftright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn_qi {
-  width: 100px;
+  width: 60px;
   height: 30px;
+  margin: 0 10px;
   background: transparent;
   color: #EA5E68;
   border: 1px solid #666666;
-  margin: 22px 10px;
   font-size: 18px;
   font-family: 'OswaldMedium', sans-serif;
   line-height: 1;
 }
-
-
+.leftright .t1{
+  margin: 0 30px;
+}
+.nw_cal_day .leftright{
+  margin: 22px auto;
+}
+.nw_cal_day .btn_qi{
+  width: 100px;
+}
 
 
 
@@ -4610,7 +4619,8 @@ a.btn_black:hover {
 
 
 .qi_men_n{
-  padding: 3px 78px 70px;
+  margin-top: -8px;
+  padding: 0 78px 70px;
 }
 .qi_men_n .block_pop{
   max-width: 460px;
@@ -4621,6 +4631,13 @@ a.btn_black:hover {
 }
 .qi_men_n .cal_date{
   margin-top: 15px;
+}
+.sidebar_grid_box-qi-men{}
+.sidebar_grid_box-qi-men .sidebar_sel_inp{
+  margin-top: 0;
+}
+.sidebar_grid_box-qi-men .sidebar_box_4 h3{
+  margin-top: 10px;
 }
 
 
@@ -5309,35 +5326,27 @@ a.btn_black:hover {
 
 /* таблица для calendar-day и qi-men */
 .ieghp-container{
-  max-width: 760px;
+  max-width: 800px;
   width: 100%;
   margin: 20px auto;
+  padding: 1.9em 1.9em 1.5em;
+  background-color: #ccc;
   font-size: 10px;
 }
-/*.ieghp-box{
-  position: relative;
-  padding-bottom: 100%;
-  overflow-x: hidden;
-}*/
+.ieghp-box{}
 .ieghp-table{
-  /*position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   grid-column-gap: 0.5em;
   grid-row-gap: 0.5em;
-  /*min-width: 722px;*/
-  border: 1.9em solid #ccc;
+  background-color: #fdf4f4;
 }
 .ieghp-item{
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*min-height: 150px;*/
   padding: 1.8em 1em 0.5em;
   text-align: center;
   border-radius: 0.2em;
@@ -5489,7 +5498,54 @@ a.btn_black:hover {
   justify-content: space-between;
   min-height: 100%;
 }
+.ieghp-form{
+  display: grid;
+  grid-template-columns: 1.1fr 0.6fr 1.6fr 0.9fr 0.8fr;
+  margin-top: 13px;
+  padding: 0 calc(20px - 1.9em);
+}
+.ieghp-form_box{}
+.ieghp-form_box input[type="radio"] + label,
+.ieghp-form_box input[type="checkbox"] + label{
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 27px;
+  padding-right: 0;
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: none;
+}
 
+.ieghp-form_box input[type="radio"] + label:before,
+.ieghp-form_box input[type="checkbox"] + label:before{
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.ieghp-form_box input[type="radio"] + label:before{
+  border-radius: 50%;
+}
+.ieghp-form_box input[type="radio"]:checked + label:before,
+.ieghp-form_box input[type="checkbox"]:checked + label:before{
+  background-color: #ea5e68;
+}
+.ieghp-form_box-middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ieghp-form_box-middle button{
+  width: 60px;
+  transition: all 0.2s ease-in-out;
+}
+.ieghp-form_box-middle button:hover{
+  background-color: #cfa4a6;
+  color: #ffffff;
+  border-color: #ffffff;
+}
 
 
 .lost_content{
