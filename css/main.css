@@ -5352,6 +5352,7 @@ a.btn_black:hover {
 .ieghp-table{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-between;
   grid-column-gap: calc(var(--s1) * 0.5);
   grid-row-gap: calc(var(--s1) * 0.5);
