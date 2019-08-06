@@ -5336,7 +5336,7 @@ a.btn_black:hover {
   max-width: 800px;
   width: 100%;
   margin: 20px auto;
-  padding: calc(var(--s1) * 1.9) calc(var(--s1) * 1.9) calc(var(--s1) * 1.5);
+  padding: calc(var(--s1) * 1.9) calc(var(--s1) * 1.9) 0;
   background-color: #ccc;
   font-family: "PT Sans Narrow";
   font-size: var(--s1);
@@ -5542,9 +5542,14 @@ a.btn_black:hover {
   display: grid;
   grid-template-columns: 1.1fr 0.6fr 1.6fr 0.9fr 0.8fr;
   margin-top: 13px;
-  padding: 0 calc(20px - 1.9em);
+  padding: 0 calc(20px - 1.9em) 10px;
 }
 .ieghp-form_box{}
+.ieghp-form_box:nth-of-type(6){
+  grid-column: 3/4;
+  margin-top: 10px;
+  justify-self: center;
+}
 .ieghp-form_box input[type="radio"] + label,
 .ieghp-form_box input[type="checkbox"] + label{
   width: 100%;
@@ -5557,7 +5562,6 @@ a.btn_black:hover {
   letter-spacing: 1px;
   text-transform: none;
 }
-
 .ieghp-form_box input[type="radio"] + label:before,
 .ieghp-form_box input[type="checkbox"] + label:before{
   width: 15px;
