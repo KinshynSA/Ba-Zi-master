@@ -205,9 +205,10 @@ $(document).ready(function() {
 
 
 	// Sidebar checkbox options
+	var clickCounter = 0;
 	$('.sidebar-switcher').click(function(){
 		var c = this.dataset.option;
-		document.querySelectorAll('.' + c + '').forEach(function(item){
+		document.querySelectorAll('.' + c).forEach(function(item){
 			if(item.dataset.hide){
 				switch(item.dataset.hide){
 					case 'opacity':
@@ -220,8 +221,18 @@ $(document).ready(function() {
 				item.classList.toggle('hidden');
 			}
 		});
+
 		if($('.box_calendar').length){
 			heightEqualize('.box_calendar');
+		};
+
+		if(this.dataset.label){
+			if(clickCounter){
+				clickCounter = 0;
+			} else {
+				clickCounter++;
+				$(this.dataset.label).click();
+			}
 		}
 	});
 
