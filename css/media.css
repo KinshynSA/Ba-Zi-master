@@ -1874,7 +1874,7 @@
 		order: 8;
 	}
 	.qi_men_n .ieghp-container{
-		margin-top: 5px;
+		margin-top: 2px;
 	}
 	.ieghp-form{
 		grid-template-columns: 1fr 1fr;
@@ -2467,7 +2467,7 @@
 		margin: 0 5px;
 	}
 	.qi_men_n .ieghp-container{
-		margin-top: 9px;
+		margin-top: 6px;
 	}
 	.ieghp-form{
 		grid-template-columns: 1fr 110px;
