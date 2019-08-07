@@ -207,7 +207,19 @@ $(document).ready(function() {
 	// Sidebar checkbox options
 	$('.sidebar-switcher').click(function(){
 		var c = this.dataset.option;
-		jQuery('.' + c + '').toggleClass('hidden');
+		document.querySelectorAll('.' + c + '').forEach(function(item){
+			if(item.dataset.hide){
+				switch(item.dataset.hide){
+					case 'opacity':
+					 	item.classList.toggle('limpid');
+						break;
+					default:
+						item.classList.toggle('hidden');
+				}
+			} else {
+				item.classList.toggle('hidden');
+			}
+		});
 		if($('.box_calendar').length){
 			heightEqualize('.box_calendar');
 		}
