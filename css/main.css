@@ -66,14 +66,6 @@ body input[type=name]::placeholder{
 }
 
 
-.input-checkbox + label:before{
-  border-radius: 0!important;
-}
-.input-radio + label:before{
-  border-radius: 50%!important;
-}
-
-
 header,
 section,
 footer,

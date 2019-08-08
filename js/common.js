@@ -211,22 +211,35 @@ $(document).ready(function() {
 
 		if(this.type == 'checkbox'){
 
-			document.querySelectorAll('.' + this.dataset.option).forEach(function(elem){
-				var specialClass = elem.dataset.hide || 'hidden';
-				elem.classList.toggle(specialClass);
-			});		
+			switchClass(this);
+
+			if(this.classList.contains('radio-checkbox')){
+				var state = $(this).prop('checked');
+
+				document.querySelectorAll('input[name=' + this.name + ']').forEach(function(item){
+					$(item).prop('checked',false);
+					switchClass(item);
+				});
+
+				$(this).prop('checked',state);
+				switchClass(this);
+			};
 
 		} else if(this.type == 'radio'){
 
 			document.querySelectorAll('input[name=' + this.name + ']').forEach(function(item){
 				if(item.dataset.option){
-					document.querySelectorAll('.' + item.dataset.option).forEach(function(elem){
-						var specialClass = elem.dataset.hide || 'hidden';
-						$(item).prop('checked') ? elem.classList.remove(specialClass) : elem.classList.add(specialClass);
-					})
+					switchClass(item)
 				}
 			});
 
+		};
+
+		function switchClass(item){
+			document.querySelectorAll('.' + item.dataset.option).forEach(function(elem){
+				var specialClass = elem.dataset.hide || 'hidden';
+				$(item).prop('checked') ? elem.classList.remove(specialClass) : elem.classList.add(specialClass);
+			});	
 		};
 
 
@@ -243,6 +256,8 @@ $(document).ready(function() {
 			heightEqualize('.box_calendar');
 		};
 	});
+
+
 
 
 	//Phone input mask
