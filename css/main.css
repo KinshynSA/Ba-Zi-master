@@ -5468,7 +5468,9 @@ a.btn_black:hover {
   font-size: calc(var(--s1) * 2.1);
   line-height: 1.6;
 }
-.ieghp-sign{}
+.ieghp-sign{
+  line-height: 1;
+}
 .ieghp-de,
 .ieghp-dp{
   display: inline-block;
