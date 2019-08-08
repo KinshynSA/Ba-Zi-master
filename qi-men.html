@@ -314,8 +314,8 @@
 																		<label for="map_hour">КАРТА ЧАСА</label>
 																		<input id="map_day" type="radio" name="map_time" value="2">
 																		<label for="map_day">КАРТА ДНЯ</label>
-																		<input id="map_choose" type="checkbox" name="map_choose" value="1">
-																		<label for="map_choose" onclick="(()=>{if(!map_choose.checked) map_hour.checked = true;})()">Карта рождения</label>
+																		<input checked id="map_choose" type="checkbox" name="map_choose" value="1">
+																		<label for="map_choose"  class="sidebar-switcher" data-option="ieghp-form_tc" onclick="(()=>{if(!map_choose.checked) map_hour.checked = true;})()">Карта рождения</label>
 																	</div>
 																	<div class="ci-men-form_item">
 																		<a href="#" class="lins">ци мэнь для фэншуй</a>
@@ -1062,7 +1062,7 @@
 			                        		<input class="sidebar-switcher" data-label="#checkbox_19" type="checkbox" name="" id="ieghp_input_7" checked>
 			                        		<label for="ieghp_input_7">Гексаграммы и Стратагемы</label>
 			                        	</div>
-			                        	<div class="ieghp-form_box">
+			                        	<div class="ieghp-form_box ieghp-form_tc">
 			                        		<input class="sidebar-switcher" data-label="#checkbox_22" type="checkbox" name="" id="ieghp_input_8" checked>
 			                        		<label for="ieghp_input_8">Темы Дворцов</label>
 			                        	</div>
