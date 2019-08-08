@@ -207,24 +207,28 @@ $(document).ready(function() {
 	// Sidebar checkbox options
 	var clickCounter = 0;
 	$('.sidebar-switcher').click(function(){
-		var c = this.dataset.option;
-		document.querySelectorAll('.' + c).forEach(function(item){
-			if(item.dataset.hide){
-				switch(item.dataset.hide){
-					case 'opacity':
-					 	item.classList.toggle('limpid');
-						break;
-					default:
-						item.classList.toggle('hidden');
-				}
-			} else {
-				item.classList.toggle('hidden');
-			}
-		});
+		var input = this;
 
-		if($('.box_calendar').length){
-			heightEqualize('.box_calendar');
+		if(this.type == 'checkbox'){
+
+			document.querySelectorAll('.' + this.dataset.option).forEach(function(elem){
+				var specialClass = elem.dataset.hide || 'hidden';
+				elem.classList.toggle(specialClass);
+			});		
+
+		} else if(this.type == 'radio'){
+
+			document.querySelectorAll('input[name=' + this.name + ']').forEach(function(item){
+				if(item.dataset.option){
+					document.querySelectorAll('.' + item.dataset.option).forEach(function(elem){
+						var specialClass = elem.dataset.hide || 'hidden';
+						$(item).prop('checked') ? elem.classList.remove(specialClass) : elem.classList.add(specialClass);
+					})
+				}
+			});
+
 		};
+
 
 		if(this.dataset.label){
 			if(clickCounter){
@@ -233,7 +237,11 @@ $(document).ready(function() {
 				clickCounter++;
 				$(this.dataset.label).click();
 			}
-		}
+		};
+
+		if($('.box_calendar').length){
+			heightEqualize('.box_calendar');
+		};
 	});
 
 

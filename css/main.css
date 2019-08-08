@@ -66,6 +66,13 @@ body input[type=name]::placeholder{
 }
 
 
+.input-checkbox + label:before{
+  border-radius: 0!important;
+}
+.input-radio + label:before{
+  border-radius: 50%!important;
+}
+
 
 header,
 section,
@@ -713,13 +720,15 @@ table.arch_tbl tr:first-child {
   padding-left: 0;
 }
 
-.arch_tbl input[type="checkbox"] + label:before, .sidebar input[type="radio"] + label:before {
+.arch_tbl input[type="checkbox"] + label:before,
+.sidebar input[type="radio"] + label:before {
   top: 3px;
   width: 15px;
   height: 15px;
 }
 
-.arch_tbl input[type="checkbox"]:checked + label:after, .sidebar input[type="radio"]:checked + label:after {
+.arch_tbl input[type="checkbox"]:checked + label:after,
+.sidebar input[type="radio"]:checked + label:after {
   top: 5px;
   left: 2px;
   width: 11px;
