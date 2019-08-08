@@ -5460,7 +5460,8 @@ a.btn_black:hover {
   font-size: calc(var(--s1) * 2.1);
   line-height: 1.6;
 }
-.ieghp-sign{
+.iegph-sign{
+  display: inline-block;
   line-height: 1;
 }
 .ieghp-de,
@@ -5505,7 +5506,10 @@ a.btn_black:hover {
   line-height: 1.4;
 }
 .iegph-item_part_tc{
-  font-size: calc(var(--s1) * 1);
+  display: inline-block;
+  max-width: calc(var(--s1) * 20);
+  margin: auto;
+  font-size: calc(var(--s1) * 1.05);
 }
 .ieghp-item-middle{
   display: grid;
