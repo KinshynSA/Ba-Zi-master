@@ -5512,7 +5512,7 @@ a.btn_black:hover {
   margin-bottom: 0;
   line-height: 1.4;
 }
-.ieghp-item_part-full span:last-of-type{
+.iegph-item_part_tc{
   font-size: calc(var(--s1) * 1);
 }
 .ieghp-item-middle{
