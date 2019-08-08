@@ -5465,8 +5465,8 @@ a.btn_black:hover {
 .ieghp-item_part:first-of-type .ieghp-ierglph,
 .ieghp-item_part:nth-of-type(5n+1) .ieghp-ierglph,
 .ieghp-item_part:nth-of-type(5n+2) .ieghp-ierglph{
-  font-size: calc(var(--s1) * 2.2);
-  line-height: 1.5;
+  font-size: calc(var(--s1) * 2.1);
+  line-height: 1.6;
 }
 .ieghp-sign{}
 .ieghp-de,
