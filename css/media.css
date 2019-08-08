@@ -1,3 +1,9 @@
+@media screen and (max-width: 1280px){
+	.qi_men_n .opisli ul li{
+		font-size: 16px;
+	}
+}
+
 @media only screen and (max-width: 1218px){
 	.top_content_block_all {
 		flex-direction: column;
@@ -1761,6 +1767,9 @@
 	}
 	.qi_men_n .opisli{
 		margin: 0;
+	}
+	.qi_men_n .opisli ul li{
+		font-size: 18px;
 	}
 	.popup-qimen_box{
 		margin: 0;
