@@ -297,27 +297,6 @@ $(document).ready(function() {
 	window.addEventListener('resize',timerMake);
 
 
-
-	// table ierogliph resize
-	/*var ieghpTableResize = function(){
-	    var arr = document.querySelectorAll('.ieghp-table');
-	    arr.forEach(function(item,i,arr){
-	    	item.parentElement.style.paddingBottom = item.offsetHeight/item.offsetWidth * 100 + '%';
-	    	var sizeParentX = Math.min(item.parentElement.offsetWidth, item.offsetWidth);
-	    	var sizeParentY = Math.min(item.parentElement.offsetHeight, item.offsetHeight);
-	    	var sizeTableX = item.offsetWidth;
-	    	var sizeTableY = item.offsetHeight;
-	    	item.style.transform = 'scale(' + sizeParentX/sizeTableX + ')'; 
-	    	item.style.left = -(sizeTableX*(1 - sizeParentX/sizeTableX))/2 + 'px';
-	    	item.style.top = -(sizeTableY*(1 - sizeParentY/sizeTableY))/2 + 'px';
-	    	console.log(getComputedStyle(item).transform)
-	    });
-	};
-
-	ieghpTableResize();
-	window.addEventListener('resize',ieghpTableResize);*/
-
-
 	//Form validation
 	formValidator.prepare();
 });
