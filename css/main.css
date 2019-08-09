@@ -5352,7 +5352,7 @@ a.btn_black:hover {
   max-width: 800px;
   width: 100%;
   margin: 20px auto;
-  /*padding: calc(var(--s1) * 1.9) calc(var(--s1) * 1.9) 0;*/
+  padding: calc(var(--s1) * 1.9) calc(var(--s1) * 1.9) 0;
   background-color: #ccc;
   font-family: "PT Sans Narrow";
   font-size: var(--s1);
@@ -5364,25 +5364,15 @@ a.btn_black:hover {
   font-family: "PT Sans Narrow";
   font-weight: bold;  
 }
-.ieghp-box{
-  position: relative;
-  padding-bottom: 100%;
-  overflow-x: hidden;
-}
+.ieghp-box{}
 .ieghp-table{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: space-between;
   grid-column-gap: calc(var(--s1) * 0.5);
   grid-row-gap: calc(var(--s1) * 0.5);
-  width: 800px;
   background-color: #fdf4f4;
-  border: 19px solid #ccc;
 }
 .ieghp-item{
   position: relative;
@@ -5607,7 +5597,6 @@ a.btn_black:hover {
 }
 .ieghp-form{
   display: grid;
-  display: none;
   grid-template-columns: 1.1fr 0.6fr 1.6fr 0.9fr 0.8fr;
   margin-top: 13px;
   padding: 0 calc(20px - 1.9em) 13px;
