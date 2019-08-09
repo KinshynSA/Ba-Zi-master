@@ -1710,10 +1710,6 @@
 	.buttons-black {
 		width: 115px;
 	}
-	.qi_mn_d_f .t1{
-		max-width: 180px;
-		margin: -10px auto -8px;
-	}
 }
 
 @media only screen and (max-width: 489px){
@@ -1919,6 +1915,11 @@
 	}
 	.qi_men_n .opisli ul li{
 		font-size: 14px;
+	}	
+	.qi_mn_d_f .t1{
+		max-width: 180px;
+		margin: -10px 0 -8px 20px;
+		text-align: left;
 	}
 
 
