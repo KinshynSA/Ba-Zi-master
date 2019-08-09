@@ -5450,6 +5450,7 @@ a.btn_black:hover {
 .ieghp-ierglph{
   display: inline-block;
   width: 100%;
+  margin-bottom: calc(var(--s1) * 0.1);
   font-size: calc(var(--s1) * 2.8);
   font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-weight: 500;
@@ -5460,7 +5461,7 @@ a.btn_black:hover {
   font-size: calc(var(--s1) * 2.1);
   line-height: 1.6;
 }
-.iegph-sign{
+.ieghp-sign{
   display: inline-block;
   line-height: 1;
 }
