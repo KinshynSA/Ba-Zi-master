@@ -112,9 +112,9 @@
 }
 
 @media screen and (max-width: 1000px){
-	:root{
+	/*:root{
 		--s1: calc((100vw - 240px)/80);
-	}
+	}*/
 	.square_high{
 		margin: 32px auto 150px;
 		max-width: 100%;
@@ -375,9 +375,9 @@
 }
 
 @media only screen and (max-width: 768px){
-	:root{
+	/*:root{
 		--s1: 1.22vw;
-	}
+	}*/
 	.top-buttons-block {
 		margin-top: 80px;
 	}
