@@ -1,10 +1,6 @@
 'use strict';
 
 $(document).ready(function() {
-	document.querySelectorAll('.datepicker').forEach((item)=>{
-		item.onclick = ()=> false;
-	});
-
     $('.but_right').click(function(){
 		$('.block_pop').show('slow'); 
 		$(this).hide('slow');
