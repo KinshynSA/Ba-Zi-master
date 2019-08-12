@@ -2768,8 +2768,7 @@
 	input[type=email],
 	input[type=tel],
 	input[type=time],
-	select:focus,
-	option:focus{
+	select{
 		font-size: 17px!important;
 	}
 
@@ -2777,8 +2776,7 @@
 	input[type=email]:focus,
 	input[type=tel]:focus,
 	input[type=time]:focus,
-	select:focus,
-	option:focus{
+	select:focus{
 		font-size: 17px!important;
 	}
 }
