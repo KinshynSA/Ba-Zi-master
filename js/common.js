@@ -1,6 +1,9 @@
 'use strict';
 
 $(document).ready(function() {
+	$('.datepicker').click(function(){
+		return false;
+	});
 
     $('.but_right').click(function(){
 		$('.block_pop').show('slow'); 
