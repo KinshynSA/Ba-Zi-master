@@ -1,8 +1,8 @@
 'use strict';
 
 $(document).ready(function() {
-	$('.datepicker').click(function(){
-		return false;
+	document.querySelectorAll('.datepicker').forEach((item)=>{
+		item.onclick = ()=> false;
 	});
 
     $('.but_right').click(function(){
