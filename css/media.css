@@ -2764,19 +2764,19 @@
 
 
 @supports (-webkit-overflow-scrolling: touch) {
-	input[type=text],
-	input[type=email],
-	input[type=tel],
-	input[type=time],
-	select{
-		font-size: 17px!important;
-	}
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  input[type=time],
+  select{
+    touch-action: manipulation;
+  }
 
-	input[type=text]:focus,
-	input[type=email]:focus,
-	input[type=tel]:focus,
-	input[type=time]:focus,
-	select:focus{
-		font-size: 17px!important;
-	}
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=tel]:focus,
+  input[type=time]:focus,
+  select:focus{
+    touch-action: manipulation;
+  }
 }
