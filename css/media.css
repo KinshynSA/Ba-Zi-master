@@ -2770,7 +2770,7 @@
 	input[type=time],
 	select:focus,
 	option:focus{
-		font-size: 16px!important;
+		font-size: 17px!important;
 	}
 
 	input[type=text]:focus,
@@ -2779,6 +2779,6 @@
 	input[type=time]:focus,
 	select:focus,
 	option:focus{
-		font-size: 16px!important;
+		font-size: 17px!important;
 	}
 }
