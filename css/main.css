@@ -1286,8 +1286,17 @@ text-align: center;
     position: absolute;
     top: 0;
     right: 0;
+    font-family: "Oswaldlight";
     text-align: center;
     z-index: 9999;
+}
+.block_pop b,
+.block_pop strong{
+  font-family: "Oswaldmedium", sans-serif;
+  font-weight: normal;
+}
+.block_pop label{
+    font-family: "Oswaldlight";  
 }
 
 .block_pop .form_box .form_box_bg{
@@ -2568,11 +2577,10 @@ label {
   min-height: 20px;
   line-height: 14px;
   font-size: 12px;
-  font-family: "Oswaldlight", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
-.content-shablon-2 .content_block label{
-  font-family: "PT Sans Narrow", sans-serif;
+.sidebar label{
+  font-family: "Oswaldlight", sans-serif;
 }
 
 input[type="radio"],
@@ -3658,11 +3666,18 @@ input[name="days"] + label::after {
 form.nes_new_form {
   width: 360px;
   max-width: 100%;
+  font-family: "Oswaldlight";
   font-size: 11px;
+}
+form.nes_new_form b,
+form.nes_new_form strong{
+  font-family: "Oswaldmedium";
+  font-weight: normal;
 }
 
 form.nes_new_form label {
   padding-right: 4px;
+  font-family: "Oswaldlight";
   font-size: 11px;
 }
 
