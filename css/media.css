@@ -1,5 +1,5 @@
 @media screen and (max-width: 1280px){
-	.qi_men_n .opisli ul li{
+	.opisli ul li{
 		font-size: 16px;
 	}
 }
@@ -1762,7 +1762,7 @@
 	.qi_men_n .opisli{
 		margin: 0;
 	}
-	.qi_men_n .opisli ul li{
+	.opisli ul li{
 		font-size: 18px;
 	}
 	.popup-qimen_box{
@@ -1909,17 +1909,17 @@
 	}
 	.ieghp-form_box:nth-of-type(6){
 		grid-row: 4/5;
-	}
-	.qi_men_n .opisli{
-		font-size: 14px;
-	}
-	.qi_men_n .opisli ul li{
-		font-size: 14px;
 	}	
 	.qi_mn_d_f .t1{
 		max-width: 170px;
 		margin: -10px 0 -8px 20px;
 		text-align: left;
+	}
+	.opisli{
+		font-size: 14px;
+	}
+	.opisli ul li{
+		font-size: 14px;
 	}
 
 
