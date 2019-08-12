@@ -1652,15 +1652,6 @@
 		grid-column: 1/2;
 		justify-self: flex-start;
 	}
-
-	input[type=text]:focus,
-	input[type=email]:focus,
-	input[type=tel]:focus,
-	input[type=time]:focus,
-	select:focus,
-	option:focus{
-		font-size: 16px!important;
-	}
 }
 
 @media only screen and (max-width: 539px){
@@ -2766,5 +2757,28 @@
 	}
 	.block_top_calendar .top_calendar_right{
 		margin-right: calc(50% - 70px);
+	}
+}
+
+
+
+
+@supports (-webkit-overflow-scrolling: touch) {
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	input[type=time],
+	select:focus,
+	option:focus{
+		font-size: 16px!important;
+	}
+
+	input[type=text]:focus,
+	input[type=email]:focus,
+	input[type=tel]:focus,
+	input[type=time]:focus,
+	select:focus,
+	option:focus{
+		font-size: 16px!important;
 	}
 }
