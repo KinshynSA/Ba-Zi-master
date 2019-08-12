@@ -9,10 +9,6 @@
 body{
   position: relative;
 }
-b,strong{
-  font-family: Oswaldmedium;
-  font-weight: normal;
-}
 html {
   height: 100%; }
 
@@ -25,15 +21,13 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   background: #1A1A1A;
-  font-family: "Oswaldlight", sans-serif;
-  font-weight: normal;
+  font-family: "Oswaldlight", "PT Sans Narrow", sans-serif;
   font-size: 14px;
   position: relative;
   letter-spacing: 0.5px;
   line-height: 1.2;
   -webkit-font-smoothing: antialised;
 }
-
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -673,7 +667,6 @@ select.mr_std{
 
 .dop_btn {
   color: #000;
-  font-family: Oswald;
   font-size: 10px;
 }
 
@@ -728,11 +721,9 @@ table.arch_tbl tr:first-child {
   background-color: #ea5e68;
 }
 
-tr>td.ff_or {
-  font-family: Oswald;
-}
+
 .ff_or {
-  font-family: Oswald;
+  font-weight: bold;
 }
 
 .fpw {
@@ -901,19 +892,21 @@ td.bg_gr_bd_b_no_l {
   list-style-type: decimal;
 }
 
-.ft_calculator table,.ft_calculator th,.ft_calculator td {
+.ft_calculator table,
+.ft_calculator th,
+.ft_calculator td {
   border: 1px solid #cccccc;
   border-collapse: collapse;
   text-align: center;
-  font-family: Oswaldlight;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 12.2px;
 }
 
 .gb_simp {
   text-align: center;
   border: 1px solid #cccccc;
-  font-family: Oswald;
   font-size: 11px;
+  font-weight: bold;
 }
 
 .month_nbr {
@@ -923,7 +916,7 @@ td.bg_gr_bd_b_no_l {
 
 .symb_block_s {
   display: flex;
-  font-family: STSongti-TC;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-weight: bold;
   font-size: 12px;
   justify-content: space-around;
@@ -1003,20 +996,20 @@ td.pmz {
 }
 
 .ft_calc_sym {
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-size: 38px;
-  font-family: STSongti-TC;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .ff_sym {
-  font-family: STSongti-TC;
-  font-weight: bold;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
+  font-weight: 500;
 }
 
 .main_sym {
-  font-family: STSongti-TC;
-  font-weight: bold;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .main_sym-img{
@@ -1025,9 +1018,9 @@ td.pmz {
 }
 
 .main_sym_bot {
-  font-family: STSongti-TC;
-  font-weight: bold;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-size: 17px;
+  font-weight: 500;
 }
 
 .calc_cent {
@@ -1056,12 +1049,10 @@ td.pmz {
     height: 81px;
 }
 .dsquare{
- 
     width: 81px;
     border: solid 1px #979797;
     float: left;
     margin: 2.5px;
-    font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -1075,12 +1066,11 @@ td.pmz {
 }
 
 .bald_f {
-  font-family: Oswaldmedium;
+  font-weight: bold;
   position: relative;
 }
 
 .copiryte {
-  font-family: Oswald;
   position: absolute;
   color: #EA5E68;
   text-align: center;
@@ -1096,7 +1086,7 @@ td.pmz {
 
 .h2 {
   font-size: 14px;
-  font-family: Oswaldmedium;
+  font-weight: bold;
   margin: 0;
   margin-bottom: 23px;
   letter-spacing: 0.5px;
@@ -1104,14 +1094,14 @@ td.pmz {
 
 .h3 {
   font-size: 14px;
-  font-family: Oswaldmedium;
+  font-weight: bold;
   margin: 0;
   letter-spacing: 0.5px;
   margin-bottom: 23px;
 }
 
 .p_text {
-  font-family: Oswaldlight;
+  font-family: "PT Sans Narrow", sans-serif;
   margin-bottom: 22px;
   letter-spacing: 0.5px;
   font-size: 14px;
@@ -1121,7 +1111,7 @@ td.pmz {
     background-color: #b8e986;
 }
 .dsquare .abs{
-   font-family: Oswald;
+   font-family: "PT Sans Narrow", sans-serif;
     font-size: 40px;
     font-weight: normal;
     font-style: normal;
@@ -1141,7 +1131,7 @@ td.pmz {
   margin: 20px 20px;
   padding: 10px 10px;
   font-size: 14px;
-  font-family: "Oswaldlight", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -1155,7 +1145,7 @@ td.pmz {
   padding: 0 10px;
   font-size: 20px;
   line-height: 36px;
-  font-family: "Oswaldlight", sans-serif; }
+  font-family: "PT Sans Narrow", sans-serif; }
   .right_block .lins_2 img {
     width: 28px;
     vertical-align: text-top; }
@@ -1219,12 +1209,12 @@ td.pmz {
 }
 .con_b .t2{
     font-size: 18px;
-    font-family: Oswaldmedium;
+    font-weight: bold;
     line-height: 1.5;
     margin-bottom: 36px;
 }
 .con_b .t3{
-    font-family: Oswaldmedium;
+  font-weight: bold;
   font-size: 14px;
   font-style: normal;
   font-stretch: normal;
@@ -1234,7 +1224,7 @@ td.pmz {
   color: #000000;
 }
 .bot_con{
-    font-family: Oswaldmedium;
+    font-weight: bold;
     font-size: 12px;
     margin-top: 40px;
 }
@@ -1254,7 +1244,6 @@ text-align: center;
 .text_block_2{
     font-size: 14px;
     text-align: left;
-    font-family: Oswald;
     margin-top: 39px;
 }
 
@@ -1281,7 +1270,6 @@ text-align: center;
 
 .calendar_box {
   color: #ffffff;
-  font-family: Oswaldlight;
   width: 100%;
   max-width: 100%;
 }
@@ -1307,7 +1295,6 @@ text-align: center;
 }
 
 .block_pop .b1{
-    font-family: Oswald;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -1318,9 +1305,8 @@ text-align: center;
   color: #ffffff;
 }
 .block_pop .b4{
-    font-family: Oswald;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
@@ -1343,15 +1329,14 @@ text-align: center;
 }
 
 .b1 span {
-  font-family: Oswaldlight;
+  font-weight: 400;
 }
 
 
 
 .block_pop .b3 button{
-    font-family: Oswald;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-stretch: normal;
     line-height: 0.57;
@@ -1602,7 +1587,6 @@ text-align: center;
 
 
 .t1{
-    font-family: Oswald;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -1635,7 +1619,7 @@ text-align: center;
   color: #EA5E68;
   border: 1px solid #666666;
   font-size: 18px;
-  font-family: 'OswaldMedium', sans-serif;
+  font-weight: bold;
   line-height: 1;
 }
 .leftright .t1{
@@ -1669,14 +1653,13 @@ text-align: center;
     border-bottom: solid 2px #4a4a4a;
     padding: 18px 0;
     font-size: 18px; 
-    font-family: Oswaldlight;
 }
 .opisli ul li:last-child{
   border-bottom: none;
 }
 .opisli ul li span{
-    font-family: "STSongti-TC", sans-serif;
-    font-weight: bold;
+    font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
+    font-weight: 500;
 }
 
 
@@ -1804,6 +1787,11 @@ text-align: center;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.8s linear; }
+.sidebar b,
+.sidebar strong{
+  font-family: "Oswaldmedium", sans-serif;
+  font-weight: normal;
+}
   .sidebar .avatar{
     display: inline-flex;
     flex-direction: column;
@@ -1826,8 +1814,6 @@ text-align: center;
     .sidebar .sidebar_box p {
       font-family: "Oswaldlight", sans-serif;
       line-height: 20px; }
-    .sidebar .sidebar_box b {
-      font-family: "Oswaldmedium", sans-serif; }
     .sidebar .sidebar_box ul {
       margin: 24px auto 16px;
       padding: 0;
@@ -1960,7 +1946,6 @@ text-align: center;
           width: 100%;
           padding: 4px;
           font-size: 12px;
-          font-family: "Oswald", sans-serif;
           line-height: 12px;
           letter-spacing: 0.5px;
           text-align: center;
@@ -1972,9 +1957,8 @@ text-align: center;
             right: 2px;
             width: 37px;
             height: 12px;
-            font-family: "Oswald", sans-serif;
             font-size: 12px;
-            font-weight: 900;
+            font-weight: 700;
             line-height: 12px;
             letter-spacing: 0.5px;
             color: #d0011b; }
@@ -1983,9 +1967,8 @@ text-align: center;
             top: 3px;
             left: 4px;
             height: 12px;
-            font-family: "Oswald", sans-serif;
             font-size: 12px;
-            font-weight: 900;
+            font-weight: 700;
             line-height: 12px;
             letter-spacing: 0.5px;
             text-align: center;
@@ -2001,7 +1984,7 @@ text-align: center;
           margin-left: 9px;
           margin-bottom: 5px;
           font-size: 19px;
-          font-family: "STSongti-TC", sans-serif;
+          font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
           font-weight: bold;
           line-height: normal;
           letter-spacing: normal;
@@ -2027,7 +2010,6 @@ text-align: center;
             min-height: 0;
             margin-bottom: 4px;
             font-size: 12px;
-            font-family: "OswaldLight", sans-serif;
             font-weight: normal;
           }
           .content_block .list_calendar li .box_list_calendar .hieroglyphs .hieroglyph-box:nth-of-type(n+4){
@@ -2046,9 +2028,8 @@ text-align: center;
           }
           .content_block .list_calendar li .box_list_calendar .hieroglyphs .numbers {
             margin-left: 6px;
-            font-family: "Oswaldlight", sans-serif;
             font-size: 12px;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 16px;
             letter-spacing: 27px;
             text-align: center; }
@@ -2066,33 +2047,31 @@ text-align: center;
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar h3 {
             margin: 0;
             font-size: 12px;
-            font-family: "Oswaldmedium", sans-serif;
+            font-weight: bold;
             line-height: 16px;
             letter-spacing: 0.2px;
             color: #000; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .green {
             color: #147500; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .hieroglyphs_2 {
-            font-family: "STSongti-TC", sans-serif;
+            font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
             font-weight: 500;
             color: #000; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar p {
             margin: 5px 0;
             font-size: 12px;
-            font-family: "Oswaldlight", sans-serif;
+            font-weight: 400;
             line-height: 16px;
             letter-spacing: 0.5px; }
             .content_block .list_calendar li .box_list_calendar .desc_list_calendar p span{
               display: inline-block;
               width: 100%;
             }
-            .content_block .list_calendar li .box_list_calendar .desc_list_calendar p b {
-              font-family: "Oswaldmedium", sans-serif; }
           .content_block .list_calendar li .box_list_calendar .desc_list_calendar .link_calendar {
             display: block;
             padding: 4px;
             font-size: 10px;
-            font-family: "Oswaldmedium", sans-serif;
+            font-weight: bold;
             text-transform: uppercase;
             line-height: 12px;
             letter-spacing: 1px;
@@ -2111,7 +2090,7 @@ text-align: center;
         width: 100%;
         padding: 5px;
         font-size: 12px;
-        font-family: "Oswaldmedium", sans-serif;
+        font-weight: bold;
         line-height: 1;
         text-align: center;
         color: #ffffff;
@@ -2125,9 +2104,8 @@ text-align: center;
   padding: 14px 10px;
   background-color: transparent;
   font-size: 12px;
-  font-family: "Oswaldlight", sasn-serif;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   line-height: 12px;
   color: #fff;
@@ -2143,7 +2121,6 @@ text-align: center;
       width: 120px;
       padding: 9px 0;
       font-size: 12px;
-      font-family: "Oswald", sasn-serif;
       text-transform: uppercase;
       font-weight: 300;
       text-align: center;
@@ -2208,12 +2185,10 @@ text-align: center;
 
         .symbol-descript, .symbol-descript-thin {
           font-size: 9px;
-          font-family: Oswald, 'sans-serif';
           letter-spacing: 0;
           margin-top: 5px;
         }
         .symbol-descript-thin{
-          font-family: Oswald, 'sans-serif';
           letter-spacing: 0.2px;
           font-size: 8px;
         }
@@ -2230,11 +2205,11 @@ text-align: center;
           border-radius: 3px;
         }
 
-        .content-bar-tables td, .content-bar-tables th {
+        .content-bar-tables td,
+        .content-bar-tables th {
           text-align: center;
           padding: 5px;
           width: 55px;
-          font-family: Oswald;
         }
 
         .symb-top{
@@ -2284,7 +2259,6 @@ text-align: center;
           color: #ea5e68;
           text-transform: uppercase;
           font-size: 12px;
-          font-family: Oswald;
         }
 
         .change_table_link:hover,.change_table_link:focus{
@@ -2296,7 +2270,7 @@ text-align: center;
 
         .black{ 
           color: #000;
-          font-family: "STSongti-TC", sans-serif;
+          font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
           font-weight: bold;
         }
         .calendar_day_title{
@@ -2305,13 +2279,11 @@ text-align: center;
           margin-top: 0;
           margin-bottom: 20px;
           text-align: center;
-          font-family: Oswald;
         }
 
         .table-description{
           margin-top: 6px;
           font-size: 11px;
-          font-family: Oswald, 'sans-serif';
           letter-spacing: 0.6px;
         }
         .table-description p {
@@ -2320,7 +2292,7 @@ text-align: center;
 
         .desc-butt {
           font-size: 10px;
-          font-family: Oswaldmedium;
+          font-weight: bold;
           display: block;
           background-color: #d10023;
           color: #fff;
@@ -2337,8 +2309,8 @@ text-align: center;
           width: 40px;
           height: 40px;
           padding: 5px;
-          font-family: Oswaldmedium, 'sans-serif';
           font-size: 12px;
+          font-weight: bold;
           text-align: center;
         }
 
@@ -2366,7 +2338,7 @@ text-align: center;
 
         .table_bottom_title{ 
           font-size: 12px;
-          font-family: "OswaldMedium", sans-serif;
+          font-weight: bold;
           line-height: 1.33;
           text-align: center;
         }
@@ -2384,7 +2356,6 @@ text-align: center;
           justify-content: flex-start;
           align-items: center;
           margin-bottom: 5px;
-          font-family: Oswald;
         }
 
         .symb_title{
@@ -2432,7 +2403,7 @@ text-align: center;
 .symbol-cont {
   position: relative;
   font-size: 20px;
-  font-family: "STSongti-TC", sans-serif;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-weight: bold;
 }
         
@@ -2478,7 +2449,6 @@ text-align: center;
     display: block; }
   .sidebar_box_bottom b {
     display: block;
-    font-family: "Oswaldmedium", sans-serif;
     text-align: right; }
 
 
@@ -2494,7 +2464,6 @@ text-align: center;
     background-color: rgba(0, 0, 0, 0.4); }
     .form_box .form_box_bg p {
       font-size: 12px;
-      font-family: "Oswaldlight", sans-serif;
       text-align: left; }
     .form_box .form_box_bg .sex span {
       display: inline-block;
@@ -2516,7 +2485,6 @@ text-align: center;
       padding: 0 10px;
       line-height: 20px;
       font-size: 12px;
-      font-family: "Oswaldlight", sans-serif;
       text-align: center;
       color: #000;
       background-color: #ccc;
@@ -2543,7 +2511,6 @@ text-align: center;
       height: 40px;
       padding: 10px 10px;
       font-size: 14px;
-      font-family: "Oswaldlight", sans-serif;
       text-transform: uppercase;
       text-align: center;
       border: 2px solid #EA5E67;
@@ -2551,8 +2518,7 @@ text-align: center;
     .form_box .form_box_bg .lins_2 {
       padding: 0 10px;
       font-size: 20px;
-      line-height: 36px;
-      font-family: "Oswaldlight", sans-serif; }
+      line-height: 36px; }
       .form_box .form_box_bg .lins_2 img {
         width: 28px;
         vertical-align: text-top; }
@@ -2603,8 +2569,11 @@ label {
   line-height: 14px;
   font-size: 12px;
   font-family: "Oswaldlight", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase; }
+.content-shablon-2 .content_block label{
+  font-family: "PT Sans Narrow", sans-serif;
+}
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -2700,6 +2669,7 @@ input[type="checkbox"]:checked + label:before {
 }
 .content-shablon-2 .content_block{
   padding: 25px 0px;
+  font-family: "PT Sans Narrow", sans-serif;  
 }
 
 .footer-shablon-2{
@@ -2862,7 +2832,6 @@ input[type="checkbox"]:checked + label:before {
     .block_top_calendar .top_calendar_box .numbers {
       padding-left: 8px;
       font-size: 12px;
-      font-family: "Oswaldlight", sans-serif;
       line-height: 20px;
       letter-spacing: 28px;
       text-align: center; }
@@ -3001,9 +2970,7 @@ input[type="checkbox"]:checked + label:before {
   margin-right: 20px;
 }
 
-.calendar_box {
-  font-family: Oswaldlight;
-}
+
 .cal_date label {
   line-height: 18px;
 }
@@ -3092,7 +3059,6 @@ input[type="checkbox"]:checked + label:before {
   height: 20px;
   border-radius: 50%;
   padding-top: 3px;
-  font-family: Oswald;
 }
 
 .crd_f_box {
@@ -3339,7 +3305,7 @@ td.td_p_cus {
   display: flex;
   margin-top: 0;
   color: #ea5e68;
-  font-family: Oswaldmedium, sans-serif;
+  font-weight: bold;
   transform: translateY(calc(-100% - 10px));
 }
 
@@ -3492,14 +3458,13 @@ a.btn_black_big:hover{
   padding: 0 50px;
   font-size: 14px;
   letter-spacing: 0.6px;
-  font-family: Oswaldlight;
 }
 
 .voprosi > .h1 {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 18px;
-  font-family: Oswaldmedium;
+  font-weight: bold;
   letter-spacing: 0.5px;
 }
 
@@ -3517,8 +3482,8 @@ a.btn_black_big:hover{
 }
 
 .center_td_tabl {
-  font-family: Oswaldmedium;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .main_add_content {
@@ -3552,7 +3517,7 @@ a.btn_black_big:hover{
 
 
 .symb_spoil {
-  font-family: STSongti-TC;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-weight: bold;
 }
 
@@ -3560,7 +3525,6 @@ a.btn_black_big:hover{
   background:#f0f0f0;
   width: 300px;
   position: relative;
-  font-family: Oswaldlight;
   letter-spacing: .4px;
 }
 .spoiler-head{
@@ -3688,10 +3652,6 @@ input[name="days"] + label::after {
   padding-left: 29px;
   padding-top: 2px;
   margin-top: 10px;
-}
-
-.thin_nad{
-  font-family: Oswaldlight;
 }
 
 
@@ -3906,7 +3866,7 @@ div.tran_hlp {
   position: absolute;
   left: 5px;
   color: #d0021b;
-  font-family: "STSongti-TC", sans-serif;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-weight: bold;
 }
 
@@ -4055,7 +4015,7 @@ div.tran_hlp {
 .popup-qimen_box .h1{
   font-size: 18px;
   color: #fff;
-  font-family: Oswald, sans-serif;
+  font-weight: 400;
   text-align: center;
 }
 .popup-qimen_content{
@@ -4072,7 +4032,6 @@ div.tran_hlp {
 
 .content-bar-tables th {
   font-size: 12px;
-  font-family: Oswald;
 }
 
 .cd_num {
@@ -4081,7 +4040,7 @@ div.tran_hlp {
 
 tr.cd_num_thin td {
   font-size: 12px;
-  font-family: Oswaldlight;
+  font-weight: 400;
 }
 
 .db_light {
@@ -4099,7 +4058,7 @@ p.mb_f {
 }
 
 .cd_symb_n {
-  font-family: "STSongti-TC", sans-serif;
+  font-family: "Noto Serif SC", "STSongti-TC", sans-serif;
   font-weight: bold;
 }
 
@@ -4110,7 +4069,6 @@ p.mb_f {
 
 .mn_fz {
   font-size: 9px;
-  font-family: Oswald;
   letter-spacing: 0.38px;
 }
 
@@ -4124,7 +4082,6 @@ p.mb_f {
 
 .pl_sm p {
   margin: 10px 0;
-  font-family: Oswald;
 }
 
 .bot_pt {
@@ -4174,7 +4131,6 @@ p.mb_f {
   padding: 0px 2px;
   color: #ffffff;
   font-size: 9px;
-  font-family: Oswaldlight, sans-serif;
   line-height: 18px;
   letter-spacing: 0.3px;
   border: solid 1px #ffffff;
@@ -4250,7 +4206,6 @@ p.mb_f {
 }
 .pl_dvad ul{
   list-style: none;
-  font-family: Oswaldlight;
 }
 .no_mb {
   margin-bottom: 0;
@@ -4352,6 +4307,10 @@ div.cal_date input {
     border: none;
 }
 
+.content-shablon-2 .content_block{
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
 .cal_date input[type="time"] {
   padding: 0;
     padding-left: 23px;
@@ -4392,6 +4351,11 @@ a.btn_black:hover {
     margin: 0;
 }
 
+.content-shablon-2 .content_block{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+}
+
 .reg_mail label {
   height: initial;
   margin: 0;
@@ -4414,7 +4378,6 @@ a.btn_black:hover {
   margin-top: 10px;
   margin-right: 0;
   font-size: 12px;
-  font-family: OswaldLight;
   font-weight: normal;
   border-width: 1px;
 }
@@ -4423,8 +4386,8 @@ a.btn_black:hover {
   margin-bottom: 11px;
   text-transform: uppercase;
   color: #fff;
-  font-family: Oswaldmedium;
   font-size: 14px;
+  font-weight: bold;
   letter-spacing: 0.39px;
 }
 
@@ -4442,7 +4405,6 @@ a.btn_black:hover {
 .arch_mnu p {
   margin-top: 10px;
   color: #fff;
-  font-family: Oswaldlight;
 }
 
 .arch_mnu input {
@@ -4703,7 +4665,6 @@ a.btn_black:hover {
   background: none;
   color: #ffffff;
   font-size: 12px;
-  font-family: Oswald;
   line-height: 0.57;
   letter-spacing: .1em;
   text-align: center;
@@ -4765,8 +4726,8 @@ a.btn_black:hover {
   max-width: 680px;
   margin: 0 auto 15px;
   padding: 0 20px;
-  font-family: "Oswaldmedium";
   font-size: 12px;
+  font-weight: bold;
   line-height: 1;
   letter-spacing: 0.2px;
 }
@@ -4850,7 +4811,7 @@ a.btn_black:hover {
   top: -32px;
   left: 0;
   color: #000;
-  font-family: Oswaldmedium;
+  font-weight: bold;
 }
 .popup_hexagrams_flex{
   margin-bottom: 10px;
@@ -4917,8 +4878,8 @@ a.btn_black:hover {
   padding: 0 16px 0 0;
   background-color: #eaeaea;
   color: #000;
-  font-family: Oswald;
   font-size: 11px;
+  font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.42px;
   border: none;
@@ -4955,7 +4916,7 @@ a.btn_black:hover {
   max-width: 790px;
   margin: -7px auto 15px;
   padding: 0 20px;
-  font-family: "Oswaldmedium";
+  font-weight: bold;
   font-size: 12px;
   line-height: 1;
   letter-spacing: 0.2px;
@@ -5062,8 +5023,8 @@ a.btn_black:hover {
   max-width: 780px;
   margin: 16px auto;
   padding: 0 32px 0 20px;
-  font-family: "Oswaldmedium";
   font-size: 12px;
+  font-weight: bold;
   line-height: 1.17;
   letter-spacing: 0.5px;
 }
@@ -5203,8 +5164,8 @@ a.btn_black:hover {
 .popup_phenomenon_table{
   max-width: 720px;
   margin: 16px auto 20px;
-  font-family: "Oswaldmedium";
   font-size: 12px;
+  font-weight: bold;
   line-height: 1.17;
   letter-spacing: 0.5px;
   text-align: center;
@@ -5406,8 +5367,8 @@ a.btn_black:hover {
 }
 .iegph-number{
   position: absolute;
-  font-family: "Oswaldlight", sans-serif;
   font-size: calc(var(--s1) * 1.6);
+  font-weight: 400;
 }
 .iegph-number-left{
   top: 50%;
@@ -5475,13 +5436,6 @@ a.btn_black:hover {
 }
 .ieghp-de,
 .ieghp-dp{
-  /*display: inline-block;
-  min-width: calc(var(--s1) * 3);
-  margin-top: calc(var(--s1) * 0.5);
-  background-color: #faeea3;
-  line-height: calc(var(--s1) * 1.3);
-  text-align: center;
-  border: solid calc(var(--s1) * 0.1) #666666;*/
   display: inline-block;
   width: calc(var(--s1) * 3);
   height: calc(var(--s1) * 1.5);
@@ -5682,8 +5636,8 @@ a.btn_black:hover {
   filter: grayscale(1);
 }
 .lost_image p{
-  font-family: "OswaldMedium", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 1.33;
   letter-spacing: 0.58px;
 }
@@ -5697,8 +5651,8 @@ a.btn_black:hover {
   padding: 15px 10px;
   margin-bottom: 20px;
   color: #ffffff;
-  font-family: "OswaldMedium", sans-serif;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   letter-spacing: 1.5px;
   text-align: center;
