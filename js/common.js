@@ -191,16 +191,18 @@ $(document).ready(function() {
 
 
 	if (document.getElementsByClassName('datepicker').length !== 0) {
-		$( ".datepicker" ).datepicker({
-                    changeMonth: true,
-                    changeYear: true,
-                    yearRange: "-100:+0",
-                });
+		var obj = {
+	        changeMonth: true,
+	        changeYear: true,
+	        yearRange: "-100:+0",
+			showOn: "button",
+			buttonImageOnly: true,
+			buttonImage: "img/calendar.svg",
 
-		$('.additionalDt').click(function(){
-			$(this).siblings( ".datepicker" ).datepicker( "show" );
-		})
-	}
+		};
+
+		$( ".datepicker" ).datepicker(obj);
+	};
 
 
 	// Sidebar checkbox options
@@ -315,14 +317,54 @@ function formValidator(){
 					item.addEventListener('click',checkInput);
 				} else {
 					item.addEventListener('focusout',checkInput);
-					item.addEventListener('keydown',checkInput);
+					//item.addEventListener('keydown',checkInput);
 				}
 			});
 		});
 
-		$('.datepicker').change(function(){
-			checkInput.apply(this);
+		document.querySelectorAll('.datepicker').forEach(function(item){
+			item.onkeydown = function(event){
+				if(event.key >= 0 && event.key <= 9){
+					if(formatDatepickerValidation(item.value,event.key)) item.value = formatDatepickerValidation(item.value,event.key);
+				} else if(event.key == 'Backspace'){
+					var date = item.value.split('');
+					date.pop();
+					item.value = date.join('');
+				}
+				return false;
+			};
+
+			item.onchange = function(){
+				checkInput.apply(item);
+			};	
 		});
+	};
+
+
+
+	function formatDatepickerValidation(date,key){
+		date = date.split('');
+		date.push(key);
+
+		if(date.length >= 1 && date[0] > 3) return false;
+		if(date.length >= 2){
+			if(+(date[0] + date[1]) > 31) return false;
+			addSlash(2);
+		};
+		if(date.length >= 4 && date[3] > 1) return false;
+		if(date.length >= 5){
+			if(+(date[3] + date[4]) > 12) return false;
+			addSlash(5);
+		};
+		if(date.length >= 7 && (date[6] != 1 && date[6] != 2)) return false;
+		if(date.length >= 8 && (date[7] != 0 && date[7] != 9)) return false;
+		if(date.length == 11) return false;
+
+		return date.join('');
+
+		function addSlash(n){
+			if(date[n] != '/') date[n] = '/';
+		}
 	};
 
 
@@ -332,6 +374,11 @@ function formValidator(){
 		switch (item.type){
 			case 'text':
 			case 'password':
+				if(item.classList.contains('datepicker')){
+					failValidation(item,item.value.length < 10);
+					break;
+				}
+
 				failValidation(item,item.value.length < 1);
 				break;
 			case 'tel':
@@ -352,13 +399,13 @@ function formValidator(){
 	}
 
 	function failValidation(item,condition){
-		item.closest('.input-box_required').classList.remove('invalid')
+		item.closest('.input-box_required').classList.remove('invalid');
 
 		if(condition){
 			item.closest('.input-box_required').classList.add('invalid');
 			self.formFlag = 0;
 		}
-	}
+	};
 
 	function checkEmailValidation(email){
 		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -367,6 +414,8 @@ function formValidator(){
 	   }
 	   return true;
 	};
+
+
 
 	this.validateForm = function(e,selector = '.input-box_required'){
 		self.formFlag = 1;

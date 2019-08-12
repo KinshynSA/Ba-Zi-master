@@ -2896,8 +2896,14 @@ input[type="checkbox"]:checked + label:before {
           margin: 0;
         }
 
-        .cal_date svg {
+        /*.cal_date svg {
           margin-left: 10px;
+        }*/
+        .cal_date img{
+          width: 20px;
+          height: 20px;
+          margin-left: 10px;
+          cursor: pointer;
         }
 
         .cal_main {
@@ -3363,10 +3369,19 @@ td.td_p_cus {
   position: relative;
 }
 
-.date_inp_prf svg {
+/*.date_inp_prf svg {
   position: absolute;
   top: -3px;
   right: -25px;
+}*/
+.date_inp_prf img{
+  position: absolute;
+  top: -3px;
+  right: -25px;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .sex_prof input[type="radio"] + label{
