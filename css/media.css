@@ -1652,6 +1652,15 @@
 		grid-column: 1/2;
 		justify-self: flex-start;
 	}
+
+	input[type=text]:focus,
+	input[type=email]:focus,
+	input[type=tel]:focus,
+	input[type=time]:focus,
+	select:focus,
+	option:focus{
+		font-size: 16px!important;
+	}
 }
 
 @media only screen and (max-width: 539px){
