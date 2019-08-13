@@ -2188,7 +2188,10 @@ text-align: center;
           margin-right: 8px;
         }
 
-        .buttons-right .cal_date svg {
+        /*.buttons-right .cal_date svg {
+          margin: 0 10px;
+        }*/
+        .buttons-right .cal_date img{
           margin: 0 10px;
         }
 

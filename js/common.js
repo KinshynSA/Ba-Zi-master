@@ -191,17 +191,22 @@ $(document).ready(function() {
 
 
 	if (document.getElementsByClassName('datepicker').length !== 0) {
-		var obj = {
-	        changeMonth: true,
-	        changeYear: true,
-	        yearRange: "-100:+0",
-			showOn: "button",
-			buttonImageOnly: true,
-			buttonImage: "img/calendar.svg",
 
-		};
+		//$( ".datepicker" ).datepicker(obj);
 
-		$( ".datepicker" ).datepicker(obj);
+		document.querySelectorAll('.datepicker').forEach(function(item){
+			var obj = {
+		        changeMonth: true,
+		        changeYear: true,
+		        yearRange: "-100:+0",
+				showOn: "button",
+				buttonImageOnly: true,
+				buttonImage: "img/calendar.svg",
+			}
+
+			if(item.classList.contains('datepicker-black')) obj['buttonImage'] = "img/calendar-black.svg";
+			$(item).datepicker(obj);
+		})
 	};
 
 

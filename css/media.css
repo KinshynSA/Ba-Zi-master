@@ -710,7 +710,7 @@
 		width: 100%;
 		padding: 20px 10px 14px;
 	}
-	.stars_pop_container{
+	.stars_pop_container form{
 		display: grid;
 	    grid-template-columns: 160px 160px 160px;
 	    justify-content: center;
@@ -1289,9 +1289,9 @@
 		padding: 0 50px;
 	}
 
-	.stars_pop_container{
+	/*.stars_pop_container form{
 		grid-template-columns: 160px 160px;
-	}
+	}*/
 	.stars-pop_block-1{
 		grid-column: 1/2;
 		grid-row: 1/2;
