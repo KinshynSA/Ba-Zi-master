@@ -300,6 +300,8 @@ $(document).ready(function() {
 
 	//Form validation
 	formValidator.prepare();
+	formValidator.changeDatepickerPlaceholder();
+	window.addEventListener('resize',formValidator.changeDatepickerPlaceholder);
 });
 
 
@@ -338,33 +340,6 @@ function formValidator(){
 				checkInput.apply(item);
 			};	
 		});
-	};
-
-
-
-	function formatDatepickerValidation(date,key){
-		date = date.split('');
-		date.push(key);
-
-		if(date.length >= 1 && date[0] > 3) return false;
-		if(date.length >= 2){
-			if(+(date[0] + date[1]) > 31) return false;
-			addSlash(2);
-		};
-		if(date.length >= 4 && date[3] > 1) return false;
-		if(date.length >= 5){
-			if(+(date[3] + date[4]) > 12) return false;
-			addSlash(5);
-		};
-		if(date.length >= 7 && (date[6] != 1 && date[6] != 2)) return false;
-		if(date.length >= 8 && (date[7] != 0 && date[7] != 9)) return false;
-		if(date.length == 11) return false;
-
-		return date.join('');
-
-		function addSlash(n){
-			if(date[n] != '/') date[n] = '/';
-		}
 	};
 
 
@@ -413,6 +388,47 @@ function formValidator(){
 	    	return false;
 	   }
 	   return true;
+	};
+
+
+
+	function formatDatepickerValidation(date,key){
+		date = date.split('');
+		date.push(key);
+
+		if(date.length >= 1 && date[0] > 3) return false;
+		if(date.length >= 2){
+			if(+(date[0] + date[1]) > 31) return false;
+			addSlash(2);
+		};
+		if(date.length >= 4 && date[3] > 1) return false;
+		if(date.length >= 5){
+			if(+(date[3] + date[4]) > 12) return false;
+			addSlash(5);
+		};
+		if(date.length >= 7 && (date[6] != 1 && date[6] != 2)) return false;
+		if(date.length >= 8 && (date[7] != 0 && date[7] != 9)) return false;
+		if(date.length == 11) return false;
+
+		return date.join('');
+
+		function addSlash(n){
+			if(date[n] != '/') date[n] = '/';
+		}
+	};
+
+
+
+	this.changeDatepickerPlaceholder = function(){
+		if(document.documentElement.clientWidth < 600){
+			document.querySelectorAll('.datepicker').forEach(function(item){
+				item.placeholder = "дд/мм/гггг"
+			});
+		} else {
+			document.querySelectorAll('.datepicker').forEach(function(item){
+				item.placeholder = "ДЕНЬ / МЕСЯЦ / ГОД"
+			});
+		}
 	};
 
 
