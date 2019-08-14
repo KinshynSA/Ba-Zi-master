@@ -307,6 +307,12 @@ $(document).ready(function() {
 	formValidator.prepare();
 	formValidator.changeDatepickerPlaceholder();
 	window.addEventListener('resize',formValidator.changeDatepickerPlaceholder);
+
+
+	
+	// bazi table breaking
+	breakBaziTable();
+	window.addEventListener('resize',breakBaziTable);
 });
 
 
@@ -476,3 +482,43 @@ function formValidator(){
 };
 var formValidator = new formValidator();
 // Form valiadtion end
+
+
+
+// bazi table breaking
+function breakBaziTable(){
+	document.querySelectorAll('.bzi-table').forEach(function(item){
+		var columnsOrigin = item.dataset.columns;
+
+		if(!columnsOrigin) return;
+
+		item.querySelectorAll('.bzi-cell').forEach(function(cell,i){
+			cell.style.gridColumn = cell.style.gridRow = '1/2';
+		});
+
+		var columns = getComputedStyle(item).gridTemplateColumns.split(' ').length;
+		var columnsCounter = 1;
+		var rowsCounter = 1;
+		var rowsDM = Math.ceil(item.querySelectorAll('.bzi-cell').length / columnsOrigin);
+
+		item.querySelectorAll('.bzi-cell').forEach(function(cell,i){
+			if(columnsCounter>columnsOrigin){
+				columnsCounter = 1;
+				rowsCounter++;
+			} 
+
+			var rowsD = Math.ceil(columnsCounter/columns);
+
+			var x = columnsCounter;
+			if(x>columns) x -= columns;
+
+			cell.style.gridColumn = `${x}/${x + 1}`;
+			cell.style.gridRow = `${(rowsDM * rowsD) + rowsCounter}/${(rowsDM * rowsD) + rowsCounter + 1}`;
+
+			columnsCounter++;
+
+			cell.classList.remove('bzi-cell_first');
+			if(rowsCounter == 1) cell.classList.add('bzi-cell_first');
+		});
+	});
+};
