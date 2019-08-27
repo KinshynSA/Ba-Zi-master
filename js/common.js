@@ -1,6 +1,10 @@
 'use strict';
 
 $(document).ready(function() {
+	document.querySelectorAll('.datepicker').forEach((item)=>{
+		item.onfocus = ()=> false;
+	});
+	
     $('.but_right').click(function(){
 		$('.block_pop').show('slow'); 
 		$(this).hide('slow');
@@ -191,8 +195,6 @@ $(document).ready(function() {
 
 
 	if (document.getElementsByClassName('datepicker').length !== 0) {
-
-		//$( ".datepicker" ).datepicker(obj);
 
 		document.querySelectorAll('.datepicker').forEach(function(item){
 			var obj = {
